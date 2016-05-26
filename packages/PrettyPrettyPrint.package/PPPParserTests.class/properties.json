@@ -1,0 +1,14 @@
+{
+	"category" : "PrettyPrettyPrint-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "PPPParserTests",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

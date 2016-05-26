@@ -1,2 +1,1 @@
 SystemOrganization addCategory: #'PrettyPrettyPrint-Tests'!
-SystemOrganization addCategory: #PrettyPrettyPrint!
