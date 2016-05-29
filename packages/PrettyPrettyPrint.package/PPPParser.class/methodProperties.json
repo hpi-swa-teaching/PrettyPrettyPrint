@@ -2,4 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
-		 } }
+		"currentToken" : "lcj 5/29/2016 15:08",
+		"nextToken" : "lcj 5/29/2016 15:08",
+		"parseBinaryMessage:" : "lcj 5/29/2016 16:06",
+		"parseMethod" : "lcj 5/29/2016 16:15",
+		"parseSequence" : "lcj 5/29/2016 16:17",
+		"parseTokenStream:" : "lcj 5/29/2016 16:16",
+		"parseUnaryMessage" : "lcj 5/29/2016 16:06",
+		"step" : "lcj 5/29/2016 15:17",
+		"step:" : "lcj 5/29/2016 16:16",
+		"syntaxError" : "lcj 5/29/2016 16:13" } }
