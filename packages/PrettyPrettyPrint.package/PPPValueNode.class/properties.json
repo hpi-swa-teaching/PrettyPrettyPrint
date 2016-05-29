@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"stream",
-		"nextToken",
-		"currentToken" ],
-	"name" : "PPPParser",
+		 ],
+	"name" : "PPPValueNode",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "PPPNode",
 	"type" : "normal" }
