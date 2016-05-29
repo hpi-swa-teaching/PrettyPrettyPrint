@@ -5,7 +5,7 @@ baseline: spec
 	spec for: #common do: [
 		spec
 			package: 'PrettyPrettyPrint' with: [];
-			package: 'PrettyPrettyPrint-Tests' with: [].
+			package: 'PrettyPrettyPrint-Tests' with: [ spec requires: #('Core') ].
 		
 		spec
 			group: 'Core' with: #('PrettyPrettyPrint');
