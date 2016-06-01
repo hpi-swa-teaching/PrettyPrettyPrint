@@ -1,5 +1,15 @@
 {
 	"class" : {
-		 },
+		"on:" : "KB 6/1/2016 18:50" },
 	"instance" : {
-		 } }
+		"classifyCharacter:" : "KB 6/1/2016 18:43",
+		"next" : "KB 6/1/2016 19:04",
+		"on:" : "KB 6/1/2016 15:08",
+		"scanAssignment" : "KB 6/1/2016 19:25",
+		"scanBinaryOperator" : "KB 6/1/2016 18:51",
+		"scanIdentifier" : "KB 6/1/2016 19:03",
+		"scanNumber" : "KB 6/1/2016 18:51",
+		"scanReturn" : "KB 6/1/2016 18:51",
+		"scanSeparator" : "KB 6/1/2016 18:50",
+		"scanSpecial" : "KB 6/1/2016 18:50",
+		"step" : "KB 6/1/2016 16:04" } }
