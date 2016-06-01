@@ -4,9 +4,13 @@
 	"instance" : {
 		"currentToken" : "lcj 5/29/2016 15:08",
 		"nextToken" : "lcj 5/29/2016 15:08",
+		"parseAssignment" : "TB 5/29/2016 19:51",
 		"parseBinaryMessage:" : "lcj 5/29/2016 16:06",
+		"parseMessageSend" : "TB 5/29/2016 19:56",
 		"parseMethod" : "lcj 5/29/2016 16:15",
+		"parseReturnStatement" : "TB 5/29/2016 19:56",
 		"parseSequence" : "lcj 5/29/2016 16:17",
+		"parseStatement" : "TB 5/29/2016 19:44",
 		"parseTokenStream:" : "lcj 5/29/2016 16:16",
 		"parseUnaryMessage" : "lcj 5/29/2016 16:06",
 		"step" : "lcj 5/29/2016 15:17",

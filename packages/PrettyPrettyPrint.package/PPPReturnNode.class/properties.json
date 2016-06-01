@@ -1,0 +1,14 @@
+{
+	"category" : "PrettyPrettyPrint",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"value" ],
+	"name" : "PPPReturnNode",
+	"pools" : [
+		 ],
+	"super" : "PPPNode",
+	"type" : "normal" }

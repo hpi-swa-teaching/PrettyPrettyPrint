@@ -8,7 +8,7 @@ testSimpleMethod
 		{#identifier. 'tmp'}.
 		{#special. '|'}.
 		{#identifier. 'tmp'}.
-		{#binaryOperator. ':='}.
+		{#assignment. ':='}.
 		{#number. '16r123123'}.
 		{#binaryOperator. '*'}.
 		{#number. '2'}.
