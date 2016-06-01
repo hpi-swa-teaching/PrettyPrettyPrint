@@ -6,9 +6,14 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"stream",
+		"currentTokenType",
+		"indexCount",
+		"characterType",
+		"buffer",
+		"currentCharacter" ],
 	"name" : "PPPTokenizer",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "Stream",
 	"type" : "normal" }
