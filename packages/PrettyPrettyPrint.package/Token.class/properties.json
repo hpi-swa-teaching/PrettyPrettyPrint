@@ -1,0 +1,18 @@
+{
+	"category" : "PrettyPrettyPrint",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"position",
+		"content",
+		"identifier",
+		"type",
+		"tokenType" ],
+	"name" : "Token",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
