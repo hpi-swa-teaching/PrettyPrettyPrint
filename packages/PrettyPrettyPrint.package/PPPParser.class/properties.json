@@ -9,8 +9,8 @@
 		"stream",
 		"nextToken",
 		"currentToken" ],
+	"literalType" : "normal",
 	"name" : "PPPParser",
 	"pools" : [
 		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"super" : "Object" }

@@ -1,11 +1,12 @@
 as yet unclassified
 parseStatement
 	" parses either an assignment, a return or a message send "
+	| statement |
 	
-	(self currentToken first = #special and: [self currentToken second = '^']) ifTrue: [
-		^self parseReturnStatement ].
+	(self nextToken first = #special and: [self nextToken second = '^'])
+		ifTrue: [ statement := self parseReturnStatement ]
+		ifFalse: [ statement := self parseMessageSendOrAssignment ].
 	
-	(self currentToken first = #identifier and: [self nextToken second first = #assignment]) ifTrue: [
-		^self parseAssignment ].
+	(self nextToken first = #special and: [self nextToken second = '.']) ifTrue: [ self step: #special ].
 	
-	self parseMessageSend
+	^statement

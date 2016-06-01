@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"value" ],
+	"literalType" : "normal",
 	"name" : "PPPReturnNode",
 	"pools" : [
 		 ],
-	"super" : "PPPNode",
-	"type" : "normal" }
+	"super" : "PPPNode" }

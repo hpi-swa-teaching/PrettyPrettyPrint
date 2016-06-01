@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
+	"literalType" : "normal",
 	"name" : "PPPTokenizer",
 	"pools" : [
 		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"super" : "Object" }
