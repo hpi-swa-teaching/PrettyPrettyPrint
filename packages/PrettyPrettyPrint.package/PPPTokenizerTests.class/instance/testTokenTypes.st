@@ -1,5 +1,5 @@
 as yet unclassified
-testTokenizeStream
+testTokenTypes
 
 	| stream tokenizer |
 	

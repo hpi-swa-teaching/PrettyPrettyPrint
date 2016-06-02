@@ -5,5 +5,5 @@ classifyCharacter: aCharacter
 	aCharacter isDigit ifTrue: [ ^#digit ].
 	aCharacter isLetter ifTrue: [ ^#letter ].
 	aCharacter isSpecial ifTrue: [ ^#binaryOperator ].
-	aCharacter isSeparator ifTrue: [ ^#seperator ].
+	aCharacter isSeparator ifTrue: [ ^#separator ].
 	aCharacter ifNil: [ ^#eof ]

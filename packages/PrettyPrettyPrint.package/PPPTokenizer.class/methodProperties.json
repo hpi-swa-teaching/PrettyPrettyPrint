@@ -2,7 +2,7 @@
 	"class" : {
 		"on:" : "KB 6/1/2016 18:50" },
 	"instance" : {
-		"classifyCharacter:" : "KB 6/1/2016 18:43",
+		"classifyCharacter:" : "KB 6/1/2016 20:21",
 		"next" : "KB 6/1/2016 19:04",
 		"on:" : "KB 6/1/2016 15:08",
 		"scanAssignment" : "KB 6/1/2016 19:25",
@@ -12,4 +12,4 @@
 		"scanReturn" : "KB 6/1/2016 18:51",
 		"scanSeparator" : "KB 6/1/2016 18:50",
 		"scanSpecial" : "KB 6/1/2016 18:50",
-		"step" : "KB 6/1/2016 16:04" } }
+		"step" : "KB 6/2/2016 11:47" } }
