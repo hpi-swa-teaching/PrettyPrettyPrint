@@ -16,7 +16,7 @@ parseMessageSendOrAssignment
 			value: self parseStatement;
 			yourself ].
 	
-	" value/variable "
+	" message send "
 	(self nextToken first = #identifier or: [self nextToken first = #number]) ifTrue: [
 		| receiver |
 		
