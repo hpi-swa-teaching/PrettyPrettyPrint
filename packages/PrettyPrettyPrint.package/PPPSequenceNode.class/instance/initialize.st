@@ -1,3 +1,4 @@
 as yet unclassified
 initialize
-	temporaries := OrderedCollection new
+	temporaries := OrderedCollection new.
+	statements := OrderedCollection new

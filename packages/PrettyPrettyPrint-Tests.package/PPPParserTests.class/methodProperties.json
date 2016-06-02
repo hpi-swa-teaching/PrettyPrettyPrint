@@ -2,7 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testMultipleTemporariesDeclaration" : "lcj 5/29/2016 16:09",
-		"testSimpleMethod" : "lcj 5/29/2016 14:51",
-		"testTemporaryDeclaration" : "lcj 5/29/2016 16:09",
-		"testUnaryMethodDeclaration" : "lcj 5/29/2016 16:06" } }
+		"testAssignment" : "lcj 6/1/2016 19:25",
+		"testMultipleTemporariesDeclaration" : "lcj 6/1/2016 16:04",
+		"testReturnStatement" : "lcj 6/1/2016 16:03",
+		"testSimpleAssignment" : "lcj 6/1/2016 18:34",
+		"testSimpleMethod" : "lcj 6/1/2016 19:39",
+		"testTemporaryDeclaration" : "lcj 6/1/2016 16:04",
+		"testUnaryMethodDeclaration" : "lcj 6/1/2016 16:04" } }

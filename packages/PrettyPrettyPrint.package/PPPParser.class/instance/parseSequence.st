@@ -1,13 +1,17 @@
 as yet unclassified
 parseSequence
-	| node |
+	| node statement |
 	node := PPPSequenceNode new.
 	
 	" if there's only a method declaration, we need to bail early "
-	self step ifNil: [ ^node ].
+	self nextToken first = #eof ifTrue: [ ^node ].
 	
-	(self currentToken first = #special and: [self currentToken second = '|']) ifTrue: [
-		[self nextToken first = #special and: [self nextToken second = '|']] whileFalse: [
-			node addTemporary: (self step: #identifier) second ]].
+	node temporaries: self parseTemporaries.
+	
+	[ self nextToken first ~= #eof ] whileTrue: [
+		statement := self parseStatement.
+		(statement class = PPPReturnNode)
+			ifTrue: [ node return: statement ]
+			ifFalse: [ node addStatement: statement ]].
 	
 	^node

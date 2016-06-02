@@ -1,12 +1,12 @@
 as yet unclassified
 parseMethod
-	self currentToken first = #binaryOperator ifTrue: [
+	self nextToken first = #binaryOperator ifTrue: [
 		^self parseBinaryMessage ].
 
-	(self currentToken first = #identifier and: [self currentToken second asString last = ':']) ifTrue: [
+	(self nextToken first = #identifier and: [self nextToken second asString last = ':']) ifTrue: [
 		^self parseNamedMessage ].
 	
-	self currentToken first = #identifier ifTrue: [
+	self nextToken first = #identifier ifTrue: [
 		^self parseUnaryMessage ].
 
 	self syntaxError

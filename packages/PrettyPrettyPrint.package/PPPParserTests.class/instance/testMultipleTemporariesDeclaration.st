@@ -1,11 +1,13 @@
 as yet unclassified
 testMultipleTemporariesDeclaration
 	| tokens methodNode |
-	tokens := {{#identifier. 'someMessage'}.
+	tokens := {
+		{#identifier. 'someMessage'}.
 		{#special. '|'}.
 		{#identifier. 'tmp'}.
 		{#identifier. 'tmp2'}.
-		{#special. '|'}}.
+		{#special. '|'}.
+		{#eof. ''}}.
 		
 	methodNode := PPPParser new parseTokenStream: (ReadStream on: tokens).
 	

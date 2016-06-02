@@ -2,6 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
+		"addStatement:" : "lcj 6/1/2016 13:57",
 		"addTemporary:" : "lcj 5/29/2016 16:12",
-		"initialize" : "lcj 5/29/2016 16:11",
-		"temporaries" : "lcj 5/29/2016 16:11" } }
+		"initialize" : "lcj 6/1/2016 13:57",
+		"return" : "lcj 6/1/2016 11:47",
+		"return:" : "lcj 6/1/2016 11:46",
+		"statements" : "lcj 6/1/2016 13:45",
+		"statements:" : "lcj 6/1/2016 13:45",
+		"temporaries" : "lcj 5/29/2016 16:11",
+		"temporaries:" : "lcj 6/1/2016 18:27" } }
