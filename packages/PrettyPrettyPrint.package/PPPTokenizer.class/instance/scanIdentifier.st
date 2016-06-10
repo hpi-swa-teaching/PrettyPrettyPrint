@@ -9,7 +9,7 @@ scanIdentifier
 		buffer nextPut: currentCharacter.
 		self step ].
 	
-	^Token new
+	^PPPToken new
 		position: indexCount;
 		content: buffer contents;
 		tokenType: #identifier;
