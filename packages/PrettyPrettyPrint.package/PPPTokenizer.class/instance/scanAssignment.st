@@ -3,7 +3,7 @@ scanAssignment
 	
 	| token |
 	
-	token := Token new.
+	token := PPPToken new.
 	token position: indexCount.
 	2 timesRepeat: [ self step ].
 	

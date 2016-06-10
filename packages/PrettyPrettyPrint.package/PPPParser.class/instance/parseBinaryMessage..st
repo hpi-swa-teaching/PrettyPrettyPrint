@@ -3,8 +3,8 @@ parseBinaryMessage: aNode
 	| node operator operand |
 	node := PPPMethodNode new.
 	
-	operator := self step second.
-	operand := (self step: #binaryOperator) second.
+	operator := self step content.
+	operand := (self step: #binaryOperator) content.
 	
 	^node
 		addArgument: operator name: operand;

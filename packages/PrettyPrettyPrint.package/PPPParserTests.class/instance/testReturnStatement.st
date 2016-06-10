@@ -2,10 +2,10 @@ as yet unclassified
 testReturnStatement
 	| tokens methodNode |
 	tokens := {
-		{#identifier. 'someMessage'}.
-		{#special. '^'}.
-		{#identifier. 'tmp'}.
-		{#eof. ''}}.
+		PPPToken type: #identifier content: 'someMessage'.
+		PPPToken type: #special content: '^'.
+		PPPToken type: #identifier content: 'tmp'.
+		PPPToken type: #eof content: ''}.
 		
 	methodNode := PPPParser new parseTokenStream: (ReadStream on: tokens).
 	

@@ -6,9 +6,9 @@ parseMessageSendOrAssignment
 	
 	self nextToken.
 	nextNextToken := stream peek.
-	(self nextToken first = #identifier and: [nextNextToken first = #assignment]) ifTrue: [
+	(self nextToken tokenType = #identifier and: [nextNextToken tokenType = #assignment]) ifTrue: [
 		| variable |
-		variable := (self step: #identifier) second.
+		variable := (self step: #identifier) content.
 		self step.
 		
 		^PPPAssignmentNode new
@@ -17,29 +17,29 @@ parseMessageSendOrAssignment
 			yourself ].
 	
 	" message send "
-	(self nextToken first = #identifier or: [self nextToken first = #number]) ifTrue: [
+	(self nextToken tokenType = #identifier or: [self nextToken tokenType = #number]) ifTrue: [
 		| receiver |
 		
-		(self nextToken first = #number) ifTrue: [
+		(self nextToken tokenType = #number) ifTrue: [
 			self step: #number.
 			
 			receiver := PPPLiteralNode new
-				value: self currentToken second;
-				literalType: self currentToken first;
+				value: self currentToken content;
+				literalType: self currentToken tokenType;
 				yourself ].
 		
-		(self nextToken first = #identifier) ifTrue: [
+		(self nextToken tokenType = #identifier) ifTrue: [
 			receiver := PPPVariableNode new
-				name: (self step: #identifier) second;
+				name: (self step: #identifier) content;
 				yourself ].
 		
-		self nextToken first = #binaryOperator ifTrue: [
+		self nextToken tokenType = #binaryOperator ifTrue: [
 			^PPPMessageNode new
 				receiver: receiver;
-				selector: (self step: #binaryOperator) second;
+				selector: (self step: #binaryOperator) content;
 				arguments: (OrderedCollection with: self parseStatement) ].
 		
-		(self nextToken first = #identifier and: [self nextToken second endsWithAColon not]) ifTrue: [
+		(self nextToken tokenType = #identifier and: [self nextToken content endsWithAColon not]) ifTrue: [
 			^PPPMessageNode new
 				receiver: receiver;
 				selector: (self step: #identifier) ].

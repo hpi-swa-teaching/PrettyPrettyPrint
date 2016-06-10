@@ -3,7 +3,7 @@ scanSeparator
 
 	| token |
 	
-	token := Token new.
+	token := PPPToken new.
 	token position: indexCount.
 	
 	token content: currentCharacter.

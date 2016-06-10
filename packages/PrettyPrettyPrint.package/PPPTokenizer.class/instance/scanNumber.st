@@ -6,7 +6,7 @@ scanNumber
 	
 	buffer reset.
 	
-	token := Token new.
+	token := PPPToken new.
 	token position: indexCount.
 	
 	[characterType = #digit ] whileTrue: [

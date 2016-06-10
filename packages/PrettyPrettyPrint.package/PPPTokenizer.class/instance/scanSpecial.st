@@ -3,7 +3,7 @@ scanSpecial
 
 	| token |
 	
-	token := Token new.
+	token := PPPToken new.
 	
 	token content: currentCharacter.
 	self step.

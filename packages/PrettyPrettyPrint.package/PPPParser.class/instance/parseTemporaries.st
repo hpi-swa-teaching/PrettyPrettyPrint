@@ -3,11 +3,11 @@ parseTemporaries
 	| temporaries |
 	temporaries := OrderedCollection new.
 	
-	(self nextToken first = #special and: [self nextToken second = '|']) ifTrue: [
+	(self nextToken tokenType = #special and: [self nextToken content = '|']) ifTrue: [
 		self step: #special.
 		
-		[self nextToken first = #special and: [self nextToken second = '|']] whileFalse: [
-			temporaries add: (self step: #identifier) second ].
+		[self nextToken tokenType = #special and: [self nextToken content = '|']] whileFalse: [
+			temporaries add: (self step: #identifier) content ].
 		
 		self step: #special ].
 	
