@@ -1,10 +1,10 @@
 as yet unclassified
-parseBinaryMessage: aNode
+parseBinaryMessage
 	| node operator operand |
 	node := PPPMethodNode new.
 	
-	operator := self step content.
-	operand := (self step: #binaryOperator) content.
+	operator := (self step: #binaryOperator) content.
+	operand := (self step: #identifier) content.
 	
 	^node
 		addArgument: operator name: operand;

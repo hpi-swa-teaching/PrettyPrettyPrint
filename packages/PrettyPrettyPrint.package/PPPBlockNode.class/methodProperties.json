@@ -2,4 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		 } }
+		"addBinding:" : "TB 6/10/2016 17:39",
+		"bindings" : "TB 6/10/2016 17:42",
+		"bodySequence" : "TB 6/10/2016 18:05",
+		"bodySequence:" : "TB 6/10/2016 18:05",
+		"initialize" : "TB 6/10/2016 17:39" } }

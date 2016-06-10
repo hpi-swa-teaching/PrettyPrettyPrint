@@ -3,7 +3,9 @@
 		 },
 	"instance" : {
 		"addArgument:name:" : "lcj 5/29/2016 15:04",
+		"arguments" : "TB 6/10/2016 17:06",
 		"bodySequence" : "lcj 5/29/2016 15:27",
 		"bodySequence:" : "lcj 5/29/2016 15:27",
+		"initialize" : "TB 6/10/2016 17:07",
 		"selector" : "lcj 5/29/2016 15:27",
 		"selector:" : "lcj 5/29/2016 15:24" } }

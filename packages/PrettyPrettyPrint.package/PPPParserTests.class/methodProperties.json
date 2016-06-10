@@ -3,7 +3,9 @@
 		 },
 	"instance" : {
 		"testAssignment" : "TB 6/10/2016 16:40",
+		"testBlock" : "TB 6/10/2016 17:34",
 		"testMultipleTemporariesDeclaration" : "TB 6/10/2016 16:41",
+		"testNamedMessageMethod" : "TB 6/10/2016 17:15",
 		"testReturnStatement" : "TB 6/10/2016 16:41",
 		"testSimpleAssignment" : "TB 6/10/2016 16:41",
 		"testSimpleMethod" : "TB 6/10/2016 16:42",
