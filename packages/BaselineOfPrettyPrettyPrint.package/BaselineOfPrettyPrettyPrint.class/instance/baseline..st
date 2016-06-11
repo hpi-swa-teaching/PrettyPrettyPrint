@@ -4,10 +4,10 @@ baseline: spec
 
 	spec for: #common do: [
 		spec
-			package: 'PrettyPrettyPrint' with: [];
-			package: 'PrettyPrettyPrint-Tests' with: [ spec requires: #('Core') ].
+			package: 'PrettyPrettyPrint' with: []";
+			package: 'PrettyPrettyPrint-Tests' with: [ spec requires: #('Core') ]".
 		
 		spec
-			group: 'Core' with: #('PrettyPrettyPrint');
+			group: 'Core' with: #('PrettyPrettyPrint')";
 			group: 'Tests' with: #('PrettyPrettyPrint-Tests');
-			group: 'TravisCI' with: #('Tests') ]
+			group: 'TravisCI' with: #('Tests')" ]
