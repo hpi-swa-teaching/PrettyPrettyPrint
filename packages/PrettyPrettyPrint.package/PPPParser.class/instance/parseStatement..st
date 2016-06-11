@@ -7,6 +7,6 @@ parseStatement: insideNamedMessage
 		ifTrue: [ statement := self parseReturnStatement ]
 		ifFalse: [ statement := self parseMessageSendOrAssignment: insideNamedMessage ].
 	
-	(self nextToken tokenType = #special and: [self nextToken content = '.']) ifTrue: [ self step: #special ].
+	((self nextToken tokenType = #special) and: [(self nextToken content = '.')]) ifTrue: [ self step: #special ].
 	
 	^statement

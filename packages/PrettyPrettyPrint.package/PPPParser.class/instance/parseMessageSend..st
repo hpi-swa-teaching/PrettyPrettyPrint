@@ -23,7 +23,7 @@ parseMessageSend: insideNamedMessage
 		
 		[self nextToken tokenType = #identifier and: [self nextToken content first = $:]] whileTrue: [
 			receiver addBinding: (self step: #identifier) ].
-	
+		
 		receiver bindings ifNotEmpty: [ self step: #special ].
 		receiver bodySequence: self parseSequence ]]].
 		
@@ -39,7 +39,7 @@ parseMessageSend: insideNamedMessage
 		^PPPMessageNode new
 			receiver: receiver;
 			selector: (self step: #identifier) ].
-		
+	
 	" message sent is a named message "
 	(insideNamedMessage not and: [self nextToken tokenType = #identifier and: [self nextToken content endsWithAColon]]) ifTrue: [
 		| messageSend |
