@@ -4,7 +4,7 @@ parseMethod
 		^self parseBinaryMessage ].
 
 	(self nextToken tokenType = #identifier and: [self nextToken content last = $:]) ifTrue: [
-		^self parseNamedMessage ].
+		^self parseNamedMessageDeclaration ].
 	
 	self nextToken tokenType = #identifier ifTrue: [
 		^self parseUnaryMessage ].

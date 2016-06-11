@@ -8,9 +8,10 @@ parseSequence
 	
 	node temporaries: self parseTemporaries.
 	
-	[ self nextToken tokenType ~= #eof and: [
-		self nextToken tokenType ~= #special or: [self nextToken content ~= ']']]] whileTrue: [
-		statement := self parseStatement.
+	[self nextToken tokenType ~= #eof and:
+	[self nextToken content ~= ']' and:
+	[self nextToken content ~= ')']]] whileTrue: [
+		statement := (self parseStatement: false).
 		(statement class = PPPReturnNode)
 			ifTrue: [ node return: statement ]
 			ifFalse: [ node addStatement: statement ]].

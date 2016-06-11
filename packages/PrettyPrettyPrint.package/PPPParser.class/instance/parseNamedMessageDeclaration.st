@@ -1,5 +1,5 @@
 as yet unclassified
-parseNamedMessage
+parseNamedMessageDeclaration
 	| node |
 	
 	node := PPPMethodNode new.
