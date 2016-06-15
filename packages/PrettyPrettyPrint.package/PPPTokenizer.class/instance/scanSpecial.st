@@ -3,10 +3,12 @@ scanSpecial
 
 	| token |
 	
-	token := PPPToken new.
-	
-	token content: currentCharacter.
-	self step.
-	^token
+	token := PPPToken new
+		position: indexCount;
+		content: currentCharacter;
 		tokenType: #special;
-		yourself
+		yourself.
+	
+	self step.
+	
+	^token

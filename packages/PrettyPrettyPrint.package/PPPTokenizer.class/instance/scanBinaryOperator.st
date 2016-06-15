@@ -3,11 +3,12 @@ scanBinaryOperator
 
 	| token |
 	
-	token := PPPToken new.
-	token position: indexCount.
-	token content: currentCharacter.
+	token := PPPToken new
+		position: indexCount;
+		content: currentCharacter;
+		tokenType: #binaryOperator;
+		yourself.
+		
 	self step.
 	
 	^token
-		tokenType: #binaryOperator;
-		yourself

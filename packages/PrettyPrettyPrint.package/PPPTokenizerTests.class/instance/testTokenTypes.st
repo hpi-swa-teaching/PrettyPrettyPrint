@@ -18,7 +18,7 @@ testTokenTypes
 		assert: tokenizer next tokenType equals: #binaryOperator;
 		assert: tokenizer next tokenType equals: #number;
 		assert: tokenizer next tokenType equals: #special;
-		assert: tokenizer next tokenType equals: #return
+		assert: tokenizer next tokenType equals: #special
 	
 	
 	

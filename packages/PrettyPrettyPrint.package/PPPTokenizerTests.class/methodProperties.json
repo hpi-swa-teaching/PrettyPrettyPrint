@@ -2,5 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testForAllTypes" : "KB 6/2/2016 11:47",
-		"testTokenTypes" : "KB 6/1/2016 20:07" } }
+		"testEscapedString" : "lcj 6/15/2016 12:50",
+		"testForAllTypes" : "lcj 6/15/2016 12:20",
+		"testTokenTypes" : "lcj 6/15/2016 12:18" } }

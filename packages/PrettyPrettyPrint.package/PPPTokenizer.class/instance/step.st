@@ -9,3 +9,4 @@ step
 	characterType := self classifyCharacter: currentCharacter.
 	indexCount := indexCount + 1.
 	
+	^currentCharacter

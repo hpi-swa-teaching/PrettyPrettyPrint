@@ -3,11 +3,12 @@ scanAssignment
 	
 	| token |
 	
-	token := PPPToken new.
-	token position: indexCount.
+	token := PPPToken new
+		position: indexCount;
+		tokenType: #assignment;
+		content: ':=';
+		yourself.
+		
 	2 timesRepeat: [ self step ].
 	
 	^token
-		content: ':=';
-		tokenType: #assignment;
-		yourself

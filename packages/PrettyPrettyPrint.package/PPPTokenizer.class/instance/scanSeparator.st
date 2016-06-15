@@ -3,13 +3,12 @@ scanSeparator
 
 	| token |
 	
-	token := PPPToken new.
-	token position: indexCount.
-	
-	token content: currentCharacter.
+	token := PPPToken new
+		position: indexCount;
+		content: currentCharacter;
+		tokenType: #separator;
+		yourself.
+		
 	self step.
 	
 	^token
-		tokenType: #separator;
-		yourself
-	
