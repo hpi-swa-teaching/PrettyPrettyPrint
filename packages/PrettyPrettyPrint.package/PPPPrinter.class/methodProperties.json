@@ -1,6 +1,7 @@
 {
 	"class" : {
-		 },
+		"spaceBeforeReturn" : "lcj 6/16/2016 00:05",
+		"spaceBeforeReturn:" : "lcj 6/16/2016 00:03" },
 	"instance" : {
 		"bufferContents" : "KB 6/15/2016 16:24",
 		"initialize" : "KB 6/15/2016 14:18",
@@ -9,7 +10,7 @@
 		"visitLiteralNode:" : "KB 6/15/2016 14:49",
 		"visitMessageNode:" : "KB 6/15/2016 18:25",
 		"visitMethodNode:" : "KB 6/15/2016 19:45",
-		"visitReturnNode:" : "KB 6/15/2016 17:24",
+		"visitReturnNode:" : "lcj 6/16/2016 00:04",
 		"visitSequenceNode:" : "KB 6/15/2016 19:14",
 		"visitValueNode:" : "KB 6/15/2016 15:57",
 		"visitVariableNode:" : "KB 6/15/2016 15:03" } }
