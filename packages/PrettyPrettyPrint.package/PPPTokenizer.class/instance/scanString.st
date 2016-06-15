@@ -11,7 +11,6 @@ scanString
 	self step.
 	
 	[ currentCharacter ~= $' or: [ currentCharacter = $' and: [stream peek = $'] ]] whileTrue: [
-	"[ currentCharacter = $' and: [ self step ~= $' ]] whileFalse: ["
 		currentCharacter = $' ifTrue: [ self step ].
 		buffer nextPut: currentCharacter.
 		self step ].

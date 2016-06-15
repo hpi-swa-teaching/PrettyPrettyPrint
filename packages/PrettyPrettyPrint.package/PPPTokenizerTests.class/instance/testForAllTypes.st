@@ -6,12 +6,10 @@ testForAllTypes
 	stream := ':=-ö19999999999^changeme ('.
 	tokenizer := PPPTokenizer on: stream.
 	
-	
 	self
 		assert: tokenizer next tokenType equals: #assignment;
 		assert: tokenizer next tokenType equals: #binaryOperator;
 		assert: tokenizer next tokenType equals: #identifier;
-		assert: tokenizer next tokenType equals: #number;
 		assert: tokenizer next tokenType equals: #special;
 		assert: tokenizer next tokenType equals: #identifier;
 		assert: tokenizer next tokenType equals: #separator;

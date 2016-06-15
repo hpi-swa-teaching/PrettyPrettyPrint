@@ -1,16 +1,20 @@
 {
 	"class" : {
-		"on:" : "KB 6/1/2016 18:50" },
+		"on:" : "lcj 6/15/2016 23:07" },
 	"instance" : {
 		"classifyCharacter:" : "lcj 6/15/2016 12:05",
-		"next" : "lcj 6/15/2016 12:06",
+		"initialize" : "lcj 6/15/2016 23:06",
+		"next" : "lcj 6/15/2016 14:02",
 		"on:" : "KB 6/1/2016 15:08",
-		"scanAssignment" : "lcj 6/15/2016 12:01",
-		"scanBinaryOperator" : "lcj 6/15/2016 12:01",
-		"scanIdentifier" : "lcj 6/15/2016 11:54",
+		"peek" : "lcj 6/15/2016 13:59",
+		"scanAssignment" : "lcj 6/15/2016 14:02",
+		"scanBinaryOperator" : "lcj 6/15/2016 14:02",
+		"scanIdentifier" : "lcj 6/15/2016 14:31",
 		"scanNumber" : "lcj 6/15/2016 12:00",
 		"scanReturn" : "KB 6/1/2016 18:51",
-		"scanSeparator" : "lcj 6/15/2016 11:57",
-		"scanSpecial" : "lcj 6/15/2016 11:57",
-		"scanString" : "lcj 6/15/2016 12:53",
+		"scanSeparator" : "lcj 6/15/2016 23:09",
+		"scanSpecial" : "lcj 6/15/2016 14:43",
+		"scanString" : "lcj 6/15/2016 14:41",
+		"skipWhitespace" : "lcj 6/15/2016 23:02",
+		"skipWhitespace:" : "lcj 6/15/2016 23:01",
 		"step" : "lcj 6/15/2016 12:44" } }

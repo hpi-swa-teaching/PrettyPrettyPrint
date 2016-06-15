@@ -5,7 +5,7 @@ scanSpecial
 	
 	token := PPPToken new
 		position: indexCount;
-		content: currentCharacter;
+		content: currentCharacter asString;
 		tokenType: #special;
 		yourself.
 	

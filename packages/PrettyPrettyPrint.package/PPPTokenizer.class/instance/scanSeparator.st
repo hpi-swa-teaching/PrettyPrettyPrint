@@ -1,7 +1,10 @@
 as yet unclassified
-scanSeparator 
-
+scanSeparator
 	| token |
+	
+	self skipWhitespace ifTrue: [
+		self step.
+		^self next ].
 	
 	token := PPPToken new
 		position: indexCount;

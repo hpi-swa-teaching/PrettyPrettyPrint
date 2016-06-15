@@ -1,5 +1,6 @@
 as yet unclassified
 on: aCollection
 
-	^self basicNew 
+	^self basicNew
+		initialize;
 		on: aCollection.

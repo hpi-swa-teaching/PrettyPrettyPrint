@@ -11,7 +11,9 @@ scanIdentifier
 	
 	buffer reset.
 	
-	[ characterType = #letter ] whileTrue: [ "TODO: implement identifying ':' character."
+	[ characterType = #letter or:
+	[ characterType = #digit or:
+	[ currentCharacter = $: and: [ stream peek ~= $= ]]]] whileTrue: [
 		buffer nextPut: currentCharacter.
 		self step ].
 	

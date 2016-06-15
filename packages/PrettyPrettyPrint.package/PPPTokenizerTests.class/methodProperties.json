@@ -3,5 +3,6 @@
 		 },
 	"instance" : {
 		"testEscapedString" : "lcj 6/15/2016 12:50",
-		"testForAllTypes" : "lcj 6/15/2016 12:20",
+		"testForAllTypes" : "lcj 6/15/2016 23:05",
+		"testNamedMessageTokens" : "lcj 6/15/2016 14:26",
 		"testTokenTypes" : "lcj 6/15/2016 12:18" } }

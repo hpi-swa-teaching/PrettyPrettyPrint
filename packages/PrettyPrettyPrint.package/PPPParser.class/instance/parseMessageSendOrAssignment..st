@@ -1,11 +1,9 @@
 as yet unclassified
 parseMessageSendOrAssignment: insideNamedMessage
-	| nextNextToken node |
-	self nextToken.
-	nextNextToken := stream peek.
+	| node |
 	
 	" assignment "
-	(self nextToken tokenType = #identifier and: [nextNextToken tokenType = #assignment]) ifTrue: [
+	(self nextToken tokenType = #identifier and: [self nextNextToken tokenType = #assignment]) ifTrue: [
 		^self parseAssignment ].
 	
 	" expression in parentheses "

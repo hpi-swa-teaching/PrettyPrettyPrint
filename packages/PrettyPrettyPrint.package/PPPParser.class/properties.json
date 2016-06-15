@@ -8,9 +8,10 @@
 	"instvars" : [
 		"stream",
 		"nextToken",
-		"currentToken" ],
+		"currentToken",
+		"nextNextToken" ],
+	"literalType" : "normal",
 	"name" : "PPPParser",
 	"pools" : [
 		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"super" : "Object" }

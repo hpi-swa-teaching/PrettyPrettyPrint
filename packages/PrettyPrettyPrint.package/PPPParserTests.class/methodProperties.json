@@ -2,8 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
+		"sampleComplexMethod:b:" : "lcj 6/15/2016 12:58",
 		"testAssignment" : "TB 6/10/2016 16:40",
 		"testBlock" : "TB 6/10/2016 17:34",
+		"testComplexMethod" : "lcj 6/15/2016 23:56",
 		"testIfTrueIfFalse" : "lcj 6/11/2016 16:19",
 		"testMultipleTemporariesDeclaration" : "TB 6/10/2016 16:41",
 		"testNamedMessage" : "TB 6/10/2016 20:04",
@@ -13,4 +15,5 @@
 		"testSimpleAssignment" : "TB 6/10/2016 16:41",
 		"testSimpleMethod" : "TB 6/10/2016 16:42",
 		"testTemporaryDeclaration" : "TB 6/10/2016 16:42",
+		"testTokenizerParserInteraction" : "lcj 6/15/2016 14:08",
 		"testUnaryMethodDeclaration" : "TB 6/10/2016 16:42" } }
