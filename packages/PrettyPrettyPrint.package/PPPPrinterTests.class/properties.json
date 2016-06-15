@@ -1,14 +1,14 @@
 {
-	"category" : "PrettyPrettyPrint",
+	"category" : "PrettyPrettyPrint-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"buffer" ],
-	"name" : "PPPPrinter",
+		 ],
+	"name" : "PPPPrinterTests",
 	"pools" : [
 		 ],
-	"super" : "PPPVisitor",
+	"super" : "TestCase",
 	"type" : "normal" }
