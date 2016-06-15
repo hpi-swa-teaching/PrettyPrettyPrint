@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"visitAssignmentNode:" : "KB 6/15/2016 13:34",
+		"visitBlockNode:" : "KB 6/15/2016 13:34",
+		"visitLiteralNode:" : "KB 6/15/2016 13:34",
+		"visitMessageNode:" : "KB 6/15/2016 13:34",
+		"visitMethodNode:" : "KB 6/15/2016 13:09",
+		"visitReturnNode:" : "KB 6/15/2016 13:33",
+		"visitSequenceNode:" : "KB 6/15/2016 13:33",
+		"visitValueNode:" : "KB 6/15/2016 13:34",
+		"visitVariableNode:" : "KB 6/15/2016 13:34" } }

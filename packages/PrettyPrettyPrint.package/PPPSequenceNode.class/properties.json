@@ -9,8 +9,8 @@
 		"temporaries",
 		"statements",
 		"return" ],
-	"literalType" : "normal",
 	"name" : "PPPSequenceNode",
 	"pools" : [
 		 ],
-	"super" : "PPPNode" }
+	"super" : "PPPNode",
+	"type" : "normal" }

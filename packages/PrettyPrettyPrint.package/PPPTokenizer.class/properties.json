@@ -12,8 +12,8 @@
 		"characterType",
 		"buffer",
 		"currentCharacter" ],
-	"literalType" : "normal",
 	"name" : "PPPTokenizer",
 	"pools" : [
 		 ],
-	"super" : "Stream" }
+	"super" : "Stream",
+	"type" : "normal" }
