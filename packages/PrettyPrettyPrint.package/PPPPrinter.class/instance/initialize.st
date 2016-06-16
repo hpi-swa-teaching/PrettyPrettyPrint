@@ -1,4 +1,5 @@
 as yet unclassified
 initialize
 
-	buffer := WriteStream on: ''
+	buffer := WriteStream on: ''.
+	currentIndent := 0

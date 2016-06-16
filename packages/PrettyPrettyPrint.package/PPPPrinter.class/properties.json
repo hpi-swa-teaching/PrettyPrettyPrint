@@ -3,12 +3,16 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
+		"DotAfterReturn",
+		"ReturnAfterTemporaryDeclaration",
+		"SpaceAroundBinaryOperator",
 		"SpaceBeforeReturn" ],
 	"commentStamp" : "",
 	"instvars" : [
-		"buffer" ],
-	"literalType" : "normal",
+		"buffer",
+		"currentIndent" ],
 	"name" : "PPPPrinter",
 	"pools" : [
 		 ],
-	"super" : "PPPVisitor" }
+	"super" : "PPPVisitor",
+	"type" : "normal" }

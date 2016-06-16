@@ -35,4 +35,7 @@ testPrintMethodNode
 	methodNode accept: printer.
 	
 	
-	self assert: (printer bufferContents ) equals: 'ourMethod: argument with: anotherArgument | temp1 temp2 |variable := 4.^self'
+	self assert: (printer bufferContents ) equals: 'ourMethod: argument with: anotherArgument 
+	| temp1 temp2 |
+	variable := 4.
+	^self'

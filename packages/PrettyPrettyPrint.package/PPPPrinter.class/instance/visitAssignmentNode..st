@@ -2,6 +2,9 @@ as yet unclassified
 visitAssignmentNode: aNode
 
 	aNode variable accept: self.
-	buffer nextPutAll: ' := '.
-	aNode value accept: self.
-	buffer nextPut: $.
+	
+	self class spaceAroundBinaryOperator
+		ifTrue: [ buffer nextPutAll: ' := ' ]
+		ifFalse: [ buffer nextPutAll: ':=' ].
+	
+	aNode value accept: self

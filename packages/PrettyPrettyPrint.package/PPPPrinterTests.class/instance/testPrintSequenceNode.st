@@ -23,4 +23,6 @@ testPrintSequenceNode
 	sequenceNode accept: printer.
 	
 	
-	self assert: (printer bufferContents ) equals: '| temp1 temp2 |variable := 4.^self'
+	self assert: (printer bufferContents ) equals: '| temp1 temp2 |
+variable := 4.
+^self'
