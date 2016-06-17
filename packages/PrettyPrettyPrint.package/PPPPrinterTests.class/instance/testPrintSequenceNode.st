@@ -13,7 +13,7 @@ testPrintSequenceNode
 			variable: (PPPVariableNode new name: 'variable');
 			value: (PPPVariableNode new name: '4'));
 		yourself.
-	return := PPPReturnNode new value: 'self'.
+	return := PPPReturnNode new value: (PPPVariableNode new name: 'self').
 	
 	sequenceNode
 		temporaries: temporaries;
@@ -22,7 +22,6 @@ testPrintSequenceNode
 	
 	sequenceNode accept: printer.
 	
-	
-	self assert: (printer bufferContents ) equals: '| temp1 temp2 |
+	self assert: printer bufferContents equals: '| temp1 temp2 |
 variable := 4.
 ^self'

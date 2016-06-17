@@ -16,7 +16,7 @@ testPrintMethodNode
 			variable: (PPPVariableNode new name: 'variable');
 			value: (PPPVariableNode new name: '4'));
 		yourself.
-	return := PPPReturnNode new value: 'self'.
+	return := PPPReturnNode new value: (PPPVariableNode new name: 'self').
 	
 	sequenceNode
 		temporaries: temporaries;
@@ -31,11 +31,9 @@ testPrintMethodNode
 		addArgument: 'with:' name: 'anotherArgument';
 		yourself.
 	
-	
 	methodNode accept: printer.
 	
-	
-	self assert: (printer bufferContents ) equals: 'ourMethod: argument with: anotherArgument 
+	self assert: printer bufferContents equals: 'ourMethod: argument with: anotherArgument 
 	| temp1 temp2 |
 	variable := 4.
 	^self'

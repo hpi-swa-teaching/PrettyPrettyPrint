@@ -15,11 +15,10 @@
 		"initialize" : "TB 6/16/2016 11:57",
 		"printIndent" : "TB 6/16/2016 12:01",
 		"visitAssignmentNode:" : "TB 6/16/2016 11:48",
-		"visitBlockNode:" : "KB 6/15/2016 13:34",
+		"visitBlockNode:" : "TB 6/17/2016 18:42",
 		"visitLiteralNode:" : "KB 6/15/2016 14:49",
 		"visitMessageNode:" : "TB 6/16/2016 11:39",
 		"visitMethodNode:" : "TB 6/16/2016 12:00",
-		"visitReturnNode:" : "TB 6/16/2016 11:34",
-		"visitSequenceNode:" : "TB 6/16/2016 12:04",
-		"visitValueNode:" : "KB 6/15/2016 15:57",
-		"visitVariableNode:" : "KB 6/15/2016 15:03" } }
+		"visitReturnNode:" : "TB 6/17/2016 17:59",
+		"visitSequenceNode:" : "TB 6/17/2016 18:46",
+		"visitVariableNode:" : "TB 6/17/2016 18:05" } }

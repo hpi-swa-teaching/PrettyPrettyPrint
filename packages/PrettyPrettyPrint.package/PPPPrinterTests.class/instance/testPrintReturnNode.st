@@ -4,7 +4,7 @@ testPrintReturnNode
 	
 	printer := PPPPrinter new.
 	returnNode := PPPReturnNode new
-		value: 'ourReturn'.
+		value: (PPPVariableNode new name: 'ourReturn').
 	
 	returnNode accept: printer.
 	

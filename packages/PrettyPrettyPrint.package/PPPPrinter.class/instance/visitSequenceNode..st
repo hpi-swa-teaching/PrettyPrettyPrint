@@ -10,10 +10,16 @@ visitSequenceNode: aNode
 	self class returnAfterTemporaryDeclaration ifTrue: [
 		buffer cr ].
 	
-	aNode statements do: [ :s |
+	aNode statements allButLastDo: [ :s |
 		self printIndent.
 		s accept: self.
 		buffer nextPut: $.; cr ].
 	
-	self printIndent.
-	aNode return accept: self.
+	aNode statements ifNotEmpty: [
+		self printIndent.
+		aNode statements last accept: self.
+		aNode return ifNotNil: [ buffer nextPut: $.; cr ]].
+	
+	aNode return ifNotNil: [
+		self printIndent.
+		aNode return accept: self ]
