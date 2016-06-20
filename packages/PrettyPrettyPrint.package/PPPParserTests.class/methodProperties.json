@@ -4,6 +4,7 @@
 	"instance" : {
 		"sampleComplexMethod:b:" : "lcj 6/15/2016 12:58",
 		"testAssignment" : "TB 6/10/2016 16:40",
+		"testAssignmentInBlock" : "TB 6/20/2016 12:02",
 		"testBlock" : "TB 6/10/2016 17:34",
 		"testComplexMethod" : "lcj 6/15/2016 23:56",
 		"testIfTrueIfFalse" : "lcj 6/11/2016 16:19",

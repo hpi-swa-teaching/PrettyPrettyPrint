@@ -7,6 +7,7 @@ next
 	
 	(currentCharacter = $: and: [stream peek = $=]) ifTrue: [ ^self scanAssignment ].
 	currentCharacter = $' ifTrue: [ ^self scanString ].
+	currentCharacter = $" ifTrue: [ ^self scanComment ].
 	characterType = #special ifTrue: [ ^self scanSpecial ].
 	(currentCharacter = $: or: [characterType = #letter]) ifTrue: [ ^self scanIdentifier ].
 	characterType = #digit ifTrue: [ ^self scanNumber ].
@@ -17,4 +18,4 @@ next
 			tokenType: #eof;
 			yourself ].
 	
-	^self syntaxError
+	^self error: 'Unclassified character encountered: ', currentCharacter asString

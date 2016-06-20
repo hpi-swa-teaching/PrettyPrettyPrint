@@ -2,12 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testPrintAssignmentNode" : "TB 6/16/2016 12:03",
+		"testPrintAssignmentNode" : "TB 6/20/2016 12:11",
 		"testPrintBinaryMessageNode" : "KB 6/15/2016 18:23",
-		"testPrintBlock" : "TB 6/17/2016 18:42",
+		"testPrintBlock" : "TB 6/20/2016 12:11",
 		"testPrintLiteralNode" : "KB 6/15/2016 16:56",
-		"testPrintMethodNode" : "TB 6/17/2016 18:04",
+		"testPrintMethodNode" : "TB 6/20/2016 12:12",
 		"testPrintReturnNode" : "TB 6/17/2016 18:07",
-		"testPrintSequenceNode" : "TB 6/17/2016 18:08",
+		"testPrintSequenceNode" : "TB 6/20/2016 12:12",
 		"testPrintUnaryMessageNode" : "KB 6/15/2016 18:13",
 		"testPrintVariableNode" : "KB 6/15/2016 16:57" } }

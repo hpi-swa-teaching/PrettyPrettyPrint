@@ -1,11 +1,9 @@
 as yet unclassified
 testTokenTypes
-
 	| stream tokenizer |
 	
 	stream := 'someMessage|tmp|tmp:=123123*2.^tmp'.
 	tokenizer := PPPTokenizer on: stream.
-	
 	
 	self
 		assert: tokenizer next tokenType equals: #identifier;
@@ -19,7 +17,3 @@ testTokenTypes
 		assert: tokenizer next tokenType equals: #number;
 		assert: tokenizer next tokenType equals: #special;
 		assert: tokenizer next tokenType equals: #special
-	
-	
-	
-	

@@ -1,6 +1,7 @@
 {
 	"class" : {
-		 },
+		"format:in:notifying:" : "TB 6/20/2016 12:20",
+		"format:in:notifying:decorated:" : "TB 6/20/2016 12:20" },
 	"instance" : {
 		"bufferContents" : "KB 6/15/2016 16:24",
 		"decrementIndent" : "TB 6/16/2016 12:01",
@@ -9,11 +10,11 @@
 		"printIndent" : "TB 6/16/2016 12:01",
 		"profile" : "TB 6/20/2016 10:27",
 		"profile:" : "TB 6/20/2016 10:27",
-		"visitAssignmentNode:" : "TB 6/20/2016 10:28",
+		"visitAssignmentNode:" : "TB 6/20/2016 12:10",
 		"visitBlockNode:" : "TB 6/17/2016 18:42",
 		"visitLiteralNode:" : "KB 6/15/2016 14:49",
 		"visitMessageNode:" : "TB 6/20/2016 10:29",
 		"visitMethodNode:" : "TB 6/16/2016 12:00",
 		"visitReturnNode:" : "TB 6/20/2016 10:28",
-		"visitSequenceNode:" : "TB 6/20/2016 10:33",
+		"visitSequenceNode:" : "TB 6/20/2016 12:23",
 		"visitVariableNode:" : "TB 6/17/2016 18:05" } }

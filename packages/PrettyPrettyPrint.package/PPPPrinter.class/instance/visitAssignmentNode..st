@@ -1,7 +1,7 @@
 as yet unclassified
 visitAssignmentNode: aNode
 
-	aNode variable accept: self.
+	buffer nextPutAll: aNode variable.
 	
 	self profile spaceAroundBinaryOperator
 		ifTrue: [ buffer nextPutAll: ' := ' ]

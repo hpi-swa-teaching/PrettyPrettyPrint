@@ -3,12 +3,13 @@ visitSequenceNode: aNode
 
 	self printIndent.
 	
-	buffer nextPutAll: '| '.
-	aNode temporaries do: [ :g | buffer nextPutAll: g, ' '].
-	buffer nextPut: $|.
-	
-	self profile newlineAfterTemporaryDeclaration ifTrue: [
-		buffer cr ].
+	aNode temporaries ifNotEmpty: [
+		buffer nextPutAll: '| '.
+		aNode temporaries do: [ :g | buffer nextPutAll: g, ' '].
+		buffer nextPut: $|.
+		
+		self profile newlineAfterTemporaryDeclaration ifTrue: [
+			buffer cr ]].
 	
 	aNode statements allButLastDo: [ :s |
 		self printIndent.

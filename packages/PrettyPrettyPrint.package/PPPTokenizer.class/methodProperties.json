@@ -2,13 +2,14 @@
 	"class" : {
 		"on:" : "lcj 6/15/2016 23:07" },
 	"instance" : {
-		"classifyCharacter:" : "lcj 6/15/2016 12:05",
+		"classifyCharacter:" : "TB 6/20/2016 11:47",
 		"initialize" : "lcj 6/15/2016 23:06",
-		"next" : "lcj 6/15/2016 14:02",
+		"next" : "TB 6/20/2016 11:48",
 		"on:" : "KB 6/1/2016 15:08",
-		"peek" : "lcj 6/15/2016 13:59",
+		"peek" : "TB 6/20/2016 12:28",
 		"scanAssignment" : "lcj 6/15/2016 14:02",
 		"scanBinaryOperator" : "lcj 6/15/2016 14:02",
+		"scanComment" : "TB 6/20/2016 11:50",
 		"scanIdentifier" : "lcj 6/15/2016 14:31",
 		"scanNumber" : "lcj 6/15/2016 12:00",
 		"scanReturn" : "KB 6/1/2016 18:51",

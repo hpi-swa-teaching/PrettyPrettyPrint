@@ -1,19 +1,18 @@
 as yet unclassified
 testPrintAssignmentNode
-	| printer assignmentNode valueNode variableNode |
-
-	variableNode := PPPVariableNode new name: 'myVar'.
-	valueNode := PPPLiteralNode new.
-	valueNode	
+	| printer assignmentNode valueNode |
+	
+	valueNode := PPPLiteralNode new
 		literalType: #string;
-		value: 'myValue'.
+		value: 'myValue';
+		yourself.
 		
 	assignmentNode := PPPAssignmentNode new
-		variable: variableNode;
+		variable: 'myVar';
 		value: valueNode.
 	
 	printer := PPPPrinter new.
 	
 	assignmentNode accept: printer.
 	
-	self assert: ( printer bufferContents ) equals: 'myVar := ''myValue'''
+	self assert: (printer bufferContents) equals: 'myVar := ''myValue'''

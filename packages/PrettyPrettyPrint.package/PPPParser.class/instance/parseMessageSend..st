@@ -38,7 +38,7 @@ parseMessageSend: insideNamedMessage
 	(self nextToken tokenType = #identifier and: [self nextToken content endsWithAColon not]) ifTrue: [
 		^PPPMessageNode new
 			receiver: receiver;
-			selector: (self step: #identifier) ].
+			selector: (self step: #identifier) content ].
 	
 	" message sent is a named message "
 	(insideNamedMessage not and: [self nextToken tokenType = #identifier and: [self nextToken content endsWithAColon]]) ifTrue: [

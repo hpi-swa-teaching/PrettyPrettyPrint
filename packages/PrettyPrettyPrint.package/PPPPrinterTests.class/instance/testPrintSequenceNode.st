@@ -10,7 +10,7 @@ testPrintSequenceNode
 		yourself.
 	statements := OrderedCollection new
 		add: (PPPAssignmentNode new 
-			variable: (PPPVariableNode new name: 'variable');
+			variable: 'variable';
 			value: (PPPVariableNode new name: '4'));
 		yourself.
 	return := PPPReturnNode new value: (PPPVariableNode new name: 'self').

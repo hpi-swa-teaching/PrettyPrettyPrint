@@ -4,8 +4,6 @@ testPrintMethodNode
 	
 	printer := PPPPrinter new.
 	
-	
-	
 	sequenceNode := PPPSequenceNode new.
 	temporaries := OrderedCollection new
 		add: 'temp1';
@@ -13,7 +11,7 @@ testPrintMethodNode
 		yourself.
 	statements := OrderedCollection new
 		add: (PPPAssignmentNode new 
-			variable: (PPPVariableNode new name: 'variable');
+			variable: 'variable';
 			value: (PPPVariableNode new name: '4'));
 		yourself.
 	return := PPPReturnNode new value: (PPPVariableNode new name: 'self').
