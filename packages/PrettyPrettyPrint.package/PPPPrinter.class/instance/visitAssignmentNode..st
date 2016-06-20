@@ -3,7 +3,7 @@ visitAssignmentNode: aNode
 
 	aNode variable accept: self.
 	
-	self class spaceAroundBinaryOperator
+	self profile spaceAroundBinaryOperator
 		ifTrue: [ buffer nextPutAll: ' := ' ]
 		ifFalse: [ buffer nextPutAll: ':=' ].
 	

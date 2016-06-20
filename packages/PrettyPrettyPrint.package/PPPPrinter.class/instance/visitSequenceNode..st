@@ -7,7 +7,7 @@ visitSequenceNode: aNode
 	aNode temporaries do: [ :g | buffer nextPutAll: g, ' '].
 	buffer nextPut: $|.
 	
-	self class returnAfterTemporaryDeclaration ifTrue: [
+	self profile newlineAfterTemporaryDeclaration ifTrue: [
 		buffer cr ].
 	
 	aNode statements allButLastDo: [ :s |

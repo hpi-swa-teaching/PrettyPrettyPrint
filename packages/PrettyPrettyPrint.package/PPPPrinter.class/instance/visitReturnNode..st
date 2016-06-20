@@ -3,10 +3,10 @@ visitReturnNode: aNode
 
 	buffer nextPut: $^.
 	
-	self class spaceBeforeReturn ifTrue: [
+	self profile spaceBeforeReturn ifTrue: [
 		buffer nextPut: $  ].
 	
 	aNode value accept: self.
 	
-	self class dotAfterReturn ifTrue: [
+	self profile dotAfterReturn ifTrue: [
 		buffer nextPut: $. ]

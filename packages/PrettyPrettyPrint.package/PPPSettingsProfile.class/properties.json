@@ -1,0 +1,17 @@
+{
+	"category" : "PrettyPrettyPrint",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"spaceBeforeReturn",
+		"dotAfterReturn",
+		"spaceAroundBinaryOperator",
+		"newlineAfterTemporaryDeclaration" ],
+	"name" : "PPPSettingsProfile",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

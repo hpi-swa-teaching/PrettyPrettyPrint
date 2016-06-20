@@ -1,0 +1,3 @@
+accessing
+newlineAfterTemporaryDeclaration: anObject
+	newlineAfterTemporaryDeclaration := anObject
