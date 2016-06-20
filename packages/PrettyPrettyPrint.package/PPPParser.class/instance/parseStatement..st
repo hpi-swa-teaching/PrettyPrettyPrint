@@ -1,12 +1,13 @@
 as yet unclassified
 parseStatement: insideNamedMessage
-	" parses either an assignment, a return or a message send "
-	| statement |
+	(self nextToken tokenType = #identifier and:
+	[self nextNextToken tokenType = #assignment]) ifTrue: [ ^self parseAssignment ].
 	
-	(self nextToken tokenType = #special and: [self nextToken content = '^'])
-		ifTrue: [ statement := self parseReturnStatement ]
-		ifFalse: [ statement := self parseMessageSendOrAssignment: insideNamedMessage ].
+	self nextToken content = '(' ifTrue: [ ^self parseParenthesesExpression ].
+	self nextToken content = '[' ifTrue: [ ^self parseBlockExpression: insideNamedMessage ].
 	
-	((self nextToken tokenType = #special) and: [(self nextToken content = '.')]) ifTrue: [ self step: #special ].
+	(self nextToken tokenType = #identifier or:
+	[self nextToken tokenType = #number] or:
+	[self nextToken tokenType = #string]) ifTrue: [ ^self parseMessageSend: insideNamedMessage ].
 	
-	^statement
+	^self syntaxError

@@ -1,5 +1,5 @@
 as yet unclassified
-parseUnaryMessage
+parseUnaryMessageDeclaration
 	^PPPMethodNode new
 		selector: (self step: #identifier) content;
 		bodySequence: self parseSequence;
