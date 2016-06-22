@@ -4,7 +4,7 @@ scanReturn
 	| token |
 	
 
-	token := Token new.
+	token := PPPToken new.
 	token position: indexCount.
 	
 	buffer nextPut: $^.
