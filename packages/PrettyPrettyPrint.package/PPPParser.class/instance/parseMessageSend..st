@@ -2,7 +2,7 @@ as yet unclassified
 parseMessageSend: insideNamedMessage
 	| receiver |
 	" receiver is literal number/string/symbol "
-	(#(number string symbol) includes: self nextToken tokenType) ifTrue: [
+	(#(number string symbol character) includes: self nextToken tokenType) ifTrue: [
 		self step.
 		
 		receiver := PPPLiteralNode new
@@ -22,7 +22,7 @@ parseMessageSend: insideNamedMessage
 		self step: #symbolArrayStart.
 		
 		[self step content ~= ')'] whileTrue: [
-			(#(identifier number string) includes: self currentToken tokenType)
+			(#(identifier number string character) includes: self currentToken tokenType)
 				ifTrue: [ receiver contents add: (PPPLiteralNode new
 					literalType: self currentToken tokenType;
 					value: self currentToken content) ]

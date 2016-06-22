@@ -6,10 +6,7 @@ parseStatement: insideNamedMessage
 	self nextToken content = '(' ifTrue: [ ^self parseParenthesesExpression ].
 	self nextToken content = '[' ifTrue: [ ^self parseBlockExpression: insideNamedMessage ].
 	
-	(self nextToken tokenType = #identifier or:
-	[self nextToken tokenType = #number] or:
-	[self nextToken tokenType = #string] or:
-	[self nextToken tokenType = #symbol] or:
-	[self nextToken tokenType = #symbolArrayStart]) ifTrue: [ ^self parseMessageSend: insideNamedMessage ].
+	(#(identifier number string symbol symbolArrayStart character) includes:
+		self nextToken tokenType) ifTrue: [ ^self parseMessageSend: insideNamedMessage ].
 	
 	^self syntaxError
