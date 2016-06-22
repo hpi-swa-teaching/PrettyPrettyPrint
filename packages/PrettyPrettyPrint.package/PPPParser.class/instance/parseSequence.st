@@ -7,7 +7,8 @@ parseSequence
 	
 	[self nextToken tokenType ~= #eof and:
 	[self nextToken content ~= ']' and:
-	[self nextToken content ~= ')']]] whileTrue: [
+	[self nextToken content ~= ')' and:
+	[self nextToken content ~= '}']]]] whileTrue: [
 		self nextToken content = '^'
 			ifTrue: [ node return: self parseReturnStatement ]
 			ifFalse: [ node addStatement: (self parseStatement: false) ].

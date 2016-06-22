@@ -6,11 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"temporaries",
-		"statements",
-		"return" ],
-	"name" : "PPPSequenceNode",
+		"contents",
+		"constant" ],
+	"name" : "PPPArrayNode",
 	"pools" : [
 		 ],
-	"super" : "PPPNode",
+	"super" : "PPPValueNode",
 	"type" : "normal" }

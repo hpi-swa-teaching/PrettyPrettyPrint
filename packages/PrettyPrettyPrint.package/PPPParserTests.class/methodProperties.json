@@ -8,6 +8,7 @@
 		"testBlock" : "TB 6/10/2016 17:34",
 		"testCharacters" : "TB 6/22/2016 13:51",
 		"testComplexMethod" : "lcj 6/15/2016 23:56",
+		"testCurlyBracketArray" : "TB 6/22/2016 15:30",
 		"testIfTrueIfFalse" : "lcj 6/11/2016 16:19",
 		"testMultipleTemporariesDeclaration" : "TB 6/10/2016 16:41",
 		"testNamedMessage" : "TB 6/10/2016 20:04",
@@ -16,7 +17,7 @@
 		"testReturnStatement" : "TB 6/10/2016 16:41",
 		"testSimpleAssignment" : "TB 6/10/2016 16:41",
 		"testSimpleMethod" : "TB 6/10/2016 16:42",
-		"testSymbols" : "TB 6/22/2016 13:34",
+		"testSymbols" : "TB 6/22/2016 15:54",
 		"testTemporaryDeclaration" : "TB 6/10/2016 16:42",
 		"testTokenizerParserInteraction" : "lcj 6/15/2016 14:08",
 		"testUnaryMethodDeclaration" : "TB 6/10/2016 16:42" } }

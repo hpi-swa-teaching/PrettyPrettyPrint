@@ -18,7 +18,9 @@ parseMessageSend: insideNamedMessage
 	
 	" receiver is symbol array "
 	self nextToken tokenType = #symbolArrayStart ifTrue: [
-		receiver := PPPSymbolArrayNode new.
+		receiver := PPPArrayNode new
+			constant: true;
+			yourself.
 		self step: #symbolArrayStart.
 		
 		[self step content ~= ')'] whileTrue: [
@@ -37,8 +39,14 @@ parseMessageSend: insideNamedMessage
 			receiver addBinding: (self step: #identifier) ].
 		
 		receiver bindings ifNotEmpty: [ self step: #special ].
-		receiver bodySequence: self parseSequence ]]]].
-		
+		receiver bodySequence: self parseSequence ] ifFalse: [
+	
+	" receiver is array "
+	(self nextToken tokenType = #special and: [self nextToken content = '{']) ifTrue: [
+		receiver := PPPArrayNode new.
+		self step.
+		receiver contents: self parseSequence statements ]]]]].
+	
 	" message sent is a binary message "
 	self nextToken tokenType = #binaryOperator ifTrue: [
 		^PPPMessageNode new

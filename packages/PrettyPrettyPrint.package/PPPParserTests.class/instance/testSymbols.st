@@ -17,7 +17,7 @@ testSymbols
 	self
 		assert: 2 equals: methodNode bodySequence statements size;
 		assert: #symbol equals: methodNode bodySequence statements first literalType;
-		assert: PPPSymbolArrayNode equals: methodNode bodySequence statements second class;
+		assert: PPPArrayNode equals: methodNode bodySequence statements second class;
 		assert: 3 equals: methodNode bodySequence statements second contents size;
 		assert: #identifier equals: methodNode bodySequence statements second contents first literalType;
 		assert: #number equals: methodNode bodySequence statements second contents second literalType;
