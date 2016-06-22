@@ -7,7 +7,7 @@ parseNamedMessageSendTo: aReceiverNode
 		selector: '';
 		yourself.
 	
-	[self nextToken tokenType = #identifier and: [self nextToken content endsWithAColon]] whileTrue: [
+	[self nextToken isMessagePart] whileTrue: [
 		messageSend selector: (messageSend selector, (self step: #identifier) content).
 		messageSend arguments add: (self parseStatement: true) ].
 	

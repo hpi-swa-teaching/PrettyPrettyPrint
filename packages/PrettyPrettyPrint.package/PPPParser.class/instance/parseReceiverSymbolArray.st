@@ -4,10 +4,11 @@ parseReceiverSymbolArray
 	receiver := PPPArrayNode new
 		constant: true;
 		yourself.
+	
 	self step: #symbolArrayStart.
-		
-	[self step content ~= ')'] whileTrue: [
-		(#(identifier number string character) includes: self currentToken tokenType)
+	
+	[self step isClosingRoundBrace] whileFalse: [
+		(self currentToken isLiteral or: [self currentToken isIdentifier])
 			ifTrue: [ receiver contents add: (PPPLiteralNode new
 				literalType: self currentToken tokenType;
 				value: self currentToken content) ]

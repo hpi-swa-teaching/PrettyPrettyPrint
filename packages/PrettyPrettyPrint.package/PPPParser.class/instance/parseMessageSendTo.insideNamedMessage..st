@@ -1,12 +1,12 @@
 as yet unclassified
 parseMessageSendTo: aReceiverNode insideNamedMessage: aBoolean
-	self nextToken tokenType = #binaryOperator ifTrue: [
+	self nextToken isBinaryOperator ifTrue: [
 		^self parseBinaryMessageSendTo: aReceiverNode ].
 	
-	(self nextToken tokenType = #identifier and: [self nextToken content endsWithAColon not]) ifTrue: [
+	(self nextToken isIdentifier and: [self nextToken isMessagePart not]) ifTrue: [
 		^self parseUnaryMessageSendTo: aReceiverNode ].
 	
-	(aBoolean not and: [self nextToken tokenType = #identifier and: [self nextToken content endsWithAColon]]) ifTrue: [
+	(aBoolean not and: [self nextToken isMessagePart]) ifTrue: [
 		^self parseNamedMessageSendTo: aReceiverNode ].
 	
 	^aReceiverNode

@@ -3,7 +3,7 @@ parseNamedMessageDeclaration
 	| node |
 	node := PPPMethodNode new.
 	
-	[self nextToken tokenType ~= #identifier or: [self nextToken content endsWithAColon not]] whileFalse: [
+	[self nextToken isMessagePart] whileTrue: [
 		node
 			addArgument: (self step: #identifier) content
 			name: (self step: #identifier) content ].

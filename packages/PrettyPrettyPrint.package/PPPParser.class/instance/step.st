@@ -4,7 +4,7 @@ step
 	nextToken := nil.
 	nextNextToken := nil.
 	
-	[ currentToken tokenType = #separator ] whileTrue: [
+	[currentToken isSeparator] whileTrue: [
 		currentToken := self nextToken ].
 	
 	^currentToken

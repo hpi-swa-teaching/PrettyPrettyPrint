@@ -5,14 +5,11 @@ parseSequence
 	
 	node temporaries: self parseTemporaries.
 	
-	[self nextToken tokenType ~= #eof and:
-	[self nextToken content ~= ']' and:
-	[self nextToken content ~= ')' and:
-	[self nextToken content ~= '}']]]] whileTrue: [
-		self nextToken content = '^'
+	[self nextToken isEof or: [self nextToken isAnyClosingBrace]] whileFalse: [
+		self nextToken isReturn
 			ifTrue: [ node return: self parseReturnStatement ]
 			ifFalse: [ node addStatement: (self parseStatement: false) ].
 		
-		[self nextToken content = '.'] whileTrue: [ self step: #special ]].
+		[self nextToken isDot] whileTrue: [ self step: #special ]].
 	
 	^node

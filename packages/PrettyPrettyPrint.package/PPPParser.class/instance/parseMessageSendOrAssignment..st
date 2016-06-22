@@ -3,7 +3,7 @@ parseMessageSendOrAssignment: insideNamedMessage
 	| node |
 	
 	" assignment "
-	(self nextToken tokenType = #identifier and: [self nextNextToken tokenType = #assignment]) ifTrue: [
+	(self nextToken isIdentifier and: [self nextNextToken isAssignment]) ifTrue: [
 		^self parseAssignment ].
 	
 	" expression in parentheses "
@@ -22,8 +22,8 @@ parseMessageSendOrAssignment: insideNamedMessage
 		^node ].
 	
 	" message send "
-	(self nextToken tokenType = #identifier or:
-	[self nextToken tokenType = #number] or:
-	[self nextToken tokenType = #string]) ifTrue: [ ^self parseMessageSend: insideNamedMessage ].
+	(self nextToken isIdentifier or:
+	[self nextToken isNumber] or:
+	[self nextToken isString]) ifTrue: [ ^self parseMessageSend: insideNamedMessage ].
 	
 	^self syntaxError
