@@ -15,6 +15,7 @@
 		"testReturnStatement" : "TB 6/10/2016 16:41",
 		"testSimpleAssignment" : "TB 6/10/2016 16:41",
 		"testSimpleMethod" : "TB 6/10/2016 16:42",
+		"testSymbols" : "TB 6/22/2016 13:34",
 		"testTemporaryDeclaration" : "TB 6/10/2016 16:42",
 		"testTokenizerParserInteraction" : "lcj 6/15/2016 14:08",
 		"testUnaryMethodDeclaration" : "TB 6/10/2016 16:42" } }

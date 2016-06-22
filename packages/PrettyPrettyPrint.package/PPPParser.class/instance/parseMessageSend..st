@@ -1,8 +1,8 @@
 as yet unclassified
 parseMessageSend: insideNamedMessage
 	| receiver |
-	" receiver is number "
-	(self nextToken tokenType = #number or: [self nextToken tokenType = #string]) ifTrue: [
+	" receiver is literal number/string/symbol "
+	(#(number string symbol) includes: self nextToken tokenType) ifTrue: [
 		self step.
 		
 		receiver := PPPLiteralNode new
@@ -16,6 +16,18 @@ parseMessageSend: insideNamedMessage
 			name: (self step: #identifier) content;
 			yourself ] ifFalse: [
 	
+	" receiver is symbol array "
+	self nextToken tokenType = #symbolArrayStart ifTrue: [
+		receiver := PPPSymbolArrayNode new.
+		self step: #symbolArrayStart.
+		
+		[self step content ~= ')'] whileTrue: [
+			(#(identifier number string) includes: self currentToken tokenType)
+				ifTrue: [ receiver contents add: (PPPLiteralNode new
+					literalType: self currentToken tokenType;
+					value: self currentToken content) ]
+				ifFalse: [ ^self syntaxError ]]] ifFalse: [
+	
 	" receiver is block "
 	(self nextToken tokenType = #special and: [self nextToken content = '[']) ifTrue: [
 		receiver := PPPBlockNode new.
@@ -25,7 +37,7 @@ parseMessageSend: insideNamedMessage
 			receiver addBinding: (self step: #identifier) ].
 		
 		receiver bindings ifNotEmpty: [ self step: #special ].
-		receiver bodySequence: self parseSequence ]]].
+		receiver bodySequence: self parseSequence ]]]].
 		
 	" message sent is a binary message "
 	self nextToken tokenType = #binaryOperator ifTrue: [
