@@ -5,6 +5,4 @@ testPrintVariableNode
 	printer := PPPPrinter new.
 	node := PPPVariableNode new name: 'someVariable'.
 	
-	printer visitVariableNode: node.
-	
-	self assert: ( printer bufferContents ) equals: 'someVariable'
+	self assert: 'someVariable' equals: (printer visitVariableNode: node)

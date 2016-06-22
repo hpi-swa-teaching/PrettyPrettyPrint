@@ -1,12 +1,17 @@
 as yet unclassified
 visitReturnNode: aNode
-
+	| buffer |
+	
+	buffer := WriteStream on: ''.
+	
 	buffer nextPut: $^.
 	
 	self profile spaceBeforeReturn ifTrue: [
 		buffer nextPut: $  ].
 	
-	aNode value accept: self.
+	buffer nextPutAll: (aNode value accept: self).
 	
 	self profile dotAfterReturn ifTrue: [
-		buffer nextPut: $. ]
+		buffer nextPut: $. ].
+	
+	^ buffer contents

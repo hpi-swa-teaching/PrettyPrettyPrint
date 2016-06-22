@@ -15,6 +15,4 @@ testPrintBinaryMessageNode
 		selector: selector;
 		arguments: argumentNodes.
 	
-	messageNode accept: printer.
-	
-	self assert: ( printer bufferContents ) equals: '2 + 3'
+	self assert: '2 + 3' equals: (messageNode accept: printer)

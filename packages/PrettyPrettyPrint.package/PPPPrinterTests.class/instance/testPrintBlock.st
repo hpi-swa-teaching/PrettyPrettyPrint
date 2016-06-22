@@ -15,9 +15,7 @@ testPrintBlock
 					yourself));
 			return: (PPPReturnNode new value: (PPPVariableNode new name: 'self'))).
 	
-	sequenceNode accept: printer.
-	
 	self assert: '[ :b1 :b2 |
 	| temp1 temp2 |
 	variable := 4.
-	^self ]' equals: printer bufferContents
+	^self ]' equals: (sequenceNode accept: printer)

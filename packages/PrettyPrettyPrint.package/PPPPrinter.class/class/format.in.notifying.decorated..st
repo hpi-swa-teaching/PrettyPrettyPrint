@@ -10,4 +10,4 @@ format: aString in: aClass notifying: ignored decorated: aBoolean
 	
 	printer := PPPPrinter new.
 	printer visitMethodNode: (PPPParser new parseTokenStream: (tokens)).
-	^printer bufferContents
+	^printer "bufferContents <- does not exist anymore"

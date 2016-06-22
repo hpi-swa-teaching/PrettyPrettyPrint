@@ -1,20 +1,19 @@
 {
 	"class" : {
 		"format:in:notifying:" : "TB 6/20/2016 12:20",
-		"format:in:notifying:decorated:" : "TB 6/20/2016 12:20" },
+		"format:in:notifying:decorated:" : "lcj 6/22/2016 14:50" },
 	"instance" : {
-		"bufferContents" : "KB 6/15/2016 16:24",
 		"decrementIndent" : "TB 6/16/2016 12:01",
 		"incrementIndent" : "TB 6/16/2016 11:57",
-		"initialize" : "TB 6/20/2016 10:31",
-		"printIndent" : "TB 6/16/2016 12:01",
+		"initialize" : "lcj 6/22/2016 12:54",
+		"printIndentOn:" : "lcj 6/22/2016 13:17",
 		"profile" : "TB 6/20/2016 10:27",
 		"profile:" : "TB 6/20/2016 10:27",
-		"visitAssignmentNode:" : "TB 6/20/2016 12:10",
-		"visitBlockNode:" : "TB 6/17/2016 18:42",
-		"visitLiteralNode:" : "KB 6/15/2016 14:49",
-		"visitMessageNode:" : "TB 6/20/2016 10:29",
-		"visitMethodNode:" : "TB 6/22/2016 10:13",
-		"visitReturnNode:" : "TB 6/20/2016 10:28",
-		"visitSequenceNode:" : "TB 6/20/2016 12:23",
-		"visitVariableNode:" : "TB 6/17/2016 18:05" } }
+		"visitAssignmentNode:" : "lcj 6/22/2016 14:25",
+		"visitBlockNode:" : "lcj 6/22/2016 13:02",
+		"visitLiteralNode:" : "lcj 6/22/2016 14:13",
+		"visitMessageNode:" : "lcj 6/22/2016 14:43",
+		"visitMethodNode:" : "lcj 6/22/2016 13:05",
+		"visitReturnNode:" : "lcj 6/22/2016 13:07",
+		"visitSequenceNode:" : "lcj 6/22/2016 13:47",
+		"visitVariableNode:" : "lcj 6/22/2016 14:29" } }

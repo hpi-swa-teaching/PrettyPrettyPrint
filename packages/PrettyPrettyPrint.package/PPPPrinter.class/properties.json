@@ -9,11 +9,10 @@
 		"SpaceBeforeReturn" ],
 	"commentStamp" : "",
 	"instvars" : [
-		"buffer",
 		"currentIndent",
 		"profile" ],
+	"literalType" : "normal",
 	"name" : "PPPPrinter",
 	"pools" : [
 		 ],
-	"super" : "PPPVisitor",
-	"type" : "normal" }
+	"super" : "PPPVisitor" }

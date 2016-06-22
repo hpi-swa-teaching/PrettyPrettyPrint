@@ -15,4 +15,4 @@ testPrintAssignmentNode
 	
 	assignmentNode accept: printer.
 	
-	self assert: (printer bufferContents) equals: 'myVar := ''myValue'''
+	self assert: 'myVar := ''myValue''' equals: (printer visitAssignmentNode: assignmentNode)

@@ -1,4 +1,4 @@
 accessing
 accept: aPrinter
 
-	aPrinter visitBlockNode: self
+	^ aPrinter visitBlockNode: self

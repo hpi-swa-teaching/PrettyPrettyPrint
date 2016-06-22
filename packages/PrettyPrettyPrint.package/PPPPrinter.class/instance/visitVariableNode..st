@@ -1,3 +1,8 @@
 as yet unclassified
 visitVariableNode: aNode
-	buffer nextPutAll: aNode name
+	| buffer |
+	
+	buffer := WriteStream on: ''.
+	buffer nextPutAll: aNode name.
+	
+	^ buffer contents.

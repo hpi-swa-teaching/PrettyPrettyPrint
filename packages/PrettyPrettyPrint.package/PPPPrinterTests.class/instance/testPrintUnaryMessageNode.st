@@ -13,6 +13,4 @@ testPrintUnaryMessageNode
 		selector: selector;
 		arguments: argumentNodes.
 	
-	messageNode accept: printer.
-	
-	self assert: ( printer bufferContents ) equals: 'self send'
+	self assert: 'self send' equals: (messageNode accept: printer)

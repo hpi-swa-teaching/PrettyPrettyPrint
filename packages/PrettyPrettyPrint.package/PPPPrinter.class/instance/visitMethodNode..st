@@ -1,6 +1,9 @@
 as yet unclassified
 visitMethodNode: aNode
-
+	| buffer |
+	
+	buffer := WriteStream on: ''.
+		
 	aNode arguments
 		ifEmpty: [ buffer nextPutAll: aNode selector ]
 		ifNotEmpty: [
@@ -11,4 +14,6 @@ visitMethodNode: aNode
 	
 	self incrementIndent.
 	
-	aNode bodySequence accept: self
+	buffer nextPutAll: (aNode bodySequence accept: self).
+
+	^ buffer contents

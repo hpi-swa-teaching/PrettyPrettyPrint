@@ -20,8 +20,6 @@ testPrintSequenceNode
 		statements: statements;
 		return: return.
 	
-	sequenceNode accept: printer.
-	
-	self assert: printer bufferContents equals: '| temp1 temp2 |
+	self assert: '| temp1 temp2 |
 variable := 4.
-^self'
+^self' equals: (sequenceNode accept: printer)

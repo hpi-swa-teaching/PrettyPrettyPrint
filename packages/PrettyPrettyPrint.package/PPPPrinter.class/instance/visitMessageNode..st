@@ -1,7 +1,9 @@
 as yet unclassified
 visitMessageNode: aNode
-
-	aNode receiver accept: self.
+	| buffer |
+	
+	buffer := WriteStream on: ''.
+	buffer nextPutAll: (aNode receiver accept: self).
 	
 	(aNode isBinaryMessage not or: [ self profile spaceAroundBinaryOperator]) ifTrue: [ buffer nextPut: $  ].
 	
@@ -10,4 +12,6 @@ visitMessageNode: aNode
 	(aNode arguments isEmpty) ifFalse: [
 		(aNode isBinaryMessage not or: [ self profile spaceAroundBinaryOperator]) ifTrue: [ buffer nextPut: $  ].
 		
-		aNode arguments first accept: self ]
+		buffer nextPutAll: (aNode arguments first accept: self)].
+	
+	^ buffer contents

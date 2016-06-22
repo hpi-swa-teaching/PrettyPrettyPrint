@@ -6,6 +6,4 @@ testPrintReturnNode
 	returnNode := PPPReturnNode new
 		value: (PPPVariableNode new name: 'ourReturn').
 	
-	returnNode accept: printer.
-	
-	self assert: (printer bufferContents ) equals: '^ourReturn'
+	self assert: '^ourReturn' equals: (returnNode accept: printer)

@@ -1,7 +1,9 @@
 as yet unclassified
 visitSequenceNode: aNode
-
-	self printIndent.
+	| buffer |
+	
+	buffer := WriteStream on: ''.
+	self printIndentOn: buffer.
 	
 	aNode temporaries ifNotEmpty: [
 		buffer nextPutAll: '| '.
@@ -12,15 +14,17 @@ visitSequenceNode: aNode
 			buffer cr ]].
 	
 	aNode statements allButLastDo: [ :s |
-		self printIndent.
-		s accept: self.
+		self printIndentOn: buffer.
+		buffer nextPutAll: (s accept: self).
 		buffer nextPut: $.; cr ].
 	
 	aNode statements ifNotEmpty: [
-		self printIndent.
-		aNode statements last accept: self.
+		self printIndentOn: buffer.
+		buffer nextPutAll: (aNode statements last accept: self).
 		aNode return ifNotNil: [ buffer nextPut: $.; cr ]].
 	
 	aNode return ifNotNil: [
-		self printIndent.
-		aNode return accept: self ]
+		self printIndentOn: buffer.
+		buffer nextPutAll: (aNode return accept: self) ].
+	
+	^ buffer contents

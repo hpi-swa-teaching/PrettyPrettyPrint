@@ -12,8 +12,6 @@ testPrintLiteralNode
 		value: '4';
 		yourself.
 	
-	stringNode accept: stringPrinter.
-	numberNode accept: numberPrinter.
-	
-	self assert: ( stringPrinter bufferContents ) equals: '''asd'''.
-	self assert: ( numberPrinter bufferContents ) equals: '4'
+	self
+		assert: '''asd''' equals: (stringNode accept: stringPrinter);
+		assert: '4' equals: (numberNode accept: numberPrinter)

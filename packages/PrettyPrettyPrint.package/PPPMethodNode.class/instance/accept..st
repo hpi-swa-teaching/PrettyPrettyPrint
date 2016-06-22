@@ -1,4 +1,4 @@
 as yet unclassified
 accept: aPrinter
 
-	aPrinter visitMethodNode: self
+	^ aPrinter visitMethodNode: self
