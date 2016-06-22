@@ -1,13 +1,18 @@
 as yet unclassified
-visitLiteralNode: aNode
+visitLiteralNode: aNode 
 	| buffer |
 	
 	buffer := WriteStream on: ''.
-	
-	(aNode literalType = #number) ifTrue: [ buffer nextPutAll: aNode value. ].
-	(aNode literalType = #string) ifTrue: [ buffer
-		nextPut: $';
-		nextPutAll: aNode value;
-		nextPut: $' ].
-	
+	aNode literalType = #number
+		ifTrue: [buffer nextPutAll: aNode value].
+		
+	aNode literalType = #string
+		ifTrue: [buffer nextPut: $';
+				 nextPutAll: aNode value;
+				 nextPut: $'].
+			
+	aNode literalType = #symbol
+		ifTrue: [buffer nextPut: $#;
+				 nextPutAll: aNode value].
+			
 	^ buffer contents
