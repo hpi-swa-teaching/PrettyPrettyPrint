@@ -3,8 +3,8 @@ step
 
 	stream atEnd ifTrue: [
 		characterType := #eof.
-		 ^nil ].
-
+		^currentCharacter := nil ].
+	
 	currentCharacter := stream next.
 	characterType := self classifyCharacter: currentCharacter.
 	indexCount := indexCount + 1.

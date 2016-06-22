@@ -3,9 +3,6 @@ scanNumber
 	"called whenever we kn ow that the first character of our next token is a digit."
 	
 	| token |
-	
-	buffer reset.
-	
 	token := PPPToken new
 		position: indexCount;
 		tokenType: #number;

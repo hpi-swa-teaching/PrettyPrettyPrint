@@ -9,11 +9,19 @@ scanIdentifier
 		tokenType: #identifier;
 		yourself.
 	
-	buffer reset.
+	currentCharacter = $# ifTrue: [
+		token tokenType: #symbol.
+		buffer nextPut: currentCharacter.
+		
+		self step = $' ifTrue: [
+			buffer nextPut: $'.
+			^token
+				content: self scanString content, $';
+				yourself ]].
 	
-	[ characterType = #letter or:
-	[ characterType = #digit or:
-	[ currentCharacter = $: and: [ stream peek ~= $= ]]]] whileTrue: [
+	[characterType = #letter or:
+	[characterType = #digit or:
+	[currentCharacter = $: and: [stream peek ~= $=]]]] whileTrue: [
 		buffer nextPut: currentCharacter.
 		self step ].
 	

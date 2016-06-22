@@ -6,8 +6,6 @@ scanString
 		tokenType: #string;
 		yourself.
 	
-	buffer reset.
-	
 	self step.
 	
 	[ currentCharacter ~= $' or: [ currentCharacter = $' and: [stream peek = $'] ]] whileTrue: [

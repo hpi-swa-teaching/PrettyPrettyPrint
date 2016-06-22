@@ -1,7 +1,7 @@
 as yet unclassified
 scanComment
+	self step.
 	
-	buffer reset.
 	[ self step ~= $" ] whileTrue: [ buffer nextPut: currentCharacter ].
 
 	" FIXME comments are skipped for now "

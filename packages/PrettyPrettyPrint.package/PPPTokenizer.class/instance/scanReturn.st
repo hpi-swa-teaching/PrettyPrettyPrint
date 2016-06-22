@@ -7,7 +7,6 @@ scanReturn
 	token := Token new.
 	token position: indexCount.
 	
-	buffer reset.	
 	buffer nextPut: $^.
 	self step.
 	
