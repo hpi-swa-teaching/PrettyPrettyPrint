@@ -1,14 +1,9 @@
 as yet unclassified
 scanBinaryOperator 
-
-	| token |
+	[buffer nextPut: currentCharacter] doWhileTrue: [ (self classifyCharacter: self step) = #binaryOperator ].
 	
-	token := PPPToken new
+	^PPPToken new
 		position: indexCount;
-		content: currentCharacter;
+		content: buffer contents;
 		tokenType: #binaryOperator;
-		yourself.
-		
-	self step.
-	
-	^token
+		yourself

@@ -4,13 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "KB 6/1/2016 12:50",
+	"commentStamp" : "",
 	"instvars" : [
-		"position",
-		"content",
-		"tokenType" ],
-	"name" : "Token",
+		"messages" ],
+	"name" : "PPPCascadeNode",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "PPPValueNode",
 	"type" : "normal" }

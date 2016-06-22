@@ -8,6 +8,7 @@
 		"isAssignment" : "TB 6/22/2016 19:21",
 		"isBinaryOperator" : "TB 6/22/2016 19:21",
 		"isBlockBinding" : "TB 6/22/2016 19:45",
+		"isCascade" : "TB 6/22/2016 20:19",
 		"isCharacter" : "TB 6/22/2016 19:20",
 		"isClosingCurlyBrace" : "TB 6/22/2016 19:22",
 		"isClosingRoundBrace" : "TB 6/22/2016 19:22",

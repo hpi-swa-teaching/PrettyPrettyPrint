@@ -3,7 +3,7 @@ testForAllTypes
 
 	| stream tokenizer |
 	
-	stream := ':=-ö19999999999^changeme ( $a $$'.
+	stream := ':=-ö19999999999^changeme ( $a $$ +++'.
 	tokenizer := PPPTokenizer on: stream.
 	
 	self
@@ -18,4 +18,6 @@ testForAllTypes
 		assert: {'$a'. #character} equalsToken: tokenizer next;
 		assert: #separator equals: tokenizer next tokenType;
 		assert: {'$$'. #character} equalsToken: tokenizer next;
+		assert: #separator equals: tokenizer next tokenType;
+		assert: {'+++'. #binaryOperator} equalsToken: tokenizer next;
 		assert: #eof equals: tokenizer next tokenType
