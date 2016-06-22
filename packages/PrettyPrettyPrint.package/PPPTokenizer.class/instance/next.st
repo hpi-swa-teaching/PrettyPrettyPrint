@@ -12,6 +12,7 @@ next
 	currentCharacter = $" ifTrue: [ ^self scanComment ].
 	(currentCharacter = $# and: [stream peek = $(]) ifTrue: [ ^self scanSymbolArray ].
 	currentCharacter = $# ifTrue: [ ^self scanIdentifier ].
+	currentCharacter = $$ ifTrue: [ ^self scanCharacter ].
 	characterType = #special ifTrue: [ ^self scanSpecial ].
 	(currentCharacter = $: or: [characterType = #letter]) ifTrue: [ ^self scanIdentifier ].
 	characterType = #digit ifTrue: [ ^self scanNumber ].
