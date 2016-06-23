@@ -1,6 +1,6 @@
 {
 	"class" : {
-		 },
+		"bodySequence:bindings:" : "TB 6/23/2016 12:05" },
 	"instance" : {
 		"accept:" : "lcj 6/22/2016 14:28",
 		"addBinding:" : "TB 6/10/2016 17:39",
@@ -8,4 +8,7 @@
 		"bindings:" : "TB 6/17/2016 18:29",
 		"bodySequence" : "TB 6/10/2016 18:05",
 		"bodySequence:" : "TB 6/10/2016 18:05",
-		"initialize" : "TB 6/10/2016 17:39" } }
+		"initialize" : "TB 6/10/2016 17:39",
+		"matches:" : "TB 6/23/2016 11:35",
+		"nodesDo:" : "TB 6/23/2016 11:42",
+		"shallowMatch:" : "TB 6/23/2016 11:35" } }

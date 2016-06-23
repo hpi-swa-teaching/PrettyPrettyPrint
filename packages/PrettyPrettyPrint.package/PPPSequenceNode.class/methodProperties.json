@@ -1,13 +1,16 @@
 {
 	"class" : {
-		 },
+		"temporaries:statements:return:" : "TB 6/23/2016 12:03" },
 	"instance" : {
 		"accept:" : "lcj 6/22/2016 14:28",
 		"addStatement:" : "lcj 6/1/2016 13:57",
 		"addTemporary:" : "lcj 5/29/2016 16:12",
 		"initialize" : "lcj 6/1/2016 13:57",
+		"matches:" : "TB 6/23/2016 11:32",
+		"nodesDo:" : "TB 6/23/2016 11:40",
 		"return" : "lcj 6/1/2016 11:47",
 		"return:" : "lcj 6/1/2016 11:46",
+		"shallowMatch:" : "TB 6/23/2016 11:32",
 		"statements" : "lcj 6/1/2016 13:45",
 		"statements:" : "lcj 6/1/2016 13:45",
 		"temporaries" : "lcj 5/29/2016 16:11",

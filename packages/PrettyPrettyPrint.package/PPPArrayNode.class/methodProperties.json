@@ -1,9 +1,12 @@
 {
 	"class" : {
-		 },
+		"contents:constant:" : "TB 6/23/2016 12:04" },
 	"instance" : {
 		"constant" : "TB 6/22/2016 15:05",
 		"constant:" : "TB 6/22/2016 15:05",
 		"contents" : "TB 6/22/2016 12:44",
 		"contents:" : "TB 6/22/2016 12:43",
-		"initialize" : "TB 6/22/2016 15:31" } }
+		"initialize" : "TB 6/22/2016 15:31",
+		"matches:" : "TB 6/23/2016 11:19",
+		"nodesDo:" : "TB 6/23/2016 11:41",
+		"shallowMatch:" : "TB 6/23/2016 11:34" } }

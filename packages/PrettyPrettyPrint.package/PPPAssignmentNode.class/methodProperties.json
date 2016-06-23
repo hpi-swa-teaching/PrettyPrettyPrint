@@ -1,8 +1,11 @@
 {
 	"class" : {
-		 },
+		"variable:value:" : "TB 6/23/2016 12:04" },
 	"instance" : {
 		"accept:" : "lcj 6/22/2016 14:28",
+		"matches:" : "TB 6/23/2016 11:35",
+		"nodesDo:" : "TB 6/23/2016 11:42",
+		"shallowMatch:" : "TB 6/23/2016 11:35",
 		"value" : "TB 5/29/2016 19:48",
 		"value:" : "TB 5/29/2016 19:48",
 		"variable" : "TB 5/29/2016 19:48",

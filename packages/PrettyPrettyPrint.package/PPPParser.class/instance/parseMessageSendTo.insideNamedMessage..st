@@ -9,4 +9,8 @@ parseMessageSendTo: aReceiverNode insideNamedMessage: aBoolean
 	(aBoolean not and: [self nextToken isMessagePart]) ifTrue: [
 		^self parseNamedMessageSendTo: aReceiverNode ].
 	
+	"[self nextToken startsMessage] whileTrue: [
+		self nextToken isCascade ifTrue: [
+			^self parseCascadeStartingWith: message insideNamedMessage: insideNamedMessage ]]."
+	
 	^aReceiverNode

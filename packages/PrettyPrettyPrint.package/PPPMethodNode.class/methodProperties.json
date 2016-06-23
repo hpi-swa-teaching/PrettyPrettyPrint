@@ -1,6 +1,6 @@
 {
 	"class" : {
-		 },
+		"bodySequence:selector:arguments:" : "TB 6/23/2016 12:01" },
 	"instance" : {
 		"accept:" : "lcj 6/22/2016 14:28",
 		"addArgument:name:" : "lcj 5/29/2016 15:04",
@@ -8,5 +8,8 @@
 		"bodySequence" : "lcj 5/29/2016 15:27",
 		"bodySequence:" : "lcj 5/29/2016 15:27",
 		"initialize" : "TB 6/10/2016 17:07",
+		"matches:" : "TB 6/23/2016 11:29",
+		"nodesDo:" : "TB 6/23/2016 11:39",
 		"selector" : "lcj 5/29/2016 15:27",
-		"selector:" : "lcj 5/29/2016 15:24" } }
+		"selector:" : "lcj 5/29/2016 15:24",
+		"shallowMatch:" : "TB 6/23/2016 11:29" } }

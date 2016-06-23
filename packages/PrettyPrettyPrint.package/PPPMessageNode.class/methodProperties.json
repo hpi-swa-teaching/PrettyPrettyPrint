@@ -1,13 +1,16 @@
 {
 	"class" : {
-		 },
+		"receiver:selector:arguments:" : "TB 6/23/2016 12:06" },
 	"instance" : {
 		"accept:" : "lcj 6/22/2016 14:28",
 		"arguments" : "TB 6/20/2016 12:17",
 		"arguments:" : "lcj 6/1/2016 19:11",
 		"initialize" : "TB 6/20/2016 12:17",
 		"isBinaryMessage" : "TB 6/16/2016 11:43",
+		"matches:" : "TB 6/23/2016 11:37",
+		"nodesDo:" : "TB 6/23/2016 12:14",
 		"receiver" : "lcj 6/1/2016 19:11",
 		"receiver:" : "lcj 6/1/2016 19:11",
 		"selector" : "lcj 6/1/2016 19:11",
-		"selector:" : "lcj 6/1/2016 19:11" } }
+		"selector:" : "lcj 6/1/2016 19:11",
+		"shallowMatch:" : "TB 6/23/2016 11:36" } }

@@ -2,4 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"accept:" : "lcj 6/22/2016 14:28" } }
+		"accept:" : "lcj 6/22/2016 14:28",
+		"collectionOfNodes:matches:" : "TB 6/23/2016 11:15",
+		"matches:" : "TB 6/23/2016 10:25",
+		"nodesDo:" : "TB 6/23/2016 11:39",
+		"shallowMatch:" : "TB 6/23/2016 11:29" } }
