@@ -14,7 +14,7 @@ testPrintLiteralNode
 		yourself.
 	symbolNode := PPPLiteralNode new
 		literalType: #symbol;
-		value: 'actualSymbol';
+		value: '#actualSymbol';
 		yourself.
 	
 	self

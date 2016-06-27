@@ -2,12 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
-		"assertHierarchy:equals:" : "TB 6/23/2016 11:53",
+		"assertHierarchy:equals:" : "TB 6/27/2016 21:19",
 		"sampleComplexMethod:b:" : "lcj 6/15/2016 12:58",
 		"testAssignment" : "TB 6/10/2016 16:40",
 		"testAssignmentInBlock" : "TB 6/20/2016 12:02",
 		"testBlock" : "TB 6/10/2016 17:34",
-		"testCascade" : "TB 6/27/2016 18:29",
+		"testCascade" : "TB 6/27/2016 21:16",
+		"testCascadeAfterNew" : "TB 6/27/2016 22:52",
 		"testChainedMessage" : "TB 6/27/2016 18:22",
 		"testCharacters" : "TB 6/22/2016 13:51",
 		"testComplexMethod" : "lcj 6/15/2016 23:56",
@@ -18,6 +19,7 @@
 		"testNamedMessage" : "TB 6/10/2016 20:04",
 		"testNamedMessageMethod" : "KB 6/15/2016 19:36",
 		"testNestedNamedMessage" : "TB 6/11/2016 15:43",
+		"testParseBinaryMessageDeclaration" : "TB 6/27/2016 23:05",
 		"testReturnStatement" : "TB 6/10/2016 16:41",
 		"testSimpleAssignment" : "TB 6/10/2016 16:41",
 		"testSimpleMessagePrecedence" : "TB 6/25/2016 13:12",

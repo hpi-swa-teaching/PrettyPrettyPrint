@@ -7,7 +7,7 @@ assertHierarchy: aNode equals: anotherNode
 	aNode nodesDo: [ :node | expected add: node ].
 	anotherNode nodesDo: [ :node | actual add: node ].
 	
-	self assert: expected size equals: actual size.
+	self assert: expected size equals: actual size description: 'AST has different number of nodes'.
 	
 	1 to: actual size do: [ :index |
 		| expectedNode actualNode |

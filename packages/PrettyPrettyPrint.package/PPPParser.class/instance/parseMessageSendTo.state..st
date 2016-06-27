@@ -6,14 +6,15 @@ parseMessageSendTo: aReceiverNode state: aState
 	[self nextToken startsMessage and: [self nextToken isMessagePart not or: [aState insideNamedMessage not]]] whileTrue: [
 		receiver := self parseSimpleMessageTo: receiver state: aState ].
 	
-	(self nextToken isCascade and: [aState insideCascade not]) ifTrue: [
+	(receiver class = PPPMessageNode and: [self nextToken isCascade and: [aState insideCascade not]]) ifTrue: [
 		cascade := PPPCascadeNode new.
-		cascade messages add: receiver.
+		cascade receiver: receiver receiver.
+		cascade messages add: (receiver receiver: nil; yourself).
 		
 		[self nextToken isCascade] whileTrue: [
 			self step.
 			cascade messages add: (self
-				parseSimpleMessageTo: cascade receiver
+				parseSimpleMessageTo: nil
 				state: (aState copy insideCascade: true; yourself)) ].
 		^cascade ].	
 	

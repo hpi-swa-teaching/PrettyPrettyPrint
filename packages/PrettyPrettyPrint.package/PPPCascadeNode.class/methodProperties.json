@@ -1,11 +1,13 @@
 {
 	"class" : {
-		"messages:" : "TB 6/23/2016 12:05" },
+		"receiver:messages:" : "TB 6/27/2016 21:15" },
 	"instance" : {
+		"accept:" : "TB 6/27/2016 20:50",
 		"initialize" : "TB 6/22/2016 20:13",
 		"matches:" : "TB 6/23/2016 11:35",
 		"messages" : "TB 6/22/2016 20:13",
 		"messages:" : "TB 6/22/2016 20:13",
-		"nodesDo:" : "TB 6/23/2016 11:44",
-		"receiver" : "TB 6/22/2016 20:12",
-		"shallowMatch:" : "TB 6/27/2016 20:26" } }
+		"nodesDo:" : "TB 6/27/2016 21:18",
+		"receiver" : "TB 6/27/2016 20:58",
+		"receiver:" : "TB 6/27/2016 20:58",
+		"shallowMatch:" : "TB 6/27/2016 21:25" } }

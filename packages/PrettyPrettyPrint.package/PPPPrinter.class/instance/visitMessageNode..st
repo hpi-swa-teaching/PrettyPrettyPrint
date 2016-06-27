@@ -3,15 +3,13 @@ visitMessageNode: aNode
 	| buffer |
 	
 	buffer := WriteStream on: ''.
-	buffer nextPutAll: (aNode receiver accept: self).
+	aNode receiver ifNotNil: [
+		buffer
+			nextPutAll: (aNode receiver accept: self);
+			nextPut: $  ].
 	
-	(aNode isBinaryMessage not or: [self profile spaceAroundBinaryOperator]) ifTrue: [ buffer nextPut: $  ].
-	
-	buffer nextPutAll: aNode selector.
-	
-	aNode arguments ifNotEmpty: [
-		(aNode isBinaryMessage not or: [self profile spaceAroundBinaryOperator]) ifTrue: [ buffer nextPut: $  ].
-		
-		buffer nextPutAll: (aNode arguments first accept: self)].
+	aNode isUnaryMessage ifTrue: [ buffer nextPutAll: aNode selector ].
+	aNode isBinaryMessage ifTrue: [ buffer nextPutAll: (self printBinaryMessage: aNode) ].
+	aNode isNamedMessage ifTrue: [ buffer nextPutAll: (self printNamedMessage: aNode) ].
 	
 	^ buffer contents

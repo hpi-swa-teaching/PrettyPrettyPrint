@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"messages" ],
+		"messages",
+		"receiver" ],
 	"name" : "PPPCascadeNode",
 	"pools" : [
 		 ],
