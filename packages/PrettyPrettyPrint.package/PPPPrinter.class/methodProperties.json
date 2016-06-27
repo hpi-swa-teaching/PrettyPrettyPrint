@@ -7,6 +7,7 @@
 		"incrementIndent" : "TB 6/16/2016 11:57",
 		"initialize" : "lcj 6/22/2016 12:54",
 		"printIndentOn:" : "lcj 6/22/2016 13:17",
+		"printReturn:" : "TB 6/27/2016 20:37",
 		"profile" : "TB 6/20/2016 10:27",
 		"profile:" : "TB 6/20/2016 10:27",
 		"visitAssignmentNode:" : "lcj 6/22/2016 14:25",
@@ -14,7 +15,6 @@
 		"visitLiteralNode:" : "KB 6/22/2016 19:00",
 		"visitMessageNode:" : "TB 6/22/2016 16:36",
 		"visitMethodNode:" : "lcj 6/22/2016 13:05",
-		"visitReturnNode:" : "lcj 6/22/2016 13:07",
-		"visitSequenceNode:" : "lcj 6/22/2016 13:47",
+		"visitSequenceNode:" : "TB 6/27/2016 20:37",
 		"visitValueNode:" : "KB 6/15/2016 15:57",
 		"visitVariableNode:" : "lcj 6/22/2016 14:29" } }

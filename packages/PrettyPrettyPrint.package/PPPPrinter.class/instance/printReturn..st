@@ -1,5 +1,5 @@
 as yet unclassified
-visitReturnNode: aNode
+printReturn: aNode
 	| buffer |
 	
 	buffer := WriteStream on: ''.

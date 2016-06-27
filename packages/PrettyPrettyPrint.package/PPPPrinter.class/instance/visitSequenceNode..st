@@ -25,6 +25,6 @@ visitSequenceNode: aNode
 	
 	aNode return ifNotNil: [
 		self printIndentOn: buffer.
-		buffer nextPutAll: (aNode return accept: self) ].
+		buffer nextPutAll: (self printReturn: aNode return) ].
 	
 	^ buffer contents

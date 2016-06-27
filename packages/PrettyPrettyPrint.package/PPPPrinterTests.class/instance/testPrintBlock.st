@@ -13,7 +13,7 @@ testPrintBlock
 					variable: 'variable';
 					value: (PPPVariableNode new name: '4');
 					yourself));
-			return: (PPPReturnNode new value: (PPPVariableNode new name: 'self'))).
+			return: (PPPVariableNode new name: 'self')).
 	
 	self assert: '[ :b1 :b2 |
 	| temp1 temp2 |

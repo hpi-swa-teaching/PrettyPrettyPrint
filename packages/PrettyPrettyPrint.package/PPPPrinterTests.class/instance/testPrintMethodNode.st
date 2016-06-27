@@ -14,7 +14,7 @@ testPrintMethodNode
 			variable: 'variable';
 			value: (PPPVariableNode new name: '4'));
 		yourself.
-	return := PPPReturnNode new value: (PPPVariableNode new name: 'self').
+	return := PPPVariableNode new name: 'self'.
 	
 	sequenceNode
 		temporaries: temporaries;
