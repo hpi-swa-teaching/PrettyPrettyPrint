@@ -1,21 +1,11 @@
 {
 	"class" : {
-		"dotAfterReturn" : "TB 6/16/2016 11:32",
-		"dotAfterReturn:" : "TB 6/16/2016 11:32",
 		"format:in:notifying:" : "TB 6/20/2016 12:20",
-		"format:in:notifying:decorated:" : "TB 6/22/2016 16:29",
-		"returnAfterTemporaryDeclaration" : "TB 6/16/2016 12:04",
-		"returnAfterTemporaryDeclaration:" : "TB 6/16/2016 11:31",
-		"spaceAroundBinaryOperator" : "TB 6/16/2016 12:02",
-		"spaceAroundBinaryOperator:" : "TB 6/16/2016 12:02",
-		"spaceBeforeReturn" : "lcj 6/16/2016 00:05",
-		"spaceBeforeReturn:" : "lcj 6/16/2016 00:03" },
+		"format:in:notifying:decorated:" : "TB 6/22/2016 16:29" },
 	"instance" : {
-		"bufferContents" : "KB 6/15/2016 16:24",
 		"decrementIndent" : "TB 6/16/2016 12:01",
 		"incrementIndent" : "TB 6/16/2016 11:57",
 		"initialize" : "lcj 6/22/2016 12:54",
-		"printIndent" : "TB 6/16/2016 12:01",
 		"printIndentOn:" : "lcj 6/22/2016 13:17",
 		"profile" : "TB 6/20/2016 10:27",
 		"profile:" : "TB 6/20/2016 10:27",

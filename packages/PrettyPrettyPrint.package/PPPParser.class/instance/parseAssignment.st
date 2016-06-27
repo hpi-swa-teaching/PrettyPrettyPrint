@@ -6,5 +6,5 @@ parseAssignment
 	
 	^PPPAssignmentNode new
 		variable: variable;
-		value: (self parseStatement: false);
+		value: (self parseStatement: PPPParserState new);
 		yourself

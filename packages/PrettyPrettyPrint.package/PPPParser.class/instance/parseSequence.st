@@ -8,7 +8,7 @@ parseSequence
 	[self nextToken isEof or: [self nextToken isAnyClosingBrace]] whileFalse: [
 		self nextToken isReturn
 			ifTrue: [ node return: self parseReturnStatement ]
-			ifFalse: [ node addStatement: (self parseStatement: false) ].
+			ifFalse: [ node addStatement: (self parseStatement: PPPParserState new) ].
 		
 		[self nextToken isDot] whileTrue: [ self step: #special ]].
 	

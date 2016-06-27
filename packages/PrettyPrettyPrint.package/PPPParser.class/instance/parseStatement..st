@@ -1,8 +1,8 @@
 as yet unclassified
-parseStatement: insideNamedMessage
+parseStatement: aState
 	(self nextToken isIdentifier and: [self nextNextToken isAssignment])
 		ifTrue: [ ^self parseAssignment ].
 	
 	^self
 			parseMessageSendTo: self parseReceiver
-			insideNamedMessage: insideNamedMessage
+			state: aState

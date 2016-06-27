@@ -1,0 +1,15 @@
+{
+	"category" : "PrettyPrettyPrint",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"insideNamedMessage",
+		"insideCascade" ],
+	"name" : "PPPParserState",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

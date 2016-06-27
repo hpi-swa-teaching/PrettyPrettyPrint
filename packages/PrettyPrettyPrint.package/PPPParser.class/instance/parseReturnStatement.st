@@ -3,5 +3,5 @@ parseReturnStatement
 	self step: #special.
 	
 	^PPPReturnNode new
-		value: (self parseStatement: false);
+		value: (self parseStatement: PPPParserState new);
 		yourself

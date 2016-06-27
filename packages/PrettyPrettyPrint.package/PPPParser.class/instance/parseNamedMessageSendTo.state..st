@@ -1,5 +1,5 @@
 as yet unclassified
-parseNamedMessageSendTo: aReceiverNode
+parseNamedMessageSendTo: aReceiverNode state: aState
 	| messageSend |
 	messageSend := PPPMessageNode new
 		arguments: OrderedCollection new;
@@ -9,6 +9,6 @@ parseNamedMessageSendTo: aReceiverNode
 	
 	[self nextToken isMessagePart] whileTrue: [
 		messageSend selector: (messageSend selector, (self step: #identifier) content).
-		messageSend arguments add: (self parseStatement: true) ].
+		messageSend arguments add: (self parseStatement: (aState copy insideNamedMessage: true; yourself)) ].
 	
 	^messageSend

@@ -1,3 +1,3 @@
 accessing
 shallowMatch: aNode
-	^aNode receiver = self receiver
+	^aNode receiver matches: self receiver
