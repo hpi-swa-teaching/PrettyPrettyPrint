@@ -1,8 +1,10 @@
 as yet unclassified
 visitVariableNode: aNode
 	| buffer |
-	
 	buffer := WriteStream on: ''.
-	buffer nextPutAll: aNode name.
 	
-	^ buffer contents.
+	self printOpenParethesesOf: aNode on: buffer.
+	buffer nextPutAll: aNode name.
+	self printCloseParethesesOf: aNode on: buffer.
+	
+	^buffer contents

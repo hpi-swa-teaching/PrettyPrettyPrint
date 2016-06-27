@@ -12,7 +12,9 @@ visitMethodNode: aNode
 	
 	buffer cr.
 	
-	self incrementIndent.
+	self
+		incrementIndent;
+		printIndentOn: buffer.
 	
 	buffer nextPutAll: (aNode bodySequence accept: self).
 

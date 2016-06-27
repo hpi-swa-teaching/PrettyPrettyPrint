@@ -3,6 +3,8 @@ visitLiteralNode: aNode
 	| buffer |
 	buffer := WriteStream on: ''.
 	
+	self printOpenParethesesOf: aNode on: buffer.
+	
 	aNode literalType = #number
 		ifTrue: [ buffer nextPutAll: aNode value ].
 		
@@ -15,5 +17,7 @@ visitLiteralNode: aNode
 			
 	aNode literalType = #symbol
 		ifTrue: [ buffer nextPutAll: aNode value ].
-			
-	^ buffer contents
+	
+	self printCloseParethesesOf: aNode on: buffer.
+	
+	^buffer contents

@@ -4,6 +4,8 @@ visitAssignmentNode: aNode
 	
 	buffer := WriteStream on: ''.
 	
+	self printOpenParethesesOf: aNode on: buffer.
+	
 	buffer nextPutAll: aNode variable.
 	
 	self profile spaceAroundBinaryOperator
@@ -12,5 +14,7 @@ visitAssignmentNode: aNode
 	
 	temp := (aNode value accept: self).
 	buffer nextPutAll: temp.
+	
+	self printCloseParethesesOf: aNode on: buffer.
 	
 	^buffer contents

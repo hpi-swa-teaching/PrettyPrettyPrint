@@ -3,7 +3,6 @@ visitSequenceNode: aNode
 	| buffer |
 	
 	buffer := WriteStream on: ''.
-	self printIndentOn: buffer.
 	
 	aNode temporaries ifNotEmpty: [
 		buffer nextPutAll: '| '.
@@ -11,20 +10,20 @@ visitSequenceNode: aNode
 		buffer nextPut: $|.
 		
 		self profile newlineAfterTemporaryDeclaration ifTrue: [
-			buffer cr ]].
+			buffer cr.
+			self printIndentOn: buffer ]].
 	
-	aNode statements allButLastDo: [ :s |
-		self printIndentOn: buffer.
-		buffer nextPutAll: (s accept: self).
-		buffer nextPut: $.; cr ].
-	
-	aNode statements ifNotEmpty: [
-		self printIndentOn: buffer.
-		buffer nextPutAll: (aNode statements last accept: self).
-		aNode return ifNotNil: [ buffer nextPut: $.; cr ]].
+	aNode statements
+		do: [ :s |
+			buffer nextPutAll: (s accept: self) ]
+		separatedBy: [
+			buffer nextPut: $.; cr.
+			self printIndentOn: buffer ].
 	
 	aNode return ifNotNil: [
-		self printIndentOn: buffer.
+		aNode statements ifNotEmpty: [
+			buffer nextPut: $.; cr.
+			self printIndentOn: buffer ].
 		buffer nextPutAll: (self printReturn: aNode return) ].
 	
 	^ buffer contents
