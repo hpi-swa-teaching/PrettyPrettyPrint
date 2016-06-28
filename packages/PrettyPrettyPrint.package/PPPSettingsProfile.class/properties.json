@@ -3,7 +3,9 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"DotAfterReturn",
+		"NewlineAfterTemporaryDeclaration",
+		"ReturnAfterTemporaryDeclaration" ],
 	"commentStamp" : "",
 	"instvars" : [
 		"spaceBeforeReturn",

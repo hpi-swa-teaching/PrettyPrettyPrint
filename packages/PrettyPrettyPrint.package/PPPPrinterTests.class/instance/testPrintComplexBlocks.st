@@ -5,4 +5,4 @@ testPrintComplexBlocks
 	string := 'testMethod
 	[ buffer nextPut: currentCharacter ] doWhileTrue: [ self classifyCharacter: self step = #binaryOperator ]'.
 	
-	self assert: string equals: (PPPPrinter format: string in: nil notifying: nil)
+	self assert: string equals: (PPPPrinter format: string)

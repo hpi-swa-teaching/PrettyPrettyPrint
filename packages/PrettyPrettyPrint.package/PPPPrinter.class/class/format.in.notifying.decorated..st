@@ -4,4 +4,4 @@ format: aString in: aClass notifying: ignored decorated: aBoolean
 	ignored ifNotNil: [ self error: 'Notifying not supported' ].
 	aBoolean ifTrue: [ self error: 'Decoration not supported' ].
 	
-	^self format: aString
+	^self userProfileFormat: aString

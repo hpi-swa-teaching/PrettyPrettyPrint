@@ -1,6 +1,11 @@
 {
 	"class" : {
-		 },
+		"dotAfterReturn" : "TB 6/28/2016 23:19",
+		"dotAfterReturn:" : "TB 6/28/2016 23:20",
+		"newlineAfterTemporaryDeclaration" : "TB 6/28/2016 23:29",
+		"newlineAfterTemporaryDeclaration:" : "TB 6/28/2016 23:29",
+		"refresh" : "TB 6/28/2016 23:47",
+		"userProfile" : "TB 6/28/2016 23:29" },
 	"instance" : {
 		"dotAfterReturn" : "TB 6/17/2016 21:06",
 		"dotAfterReturn:" : "TB 6/17/2016 21:06",
