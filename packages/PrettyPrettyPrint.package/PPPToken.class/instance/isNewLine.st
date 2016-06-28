@@ -1,3 +1,3 @@
 as yet unclassified
 isNewLine
-	^tokenType = #separator and: [content first = Character cr]
+	^tokenType = #separator and: [content = String cr]

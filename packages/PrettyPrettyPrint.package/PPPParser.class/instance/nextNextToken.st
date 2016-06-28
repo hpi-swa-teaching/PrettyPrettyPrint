@@ -4,6 +4,12 @@ nextNextToken
 	self nextToken.
 
 	nextNextToken ifNil: [
-		[nextNextToken := stream next] doWhileTrue: [ nextNextToken isSeparator ]].
+		| numberOfNewLines |
+		numberOfNewLines := 0.
+		[	nextNextToken := stream next.
+			nextNextToken isNewLine ifTrue: [ numberOfNewLines := numberOfNewLines + 1 ]]
+		doWhileTrue: [ nextNextToken isSeparator ].
+		
+		emptyLineBeforeNextNextToken := numberOfNewLines > 1 ].
 
 	^nextNextToken

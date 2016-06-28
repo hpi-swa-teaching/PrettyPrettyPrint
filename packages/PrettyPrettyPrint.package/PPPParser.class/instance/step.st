@@ -3,6 +3,7 @@ step
 	currentToken := self nextToken.
 	nextToken := self nextNextToken.
 	nextNextToken := nil.
-	emptyLineBeforeNextToken := false.
+	emptyLineBeforeNextToken := emptyLineBeforeNextNextToken.
+	emptyLineBeforeNextNextToken := false.
 	
 	^currentToken

@@ -10,7 +10,8 @@
 		"nextToken",
 		"currentToken",
 		"nextNextToken",
-		"emptyLineBeforeNextToken" ],
+		"emptyLineBeforeNextToken",
+		"emptyLineBeforeNextNextToken" ],
 	"name" : "PPPParser",
 	"pools" : [
 		 ],

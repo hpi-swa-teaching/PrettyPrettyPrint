@@ -2,9 +2,7 @@ as yet unclassified
 format: aString preferences: aBlock
 	| tokens printer |
 	
-	tokens := (PPPTokenizer on: aString)
-		"skipWhitespace: true;
-		yourself".
+	tokens := PPPTokenizer on: aString.
 	
 	printer := PPPPrinter new.
 	aBlock value: printer profile.
