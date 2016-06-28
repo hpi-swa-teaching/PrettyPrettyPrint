@@ -1,4 +1,4 @@
-as yet unclassified
+initialize-release
 on: aString
 	stream := ReadStream on: aString.
 	buffer := WriteStream on: ''.

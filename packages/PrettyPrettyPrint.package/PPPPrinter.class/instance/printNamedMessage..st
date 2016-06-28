@@ -1,4 +1,4 @@
-as yet unclassified
+helpers-printing
 printNamedMessage: aNode
 	| buffer multiLine arguments argumentsLength |
 	buffer := WriteStream on: ''.

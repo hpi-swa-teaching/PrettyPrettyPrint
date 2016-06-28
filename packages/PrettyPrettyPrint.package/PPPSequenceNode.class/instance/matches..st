@@ -1,4 +1,4 @@
-as yet unclassified
+comparing
 matches: aNode
 	aNode return ifNotNil: [
 		(self return notNil and: [aNode return matches: self return]) ifFalse: [ ^false ]].

@@ -1,3 +1,3 @@
-as yet unclassified
+testing
 isBlockBinding
 	^self isIdentifier and: [content first = $:]

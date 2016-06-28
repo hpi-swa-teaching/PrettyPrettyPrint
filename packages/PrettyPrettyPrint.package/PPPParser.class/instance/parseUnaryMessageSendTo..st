@@ -1,4 +1,4 @@
-as yet unclassified
+parse-message-send
 parseUnaryMessageSendTo: aReceiverNode
 	^PPPMessageNode new
 		receiver: aReceiverNode;

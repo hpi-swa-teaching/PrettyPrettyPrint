@@ -1,5 +1,5 @@
-as yet unclassified
+parse-node
 parseReturnStatement
-	self step: #special.
+	self step.
 	
 	^self parseStatement: PPPParserState new

@@ -1,4 +1,4 @@
-as yet unclassified
+parse-message-receiver
 parseReceiverSymbolArray
 	| receiver |
 	receiver := PPPArrayNode new
@@ -9,9 +9,10 @@ parseReceiverSymbolArray
 	
 	[self step isClosingRoundBrace] whileFalse: [
 		(self currentToken isLiteral or: [self currentToken isIdentifier])
-			ifTrue: [ receiver contents add: (PPPLiteralNode new
-				literalType: self currentToken tokenType;
-				value: self currentToken content) ]
+			ifTrue: [
+				receiver contents add: (PPPLiteralNode new
+					literalType: self currentToken tokenType;
+					value: self currentToken content) ]
 			ifFalse: [ ^self syntaxError ]].
 		
 	^receiver

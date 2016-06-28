@@ -1,3 +1,3 @@
-as yet unclassified
+testing
 isMessagePart
 	^tokenType = #identifier and: [content endsWithAColon]

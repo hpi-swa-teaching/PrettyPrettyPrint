@@ -1,7 +1,7 @@
-as yet unclassified
+parse-node
 parseParenthesesExpression
 	| node |
-	self step: #special.
+	self step.
 	
 	node := self parseStatement: PPPParserState new.
 	node hasParentheses: true.

@@ -1,3 +1,3 @@
-as yet unclassified
+testing
 isBinaryOperator
 	^tokenType = #binaryOperator

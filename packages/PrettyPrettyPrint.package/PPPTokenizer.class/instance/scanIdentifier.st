@@ -1,4 +1,4 @@
-as yet unclassified
+scanning
 scanIdentifier
 
 	"called whenever we know that the first character of our next token is a letter."

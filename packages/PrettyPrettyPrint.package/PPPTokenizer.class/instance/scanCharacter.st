@@ -1,4 +1,4 @@
-as yet unclassified
+scanning
 scanCharacter
 	| character |
 	character := String with: currentCharacter with: self step.

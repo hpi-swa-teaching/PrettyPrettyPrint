@@ -1,3 +1,3 @@
-as yet unclassified
+testing
 isOpeningSquareBrace
 	^self isSpecial and: [content = '[']

@@ -1,3 +1,3 @@
-as yet unclassified
+testing
 startsMessage
 	^self isIdentifier or: [self isBinaryOperator]

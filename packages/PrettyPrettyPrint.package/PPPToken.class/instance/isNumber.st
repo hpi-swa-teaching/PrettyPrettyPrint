@@ -1,3 +1,3 @@
-as yet unclassified
+testing
 isNumber
 	^tokenType = #number

@@ -1,4 +1,4 @@
-as yet unclassified
+stepping
 nextToken
 	nextToken ifNil: [
 		| numberOfNewLines |

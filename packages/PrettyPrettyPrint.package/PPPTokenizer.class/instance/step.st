@@ -1,4 +1,4 @@
-as yet unclassified
+private
 step
 
 	stream atEnd ifTrue: [

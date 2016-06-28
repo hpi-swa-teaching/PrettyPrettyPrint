@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 addStatement: aStatementNode
 	statements add: aStatementNode 

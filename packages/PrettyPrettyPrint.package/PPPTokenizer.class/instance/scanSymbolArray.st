@@ -1,4 +1,4 @@
-as yet unclassified
+scanning
 scanSymbolArray
 	2 timesRepeat: [ self step ].
 	

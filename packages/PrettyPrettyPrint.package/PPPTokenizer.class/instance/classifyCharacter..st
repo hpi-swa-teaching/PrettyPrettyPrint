@@ -1,4 +1,4 @@
-as yet unclassified
+scanning
 classifyCharacter: aCharacter
 	aCharacter ifNil: [ ^#eof ].
 	('|{[()]}.^;' includes: aCharacter)  ifTrue: [ ^#special ].

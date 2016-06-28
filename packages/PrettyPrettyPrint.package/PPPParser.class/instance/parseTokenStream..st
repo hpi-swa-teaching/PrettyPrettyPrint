@@ -1,4 +1,4 @@
-as yet unclassified
+initialize-release
 parseTokenStream: aStream
 	stream := aStream.
 	emptyLineBeforeNextToken := false.

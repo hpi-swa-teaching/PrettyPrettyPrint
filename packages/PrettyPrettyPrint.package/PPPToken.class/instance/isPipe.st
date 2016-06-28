@@ -1,3 +1,3 @@
-as yet unclassified
+testing
 isPipe
 	^self isSpecial and: [content = '|']

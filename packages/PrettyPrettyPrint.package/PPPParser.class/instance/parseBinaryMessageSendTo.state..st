@@ -1,6 +1,6 @@
-as yet unclassified
+parse-message-send
 parseBinaryMessageSendTo: aReceiverNode state: aState
 	^PPPMessageNode new
 		receiver: aReceiverNode;
 		selector: (self step: #binaryOperator) content;
-		arguments: (OrderedCollection with: (self parseStatement: aState))
+		arguments: { self parseStatement: aState }

@@ -1,3 +1,3 @@
-as yet unclassified
+accsessing
 bodySequence: aSequenceNode
 	bodySequence := aSequenceNode

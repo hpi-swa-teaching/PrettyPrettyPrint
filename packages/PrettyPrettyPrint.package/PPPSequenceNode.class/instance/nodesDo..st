@@ -1,4 +1,4 @@
-as yet unclassified
+visit-node
 nodesDo: aBlock
 	super nodesDo: aBlock.
 	self statements do: [ :statement | statement nodesDo: aBlock ].

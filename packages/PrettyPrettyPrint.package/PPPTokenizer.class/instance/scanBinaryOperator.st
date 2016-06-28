@@ -1,4 +1,4 @@
-as yet unclassified
+scanning
 scanBinaryOperator 
 	[buffer nextPut: currentCharacter] doWhileTrue: [ (self classifyCharacter: self step) = #binaryOperator ].
 	

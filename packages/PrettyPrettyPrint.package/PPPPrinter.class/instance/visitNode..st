@@ -1,4 +1,4 @@
-as yet unclassified
+visit-node
 visitNode: aNode
 	| buffer |
 	buffer := WriteStream on: ''.

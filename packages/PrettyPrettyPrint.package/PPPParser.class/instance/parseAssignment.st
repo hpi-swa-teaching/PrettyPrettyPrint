@@ -1,4 +1,4 @@
-as yet unclassified
+parse-node
 parseAssignment
 	| variable |
 	variable := (self step: #identifier) content.

@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 peek
 	^ nextObject ifNil: [nextObject := self next]

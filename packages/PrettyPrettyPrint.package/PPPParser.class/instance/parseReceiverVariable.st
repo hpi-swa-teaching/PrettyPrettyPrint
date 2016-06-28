@@ -1,4 +1,4 @@
-as yet unclassified
+parse-message-receiver
 parseReceiverVariable
 	^PPPVariableNode new
 		name: (self step: #identifier) content;

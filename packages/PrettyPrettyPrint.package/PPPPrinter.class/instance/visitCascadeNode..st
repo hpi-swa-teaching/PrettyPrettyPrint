@@ -1,4 +1,4 @@
-as yet unclassified
+visit-node
 visitCascadeNode: aNode
 	| buffer |
 	buffer := WriteStream on: ''.

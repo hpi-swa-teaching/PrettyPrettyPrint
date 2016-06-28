@@ -1,4 +1,4 @@
-as yet unclassified
+parse-message-receiver
 parseReceiverLiteral
 	self step.
 	

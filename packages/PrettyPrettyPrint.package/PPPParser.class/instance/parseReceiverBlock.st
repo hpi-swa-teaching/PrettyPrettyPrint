@@ -1,4 +1,4 @@
-as yet unclassified
+parse-message-receiver
 parseReceiverBlock
 	| receiver |
 	receiver := PPPBlockNode new.

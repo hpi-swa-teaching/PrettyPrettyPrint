@@ -1,14 +1,14 @@
-as yet unclassified
+parse-node
 parseTemporaries
 	| temporaries |
 	temporaries := OrderedCollection new.
 	
 	self nextToken isPipe ifTrue: [
-		self step: #special.
+		self step.
 		
 		[self nextToken isPipe] whileFalse: [
 			temporaries add: (self step: #identifier) content ].
 		
-		self step: #special ].
+		self step ].
 	
 	^temporaries

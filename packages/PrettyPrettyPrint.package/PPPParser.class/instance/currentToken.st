@@ -1,3 +1,3 @@
-as yet unclassified
+stepping
 currentToken
 	^currentToken

@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 bindings: aList
 	bindings := aList

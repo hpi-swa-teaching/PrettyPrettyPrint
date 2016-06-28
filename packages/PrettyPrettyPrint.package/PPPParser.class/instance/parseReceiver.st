@@ -1,4 +1,4 @@
-as yet unclassified
+parse-message-receiver
 parseReceiver
 	self nextToken isLiteral ifTrue: [ ^self parseReceiverLiteral ].
 	self nextToken isIdentifier ifTrue: [ ^self parseReceiverVariable ].

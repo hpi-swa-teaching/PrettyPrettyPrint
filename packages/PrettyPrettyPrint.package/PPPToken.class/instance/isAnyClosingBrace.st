@@ -1,3 +1,3 @@
-as yet unclassified
+testing
 isAnyClosingBrace
 	^self isClosingRoundBrace or: [self isClosingSquareBrace or: [self isClosingCurlyBrace]]

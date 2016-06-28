@@ -1,3 +1,3 @@
-as yet unclassified
+visit-node
 visitBlockNode: aNode
 	^self subclassResponsibility 

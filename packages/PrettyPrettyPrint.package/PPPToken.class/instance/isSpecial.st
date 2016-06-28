@@ -1,3 +1,3 @@
-as yet unclassified
+testing
 isSpecial
 	^tokenType = #special

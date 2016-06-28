@@ -1,4 +1,4 @@
-accessing
+visit-node
 nodesDo: aBlock
 	super nodesDo: aBlock.
 	self receiver ifNotNil: [ self receiver nodesDo: aBlock ].

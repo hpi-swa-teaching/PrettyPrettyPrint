@@ -1,3 +1,3 @@
-as yet unclassified
+testing
 isClosingSquareBrace
 	^self isSpecial and: [content = ']']

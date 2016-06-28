@@ -1,3 +1,3 @@
-as yet unclassified
+visit-node
 visitMethodNode: aNode
 	^self subclassResponsibility 

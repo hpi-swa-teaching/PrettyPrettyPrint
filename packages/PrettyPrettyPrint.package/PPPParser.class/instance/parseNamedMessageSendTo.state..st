@@ -1,4 +1,4 @@
-as yet unclassified
+parse-message-send
 parseNamedMessageSendTo: aReceiverNode state: aState
 	| messageSend |
 	messageSend := PPPMessageNode new

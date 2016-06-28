@@ -1,3 +1,3 @@
-as yet unclassified
+comparing
 shallowMatch: aNode
 	^self subclassResponsibility

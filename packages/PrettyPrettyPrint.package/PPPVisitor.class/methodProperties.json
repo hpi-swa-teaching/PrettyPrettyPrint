@@ -2,8 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
+		"visitArrayNode:" : "TB 6/29/2016 01:18",
 		"visitAssignmentNode:" : "TB 6/17/2016 18:48",
 		"visitBlockNode:" : "TB 6/17/2016 18:48",
+		"visitCascadeNode:" : "TB 6/29/2016 01:18",
 		"visitLiteralNode:" : "TB 6/17/2016 18:48",
 		"visitMessageNode:" : "lcj 6/22/2016 13:59",
 		"visitMethodNode:" : "TB 6/17/2016 18:48",

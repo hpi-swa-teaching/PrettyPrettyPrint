@@ -1,4 +1,4 @@
-as yet unclassified
+comparing
 collectionOfNodes: aCollection matches: anotherCollection
 	aCollection size ~= anotherCollection size ifTrue: [ ^false ].
 	

@@ -1,4 +1,4 @@
-as yet unclassified
+helpers-printing
 printBinaryMessage: aNode
 	| buffer |
 	buffer := WriteStream on: ''.

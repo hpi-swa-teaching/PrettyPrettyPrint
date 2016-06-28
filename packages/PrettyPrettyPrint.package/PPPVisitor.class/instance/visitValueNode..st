@@ -1,3 +1,3 @@
-as yet unclassified
+visit-node
 visitValueNode: aNode
 	^self shouldNotImplement

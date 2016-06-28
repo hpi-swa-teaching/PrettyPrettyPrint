@@ -1,4 +1,4 @@
-as yet unclassified
+scanning
 scanNumber
 	"called whenever we kn ow that the first character of our next token is a digit."
 	

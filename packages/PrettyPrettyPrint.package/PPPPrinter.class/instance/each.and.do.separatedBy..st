@@ -1,4 +1,4 @@
-as yet unclassified
+helpers
 each: anArray and: anotherArray do: aBlock separatedBy: anotherBlock
 	| index |
 	index := 1.

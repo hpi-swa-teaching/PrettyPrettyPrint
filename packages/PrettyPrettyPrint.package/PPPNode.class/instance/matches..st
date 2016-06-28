@@ -1,3 +1,3 @@
-as yet unclassified
+comparing
 matches: aNode
 	^self subclassResponsibility

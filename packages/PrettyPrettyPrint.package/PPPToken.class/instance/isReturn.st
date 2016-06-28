@@ -1,3 +1,3 @@
-as yet unclassified
+testing
 isReturn
 	^tokenType = #special and: [content = '^']

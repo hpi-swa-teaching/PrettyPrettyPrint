@@ -1,4 +1,4 @@
-as yet unclassified
+parse-declaration
 parseMethod
 	self nextToken isBinaryOperator ifTrue: [ ^self parseBinaryMessageDeclaration ].
 	self nextToken isMessagePart ifTrue: [ ^self parseNamedMessageDeclaration ].

@@ -1,4 +1,4 @@
-as yet unclassified
+scanning
 scanString
 	| token |
 	token := PPPToken new

@@ -1,3 +1,3 @@
-accessing
+comparing
 matches: aNode
 	^self shouldNotImplement

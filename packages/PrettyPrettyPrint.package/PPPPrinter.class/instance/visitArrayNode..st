@@ -1,4 +1,4 @@
-as yet unclassified
+visit-node
 visitArrayNode: aNode
 	| buffer |
 	

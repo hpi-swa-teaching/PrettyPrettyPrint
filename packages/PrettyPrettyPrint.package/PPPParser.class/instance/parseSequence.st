@@ -1,11 +1,11 @@
-as yet unclassified
+parse-node
 parseSequence
 	| node precededByEmptyLine |
-	node := PPPSequenceNode new.
+	node := PPPSequenceNode new
+		temporaries: self parseTemporaries;
+		yourself.
 	
-	node temporaries: self parseTemporaries.
-	
-	[self nextToken isEof or: [self nextToken isAnyClosingBrace]] whileFalse: [
+	[self nextToken endsSequence] whileFalse: [
 		precededByEmptyLine := self emptyLineBeforeNextToken.
 		self nextToken isReturn
 			ifTrue: [
@@ -17,6 +17,6 @@ parseSequence
 					precededByEmptyLine: precededByEmptyLine;
 					yourself) ].
 		
-		[self nextToken isDot] whileTrue: [ self step: #special ]].
+		self skipDots ].
 	
 	^node

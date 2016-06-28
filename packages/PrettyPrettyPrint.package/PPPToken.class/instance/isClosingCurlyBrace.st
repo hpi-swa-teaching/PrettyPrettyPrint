@@ -1,3 +1,3 @@
-as yet unclassified
+testing
 isClosingCurlyBrace
 	^self isSpecial and: [content = '}']

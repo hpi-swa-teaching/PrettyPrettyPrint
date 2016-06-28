@@ -1,4 +1,4 @@
-as yet unclassified
+visit-node
 visitMessageNode: aNode
 	| buffer |
 	

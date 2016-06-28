@@ -1,3 +1,3 @@
-as yet unclassified
+visit-node
 accept: aPrinter
 	^ aPrinter visitArrayNode: self

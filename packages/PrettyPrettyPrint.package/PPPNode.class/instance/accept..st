@@ -1,4 +1,4 @@
-as yet unclassified
+visit-node
 accept: aPrinter
 
 	^ self subclassResponsibility 

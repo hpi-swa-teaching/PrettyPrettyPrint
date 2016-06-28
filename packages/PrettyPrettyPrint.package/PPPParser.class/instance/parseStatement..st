@@ -1,8 +1,10 @@
-as yet unclassified
+parse-node
 parseStatement: aState
-	(self nextToken isIdentifier and: [self nextNextToken isAssignment])
-		ifTrue: [ ^self parseAssignment ].
+	| receiver |
+	self nextNextToken isAssignment ifTrue: [ ^self parseAssignment ].
 	
-	^self
-			parseMessageSendTo: self parseReceiver
-			state: aState
+	receiver := self parseReceiver.
+	
+	self nextToken startsMessage
+		ifTrue: [ ^self parseMessageSendTo: receiver state: aState ]
+		ifFalse: [ ^receiver ]

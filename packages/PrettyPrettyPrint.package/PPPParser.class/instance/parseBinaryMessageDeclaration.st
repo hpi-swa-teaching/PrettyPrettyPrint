@@ -1,4 +1,4 @@
-as yet unclassified
+parse-declaration
 parseBinaryMessageDeclaration
 	| node operator operand |
 	node := PPPMethodNode new.

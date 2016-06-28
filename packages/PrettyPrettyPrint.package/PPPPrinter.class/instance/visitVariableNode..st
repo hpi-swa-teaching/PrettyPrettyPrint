@@ -1,3 +1,3 @@
-as yet unclassified
+visit-node
 visitVariableNode: aNode
 	^aNode name
