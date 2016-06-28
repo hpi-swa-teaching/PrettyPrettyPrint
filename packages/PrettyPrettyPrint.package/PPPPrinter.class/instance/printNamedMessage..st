@@ -8,9 +8,10 @@ printNamedMessage: aNode
 	
 	multiLine := argumentsLength + aNode selector size > self profile maxLineLength and: [aNode arguments size > 1].
 	
-	multiLine ifTrue: [
-		self incrementIndent.
-		aNode receiver ifNotNil: [ self newLineIndentOn: buffer ]].
+	aNode ifNotInCascade: [
+		multiLine
+			ifTrue: [ self incrementIndent; newLineIndentOn: buffer ]
+			ifFalse: [ buffer space ]].
 	
 	self
 		each: (aNode selector subStrings: ':')

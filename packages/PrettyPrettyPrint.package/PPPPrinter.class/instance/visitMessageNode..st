@@ -6,11 +6,11 @@ visitMessageNode: aNode
 	self printOpenParethesesOf: aNode on: buffer.
 	
 	aNode receiver ifNotNil: [
-		buffer
-			nextPutAll: (aNode receiver accept: self);
-			nextPut: $  ].
+		buffer nextPutAll: (aNode receiver accept: self) ].
 	
-	aNode isUnaryMessage ifTrue: [ buffer nextPutAll: aNode selector ].
+	aNode isUnaryMessage ifTrue: [
+		aNode ifNotInCascade: [ buffer space ].
+		buffer nextPutAll: aNode selector ].
 	aNode isBinaryMessage ifTrue: [ buffer nextPutAll: (self printBinaryMessage: aNode) ].
 	aNode isNamedMessage ifTrue: [ buffer nextPutAll: (self printNamedMessage: aNode) ].
 	

@@ -10,6 +10,7 @@
 		"testPrintComplexBlocks" : "TB 6/28/2016 00:53",
 		"testPrintLiteralNode" : "TB 6/27/2016 22:58",
 		"testPrintMethodNode" : "TB 6/27/2016 20:33",
+		"testPrintMultilineMessage" : "TB 6/28/2016 14:43",
 		"testPrintNamedMessage" : "TB 6/27/2016 21:36",
 		"testPrintReturnNode" : "TB 6/27/2016 20:35",
 		"testPrintSequenceNode" : "TB 6/27/2016 20:35",

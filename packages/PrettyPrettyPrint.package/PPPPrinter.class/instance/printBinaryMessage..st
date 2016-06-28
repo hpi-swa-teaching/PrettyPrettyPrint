@@ -3,9 +3,9 @@ printBinaryMessage: aNode
 	| buffer |
 	buffer := WriteStream on: ''.
 	
-	buffer nextPutAll: aNode selector.
-	
-	self profile spaceAroundBinaryOperator ifTrue: [ buffer nextPut: $  ].
+	(aNode isInCascade not and: [self profile spaceAroundBinaryOperator]) ifTrue: [ buffer space ].
+	buffer space; nextPutAll: aNode selector.
+	self profile spaceAroundBinaryOperator ifTrue: [ buffer space ].
 	
 	buffer nextPutAll: (aNode arguments first accept: self).
 	
