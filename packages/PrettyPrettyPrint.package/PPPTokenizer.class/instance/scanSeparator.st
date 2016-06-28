@@ -8,7 +8,7 @@ scanSeparator
 	
 	token := PPPToken new
 		position: indexCount;
-		content: currentCharacter;
+		content: currentCharacter asString;
 		tokenType: #separator;
 		yourself.
 		

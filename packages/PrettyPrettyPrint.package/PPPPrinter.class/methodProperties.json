@@ -3,7 +3,7 @@
 		"format:" : "TB 6/28/2016 14:27",
 		"format:in:notifying:" : "TB 6/28/2016 12:06",
 		"format:in:notifying:decorated:" : "TB 6/28/2016 14:15",
-		"format:preferences:" : "TB 6/28/2016 14:26" },
+		"format:preferences:" : "TB 6/28/2016 15:34" },
 	"instance" : {
 		"decrementIndent" : "TB 6/16/2016 12:01",
 		"each:and:do:separatedBy:" : "TB 6/27/2016 22:15",
@@ -11,9 +11,7 @@
 		"initialize" : "lcj 6/22/2016 12:54",
 		"newLineIndentOn:" : "TB 6/28/2016 14:10",
 		"printBinaryMessage:" : "TB 6/28/2016 15:00",
-		"printCloseParethesesOf:on:" : "TB 6/28/2016 00:56",
 		"printNamedMessage:" : "TB 6/28/2016 14:51",
-		"printOpenParethesesOf:on:" : "TB 6/28/2016 00:55",
 		"printReturn:" : "TB 6/28/2016 14:51",
 		"profile" : "TB 6/20/2016 10:27",
 		"profile:" : "TB 6/20/2016 10:27",
@@ -21,10 +19,9 @@
 		"visitAssignmentNode:" : "TB 6/28/2016 14:52",
 		"visitBlockNode:" : "TB 6/28/2016 14:59",
 		"visitCascadeNode:" : "TB 6/28/2016 14:54",
-		"visitLiteralNode:" : "TB 6/28/2016 12:21",
+		"visitLiteralNode:" : "TB 6/28/2016 15:02",
 		"visitMessageNode:" : "TB 6/28/2016 14:54",
 		"visitMethodNode:" : "TB 6/28/2016 14:58",
 		"visitNode:" : "TB 6/28/2016 14:50",
-		"visitSequenceNode:" : "TB 6/28/2016 14:56",
-		"visitValueNode:" : "KB 6/15/2016 15:57",
-		"visitVariableNode:" : "TB 6/28/2016 00:58" } }
+		"visitSequenceNode:" : "TB 6/28/2016 15:30",
+		"visitVariableNode:" : "TB 6/28/2016 15:03" } }

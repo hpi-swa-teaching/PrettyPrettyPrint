@@ -27,4 +27,5 @@
 		"testSymbols" : "TB 6/22/2016 15:54",
 		"testTemporaryDeclaration" : "TB 6/10/2016 16:42",
 		"testTokenizerParserInteraction" : "lcj 6/15/2016 14:08",
-		"testUnaryMethodDeclaration" : "TB 6/10/2016 16:42" } }
+		"testUnaryMethodDeclaration" : "TB 6/10/2016 16:42",
+		"testWhitespacesInMethod" : "TB 6/28/2016 15:51" } }

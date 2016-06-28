@@ -1,10 +1,8 @@
 as yet unclassified
 step
 	currentToken := self nextToken.
-	nextToken := nil.
+	nextToken := self nextNextToken.
 	nextNextToken := nil.
-	
-	[currentToken isSeparator] whileTrue: [
-		currentToken := self nextToken ].
+	emptyLineBeforeNextToken := false.
 	
 	^currentToken

@@ -1,7 +1,12 @@
 as yet unclassified
 nextToken
 	nextToken ifNil: [
-		nextToken := stream next.
-		[nextToken isSeparator] whileTrue: [ nextToken := stream next ]].
-
+		| numberOfNewLines |
+		numberOfNewLines := 0.
+		[	nextToken := stream next.
+			nextToken isNewLine ifTrue: [ numberOfNewLines := numberOfNewLines + 1 ]]
+			doWhileTrue: [ nextToken isSeparator ].
+		
+		emptyLineBeforeNextToken := numberOfNewLines > 1 ].
+	
 	^nextToken
