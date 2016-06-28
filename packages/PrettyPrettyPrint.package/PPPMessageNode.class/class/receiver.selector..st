@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 receiver: aNode selector: aString
 	^self new
 		receiver: aNode;

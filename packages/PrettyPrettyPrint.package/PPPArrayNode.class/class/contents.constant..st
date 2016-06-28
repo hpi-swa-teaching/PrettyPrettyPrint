@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 contents: anArray constant: aBoolean
 	^self new
 		contents: anArray;

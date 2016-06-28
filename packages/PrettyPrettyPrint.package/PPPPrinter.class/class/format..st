@@ -1,3 +1,3 @@
-as yet unclassified
+format
 format: aString
 	^self format: aString preferences: [ :profile | ]

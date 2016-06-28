@@ -1,4 +1,4 @@
-as yet unclassified
+format
 userProfileFormat: aString
 	^PPPPrinter new
 		profile: PPPSettingsProfile userProfile;

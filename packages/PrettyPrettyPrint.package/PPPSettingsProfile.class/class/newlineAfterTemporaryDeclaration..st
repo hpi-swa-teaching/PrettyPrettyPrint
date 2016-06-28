@@ -1,4 +1,4 @@
-as yet unclassified
+preferences
 newlineAfterTemporaryDeclaration: aBoolean
 	NewlineAfterTemporaryDeclaration := aBoolean.
 	self refresh

@@ -12,7 +12,8 @@ parseReceiverSymbolArray
 			ifTrue: [
 				receiver contents add: (PPPLiteralNode new
 					literalType: self currentToken tokenType;
-					value: self currentToken content) ]
+					value: self currentToken content;
+					yourself) ]
 			ifFalse: [ ^self syntaxError ]].
 		
 	^receiver

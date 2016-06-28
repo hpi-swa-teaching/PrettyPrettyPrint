@@ -1,4 +1,4 @@
-as yet unclassified
+preferences
 userProfile
 	^PPPSettingsProfile new
 		dotAfterReturn: self dotAfterReturn;

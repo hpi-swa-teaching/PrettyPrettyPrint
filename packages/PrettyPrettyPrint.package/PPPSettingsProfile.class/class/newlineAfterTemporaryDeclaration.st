@@ -1,4 +1,4 @@
-as yet unclassified
+preferences
 newlineAfterTemporaryDeclaration
 	<preference: 'Add a newline after declaration of temporaries'
 		category: 'PrettyPrettyPrint'

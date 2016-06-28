@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 bodySequence: aSequenceNode bindings: anArray
 	^self new
 		bodySequence: aSequenceNode;

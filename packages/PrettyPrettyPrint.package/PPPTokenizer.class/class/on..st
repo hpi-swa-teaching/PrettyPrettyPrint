@@ -1,6 +1,6 @@
-as yet unclassified
+instance creation
 on: aCollection
-
 	^self basicNew
 		initialize;
-		on: aCollection.
+		on: aCollection;
+		yourself

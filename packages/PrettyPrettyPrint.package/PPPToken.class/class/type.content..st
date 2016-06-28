@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 type: aType content: aString
 	^self new
 		tokenType: aType;

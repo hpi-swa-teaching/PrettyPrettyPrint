@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 receiver: aNode messages: anArray
 	^self new
 		receiver: aNode;

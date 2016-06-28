@@ -3,10 +3,7 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"DotAfterReturn",
-		"ReturnAfterTemporaryDeclaration",
-		"SpaceAroundBinaryOperator",
-		"SpaceBeforeReturn" ],
+		 ],
 	"commentStamp" : "",
 	"instvars" : [
 		"currentIndent",

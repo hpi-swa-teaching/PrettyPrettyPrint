@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 receiver: aNode selector: aString arguments: anArray
 	^self new
 		receiver: aNode;

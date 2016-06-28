@@ -1,4 +1,4 @@
-as yet unclassified
+preferences
 dotAfterReturn
 	<preference: 'Print a dot after a return statement'
 		category: 'PrettyPrettyPrint'
