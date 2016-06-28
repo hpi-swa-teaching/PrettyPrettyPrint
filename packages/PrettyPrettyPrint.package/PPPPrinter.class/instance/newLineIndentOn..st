@@ -1,3 +1,4 @@
 as yet unclassified
-printIndentOn: aBuffer
+newLineIndentOn: aBuffer
+	aBuffer cr.
 	currentIndent timesRepeat: [ aBuffer tab ]

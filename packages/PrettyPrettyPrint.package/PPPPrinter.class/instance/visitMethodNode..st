@@ -10,11 +10,9 @@ visitMethodNode: aNode
 			aNode arguments do: [ :z | buffer
 			nextPutAll: z first, ' ', z second, ' ' ]].
 	
-	buffer cr.
-	
 	self
 		incrementIndent;
-		printIndentOn: buffer.
+		newLineIndentOn: buffer.
 	
 	buffer nextPutAll: (aNode bodySequence accept: self).
 

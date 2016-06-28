@@ -5,14 +5,14 @@ visitCascadeNode: aNode
 	
 	self printOpenParethesesOf: aNode on: buffer.
 	
-	buffer nextPutAll: (aNode receiver accept: self); cr.
+	buffer nextPutAll: (aNode receiver accept: self).
 	self incrementIndent.
 	
 	aNode messages
 		do: [ :message |
-			self printIndentOn: buffer.
+			self newLineIndentOn: buffer.
 			buffer nextPutAll: (message accept: self) ]
-		separatedBy: [ buffer nextPut: $;; cr ].
+		separatedBy: [ buffer nextPut: $; ].
 	
 	self
 		decrementIndent;

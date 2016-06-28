@@ -9,21 +9,19 @@ visitSequenceNode: aNode
 		aNode temporaries do: [ :g | buffer nextPutAll: g, ' '].
 		buffer nextPut: $|.
 		
-		self profile newlineAfterTemporaryDeclaration ifTrue: [
-			buffer cr.
-			self printIndentOn: buffer ]].
+		self profile newlineAfterTemporaryDeclaration ifTrue: [ self newLineIndentOn: buffer ]].
 	
 	aNode statements
 		do: [ :s |
 			buffer nextPutAll: (s accept: self) ]
 		separatedBy: [
-			buffer nextPut: $.; cr.
-			self printIndentOn: buffer ].
+			buffer nextPut: $..
+			self newLineIndentOn: buffer ].
 	
 	aNode return ifNotNil: [
 		aNode statements ifNotEmpty: [
-			buffer nextPut: $.; cr.
-			self printIndentOn: buffer ].
+			buffer nextPut: $..
+			self newLineIndentOn: buffer ].
 		buffer nextPutAll: (self printReturn: aNode return) ].
 	
 	^ buffer contents

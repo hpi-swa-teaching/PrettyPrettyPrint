@@ -9,7 +9,8 @@
 		"spaceBeforeReturn",
 		"dotAfterReturn",
 		"spaceAroundBinaryOperator",
-		"newlineAfterTemporaryDeclaration" ],
+		"newlineAfterTemporaryDeclaration",
+		"maxLineLength" ],
 	"name" : "PPPSettingsProfile",
 	"pools" : [
 		 ],

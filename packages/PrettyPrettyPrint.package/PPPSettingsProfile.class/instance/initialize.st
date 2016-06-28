@@ -5,4 +5,5 @@ initialize
 	dotAfterReturn := false.
 	newlineAfterTemporaryDeclaration := true.
 	spaceBeforeReturn := false.
-	spaceAroundBinaryOperator := true
+	spaceAroundBinaryOperator := true.
+	maxLineLength := 80

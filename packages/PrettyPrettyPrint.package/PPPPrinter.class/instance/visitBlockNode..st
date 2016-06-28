@@ -12,17 +12,12 @@ visitBlockNode: aNode
 	aNode bindings ifNotEmpty: [ buffer nextPut: $| ].
 	
 	multiLine
-		ifTrue: [
-			buffer cr.
-			self
-				incrementIndent;
-				printIndentOn: buffer ]
+		ifTrue: [ self incrementIndent; newLineIndentOn: buffer ]
 		ifFalse: [ buffer nextPut: $  ].
 	
 	buffer nextPutAll: (aNode bodySequence accept: self).
 	
 	buffer space; nextPut: $].
-	multiLine ifTrue: [
-		self decrementIndent ].
+	multiLine ifTrue: [ self decrementIndent ].
 	
 	 ^ buffer contents
