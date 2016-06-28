@@ -3,19 +3,15 @@ visitCascadeNode: aNode
 	| buffer |
 	buffer := WriteStream on: ''.
 	
-	self printOpenParethesesOf: aNode on: buffer.
-	
-	buffer nextPutAll: (aNode receiver accept: self).
+	buffer nextPutAll: (self visitNode: aNode receiver).
 	self incrementIndent.
 	
 	aNode messages
 		do: [ :message |
 			self newLineIndentOn: buffer.
-			buffer nextPutAll: (message accept: self) ]
+			buffer nextPutAll: (self visitNode: message) ]
 		separatedBy: [ buffer nextPut: $; ].
 	
-	self
-		decrementIndent;
-		printOpenParethesesOf: aNode on: buffer.
+	self decrementIndent.
 	
 	^buffer contents

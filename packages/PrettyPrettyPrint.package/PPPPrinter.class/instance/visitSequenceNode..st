@@ -12,8 +12,8 @@ visitSequenceNode: aNode
 		self profile newlineAfterTemporaryDeclaration ifTrue: [ self newLineIndentOn: buffer ]].
 	
 	aNode statements
-		do: [ :s |
-			buffer nextPutAll: (s accept: self) ]
+		do: [ :statement |
+			buffer nextPutAll: (self visitNode: statement) ]
 		separatedBy: [
 			buffer nextPut: $..
 			self newLineIndentOn: buffer ].

@@ -9,7 +9,7 @@ visitArrayNode: aNode
 		ifFalse: [ buffer nextPutAll: '{ ' ].
 	
 	aNode contents
-		do: [ :content | buffer nextPutAll: (content accept: self) ]
+		do: [ :content | buffer nextPutAll: (self visitNode: content) ]
 		separatedBy: [
 			aNode constant
 				ifTrue: [ buffer space ]
