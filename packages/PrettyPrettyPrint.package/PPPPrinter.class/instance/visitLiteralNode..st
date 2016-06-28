@@ -5,18 +5,15 @@ visitLiteralNode: aNode
 	
 	self printOpenParethesesOf: aNode on: buffer.
 	
-	aNode literalType = #number
+	(#(number symbol character identifier) includes: aNode literalType)
 		ifTrue: [ buffer nextPutAll: aNode value ].
-		
+	
 	aNode literalType = #string
 		ifTrue: [
 			buffer
 				nextPut: $';
 				nextPutAll: aNode value;
 				nextPut: $' ].
-			
-	aNode literalType = #symbol
-		ifTrue: [ buffer nextPutAll: aNode value ].
 	
 	self printCloseParethesesOf: aNode on: buffer.
 	

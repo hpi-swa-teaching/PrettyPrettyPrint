@@ -1,12 +1,7 @@
 as yet unclassified
 format: aString in: aClass notifying: ignored decorated: aBoolean
-	| tokens printer |
+	" interface for Pretty Printer Class as used by content display in squeak "
 	ignored ifNotNil: [ self error: 'Notifying not supported' ].
 	aBoolean ifTrue: [ self error: 'Decoration not supported' ].
 	
-	tokens := (PPPTokenizer on: aString)
-		skipWhitespace: true;
-		yourself.
-	
-	printer := PPPPrinter new.
-	^printer visitMethodNode: (PPPParser new parseTokenStream: (tokens))
+	self format: aString

@@ -1,6 +1,6 @@
 as yet unclassified
 visitAssignmentNode: aNode
-	| buffer temp |
+	| buffer |
 	
 	buffer := WriteStream on: ''.
 	
@@ -12,8 +12,7 @@ visitAssignmentNode: aNode
 		ifTrue: [ buffer nextPutAll: ' := ' ]
 		ifFalse: [ buffer nextPutAll: ':=' ].
 	
-	temp := (aNode value accept: self).
-	buffer nextPutAll: temp.
+	buffer nextPutAll: (aNode value accept: self).
 	
 	self printCloseParethesesOf: aNode on: buffer.
 	

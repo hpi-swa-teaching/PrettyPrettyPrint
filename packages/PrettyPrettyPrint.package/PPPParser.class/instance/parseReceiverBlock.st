@@ -4,7 +4,7 @@ parseReceiverBlock
 	receiver := PPPBlockNode new.
 	self step.
 	
-	[self nextToken isBlockBinding] whileTrue: [ receiver addBinding: (self step: #identifier) ].
+	[self nextToken isBlockBinding] whileTrue: [ receiver addBinding: (self step: #identifier) content ].
 	
 	receiver bindings ifNotEmpty: [ self step: #special ].
 	receiver bodySequence: self parseSequence.
