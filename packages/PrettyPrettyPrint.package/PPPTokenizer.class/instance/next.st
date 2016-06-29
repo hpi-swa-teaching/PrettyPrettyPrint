@@ -16,6 +16,7 @@ next
 	characterType = #special ifTrue: [ ^self scanSpecial ].
 	(currentCharacter = $: or: [characterType = #letter]) ifTrue: [ ^self scanIdentifier ].
 	characterType = #digit ifTrue: [ ^self scanNumber ].
+	(currentCharacter = $- and: [(self classifyCharacter: stream peek) = #digit]) ifTrue: [ ^self scanNumber ].
 	characterType = #binaryOperator ifTrue: [ ^self scanBinaryOperator ].
 	characterType = #separator ifTrue: [ ^self scanSeparator ].
 	characterType = #eof ifTrue: [
