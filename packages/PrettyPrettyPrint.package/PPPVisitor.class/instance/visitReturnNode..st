@@ -1,3 +1,3 @@
 visit-node
-visitCascadeNode: aNode
+visitReturnNode: aNode
 	^self subclassResponsibility

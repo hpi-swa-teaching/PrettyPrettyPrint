@@ -1,2 +1,0 @@
-visit-node
-visitSymbolArrayNode

@@ -8,7 +8,7 @@ testWhitespacesInMethod
 	 [  self    hi]   ').
 	
 	reference := PPPSequenceNode
-		temporaries: OrderedCollection new
+		temporaries: {}
 		statements: {
 			PPPAssignmentNode
 				variable: 'test'
@@ -18,11 +18,9 @@ testWhitespacesInMethod
 					argument: (PPPLiteralNode value: '6' literalType: #number)).
 			PPPBlockNode
 				bodySequence: (PPPSequenceNode
-					temporaries: OrderedCollection new
-					statements: { PPPMessageNode receiver: (PPPVariableNode name: 'self') selector: 'hi' }
-					return: nil)
-				bindings: OrderedCollection new
-		}
-		return: nil.
+					temporaries: {}
+					statements: { PPPMessageNode receiver: (PPPVariableNode name: 'self') selector: 'hi' })
+				bindings: {}
+		}.
 	
 	self assertHierarchy: reference equals: methodNode bodySequence

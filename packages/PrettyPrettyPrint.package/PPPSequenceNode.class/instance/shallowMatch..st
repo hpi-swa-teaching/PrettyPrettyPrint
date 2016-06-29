@@ -1,3 +1,3 @@
 comparing
 shallowMatch: aNode
-	^aNode temporaries = self temporaries
+	^aNode temporaries hasEqualElements: self temporaries

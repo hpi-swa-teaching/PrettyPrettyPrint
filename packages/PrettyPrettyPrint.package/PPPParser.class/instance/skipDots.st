@@ -1,3 +1,3 @@
 parse-node
 skipDots
-	[self nextToken isDot] whileTrue: [ self step: #special ]
+	[self nextToken isDot] whileTrue: [ self step ]

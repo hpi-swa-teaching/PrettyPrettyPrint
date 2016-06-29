@@ -9,7 +9,7 @@ printReturn: aNode
 	self profile spaceBeforeReturn ifTrue: [
 		buffer nextPut: $  ].
 	
-	buffer nextPutAll: (self visitNode: aNode value).
+	buffer nextPutAll: (self visitValueNode: aNode value).
 	
 	self profile dotAfterReturn ifTrue: [
 		buffer nextPut: $. ].

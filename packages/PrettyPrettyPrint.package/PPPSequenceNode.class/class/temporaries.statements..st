@@ -1,7 +1,6 @@
 instance creation
-temporaries: anArray statements: anotherArray return: aReturnNode
+temporaries: anArray statements: anotherArray
 	^self new
 		temporaries: anArray;
 		statements: anotherArray;
-		return: aReturnNode;
 		yourself

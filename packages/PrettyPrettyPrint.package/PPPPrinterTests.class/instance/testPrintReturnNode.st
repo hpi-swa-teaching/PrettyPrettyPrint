@@ -6,7 +6,6 @@ testPrintReturnNode
 	
 	returnNode := PPPSequenceNode
 		temporaries: OrderedCollection new
-		statements: OrderedCollection new
-		return: (PPPVariableNode new name: 'ourReturn').
+		statements: {PPPReturnNode value: (PPPVariableNode new name: 'ourReturn')}.
 	
 	self assert: '^ourReturn' equals: (returnNode accept: printer)

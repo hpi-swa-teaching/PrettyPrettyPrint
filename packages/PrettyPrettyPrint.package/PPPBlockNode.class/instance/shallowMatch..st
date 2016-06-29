@@ -1,3 +1,3 @@
 comparing
 shallowMatch: aNode
-	^aNode bindings = self bindings
+	^aNode bindings hasEqualElements: self bindings

@@ -3,7 +3,7 @@ printNamedMessage: aNode
 	| buffer multiLine arguments argumentsLength |
 	buffer := WriteStream on: ''.
 	
-	arguments := aNode arguments collect: [ :argument | self visitNode: argument ].
+	arguments := aNode arguments collect: [ :argument | self visitValueNode: argument ].
 	argumentsLength := arguments inject: 0 into: [ :sum :argument | sum + argument size ].
 	
 	multiLine := argumentsLength + aNode selector size > self profile maxLineLength and: [aNode arguments size > 1].
@@ -20,7 +20,7 @@ printNamedMessage: aNode
 			buffer
 				nextPutAll: messagePart;
 				nextPutAll: ': ';
-				nextPutAll: (self visitNode: argument) ]
+				nextPutAll: (self visitValueNode: argument) ]
 		separatedBy: [
 			multiLine
 				ifFalse: [ buffer nextPut: $ ]

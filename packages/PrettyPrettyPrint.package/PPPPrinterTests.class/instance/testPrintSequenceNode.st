@@ -1,6 +1,6 @@
 as yet unclassified
 testPrintSequenceNode
-	| sequenceNode printer return statements temporaries |
+	| sequenceNode printer statements temporaries |
 	
 	printer := PPPPrinter new.
 	sequenceNode := PPPSequenceNode new.
@@ -8,17 +8,13 @@ testPrintSequenceNode
 		add: 'temp1';
 		add: 'temp2';
 		yourself.
-	statements := OrderedCollection new
-		add: (PPPAssignmentNode
-			variable: 'variable'
-			value: (PPPVariableNode name: '4'));
-		yourself.
-	return := PPPVariableNode name: 'self'.
+	statements := {
+		PPPAssignmentNode variable: 'variable' value: (PPPVariableNode name: '4').
+		PPPReturnNode value: (PPPVariableNode name: 'self') }.
 	
 	sequenceNode
 		temporaries: temporaries;
-		statements: statements;
-		return: return.
+		statements: statements.
 	
 	self assert: '| temp1 temp2 |
 variable := 4.

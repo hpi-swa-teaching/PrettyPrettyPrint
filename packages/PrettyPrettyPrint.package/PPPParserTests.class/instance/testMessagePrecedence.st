@@ -24,8 +24,8 @@ testMessagePrecedence
 	
 	
 	referenceMethodNode := PPPMethodNode
-		bodySequence: (PPPSequenceNode temporaries: OrderedCollection new statements: (OrderedCollection with: msgSend) return: nil)
+		bodySequence: (PPPSequenceNode temporaries: OrderedCollection new statements: { msgSend })
 		selector: 'testMethod'
-		arguments: OrderedCollection new.
+		arguments: {}.
 	
 	self assertHierarchy: referenceMethodNode equals: methodNode

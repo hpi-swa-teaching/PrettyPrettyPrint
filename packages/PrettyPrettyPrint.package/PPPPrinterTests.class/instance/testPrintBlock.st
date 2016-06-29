@@ -8,12 +8,12 @@ testPrintBlock
 		bindings: (OrderedCollection with: ':b1' with: ':b2');
 		bodySequence: (PPPSequenceNode new
 			temporaries: (OrderedCollection with: 'temp1' with: 'temp2');
-			statements: (OrderedCollection with:
-				(PPPAssignmentNode new 
+			statements: {
+				PPPAssignmentNode new 
 					variable: 'variable';
 					value: (PPPVariableNode new name: '4');
-					yourself));
-			return: (PPPVariableNode new name: 'self')).
+					yourself.
+				PPPReturnNode value: (PPPVariableNode new name: 'self')}).
 	
 	self assert: '[ :b1 :b2 |
 	| temp1 temp2 |

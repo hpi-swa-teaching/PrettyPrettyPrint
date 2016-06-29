@@ -14,16 +14,9 @@ visitSequenceNode: aNode
 	aNode statements
 		do: [ :statement |
 			statement precededByEmptyLine ifTrue: [ self newLineIndentOn: buffer ].
-			buffer nextPutAll: (self visitNode: statement) ]
+			buffer nextPutAll: (self visitValueNode: statement) ]
 		separatedBy: [
 			buffer nextPut: $..
 			self newLineIndentOn: buffer ].
-	
-	aNode return ifNotNil: [
-		aNode statements ifNotEmpty: [
-			buffer nextPut: $..
-			aNode return precededByEmptyLine ifTrue: [ self newLineIndentOn: buffer ].
-			self newLineIndentOn: buffer ].
-		buffer nextPutAll: (self printReturn: aNode return) ].
 	
 	^ buffer contents

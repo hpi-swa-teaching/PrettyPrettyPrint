@@ -5,7 +5,7 @@
 		"assertHierarchy:equals:" : "TB 6/27/2016 21:19",
 		"sampleComplexMethod:b:" : "lcj 6/15/2016 12:58",
 		"testAssignment" : "TB 6/10/2016 16:40",
-		"testAssignmentInBlock" : "TB 6/20/2016 12:02",
+		"testAssignmentInBlock" : "TB 6/29/2016 10:47",
 		"testBlock" : "TB 6/10/2016 17:34",
 		"testCascade" : "TB 6/27/2016 21:16",
 		"testCascadeAfterNew" : "TB 6/27/2016 22:52",
@@ -14,7 +14,7 @@
 		"testComplexMethod" : "lcj 6/15/2016 23:56",
 		"testCurlyBracketArray" : "TB 6/23/2016 12:14",
 		"testIfTrueIfFalse" : "lcj 6/11/2016 16:19",
-		"testMessagePrecedence" : "TB 6/27/2016 18:10",
+		"testMessagePrecedence" : "TB 6/29/2016 10:54",
 		"testMultipleTemporariesDeclaration" : "TB 6/10/2016 16:41",
 		"testNamedMessage" : "TB 6/10/2016 20:04",
 		"testNamedMessageMethod" : "KB 6/15/2016 19:36",
@@ -28,4 +28,4 @@
 		"testTemporaryDeclaration" : "TB 6/10/2016 16:42",
 		"testTokenizerParserInteraction" : "lcj 6/15/2016 14:08",
 		"testUnaryMethodDeclaration" : "TB 6/10/2016 16:42",
-		"testWhitespacesInMethod" : "TB 6/28/2016 15:51" } }
+		"testWhitespacesInMethod" : "TB 6/29/2016 11:12" } }

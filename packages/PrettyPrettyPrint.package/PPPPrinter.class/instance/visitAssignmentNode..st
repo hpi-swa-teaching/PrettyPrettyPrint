@@ -9,6 +9,6 @@ visitAssignmentNode: aNode
 		ifTrue: [ buffer nextPutAll: ' := ' ]
 		ifFalse: [ buffer nextPutAll: ':=' ].
 	
-	buffer nextPutAll: (self visitNode: aNode value).
+	buffer nextPutAll: (self visitValueNode: aNode value).
 	
 	^buffer contents

@@ -5,7 +5,7 @@ visitMessageNode: aNode
 	buffer := WriteStream on: ''.
 	
 	aNode receiver ifNotNil: [
-		buffer nextPutAll: (self visitNode: aNode receiver) ].
+		buffer nextPutAll: (self visitValueNode: aNode receiver) ].
 	
 	aNode isUnaryMessage ifTrue: [
 		aNode ifNotInCascade: [ buffer space ].
