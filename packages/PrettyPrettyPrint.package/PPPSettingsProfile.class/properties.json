@@ -4,15 +4,19 @@
 		 ],
 	"classvars" : [
 		"DotAfterReturn",
+		"KeepEmptyLines",
+		"MaxLineLength",
 		"NewlineAfterTemporaryDeclaration",
-		"ReturnAfterTemporaryDeclaration" ],
+		"ReturnAfterTemporaryDeclaration",
+		"SpaceBeforeReturn" ],
 	"commentStamp" : "",
 	"instvars" : [
 		"spaceBeforeReturn",
 		"dotAfterReturn",
 		"spaceAroundBinaryOperator",
 		"newlineAfterTemporaryDeclaration",
-		"maxLineLength" ],
+		"maxLineLength",
+		"keepEmptyLines" ],
 	"name" : "PPPSettingsProfile",
 	"pools" : [
 		 ],

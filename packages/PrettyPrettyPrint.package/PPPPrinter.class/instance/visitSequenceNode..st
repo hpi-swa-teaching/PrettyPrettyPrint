@@ -13,10 +13,12 @@ visitSequenceNode: aNode
 	
 	aNode statements
 		do: [ :statement |
-			statement precededByEmptyLine ifTrue: [ self newLineIndentOn: buffer ].
+			(statement precededByEmptyLine and: [self profile keepEmptyLines]) ifTrue: [ self newLineIndentOn: buffer ].
 			buffer nextPutAll: (self visitValueNode: statement) ]
 		separatedBy: [
 			buffer nextPut: $..
 			self newLineIndentOn: buffer ].
+	
+	self profile dotAfterReturn ifTrue: [ buffer nextPut: $. ].
 	
 	^ buffer contents
