@@ -8,6 +8,6 @@ parseMessageSendState: aState
 	[self canStartNewMessage: aState] whileTrue: [
 		receiver := self parseSingleMessageSendTo: receiver state: aState ].
 	
-	(self nextToken isCascade and: [aState insideCascade not])
+	(self nextToken isCascade and: [aState insideCascade not and: [aState insideNamedMessage not]])
 		ifTrue: [ ^self parseCascadeMessageSendStartingWith: receiver state: aState ]
 		ifFalse: [ ^receiver ]

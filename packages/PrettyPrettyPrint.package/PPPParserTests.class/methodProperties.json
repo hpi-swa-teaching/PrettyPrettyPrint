@@ -9,6 +9,7 @@
 		"testBlock" : "TB 6/10/2016 17:34",
 		"testCascade" : "TB 6/27/2016 21:16",
 		"testCascadeAfterNew" : "TB 6/27/2016 22:52",
+		"testCascadeWithMessageSendArgument" : "TB 6/29/2016 12:08",
 		"testChainedMessage" : "TB 6/27/2016 18:22",
 		"testCharacters" : "TB 6/22/2016 13:51",
 		"testComplexMethod" : "lcj 6/15/2016 23:56",

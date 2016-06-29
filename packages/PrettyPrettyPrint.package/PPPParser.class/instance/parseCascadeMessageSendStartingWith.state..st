@@ -9,6 +9,6 @@ parseCascadeMessageSendStartingWith: aMessageNode state: aState
 		self step.
 		cascade messages add: (self
 			parseSingleMessageSendTo: nil
-			state: (aState copy insideCascade: true; yourself)) ].
+			state: (aState copy insideCascade: true; insideNamedMessage: false; yourself)) ].
 	
 	^cascade
