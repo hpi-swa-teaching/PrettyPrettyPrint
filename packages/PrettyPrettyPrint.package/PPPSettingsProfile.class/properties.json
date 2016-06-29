@@ -4,6 +4,7 @@
 		 ],
 	"classvars" : [
 		"DotAfterReturn",
+		"EncloseBlockSequenceWithSpace",
 		"KeepEmptyLines",
 		"MaxLineLength",
 		"NewlineAfterTemporaryDeclaration",
@@ -16,7 +17,8 @@
 		"spaceAroundBinaryOperator",
 		"newlineAfterTemporaryDeclaration",
 		"maxLineLength",
-		"keepEmptyLines" ],
+		"keepEmptyLines",
+		"encloseBlockSequenceWithSpace" ],
 	"name" : "PPPSettingsProfile",
 	"pools" : [
 		 ],

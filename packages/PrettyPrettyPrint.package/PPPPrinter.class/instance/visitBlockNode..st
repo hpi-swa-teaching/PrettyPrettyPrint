@@ -13,11 +13,12 @@ visitBlockNode: aNode
 	
 	multiLine
 		ifTrue: [ self incrementIndent; newLineIndentOn: buffer ]
-		ifFalse: [ buffer nextPut: $  ].
+		ifFalse: [ self profile encloseBlockSequenceWithSpace ifTrue: [ buffer space ] ].
 	
 	buffer nextPutAll: (aNode bodySequence accept: self).
 	
-	buffer space; nextPut: $].
+	self profile encloseBlockSequenceWithSpace ifTrue: [ buffer space ].
+	buffer nextPut: $].
 	multiLine ifTrue: [ self decrementIndent ].
 	
 	 ^ buffer contents

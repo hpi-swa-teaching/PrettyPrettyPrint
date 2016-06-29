@@ -6,4 +6,6 @@ initialize
 	newlineAfterTemporaryDeclaration := true.
 	spaceBeforeReturn := false.
 	spaceAroundBinaryOperator := true.
-	maxLineLength := 80
+	encloseBlockSequenceWithSpace := true.
+	maxLineLength := 80.
+	keepEmptyLines := true

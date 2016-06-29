@@ -6,4 +6,5 @@ userProfile
 		spaceBeforeReturn: self spaceBeforeReturn;
 		maxLineLength: self maxLineLength;
 		keepEmptyLines: self keepEmptyLines;
+		encloseBlockSequenceWithSpace: self encloseBlockSequenceWithSpace;
 		yourself
