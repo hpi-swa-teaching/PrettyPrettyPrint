@@ -19,8 +19,8 @@
 		"maxLineLength",
 		"keepEmptyLines",
 		"encloseBlockSequenceWithSpace" ],
+	"literalType" : "normal",
 	"name" : "PPPSettingsProfile",
 	"pools" : [
 		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"super" : "Object" }

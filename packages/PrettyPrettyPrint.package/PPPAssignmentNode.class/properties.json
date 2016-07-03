@@ -8,8 +8,8 @@
 	"instvars" : [
 		"variable",
 		"value" ],
+	"literalType" : "normal",
 	"name" : "PPPAssignmentNode",
 	"pools" : [
 		 ],
-	"super" : "PPPValueNode",
-	"type" : "normal" }
+	"super" : "PPPValueNode" }

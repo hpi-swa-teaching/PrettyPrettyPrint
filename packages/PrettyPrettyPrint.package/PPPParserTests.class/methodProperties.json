@@ -19,6 +19,7 @@
 		"testMultipleTemporariesDeclaration" : "TB 6/10/2016 16:41",
 		"testNamedMessage" : "TB 6/10/2016 20:04",
 		"testNamedMessageMethod" : "KB 6/15/2016 19:36",
+		"testNestedBlocks" : "lcj 7/3/2016 14:13",
 		"testNestedNamedMessage" : "TB 6/11/2016 15:43",
 		"testParseBinaryMessageDeclaration" : "TB 6/27/2016 23:05",
 		"testReturnStatement" : "TB 6/10/2016 16:41",
