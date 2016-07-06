@@ -9,4 +9,4 @@ testUserProfileImportExport
 		exportUserProfileNamed: name;
 		importUserProfileFromFileNamed: name.
 	
-	self assert: previousProfile userProfile equals: PPPSettingsProfile userProfile
+	self assert: previousProfile equals: PPPSettingsProfile userProfile
