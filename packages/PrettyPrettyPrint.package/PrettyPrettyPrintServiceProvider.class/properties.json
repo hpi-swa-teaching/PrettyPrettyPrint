@@ -1,0 +1,14 @@
+{
+	"category" : "PrettyPrettyPrint",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"literalType" : "normal",
+	"name" : "PrettyPrettyPrintServiceProvider",
+	"pools" : [
+		 ],
+	"super" : "ServiceProvider" }

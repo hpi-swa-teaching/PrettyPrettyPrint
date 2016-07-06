@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"testCustomProfileImportExport" : "lcj 7/6/2016 15:46",
 		"testKeepEmptyLines" : "TB 6/28/2016 17:20",
 		"testPrintArray" : "TB 6/28/2016 12:18",
 		"testPrintAssignmentNode" : "lcj 6/22/2016 13:45",
@@ -17,4 +18,5 @@
 		"testPrintSequenceNode" : "TB 6/29/2016 10:57",
 		"testPrintShortNamedMessage" : "TB 6/28/2016 12:08",
 		"testPrintUnaryMessageNode" : "lcj 6/22/2016 14:31",
-		"testPrintVariableNode" : "lcj 6/22/2016 13:22" } }
+		"testPrintVariableNode" : "lcj 6/22/2016 13:22",
+		"testUserProfileImportExport" : "lcj 7/6/2016 15:59" } }

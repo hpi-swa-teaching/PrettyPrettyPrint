@@ -1,9 +1,14 @@
 {
 	"class" : {
+		"defaultUserProfileName" : "lcj 7/6/2016 15:48",
 		"dotAfterReturn" : "TB 6/28/2016 23:19",
 		"dotAfterReturn:" : "TB 6/28/2016 23:20",
 		"encloseBlockSequenceWithSpace" : "TB 6/29/2016 14:04",
 		"encloseBlockSequenceWithSpace:" : "TB 6/29/2016 14:02",
+		"exportUserProfile" : "lcj 7/6/2016 15:49",
+		"exportUserProfileNamed:" : "lcj 7/6/2016 15:49",
+		"importProfileFromFileNamed:" : "lcj 7/6/2016 15:57",
+		"importUserProfileFromFileNamed:" : "lcj 7/6/2016 15:58",
 		"keepEmptyLines" : "TB 6/29/2016 13:00",
 		"keepEmptyLines:" : "TB 6/29/2016 13:02",
 		"maxLineLength" : "TB 6/29/2016 12:54",
@@ -15,10 +20,12 @@
 		"spaceBeforeReturn:" : "TB 6/29/2016 12:50",
 		"userProfile" : "TB 6/29/2016 15:47" },
 	"instance" : {
+		"=" : "lcj 7/6/2016 15:43",
 		"dotAfterReturn" : "TB 6/17/2016 21:06",
 		"dotAfterReturn:" : "TB 6/17/2016 21:06",
 		"encloseBlockSequenceWithSpace" : "TB 6/29/2016 14:02",
 		"encloseBlockSequenceWithSpace:" : "TB 6/29/2016 14:02",
+		"exportProfileNamed:" : "lcj 7/6/2016 15:47",
 		"initialize" : "TB 6/29/2016 14:50",
 		"keepEmptyLines" : "TB 6/29/2016 12:57",
 		"keepEmptyLines:" : "TB 6/29/2016 12:57",
@@ -29,4 +36,5 @@
 		"spaceAroundBinaryOperator" : "TB 6/20/2016 10:32",
 		"spaceAroundBinaryOperator:" : "TB 6/20/2016 10:33",
 		"spaceBeforeReturn" : "TB 6/17/2016 21:06",
-		"spaceBeforeReturn:" : "TB 6/17/2016 21:06" } }
+		"spaceBeforeReturn:" : "TB 6/17/2016 21:06",
+		"storeOn:" : "lcj 7/6/2016 14:33" } }
