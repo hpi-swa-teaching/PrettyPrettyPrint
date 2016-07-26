@@ -11,9 +11,11 @@
 		"currentToken",
 		"nextNextToken",
 		"emptyLineBeforeNextToken",
-		"emptyLineBeforeNextNextToken" ],
-	"literalType" : "normal",
+		"emptyLineBeforeNextNextToken",
+		"commentsBeforeNextToken",
+		"commentsBeforeNextNextToken" ],
 	"name" : "PPPParser",
 	"pools" : [
 		 ],
-	"super" : "Object" }
+	"super" : "Object",
+	"type" : "normal" }

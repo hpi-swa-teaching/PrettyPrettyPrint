@@ -7,9 +7,10 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"hasParentheses",
-		"precededByEmptyLine" ],
-	"literalType" : "normal",
+		"precededByEmptyLine",
+		"comments" ],
 	"name" : "PPPValueNode",
 	"pools" : [
 		 ],
-	"super" : "PPPNode" }
+	"super" : "PPPNode",
+	"type" : "normal" }

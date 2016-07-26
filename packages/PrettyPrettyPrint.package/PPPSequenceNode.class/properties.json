@@ -8,8 +8,8 @@
 	"instvars" : [
 		"temporaries",
 		"statements" ],
-	"literalType" : "normal",
 	"name" : "PPPSequenceNode",
 	"pools" : [
 		 ],
-	"super" : "PPPNode" }
+	"super" : "PPPNode",
+	"type" : "normal" }

@@ -5,6 +5,7 @@
 	"classvars" : [
 		"DotAfterReturn",
 		"EncloseBlockSequenceWithSpace",
+		"FreezeCodeHolderRefresh",
 		"KeepEmptyLines",
 		"MaxLineLength",
 		"NewlineAfterTemporaryDeclaration",
@@ -19,8 +20,8 @@
 		"maxLineLength",
 		"keepEmptyLines",
 		"encloseBlockSequenceWithSpace" ],
-	"literalType" : "normal",
 	"name" : "PPPSettingsProfile",
 	"pools" : [
 		 ],
-	"super" : "Object" }
+	"super" : "Object",
+	"type" : "normal" }

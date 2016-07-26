@@ -9,8 +9,8 @@
 		"position",
 		"content",
 		"tokenType" ],
-	"literalType" : "normal",
 	"name" : "PPPToken",
 	"pools" : [
 		 ],
-	"super" : "Object" }
+	"super" : "Object",
+	"type" : "normal" }

@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"literalType" : "normal",
 	"name" : "PPPVisitor",
 	"pools" : [
 		 ],
-	"super" : "Object" }
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,3 +1,3 @@
 accessing
-hasParentheses: anObject
-	hasParentheses := anObject
+hasParentheses: aBoolean
+	hasParentheses := aBoolean

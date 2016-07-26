@@ -5,6 +5,9 @@ scanComment
 	[ self step ~= $" ] whileTrue: [ buffer nextPut: currentCharacter ].
 	
 	self step.
-
-	" FIXME comments are skipped for now "
-	^self next
+	
+	^PPPToken new
+		position: indexCount;
+		tokenType: #comment;
+		content: buffer contents;
+		yourself

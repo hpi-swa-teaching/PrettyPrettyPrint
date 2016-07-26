@@ -7,7 +7,8 @@ nextNextToken
 		| numberOfNewLines |
 		numberOfNewLines := 0.
 		[	nextNextToken := stream next.
-			nextNextToken isNewLine ifTrue: [ numberOfNewLines := numberOfNewLines + 1 ]]
+			nextNextToken isNewLine ifTrue: [ numberOfNewLines := numberOfNewLines + 1 ].
+			nextNextToken isComment ifTrue: [ commentsBeforeNextNextToken add: nextNextToken content ]]
 		doWhileTrue: [ nextNextToken isSeparator ].
 		
 		emptyLineBeforeNextNextToken := numberOfNewLines > 1 ].

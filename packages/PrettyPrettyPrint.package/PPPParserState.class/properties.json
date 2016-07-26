@@ -8,8 +8,8 @@
 	"instvars" : [
 		"insideNamedMessage",
 		"insideCascade" ],
-	"literalType" : "normal",
 	"name" : "PPPParserState",
 	"pools" : [
 		 ],
-	"super" : "Object" }
+	"super" : "Object",
+	"type" : "normal" }

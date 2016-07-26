@@ -3,10 +3,12 @@
 		 },
 	"instance" : {
 		"canStartNewMessage:" : "TB 6/29/2016 11:25",
+		"commentsBeforeNextToken" : "TB 7/7/2016 13:56",
 		"currentToken" : "lcj 5/29/2016 15:08",
 		"emptyLineBeforeNextToken" : "TB 6/28/2016 16:09",
-		"nextNextToken" : "TB 6/28/2016 21:11",
-		"nextToken" : "TB 6/28/2016 17:24",
+		"initialize" : "TB 7/20/2016 11:21",
+		"nextNextToken" : "TB 7/20/2016 11:20",
+		"nextToken" : "TB 7/20/2016 11:20",
 		"parseAssignment" : "TB 6/27/2016 20:25",
 		"parseBinaryMessageDeclaration" : "TB 6/20/2016 10:53",
 		"parseBinaryMessageSendTo:state:" : "TB 6/29/2016 01:42",
@@ -31,6 +33,6 @@
 		"parseUnaryMessageDeclaration" : "TB 6/20/2016 10:51",
 		"parseUnaryMessageSendTo:" : "TB 6/29/2016 01:42",
 		"skipDots" : "TB 6/29/2016 11:29",
-		"step" : "TB 6/28/2016 21:04",
+		"step" : "TB 7/20/2016 11:21",
 		"step:" : "TB 6/10/2016 15:42",
 		"syntaxError" : "TB 6/20/2016 11:15" } }

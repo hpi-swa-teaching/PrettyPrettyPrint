@@ -1,4 +1,5 @@
 helper
 refresh
-	CodeHolder allSubInstancesDo: [ :holder |
-		holder setContentsToForceRefetch; contentsChanged ]
+	FreezeCodeHolderRefresh ifFalse: [
+		CodeHolder allSubInstancesDo: [ :holder |
+			holder setContentsToForceRefetch; contentsChanged ]]

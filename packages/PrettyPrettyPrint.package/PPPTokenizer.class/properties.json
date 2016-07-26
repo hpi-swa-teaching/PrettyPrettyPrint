@@ -14,8 +14,8 @@
 		"currentCharacter",
 		"nextObject",
 		"skipWhitespace" ],
-	"literalType" : "normal",
 	"name" : "PPPTokenizer",
 	"pools" : [
 		 ],
-	"super" : "Stream" }
+	"super" : "Stream",
+	"type" : "normal" }
