@@ -2,4 +2,5 @@ initialize-release
 initialize
 	super initialize.
 	
-	skipWhitespace := false
+	currentComments := OrderedCollection new.
+	currentWhitespaces := OrderedCollection new

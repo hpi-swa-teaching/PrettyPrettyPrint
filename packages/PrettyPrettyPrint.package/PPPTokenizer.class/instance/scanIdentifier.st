@@ -15,9 +15,9 @@ scanIdentifier
 		
 		self step = $' ifTrue: [
 			buffer nextPut: $'.
-			^token
+			^self flushToken: (token
 				content: self scanString content, $';
-				yourself ]].
+				yourself) ]].
 	
 	[characterType = #letter or:
 	[characterType = #digit or:
@@ -25,6 +25,6 @@ scanIdentifier
 		buffer nextPut: currentCharacter.
 		self step ].
 	
-	^token
+	^self flushToken: (token
 		content: buffer contents;
-		yourself
+		yourself)

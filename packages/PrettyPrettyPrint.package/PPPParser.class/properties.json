@@ -9,13 +9,9 @@
 		"stream",
 		"nextToken",
 		"currentToken",
-		"nextNextToken",
-		"emptyLineBeforeNextToken",
-		"emptyLineBeforeNextNextToken",
-		"commentsBeforeNextToken",
-		"commentsBeforeNextNextToken" ],
-	"literalType" : "normal",
+		"nextNextToken" ],
 	"name" : "PPPParser",
 	"pools" : [
 		 ],
-	"super" : "Object" }
+	"super" : "Object",
+	"type" : "normal" }

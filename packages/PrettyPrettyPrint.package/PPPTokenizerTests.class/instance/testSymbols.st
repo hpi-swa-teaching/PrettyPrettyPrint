@@ -4,7 +4,6 @@ testSymbols
 	
 	stream := '#test #''abc.def'' #(test ''hi-def'' blah) #multi:key:word:'.
 	tokenizer := PPPTokenizer on: stream.
-	tokenizer skipWhitespace: true.
 	
 	self
 		assert: {'#test'. #symbol} equalsToken: tokenizer next;

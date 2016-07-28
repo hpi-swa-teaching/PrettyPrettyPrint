@@ -2,9 +2,12 @@
 	"class" : {
 		"type:content:" : "TB 6/10/2016 16:39" },
 	"instance" : {
+		"comments" : "TB 7/28/2016 08:44",
+		"comments:" : "TB 7/28/2016 08:44",
 		"content" : "KB 6/1/2016 12:10",
 		"content:" : "KB 6/1/2016 19:04",
 		"endsSequence" : "TB 6/29/2016 01:13",
+		"initialize" : "TB 7/28/2016 09:32",
 		"isAnyClosingBrace" : "TB 6/22/2016 19:49",
 		"isAssignment" : "TB 6/22/2016 19:21",
 		"isBinaryOperator" : "TB 6/22/2016 19:21",
@@ -34,6 +37,10 @@
 		"isSymbolArrayStart" : "TB 6/22/2016 19:21",
 		"position" : "KB 6/1/2016 11:51",
 		"position:" : "KB 6/1/2016 19:04",
+		"precededByEmptyLine" : "TB 7/28/2016 09:42",
+		"precedingComments" : "TB 7/28/2016 08:48",
 		"startsMessage" : "TB 6/23/2016 09:19",
 		"tokenType" : "KB 6/1/2016 12:15",
-		"tokenType:" : "KB 6/1/2016 19:04" } }
+		"tokenType:" : "KB 6/1/2016 19:04",
+		"whitespaces" : "TB 7/28/2016 08:48",
+		"whitespaces:" : "TB 7/28/2016 08:48" } }

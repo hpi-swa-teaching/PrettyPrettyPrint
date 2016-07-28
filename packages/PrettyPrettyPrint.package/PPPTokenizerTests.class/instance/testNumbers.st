@@ -3,8 +3,6 @@ testNumbers
 	| tokenizer |
 	tokenizer := PPPTokenizer on: '6 7.7 3.1415 -15 -15.5 16rBEeF -16rBEeF'.
 	
-	tokenizer skipWhitespace: true.
-
 	self
 		assert: {'6'. #number} equalsToken: tokenizer next;
 		assert: {'7.7'. #number} equalsToken: tokenizer next;

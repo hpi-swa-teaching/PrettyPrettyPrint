@@ -1,9 +1,7 @@
 as yet unclassified
 testSimpleMessagePrecedence
 	| tokens methodNode sendPartMsg firstArgument secondArgument |
-	tokens := (PPPTokenizer on: 'testMethod self send: 5 nope part: 3')
-		skipWhitespace: true;
-		yourself.
+	tokens := PPPTokenizer on: 'testMethod self send: 5 nope part: 3'.
 	
 	methodNode := PPPParser new parseTokenStream: tokens.
 	

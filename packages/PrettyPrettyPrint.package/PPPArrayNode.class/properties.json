@@ -8,8 +8,8 @@
 	"instvars" : [
 		"contents",
 		"constant" ],
-	"literalType" : "normal",
 	"name" : "PPPArrayNode",
 	"pools" : [
 		 ],
-	"super" : "PPPValueNode" }
+	"super" : "PPPValueNode",
+	"type" : "normal" }

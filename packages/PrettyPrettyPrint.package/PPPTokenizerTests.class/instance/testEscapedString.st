@@ -13,10 +13,7 @@ testEscapedString
 		
 	token := tokenizer next.
 	
-	self assert: #separator equals: token tokenType.
-		
-	token := tokenizer next.
-	
 	self
+		assert: 1 equals: token whitespaces size;
 		assert: #string equals: token tokenType;
 		assert: 'hell''o' equals: token content

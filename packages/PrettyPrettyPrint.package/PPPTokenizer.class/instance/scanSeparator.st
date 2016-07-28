@@ -1,17 +1,12 @@
 scanning
 scanSeparator
-	| token |
 	
-	self skipWhitespace ifTrue: [
-		self step.
-		^self next ].
-	
-	token := PPPToken new
+	currentWhitespaces add: (PPPToken new
 		position: indexCount;
 		content: currentCharacter asString;
 		tokenType: #separator;
-		yourself.
+		yourself).
 		
 	self step.
 	
-	^token
+	^self next

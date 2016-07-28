@@ -6,7 +6,7 @@ parseSequence
 		yourself.
 	
 	[self nextToken endsSequence] whileFalse: [
-		precededByEmptyLine := self emptyLineBeforeNextToken.
+		precededByEmptyLine := self nextToken precededByEmptyLine.
 		
 		node addStatement: ((self parseStatement: PPPParserState new)
 			precededByEmptyLine: precededByEmptyLine;

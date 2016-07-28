@@ -11,4 +11,4 @@ scanAssignment
 		
 	2 timesRepeat: [ self step ].
 	
-	^token
+	^self flushToken: token

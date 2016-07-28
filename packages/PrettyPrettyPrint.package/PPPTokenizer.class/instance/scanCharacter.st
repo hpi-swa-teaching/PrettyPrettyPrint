@@ -4,8 +4,8 @@ scanCharacter
 	character := String with: currentCharacter with: self step.
 	self step.
 	
-	^PPPToken new
+	^self flushToken: (PPPToken new
 		position: indexCount;
 		tokenType: #character;
 		content: character;
-		yourself
+		yourself)

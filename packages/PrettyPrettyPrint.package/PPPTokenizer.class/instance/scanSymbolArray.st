@@ -2,8 +2,8 @@ scanning
 scanSymbolArray
 	2 timesRepeat: [ self step ].
 	
-	^PPPToken new
+	^self flushToken: (PPPToken new
 		position: indexCount;
 		tokenType: #symbolArrayStart;
 		content: '#(';
-		yourself
+		yourself)

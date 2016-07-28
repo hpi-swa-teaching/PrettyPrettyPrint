@@ -1,10 +1,7 @@
 as yet unclassified
 testComplexMethod
 	| tokens methodNode firstBlock firstNamedMsgSend secondNamedMsgSend condition |
-	tokens := (PPPTokenizer
-		on: (self class methodDict at: #sampleComplexMethod:b:) decompile asString)
-		skipWhitespace: true;
-		yourself.
+	tokens := PPPTokenizer on: (self class methodDict at: #sampleComplexMethod:b:) decompile asString.
 	
 	methodNode := PPPParser new parseTokenStream: tokens.
 	

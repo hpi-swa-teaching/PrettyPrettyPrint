@@ -9,8 +9,8 @@
 		"hasParentheses",
 		"precededByEmptyLine",
 		"comments" ],
-	"literalType" : "normal",
 	"name" : "PPPValueNode",
 	"pools" : [
 		 ],
-	"super" : "PPPNode" }
+	"super" : "PPPNode",
+	"type" : "normal" }

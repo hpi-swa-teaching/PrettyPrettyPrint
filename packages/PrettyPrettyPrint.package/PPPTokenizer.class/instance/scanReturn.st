@@ -14,7 +14,7 @@ scanReturn
 		buffer nextPut: currentCharacter.
 		self step ].
 	
-	^token 
+	^self flushToken: (token 
 		content: buffer contents;
 		tokenType: #return;
-		yourself
+		yourself)

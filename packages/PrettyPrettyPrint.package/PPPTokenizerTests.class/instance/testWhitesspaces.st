@@ -1,15 +1,18 @@
 as yet unclassified
 testWhitesspaces
-	| stream tokenizer |
+	| tokenizer token |
 	
-	stream := '  
-	  '.
-	tokenizer := PPPTokenizer on: stream.
+	tokenizer := PPPTokenizer on: '  
+	  a'.
+	
+	token := tokenizer next.
 	
 	self
-		assert: {String space. #separator} equalsToken: tokenizer next;
-		assert: {String space. #separator} equalsToken: tokenizer next;
-		assert: {String cr. #separator} equalsToken: tokenizer next;
-		assert: {String tab. #separator} equalsToken: tokenizer next;
-		assert: {String space. #separator} equalsToken: tokenizer next;
-		assert: {String space. #separator} equalsToken: tokenizer next
+		assert: 6 equals: token whitespaces size;
+		assert: ({
+			String space.
+			String space.
+			String cr.
+			String tab.
+			String space.
+			String space} hasEqualElements: (token whitespaces collect: [ :t | t content ]))

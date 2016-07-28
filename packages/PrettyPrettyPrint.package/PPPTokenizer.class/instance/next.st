@@ -20,8 +20,8 @@ next
 	characterType = #binaryOperator ifTrue: [ ^self scanBinaryOperator ].
 	characterType = #separator ifTrue: [ ^self scanSeparator ].
 	characterType = #eof ifTrue: [
-		^PPPToken new
+		^self flushToken: (PPPToken new
 			tokenType: #eof;
-			yourself ].
+			yourself) ].
 	
 	^self error: 'Unclassified character encountered: ', currentCharacter asString

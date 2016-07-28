@@ -6,8 +6,10 @@ scanComment
 	
 	self step.
 	
-	^PPPToken new
+	currentComments add: (PPPToken new
 		position: indexCount;
 		tokenType: #comment;
 		content: buffer contents;
-		yourself
+		yourself).
+		
+	^self next
