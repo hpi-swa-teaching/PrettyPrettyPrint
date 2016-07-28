@@ -5,7 +5,7 @@
 	"instance" : {
 		"accept:" : "lcj 6/22/2016 14:28",
 		"addStatement:" : "TB 6/29/2016 10:45",
-		"initialize" : "lcj 6/1/2016 13:57",
+		"initialize" : "TB 7/28/2016 10:07",
 		"matches:" : "TB 6/29/2016 11:06",
 		"nodesDo:" : "TB 6/27/2016 18:03",
 		"return" : "lcj 7/26/2016 14:33",
@@ -13,4 +13,6 @@
 		"statements" : "lcj 6/1/2016 13:45",
 		"statements:" : "lcj 6/1/2016 13:45",
 		"temporaries" : "lcj 5/29/2016 16:11",
-		"temporaries:" : "lcj 6/1/2016 18:27" } }
+		"temporaries:" : "lcj 6/1/2016 18:27",
+		"trailingComments" : "TB 7/28/2016 10:09",
+		"trailingComments:" : "TB 7/28/2016 10:06" } }

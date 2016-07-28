@@ -9,7 +9,8 @@
 		"stream",
 		"nextToken",
 		"currentToken",
-		"nextNextToken" ],
+		"nextNextToken",
+		"currentComments" ],
 	"name" : "PPPParser",
 	"pools" : [
 		 ],

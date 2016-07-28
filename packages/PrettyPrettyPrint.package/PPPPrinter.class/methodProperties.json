@@ -12,6 +12,7 @@
 		"initialize" : "lcj 6/22/2016 12:54",
 		"newLineIndentOn:" : "TB 6/28/2016 14:10",
 		"printBinaryMessage:" : "TB 6/29/2016 11:18",
+		"printCommentsOf:on:" : "TB 7/28/2016 10:20",
 		"printNamedMessage:" : "TB 6/29/2016 11:18",
 		"printReturn:" : "TB 6/29/2016 11:18",
 		"profile" : "TB 6/20/2016 10:27",
@@ -24,6 +25,6 @@
 		"visitMessageNode:" : "TB 6/29/2016 11:19",
 		"visitMethodNode:" : "TB 6/28/2016 14:58",
 		"visitReturnNode:" : "TB 6/29/2016 13:03",
-		"visitSequenceNode:" : "TB 6/29/2016 13:03",
-		"visitValueNode:" : "TB 6/29/2016 11:19",
+		"visitSequenceNode:" : "TB 7/28/2016 10:15",
+		"visitValueNode:" : "TB 7/28/2016 10:02",
 		"visitVariableNode:" : "TB 6/28/2016 15:03" } }

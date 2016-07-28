@@ -21,4 +21,8 @@ visitSequenceNode: aNode
 	
 	self profile dotAfterReturn ifTrue: [ buffer nextPut: $. ].
 	
-	^ buffer contents
+	aNode trailingComments do: [ :comment |
+		self newLineIndentOn: buffer.
+		buffer nextPutAll: comment content ].
+	
+	^buffer contents

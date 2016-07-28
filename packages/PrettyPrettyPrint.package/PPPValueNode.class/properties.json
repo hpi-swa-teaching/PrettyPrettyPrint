@@ -7,8 +7,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"hasParentheses",
-		"precededByEmptyLine",
-		"comments" ],
+		"precededByEmptyLine" ],
 	"name" : "PPPValueNode",
 	"pools" : [
 		 ],
