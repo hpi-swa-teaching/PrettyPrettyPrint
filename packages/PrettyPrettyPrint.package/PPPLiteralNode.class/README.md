@@ -1,11 +1,1 @@
-A PPPLiteralNode is xxxxxxxxx.
-
-Instance Variables
-	literalType:		<Object>
-	value:		<Object>
-
-literalType
-	- either #number or #string
-
-value
-	- xxxxx
+A PPPLiteralNode is the representation of a constant value (saved as a string) in the AST, e.g. "2" or "'string here'" or #symbols.

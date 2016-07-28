@@ -11,7 +11,7 @@
 		"NewlineAfterTemporaryDeclaration",
 		"ReturnAfterTemporaryDeclaration",
 		"SpaceBeforeReturn" ],
-	"commentStamp" : "",
+	"commentStamp" : "TB 7/28/2016 16:11",
 	"instvars" : [
 		"spaceBeforeReturn",
 		"dotAfterReturn",
