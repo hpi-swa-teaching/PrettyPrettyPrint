@@ -8,9 +8,6 @@ visitLiteralNode: aNode
 	
 	aNode literalType = #string
 		ifTrue: [
-			buffer
-				nextPut: $';
-				nextPutAll: aNode value;
-				nextPut: $' ].
+			buffer store: aNode value ].
 	
 	^buffer contents

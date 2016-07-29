@@ -9,8 +9,8 @@
 		"bodySequence",
 		"selector",
 		"arguments" ],
+	"literalType" : "normal",
 	"name" : "PPPMethodNode",
 	"pools" : [
 		 ],
-	"super" : "PPPNode",
-	"type" : "normal" }
+	"super" : "PPPNode" }

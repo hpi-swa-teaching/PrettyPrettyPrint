@@ -4,6 +4,8 @@
 		"format:in:notifying:" : "TB 6/28/2016 23:23",
 		"format:in:notifying:decorated:" : "TB 6/28/2016 23:23",
 		"format:preferences:" : "TB 6/28/2016 20:22",
+		"formatPackage:" : "lcj 7/29/2016 15:17",
+		"userFormatPackage:" : "lcj 7/29/2016 15:18",
 		"userProfileFormat:" : "TB 6/28/2016 23:28" },
 	"instance" : {
 		"decrementIndent" : "TB 6/16/2016 12:01",
@@ -25,7 +27,7 @@
 		"visitAssignmentNode:" : "TB 6/29/2016 11:19",
 		"visitBlockNode:" : "lcj 7/29/2016 14:12",
 		"visitCascadeNode:" : "TB 6/29/2016 11:19",
-		"visitLiteralNode:" : "TB 6/28/2016 15:02",
+		"visitLiteralNode:" : "lcj 7/29/2016 15:12",
 		"visitMessageNode:" : "TB 7/29/2016 14:14",
 		"visitMethodNode:" : "TB 6/28/2016 14:58",
 		"visitReturnNode:" : "TB 6/29/2016 13:03",

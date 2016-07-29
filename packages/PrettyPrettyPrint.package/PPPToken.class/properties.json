@@ -11,8 +11,8 @@
 		"tokenType",
 		"comments",
 		"whitespaces" ],
+	"literalType" : "normal",
 	"name" : "PPPToken",
 	"pools" : [
 		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"super" : "Object" }
