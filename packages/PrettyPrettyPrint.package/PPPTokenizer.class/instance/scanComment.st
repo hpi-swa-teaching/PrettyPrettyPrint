@@ -10,4 +10,4 @@ scanComment
 		content: '"', buffer contents, '"';
 		yourself).
 		
-	^self next
+	^self nextToken

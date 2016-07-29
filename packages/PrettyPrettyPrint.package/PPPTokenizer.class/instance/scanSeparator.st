@@ -9,4 +9,4 @@ scanSeparator
 		
 	self step.
 	
-	^self next
+	^self nextToken

@@ -1,23 +1,10 @@
 scanning
 scanIdentifier
-
-	"called whenever we know that the first character of our next token is a letter."
-	
 	| token |
 	token := PPPToken new
 		position: indexCount;
 		tokenType: #identifier;
 		yourself.
-	
-	currentCharacter = $# ifTrue: [
-		token tokenType: #symbol.
-		buffer nextPut: currentCharacter.
-		
-		self step = $' ifTrue: [
-			buffer nextPut: $'.
-			^self flushToken: (token
-				content: self scanString content, $';
-				yourself) ]].
 	
 	[characterType = #letter or:
 	[characterType = #digit or:
@@ -25,6 +12,6 @@ scanIdentifier
 		buffer nextPut: currentCharacter.
 		self step ].
 	
-	^self flushToken: (token
+	^token
 		content: buffer contents;
-		yourself)
+		yourself

@@ -1,6 +1,5 @@
 scanning
 scanAssignment 
-	
 	| token |
 	
 	token := PPPToken new
@@ -11,4 +10,4 @@ scanAssignment
 		
 	2 timesRepeat: [ self step ].
 	
-	^self flushToken: token
+	^token

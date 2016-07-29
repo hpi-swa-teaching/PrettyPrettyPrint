@@ -1,4 +1,4 @@
-comparing
+initialize-release
 initialize
 	super initialize.
 	

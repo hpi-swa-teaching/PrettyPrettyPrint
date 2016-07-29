@@ -15,6 +15,6 @@ scanString
 	
 	self step.
 	
-	^self flushToken: (token
+	^token
 		content: buffer contents;
-		yourself)
+		yourself

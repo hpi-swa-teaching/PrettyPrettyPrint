@@ -1,7 +1,5 @@
 scanning
 scanNumber
-	"called whenever we know that the first character of our next token is a digit."
-	
 	| token positionBeforeParsing positionAfterParsing |
 	token := PPPToken new
 		position: indexCount;
@@ -18,6 +16,6 @@ scanNumber
 	
 	self step.
 	
-	^self flushToken: (token
+	^token
 		content: buffer contents;
-		yourself)
+		yourself

@@ -1,4 +1,4 @@
-accessing
+printing
 storeOn: aStream
 
 	aStream nextPut: $(.

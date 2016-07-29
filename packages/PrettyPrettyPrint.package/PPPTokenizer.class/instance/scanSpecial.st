@@ -11,4 +11,4 @@ scanSpecial
 	
 	self step.
 	
-	^self flushToken: token
+	^token
