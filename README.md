@@ -1,7 +1,9 @@
 # SWT16-Project-08 [![Build Status](https://travis-ci.org/HPI-SWA-Teaching/SWT16-Project-08.svg?branch=master)](https://travis-ci.org/HPI-SWA-Teaching/SWT16-Project-08)
 
-How to Use
+Installation Guide
 =================
+
+(via github repository)
 
 **Step 1**
 
@@ -19,9 +21,43 @@ Behavior>>prettyPrinterClass
  ^ PPPPrinter
 ```
 
-To pretty pretty print your whole package with the default settings execute the following command in your Workspace.
+(via Metacello)
+
+**Step 1**
+
+Make sure you have metacello-work installed.
+
+**Step 2**
+
+2. Load the project by running the following in your workspace:
+
 ```
-PPPPrinter formatPackage: 'name of your package'
+Metacello new
+  baseline: 'PrettyPrettyPrint';
+  repository: 'github://HPI-SWA-Teaching/SWT16-Project-08:master/packages'; 
+  onConflict: [:ex | ex allow];
+  load
+```
+
+**Step 3**
+
+Change the method Behavior>>prettyPrinterClass as follows:
+```
+Behavior>>prettyPrinterClass
+ ^ PPPPrinter
+```
+
+How to Use
+=================
+
+To pretty pretty print an entire package with the default settings execute the following command:
+```
+PPPPrinter formatPackage: 'name of package'
+```
+
+To pretty pretty print an entire package with your userProfile execute the following command:
+```
+PPPPrinter userFormatPackage: 'name of package'
 ```
 
 Implementation Details
