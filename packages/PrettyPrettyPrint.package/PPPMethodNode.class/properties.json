@@ -4,13 +4,13 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "TB 7/28/2016 15:27",
+	"commentStamp" : "KB 7/29/2016 13:40",
 	"instvars" : [
 		"bodySequence",
 		"selector",
 		"arguments" ],
-	"literalType" : "normal",
 	"name" : "PPPMethodNode",
 	"pools" : [
 		 ],
-	"super" : "PPPNode" }
+	"super" : "PPPNode",
+	"type" : "normal" }

@@ -7,8 +7,8 @@
 	"commentStamp" : "TB 7/28/2016 15:14",
 	"instvars" : [
 		"name" ],
-	"literalType" : "normal",
 	"name" : "PPPVariableNode",
 	"pools" : [
 		 ],
-	"super" : "PPPValueNode" }
+	"super" : "PPPValueNode",
+	"type" : "normal" }

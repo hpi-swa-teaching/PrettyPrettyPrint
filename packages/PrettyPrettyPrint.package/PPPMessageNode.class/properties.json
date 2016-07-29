@@ -9,8 +9,8 @@
 		"receiver",
 		"selector",
 		"arguments" ],
-	"literalType" : "normal",
 	"name" : "PPPMessageNode",
 	"pools" : [
 		 ],
-	"super" : "PPPValueNode" }
+	"super" : "PPPValueNode",
+	"type" : "normal" }

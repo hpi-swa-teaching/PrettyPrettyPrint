@@ -8,8 +8,8 @@
 	"instvars" : [
 		"bodySequence",
 		"bindings" ],
-	"literalType" : "normal",
 	"name" : "PPPBlockNode",
 	"pools" : [
 		 ],
-	"super" : "PPPValueNode" }
+	"super" : "PPPValueNode",
+	"type" : "normal" }
