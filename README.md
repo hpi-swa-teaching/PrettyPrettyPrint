@@ -3,7 +3,7 @@
 Installation Guide
 =================
 
-(via github repository)
+###### Via Github Repository
 
 **Step 1**
 
@@ -21,7 +21,7 @@ Behavior>>prettyPrinterClass
  ^ PPPPrinter
 ```
 
-(via Metacello)
+###### Via Metacello
 
 **Step 1**
 
