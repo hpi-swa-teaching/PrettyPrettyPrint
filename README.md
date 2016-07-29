@@ -1,12 +1,63 @@
 # SWT16-Project-08 [![Build Status](https://travis-ci.org/HPI-SWA-Teaching/SWT16-Project-08.svg?branch=master)](https://travis-ci.org/HPI-SWA-Teaching/SWT16-Project-08)
 
-How to Use
+Installation Guide
 =================
-Install the PrettyPrettyPrinter Package in your Squeak Image.  
+
+###### Via Github Repository
+
+**Step 1**
+
+Clone the repository.
+
+**Step 2**
+
+Pull the package the package into your Squeak Image, by adding it as a Monitcello filetree repository.
+
+**Step 3**
+
 Change the method Behavior>>prettyPrinterClass as follows:
 ```
 Behavior>>prettyPrinterClass
  ^ PPPPrinter
+```
+
+###### Via Metacello
+
+**Step 1**
+
+Make sure you have [metacello-work](https://github.com/dalehenrich/metacello-work) installed.
+
+**Step 2**
+
+Load the project by running the following in your workspace:
+
+```
+Metacello new
+  baseline: 'PrettyPrettyPrint';
+  repository: 'github://HPI-SWA-Teaching/SWT16-Project-08:master/packages'; 
+  onConflict: [:ex | ex allow];
+  load
+```
+
+**Step 3**
+
+Change the method Behavior>>prettyPrinterClass as follows:
+```
+Behavior>>prettyPrinterClass
+ ^ PPPPrinter
+```
+
+How to Use
+=================
+
+To pretty pretty print an entire package with the default settings execute the following command:
+```
+PPPPrinter formatPackage: 'name of package'
+```
+
+To pretty pretty print an entire package with your userProfile execute the following command:
+```
+PPPPrinter userFormatPackage: 'name of package'
 ```
 
 Implementation Details
