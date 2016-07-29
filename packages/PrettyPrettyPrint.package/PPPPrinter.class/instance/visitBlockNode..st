@@ -6,11 +6,8 @@ visitBlockNode: aNode
 	multiLine := aNode bodySequence statements size +
 		(aNode bodySequence return notNil ifTrue: [1] ifFalse: [0]) > 1.
 	
-	buffer nextPut: $[.
-	aNode bindings ifNotEmpty: [ buffer space ].
-	aNode bindings do: [ :name | buffer nextPutAll: name; space ].
-	aNode bindings ifNotEmpty: [ buffer nextPut: $| ].
-	
+	self printBlockOf: aNode on: buffer.
+	 
 	multiLine
 		ifTrue: [ self incrementIndent; newLineIndentOn: buffer ]
 		ifFalse: [ self profile encloseBlockSequenceWithSpace ifTrue: [ buffer space ] ].
