@@ -25,7 +25,7 @@ Behavior>>prettyPrinterClass
 
 **Step 1**
 
-Make sure you have metacello-work installed.
+Make sure you have [metacello-work](https://github.com/dalehenrich/metacello-work) installed.
 
 **Step 2**
 
