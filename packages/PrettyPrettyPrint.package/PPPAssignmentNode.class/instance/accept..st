@@ -1,4 +1,3 @@
 visit-node
 accept: aPrinter
-
-	^ aPrinter visitAssignmentNode: self
+	^aPrinter visitAssignmentNode: self

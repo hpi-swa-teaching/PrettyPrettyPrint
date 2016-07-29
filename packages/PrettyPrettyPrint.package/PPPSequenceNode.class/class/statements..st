@@ -1,6 +1,6 @@
 instance creation
-statements: anArray
+statements: anArray 
 	^self new
-		temporaries: {};
+		temporaries: {  };
 		statements: anArray;
 		yourself

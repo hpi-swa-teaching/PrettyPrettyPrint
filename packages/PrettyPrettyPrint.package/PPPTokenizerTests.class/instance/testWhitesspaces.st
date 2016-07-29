@@ -9,10 +9,4 @@ testWhitesspaces
 	
 	self
 		assert: 6 equals: token whitespaces size;
-		assert: ({
-			String space.
-			String space.
-			String cr.
-			String tab.
-			String space.
-			String space} hasEqualElements: (token whitespaces collect: [ :t | t content ]))
+		assert: ({ String space. String space. String cr. String tab. String space. String space } hasEqualElements: (token whitespaces collect: [ :t | t content ]))

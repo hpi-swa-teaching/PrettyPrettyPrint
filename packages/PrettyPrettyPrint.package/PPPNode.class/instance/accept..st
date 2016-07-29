@@ -1,4 +1,3 @@
 visit-node
-accept: aPrinter
-
-	^ self subclassResponsibility 
+accept: aPrinter 
+	^self subclassResponsibility

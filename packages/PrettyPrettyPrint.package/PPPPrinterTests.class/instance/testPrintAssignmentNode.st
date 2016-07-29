@@ -4,9 +4,9 @@ testPrintAssignmentNode
 	
 	valueNode := PPPLiteralNode new
 		literalType: #string;
-		value: 'myValue';
+		value: '''myValue''';
 		yourself.
-		
+	
 	assignmentNode := PPPAssignmentNode new
 		variable: 'myVar';
 		value: valueNode;
@@ -16,4 +16,6 @@ testPrintAssignmentNode
 	
 	assignmentNode accept: printer.
 	
-	self assert: 'myVar := ''myValue''' equals: (printer visitAssignmentNode: assignmentNode)
+	self
+		assert: 'myVar := ''myValue'''
+		equals: (printer visitAssignmentNode: assignmentNode)

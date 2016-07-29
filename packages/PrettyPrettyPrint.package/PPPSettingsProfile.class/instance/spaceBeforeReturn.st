@@ -1,3 +1,3 @@
 accessing
 spaceBeforeReturn
-	^ spaceBeforeReturn
+	^spaceBeforeReturn

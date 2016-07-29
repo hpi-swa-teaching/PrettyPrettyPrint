@@ -1,8 +1,8 @@
 visit-node
-printUnaryMessage: aNode
+printUnaryMessage: aNode 
 	| buffer |
 	buffer := WriteStream on: ''.
-		
+	
 	aNode ifNotInCascade: [ buffer space ].
 	buffer nextPutAll: aNode selector.
 	

@@ -1,3 +1,3 @@
 testing
 isClosingCurlyBrace
-	^self isSpecial and: [content = '}']
+	^self isSpecial and: [ content = '}' ]

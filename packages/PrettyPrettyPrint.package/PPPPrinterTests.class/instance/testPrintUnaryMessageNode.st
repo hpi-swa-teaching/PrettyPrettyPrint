@@ -6,7 +6,7 @@ testPrintUnaryMessageNode
 	messageNode := PPPMessageNode new.
 	receiverNode := PPPVariableNode new name: 'self'.
 	selector := 'send'.
-	argumentNodes :=  OrderedCollection new.
+	argumentNodes := OrderedCollection new.
 	
 	messageNode
 		receiver: receiverNode;

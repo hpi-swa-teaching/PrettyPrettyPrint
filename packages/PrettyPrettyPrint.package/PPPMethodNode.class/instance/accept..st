@@ -1,4 +1,3 @@
 visit-node
-accept: aPrinter
-
-	^ aPrinter visitMethodNode: self
+accept: aPrinter 	
+	^aPrinter visitMethodNode: self

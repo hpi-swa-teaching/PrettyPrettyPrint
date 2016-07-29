@@ -1,5 +1,5 @@
 instance creation
-value: aValue literalType: aType
+value: aValue literalType: aType 
 	^self new
 		value: aValue;
 		literalType: aType;

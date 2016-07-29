@@ -25,7 +25,7 @@ testComplexMethod
 		assert: 2 equals: secondNamedMsgSend arguments size;
 		assert: PPPMessageNode equals: secondNamedMsgSend arguments first class;
 		assert: secondNamedMsgSend arguments first hasParentheses;
-		assert: 'test2' equals: secondNamedMsgSend arguments second value;
+		assert: '''test2''' equals: secondNamedMsgSend arguments second value;
 		
 		assert: PPPMessageNode equals: condition class;
 		assert: 'true' equals: condition receiver name;

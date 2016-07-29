@@ -1,3 +1,3 @@
 visit-node
-nodesDo: aBlock
+nodesDo: aBlock 
 	aBlock value: self

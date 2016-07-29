@@ -1,6 +1,7 @@
 scanning
 scanIdentifier
 	| token |
+	
 	token := PPPToken new
 		position: indexCount;
 		tokenType: #identifier;

@@ -1,4 +1,4 @@
 helpers-indent
-newLineIndentOn: aBuffer
+newLineIndentOn: aBuffer 
 	aBuffer cr.
 	currentIndent timesRepeat: [ aBuffer tab ]

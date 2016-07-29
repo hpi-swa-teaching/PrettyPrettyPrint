@@ -7,10 +7,6 @@ testPrintNamedMessage
 	msgNode := PPPMessageNode
 		receiver: (PPPVariableNode name: 'self')
 		selector: 'print:on:by:do:'
-		arguments: {
-			PPPLiteralNode value: '1' literalType: #number.
-			PPPLiteralNode value: '2' literalType: #number.
-			PPPLiteralNode value: '3' literalType: #number.
-			PPPLiteralNode value: '4' literalType: #number }.
+		arguments: { PPPLiteralNode value: '1' literalType: #number. PPPLiteralNode value: '2' literalType: #number. PPPLiteralNode value: '3' literalType: #number. PPPLiteralNode value: '4' literalType: #number }.
 	
 	self assert: 'self print: 1 on: 2 by: 3 do: 4' equals: (msgNode accept: printer)

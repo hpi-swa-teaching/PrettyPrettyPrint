@@ -1,3 +1,3 @@
 accessing
-profile: aProfile
+profile: aProfile 
 	profile := aProfile

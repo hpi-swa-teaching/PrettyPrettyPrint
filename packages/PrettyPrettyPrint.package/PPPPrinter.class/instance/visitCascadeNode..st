@@ -1,5 +1,5 @@
 visit-node
-visitCascadeNode: aNode
+visitCascadeNode: aNode 
 	| buffer |
 	buffer := WriteStream on: ''.
 	

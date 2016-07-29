@@ -1,3 +1,3 @@
 accessing
-addContents: anArray
+addContents: anArray 
 	contents add: anArray

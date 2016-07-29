@@ -1,3 +1,3 @@
 accessing
 receiver
-	^ receiver
+	^receiver

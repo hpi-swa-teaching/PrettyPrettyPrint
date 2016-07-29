@@ -1,3 +1,3 @@
 accsessing
-bodySequence: aSequenceNode
+bodySequence: aSequenceNode 
 	bodySequence := aSequenceNode

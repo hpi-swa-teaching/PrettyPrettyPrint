@@ -1,3 +1,3 @@
 testing
 endsSequence
-	^self isEof or: [self isAnyClosingBrace]
+	^self isEof or: [ self isAnyClosingBrace ]

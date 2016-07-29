@@ -1,3 +1,3 @@
 testing
 isBinaryMessage
-	^selector first isSpecial and: [arguments size = 1]
+	^selector first isSpecial and: [ arguments size = 1 ]

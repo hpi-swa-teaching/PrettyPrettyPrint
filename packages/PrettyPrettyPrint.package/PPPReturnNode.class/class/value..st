@@ -1,5 +1,5 @@
 instance creation
-value: aNode
+value: aNode 
 	^self new
 		value: aNode;
 		yourself

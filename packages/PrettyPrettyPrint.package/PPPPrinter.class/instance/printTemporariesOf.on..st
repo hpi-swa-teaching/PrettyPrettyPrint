@@ -1,9 +1,8 @@
 helpers-printing
-printTemporariesOf: aNode on: aBuffer
+printTemporariesOf: aNode on: aBuffer 
 	aNode temporaries ifNotEmpty: [
 		aBuffer nextPutAll: '| '.
-		aNode temporaries do: [ :g | aBuffer nextPutAll: g, ' '].
+		aNode temporaries do: [ :g | aBuffer nextPutAll: g , ' ' ].
 		aBuffer nextPut: $|.
 		
-		self profile newlineAfterTemporaryDeclaration ifTrue: [ self newLineIndentOn: aBuffer ]]
-	
+		self profile newlineAfterTemporaryDeclaration ifTrue: [ self newLineIndentOn: aBuffer ] ]

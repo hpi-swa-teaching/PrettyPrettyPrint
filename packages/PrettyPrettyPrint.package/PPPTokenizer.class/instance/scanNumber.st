@@ -1,6 +1,7 @@
 scanning
 scanNumber
 	| token positionBeforeParsing positionAfterParsing |
+	
 	token := PPPToken new
 		position: indexCount;
 		tokenType: #number;

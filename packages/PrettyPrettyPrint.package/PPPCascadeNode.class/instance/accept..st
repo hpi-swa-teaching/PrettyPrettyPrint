@@ -1,3 +1,3 @@
 visit-node
 accept: aPrinter
-	^ aPrinter visitCascadeNode: self
+	^aPrinter visitCascadeNode: self

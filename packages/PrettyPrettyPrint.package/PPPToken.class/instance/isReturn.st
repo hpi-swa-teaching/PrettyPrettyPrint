@@ -1,3 +1,3 @@
 testing
 isReturn
-	^tokenType = #special and: [content = '^']
+	^tokenType = #special and: [ content = '^' ]

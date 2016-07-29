@@ -1,5 +1,5 @@
 helpers-printing
-messageExceedsLineLimit: aNode
+messageExceedsLineLimit: aNode 
 	| arguments argumentsLength |
 	
 	arguments := aNode arguments collect: [ :argument | self visitValueNode: argument ].

@@ -1,19 +1,16 @@
 visit-node
-visitMethodNode: aNode
+visitMethodNode: aNode 
 	| buffer |
-	
 	buffer := WriteStream on: ''.
-		
+	
 	aNode arguments
 		ifEmpty: [ buffer nextPutAll: aNode selector ]
-		ifNotEmpty: [
-			aNode arguments do: [ :z | buffer
-			nextPutAll: z first, ' ', z second, ' ' ]].
+		ifNotEmpty: [ aNode arguments do: [ :z | buffer nextPutAll: z first , ' ' , z second , ' ' ] ].
 	
 	self
 		incrementIndent;
 		newLineIndentOn: buffer.
 	
 	buffer nextPutAll: (aNode bodySequence accept: self).
-
-	^ buffer contents
+	
+	^buffer contents

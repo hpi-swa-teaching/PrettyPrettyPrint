@@ -1,3 +1,3 @@
 accessing
-contents: anArray
+contents: anArray 
 	contents := anArray

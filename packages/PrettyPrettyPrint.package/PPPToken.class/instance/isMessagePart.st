@@ -1,3 +1,3 @@
 testing
 isMessagePart
-	^tokenType = #identifier and: [content endsWithAColon]
+	^tokenType = #identifier and: [ content endsWithAColon ]

@@ -1,3 +1,3 @@
 testing
-isComment 
+isComment
 	^tokenType = #comment

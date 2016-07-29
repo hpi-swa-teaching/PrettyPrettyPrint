@@ -1,6 +1,5 @@
 testing
 testNamedMessageTokens
-
 	| stream tokenizer token |
 	
 	stream := 'someMessage: test  blah: test2 c2: test3'.

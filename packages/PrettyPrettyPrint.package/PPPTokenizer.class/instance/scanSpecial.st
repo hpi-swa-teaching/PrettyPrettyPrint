@@ -1,6 +1,5 @@
 scanning
-scanSpecial 
-
+scanSpecial
 	| token |
 	
 	token := PPPToken new

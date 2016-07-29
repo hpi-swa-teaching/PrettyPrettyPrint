@@ -1,6 +1,7 @@
 scanning
 scanString
 	| token |
+	
 	token := PPPToken new
 		position: indexCount;
 		tokenType: #string;
@@ -9,12 +10,12 @@ scanString
 	self step.
 	
 	[ currentCharacter ~= $' or: [ currentCharacter = $' and: [stream peek = $'] ]] whileTrue: [
-		currentCharacter = $' ifTrue: [ self step ].
 		buffer nextPut: currentCharacter.
+		currentCharacter = $' ifTrue: [ buffer nextPut: $'. self step ].
 		self step ].
 	
 	self step.
 	
 	^token
-		content: buffer contents;
+		content: '''', buffer contents, '''';
 		yourself

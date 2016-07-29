@@ -1,5 +1,5 @@
 initialize-release
-initialize 
+initialize
 	super initialize.
 	
 	arguments := OrderedCollection new

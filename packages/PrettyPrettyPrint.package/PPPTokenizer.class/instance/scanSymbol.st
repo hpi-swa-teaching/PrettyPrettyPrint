@@ -1,6 +1,7 @@
 scanning
 scanSymbol
 	| token |
+	
 	token := PPPToken new
 		position: indexCount;
 		tokenType: #symbol;
@@ -8,7 +9,7 @@ scanSymbol
 	
 	self step = $'
 		ifTrue: [
-			token content: '#''', self scanString content, '''' ]
+			token content: '#', self scanString content ]
 		ifFalse: [
 			token content: '#', self scanIdentifier content ].
 		

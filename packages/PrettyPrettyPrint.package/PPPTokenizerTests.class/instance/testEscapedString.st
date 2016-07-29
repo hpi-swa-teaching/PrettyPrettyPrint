@@ -9,11 +9,11 @@ testEscapedString
 	
 	self
 		assert: #string equals: token tokenType;
-		assert: 'hello' equals: token content.
-		
+		assert: '''hello''' equals: token content.
+	
 	token := tokenizer next.
 	
 	self
 		assert: 1 equals: token whitespaces size;
 		assert: #string equals: token tokenType;
-		assert: 'hell''o' equals: token content
+		assert: '''hell''''o''' equals: token content

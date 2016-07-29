@@ -4,9 +4,9 @@ testPrintLiteralNode
 	stringPrinter := PPPPrinter new.
 	numberPrinter := PPPPrinter new.
 	symbolPrinter := PPPPrinter new.
-	stringNode := PPPLiteralNode new	
+	stringNode := PPPLiteralNode new
 		literalType: #string;
-		value: 'asd';
+		value: '''asd''';
 		yourself.
 	numberNode := PPPLiteralNode new
 		literalType: #number;

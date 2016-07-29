@@ -1,3 +1,3 @@
 accessing
 newlineAfterTemporaryDeclaration
-	^ newlineAfterTemporaryDeclaration
+	^newlineAfterTemporaryDeclaration

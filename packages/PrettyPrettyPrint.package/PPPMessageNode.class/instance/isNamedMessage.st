@@ -1,3 +1,3 @@
 testing
 isNamedMessage
-	^arguments notEmpty and: [self isBinaryMessage not]
+	^arguments notEmpty and: [ self isBinaryMessage not ]

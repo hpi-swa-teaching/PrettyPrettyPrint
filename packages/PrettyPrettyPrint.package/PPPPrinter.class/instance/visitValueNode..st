@@ -1,5 +1,5 @@
 visit-node
-visitValueNode: aNode
+visitValueNode: aNode 
 	| buffer |
 	buffer := WriteStream on: ''.
 	

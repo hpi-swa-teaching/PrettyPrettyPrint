@@ -1,7 +1,6 @@
 visit-node
-visitSequenceNode: aNode
+visitSequenceNode: aNode 
 	| buffer |
-	
 	buffer := WriteStream on: ''.
 	
 	self

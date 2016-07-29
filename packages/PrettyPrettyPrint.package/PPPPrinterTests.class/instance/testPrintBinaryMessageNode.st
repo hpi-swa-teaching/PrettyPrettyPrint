@@ -6,7 +6,7 @@ testPrintBinaryMessageNode
 	messageNode := PPPMessageNode new.
 	receiverNode := PPPVariableNode new name: '2'.
 	selector := '+'.
-	argumentNodes :=  OrderedCollection new
+	argumentNodes := OrderedCollection new
 		add: (PPPVariableNode new name: '3');
 		yourself.
 	

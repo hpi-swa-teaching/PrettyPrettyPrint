@@ -1,7 +1,6 @@
 visit-node
-visitMessageNode: aNode
+visitMessageNode: aNode 
 	| buffer |
-	
 	buffer := WriteStream on: ''.
 	
 	aNode ifNotInCascade: [ buffer nextPutAll: (self visitValueNode: aNode receiver) ].

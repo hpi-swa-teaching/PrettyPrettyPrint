@@ -16,7 +16,9 @@ testPrintCascade
 					with: (PPPLiteralNode value: '3' literalType: #number)))
 			with: (PPPMessageNode receiver: nil selector: 'yourself')).
 	
-	self assert: 'self
+	self
+		assert: 'self
 	asString;
 	toBuffer: 5 and: 3;
-	yourself' equals: (cascadeNode accept: printer)
+	yourself'
+		equals: (cascadeNode accept: printer)

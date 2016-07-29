@@ -1,4 +1,3 @@
 visit-node
 accept: aPrinter
-
-	^ aPrinter visitVariableNode: self
+	^aPrinter visitVariableNode: self

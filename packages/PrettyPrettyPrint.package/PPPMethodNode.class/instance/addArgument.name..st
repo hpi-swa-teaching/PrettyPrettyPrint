@@ -1,3 +1,3 @@
 accsessing
-addArgument: aSelectorPart name: aName
-	arguments add: {aSelectorPart. aName}
+addArgument: aSelectorPart name: aName 
+	arguments add: { aSelectorPart. aName }

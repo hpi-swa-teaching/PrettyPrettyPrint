@@ -1,6 +1,5 @@
 scanning
 scanSeparator
-	
 	currentWhitespaces add: (PPPToken new
 		position: indexCount;
 		content: currentCharacter asString;

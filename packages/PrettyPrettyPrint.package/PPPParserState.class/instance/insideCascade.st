@@ -1,3 +1,3 @@
 accessing
 insideCascade
-	^ insideCascade
+	^insideCascade

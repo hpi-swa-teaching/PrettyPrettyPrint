@@ -1,5 +1,5 @@
 instance creation
-name: aString
+name: aString 
 	^self new
 		name: aString;
 		yourself

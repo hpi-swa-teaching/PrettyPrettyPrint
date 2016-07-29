@@ -1,3 +1,3 @@
 testing
-whitespaces: aList
+whitespaces: aList 
 	whitespaces := aList

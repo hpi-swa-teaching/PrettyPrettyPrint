@@ -4,6 +4,8 @@ parseSequence
 	node := PPPSequenceNode new
 		temporaries: self parseTemporaries;
 		yourself.
+		
+	self parsePragmaFor: node.
 	
 	[self nextToken endsSequence] whileFalse: [
 		precededByEmptyLine := self nextToken precededByEmptyLine.

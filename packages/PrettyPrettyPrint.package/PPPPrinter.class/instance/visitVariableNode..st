@@ -1,3 +1,3 @@
 visit-node
-visitVariableNode: aNode
+visitVariableNode: aNode 
 	^aNode name

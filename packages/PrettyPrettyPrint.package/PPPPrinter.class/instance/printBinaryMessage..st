@@ -1,9 +1,9 @@
 helpers-printing
-printBinaryMessage: aNode
+printBinaryMessage: aNode 
 	| buffer |
 	buffer := WriteStream on: ''.
 	
-	(aNode isInCascade not and: [self profile spaceAroundBinaryOperator]) ifTrue: [ buffer space ].
+	(aNode isInCascade not and: [ self profile spaceAroundBinaryOperator ]) ifTrue: [ buffer space ].
 	buffer nextPutAll: aNode selector.
 	self profile spaceAroundBinaryOperator ifTrue: [ buffer space ].
 	

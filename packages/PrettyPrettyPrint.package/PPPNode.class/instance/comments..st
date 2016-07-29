@@ -1,3 +1,3 @@
 comparing
-comments: aList
+comments: aList 
 	comments := aList

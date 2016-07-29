@@ -1,5 +1,5 @@
 visit-node
-visitReturnNode: aNode
+visitReturnNode: aNode 
 	| buffer |
 	buffer := WriteStream with: '^'.
 	

@@ -8,14 +8,14 @@ testPrintSequenceNode
 		add: 'temp1';
 		add: 'temp2';
 		yourself.
-	statements := {
-		PPPAssignmentNode variable: 'variable' value: (PPPVariableNode name: '4').
-		PPPReturnNode value: (PPPVariableNode name: 'self') }.
+	statements := { PPPAssignmentNode variable: 'variable' value: (PPPVariableNode name: '4'). PPPReturnNode value: (PPPVariableNode name: 'self') }.
 	
 	sequenceNode
 		temporaries: temporaries;
 		statements: statements.
 	
-	self assert: '| temp1 temp2 |
+	self
+		assert: '| temp1 temp2 |
 variable := 4.
-^self' equals: (sequenceNode accept: printer)
+^self'
+		equals: (sequenceNode accept: printer)
