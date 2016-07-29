@@ -4,13 +4,10 @@ visitMessageNode: aNode
 	
 	buffer := WriteStream on: ''.
 	
-	aNode receiver ifNotNil: [
-		buffer nextPutAll: (self visitValueNode: aNode receiver) ].
+	aNode ifNotInCascade: [ buffer nextPutAll: (self visitValueNode: aNode receiver) ].
 	
-	aNode isUnaryMessage ifTrue: [
-		aNode ifNotInCascade: [ buffer space ].
-		buffer nextPutAll: aNode selector ].
+	aNode isUnaryMessage ifTrue: [ buffer nextPutAll: (self printUnaryMessage: aNode) ].
 	aNode isBinaryMessage ifTrue: [ buffer nextPutAll: (self printBinaryMessage: aNode) ].
 	aNode isNamedMessage ifTrue: [ buffer nextPutAll: (self printNamedMessage: aNode) ].
 	
-	^ buffer contents
+	^buffer contents

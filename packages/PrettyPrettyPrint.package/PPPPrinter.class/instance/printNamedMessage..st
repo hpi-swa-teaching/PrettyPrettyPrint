@@ -1,12 +1,9 @@
 helpers-printing
 printNamedMessage: aNode
-	| buffer multiLine arguments argumentsLength |
+	| buffer multiLine |
 	buffer := WriteStream on: ''.
 	
-	arguments := aNode arguments collect: [ :argument | self visitValueNode: argument ].
-	argumentsLength := arguments inject: 0 into: [ :sum :argument | sum + argument size ].
-	
-	multiLine := argumentsLength + aNode selector size > self profile maxLineLength and: [aNode arguments size > 1].
+	multiLine := (self messageExceedsLineLimit: aNode) and: [aNode arguments size > 1].
 	
 	aNode ifNotInCascade: [
 		multiLine
@@ -23,7 +20,7 @@ printNamedMessage: aNode
 				nextPutAll: (self visitValueNode: argument) ]
 		separatedBy: [
 			multiLine
-				ifFalse: [ buffer nextPut: $ ]
+				ifFalse: [ buffer space ]
 				ifTrue: [ self newLineIndentOn: buffer ]].
 	
 	multiLine ifTrue: [ self decrementIndent ].
