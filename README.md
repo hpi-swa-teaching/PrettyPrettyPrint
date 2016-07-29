@@ -22,7 +22,7 @@ The tokenizer implements the stream interface. It operates on a string and retur
 The parser takes a stream of tokens (so for us directly the PPPTokenizer) and builds the AST based on those. To facilitate the understanding of the parsing process and to give the methods a degree of isolation, `self nextToken` always points at the first token of the node that is to be parsed upon entry of any `parse*` method (this contract is also the reason why `self nextNextToken` had to be created for assignments).
 
 Rough code flow when parsing a method is as follows:
-* The method header is parsed (`parseMethod`, then either one of `parseBinaryMessageDeclaration`, `parseNamedMesscitration`, `parseUnaryMessageDeclaration`)
+* The method header is parsed (`parseMethod`, then either one of `parseBinaryMessageDeclaration`, `parseNamedMessageDeclaration`, `parseUnaryMessageDeclaration`)
 * The body of the method is parsed into a PPPSequenceNode (`parseSequence`)
 * To parse the sequence, `parseStatement:` is called repeatedly, until the end of the method is reached.
 * `parseStatement` differentiates between assignments, return statements and message sends.
