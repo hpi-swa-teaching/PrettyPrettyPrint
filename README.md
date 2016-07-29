@@ -2,11 +2,26 @@
 
 How to Use
 =================
-Install the PrettyPrettyPrinter Package in your Squeak Image.  
+
+**Step 1**
+
+Clone the repository.
+
+**Step 2**
+
+Pull the package the package into your Squeak Image, by adding it as a Monitcello filetree repository.
+
+**Step 3**
+
 Change the method Behavior>>prettyPrinterClass as follows:
 ```
 Behavior>>prettyPrinterClass
  ^ PPPPrinter
+```
+
+To pretty pretty print your whole package with the default settings execute the following command in your Workspace.
+```
+PPPPrinter formatPackage: 'name of your package'
 ```
 
 Implementation Details
