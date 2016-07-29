@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testNestedNamedMessage
 	| tokens methodNode |
 	tokens := {

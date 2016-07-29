@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testComplexMethod
 	| tokens methodNode firstBlock firstNamedMsgSend secondNamedMsgSend condition |
 	tokens := PPPTokenizer on: (self class methodDict at: #sampleComplexMethod:b:) decompile asString.

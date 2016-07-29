@@ -9,8 +9,8 @@
 		"temporaries",
 		"statements",
 		"trailingComments" ],
+	"literalType" : "normal",
 	"name" : "PPPSequenceNode",
 	"pools" : [
 		 ],
-	"super" : "PPPNode",
-	"type" : "normal" }
+	"super" : "PPPNode" }

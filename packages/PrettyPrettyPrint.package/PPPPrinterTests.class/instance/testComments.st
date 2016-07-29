@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testComments
 	self assert: 'test
 	" hi "

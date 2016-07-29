@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testIfTrueIfFalse
 	| tokens methodNode |
 	tokens := {

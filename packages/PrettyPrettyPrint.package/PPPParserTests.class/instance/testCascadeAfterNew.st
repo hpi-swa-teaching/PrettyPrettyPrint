@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testCascadeAfterNew
 	| tokens methodNode referenceStatement |
 	tokens := PPPTokenizer on: 'testMethod PPPToken new position: 3; tokenType: 2; content: 1; yourself'.

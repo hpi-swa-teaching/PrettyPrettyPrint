@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testSimpleMessagePrecedence
 	| tokens methodNode sendPartMsg firstArgument secondArgument |
 	tokens := PPPTokenizer on: 'testMethod self send: 5 nope part: 3'.

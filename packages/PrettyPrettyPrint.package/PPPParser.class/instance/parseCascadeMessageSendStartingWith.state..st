@@ -3,11 +3,11 @@ parseCascadeMessageSendStartingWith: aMessageNode state: aState
 	| cascade |
 	cascade := PPPCascadeNode new.
 	cascade receiver: aMessageNode receiver.
-	cascade messages add: (aMessageNode receiver: nil; yourself).
+	cascade addMessage: (aMessageNode receiver: nil; yourself).
 	
 	[self nextToken isCascade] whileTrue: [
 		self step.
-		cascade messages add: (self
+		cascade addMessage: (self
 			parseSingleMessageSendTo: nil
 			state: (aState copy insideCascade: true; insideNamedMessage: false; yourself)) ].
 	

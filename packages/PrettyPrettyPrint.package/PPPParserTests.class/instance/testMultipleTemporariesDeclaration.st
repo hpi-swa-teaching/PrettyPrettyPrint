@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testMultipleTemporariesDeclaration
 	| tokens methodNode |
 	tokens := {

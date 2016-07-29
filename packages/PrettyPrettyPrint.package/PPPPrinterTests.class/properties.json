@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "lcj 7/29/2016 13:06",
 	"instvars" : [
 		 ],
+	"literalType" : "normal",
 	"name" : "PPPPrinterTests",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
-	"type" : "normal" }
+	"super" : "TestCase" }

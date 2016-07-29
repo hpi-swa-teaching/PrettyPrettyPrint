@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testNestedBlocks
 	| tokens methodNode referenceStatement |
 	tokens := PPPTokenizer on: 'testMethod [ [ true ifTrue: [ :e | e high ] ] ]'.

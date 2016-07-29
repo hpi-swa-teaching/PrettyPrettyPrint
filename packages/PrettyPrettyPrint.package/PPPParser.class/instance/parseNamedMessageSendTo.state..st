@@ -9,6 +9,6 @@ parseNamedMessageSendTo: aReceiverNode state: aState
 	
 	[self nextToken isMessagePart] whileTrue: [
 		messageSend selector: (messageSend selector, (self step: #identifier) content).
-		messageSend arguments add: (self parseStatement: (aState copy insideNamedMessage: true; yourself)) ].
+		messageSend addArgument: (self parseStatement: (aState copy insideNamedMessage: true; yourself)) ].
 	
 	^messageSend

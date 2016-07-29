@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testWhitespacesInMethod
 	| methodNode reference |
 	methodNode := PPPParser new parseTokenStream: (PPPTokenizer on: 'testMethod    

@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testCustomProfileImportExport
 	| name profile otherProfile |
 	name := 'testProfile'.
@@ -6,10 +6,11 @@ testCustomProfileImportExport
 	profile := PPPSettingsProfile new
 		keepEmptyLines: false;
 		dotAfterReturn: true;
-		exportProfileNamed: name.
+		exportProfileNamed: name;
+		yourself.
 	
 	otherProfile := PPPSettingsProfile importProfileFromFileNamed: name.
 	
 	self
-		assert: false equals: otherProfile keepEmptyLines;
-		assert: true equals: otherProfile dotAfterReturn
+		assert: profile keepEmptyLines equals: otherProfile keepEmptyLines;
+		assert: profile dotAfterReturn equals: otherProfile dotAfterReturn

@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testTokenizerParserInteraction
 	| tokens methodNode |
 	tokens := PPPTokenizer on: 'testMessage 4 send'.

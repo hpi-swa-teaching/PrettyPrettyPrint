@@ -3,11 +3,11 @@
 		 },
 	"instance" : {
 		"assert:equalsToken:" : "TB 6/22/2016 10:33",
-		"testAssignmentInBlock" : "TB 7/28/2016 09:03",
+		"testAssignmentInBlock" : "lcj 7/29/2016 13:42",
 		"testEscapedString" : "TB 7/28/2016 08:56",
-		"testForAllTypes" : "TB 7/28/2016 08:57",
+		"testForAllTypes" : "lcj 7/29/2016 13:17",
 		"testNamedMessageTokens" : "TB 7/28/2016 08:59",
 		"testNumbers" : "TB 7/28/2016 08:59",
 		"testSymbols" : "TB 7/28/2016 08:59",
-		"testTokenTypes" : "TB 6/20/2016 12:02",
+		"testTokenTypes" : "lcj 7/29/2016 13:37",
 		"testWhitesspaces" : "TB 7/28/2016 09:10" } }

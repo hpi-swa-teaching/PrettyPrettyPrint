@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testPrintAssignmentNode
 	| printer assignmentNode valueNode |
 	
@@ -9,7 +9,8 @@ testPrintAssignmentNode
 		
 	assignmentNode := PPPAssignmentNode new
 		variable: 'myVar';
-		value: valueNode.
+		value: valueNode;
+		yourself.
 	
 	printer := PPPPrinter new.
 	

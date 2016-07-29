@@ -1,4 +1,4 @@
-as yet unclassified
+utility
 assert: anArray equalsToken: aToken
 	self
 		assert: anArray first equals: aToken content;

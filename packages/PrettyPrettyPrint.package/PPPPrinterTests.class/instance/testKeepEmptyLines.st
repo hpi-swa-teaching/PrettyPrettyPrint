@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testKeepEmptyLines
 	self assert: 'testMethod
 	1.

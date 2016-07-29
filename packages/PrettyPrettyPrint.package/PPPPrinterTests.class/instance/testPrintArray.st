@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testPrintArray
 	| string |
 	string := 'testMethod

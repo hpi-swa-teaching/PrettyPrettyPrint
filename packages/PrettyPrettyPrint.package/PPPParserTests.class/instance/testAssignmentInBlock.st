@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testAssignmentInBlock
 	| tokens methodNode |
 	tokens := {

@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testChainedMessage
 	| tokens methodNode referenceFirstStatement referenceSecondStatement firstStatement secondStatement |
 	tokens := {

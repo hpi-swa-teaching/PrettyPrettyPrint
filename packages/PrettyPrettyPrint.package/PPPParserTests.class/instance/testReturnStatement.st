@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testReturnStatement
 	| tokens methodNode |
 	tokens := {

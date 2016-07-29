@@ -1,4 +1,4 @@
-as yet unclassified
+test-method
 sampleComplexMethod: arg5 b: arg6
 	| a d |
 	a := [ :b :c | | arg1 |

@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testPrintLiteralNode
 	| stringNode numberNode symbolNode numberPrinter stringPrinter symbolPrinter |
 	stringPrinter := PPPPrinter new.

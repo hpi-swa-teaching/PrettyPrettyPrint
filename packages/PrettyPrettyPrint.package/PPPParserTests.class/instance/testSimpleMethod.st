@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testSimpleMethod
 	"someMessage|tmp|tmp:=16r123123*2.^tmp"
 	| tokens methodNode |

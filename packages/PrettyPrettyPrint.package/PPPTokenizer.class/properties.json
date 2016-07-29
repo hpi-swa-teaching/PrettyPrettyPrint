@@ -15,8 +15,8 @@
 		"nextObject",
 		"currentComments",
 		"currentWhitespaces" ],
+	"literalType" : "normal",
 	"name" : "PPPTokenizer",
 	"pools" : [
 		 ],
-	"super" : "Stream",
-	"type" : "normal" }
+	"super" : "Stream" }

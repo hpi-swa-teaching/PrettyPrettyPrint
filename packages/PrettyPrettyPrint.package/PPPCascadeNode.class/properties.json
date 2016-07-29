@@ -8,8 +8,8 @@
 	"instvars" : [
 		"messages",
 		"receiver" ],
+	"literalType" : "normal",
 	"name" : "PPPCascadeNode",
 	"pools" : [
 		 ],
-	"super" : "PPPValueNode",
-	"type" : "normal" }
+	"super" : "PPPValueNode" }

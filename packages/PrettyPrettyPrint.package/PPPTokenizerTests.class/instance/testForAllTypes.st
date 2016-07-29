@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testForAllTypes
 
 	| stream tokenizer |
@@ -7,12 +7,12 @@ testForAllTypes
 	tokenizer := PPPTokenizer on: stream.
 	
 	self
-		assert: tokenizer next tokenType equals: #assignment;
-		assert: tokenizer next tokenType equals: #binaryOperator;
-		assert: tokenizer next tokenType equals: #identifier;
-		assert: tokenizer next tokenType equals: #special;
-		assert: tokenizer next tokenType equals: #identifier;
-		assert: tokenizer next tokenType equals: #special;
+		assert: {':='. #assignment} equalsToken: tokenizer next;
+		assert: {'-'. #binaryOperator} equalsToken: tokenizer next;
+		assert: {'ö19999999999'. #identifier} equalsToken: tokenizer next;
+		assert: {'^'. #special} equalsToken: tokenizer next;
+		assert: {'changeme'. #identifier} equalsToken: tokenizer next;
+		assert: {'('. #special} equalsToken: tokenizer next;
 		assert: {'$a'. #character} equalsToken: tokenizer next;
 		assert: {'$$'. #character} equalsToken: tokenizer next;
 		assert: {'+++'. #binaryOperator} equalsToken: tokenizer next;

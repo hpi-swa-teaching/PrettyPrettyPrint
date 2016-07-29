@@ -1,4 +1,4 @@
-as yet unclassified
+utility
 assertHierarchy: aNode equals: anotherNode
 	| actual expected |
 	expected := OrderedCollection new.

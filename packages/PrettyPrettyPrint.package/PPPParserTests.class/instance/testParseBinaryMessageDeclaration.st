@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testParseBinaryMessageDeclaration
 	| tokens  methodNode |
 	tokens := {

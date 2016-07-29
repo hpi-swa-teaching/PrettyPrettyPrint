@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testCascadeWithMessageSendArgument
 	| tokens methodNode referenceStatement |
 	tokens := PPPTokenizer on: 'testMethod token content: buffer contents;tokenType: 1;yourself'.

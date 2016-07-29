@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testUserProfileImportExport
 	| name previousProfile |
 	name := 'testProfile'.

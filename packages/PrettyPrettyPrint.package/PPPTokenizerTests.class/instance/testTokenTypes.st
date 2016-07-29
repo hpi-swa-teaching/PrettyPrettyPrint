@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testTokenTypes
 	| stream tokenizer |
 	
@@ -6,14 +6,15 @@ testTokenTypes
 	tokenizer := PPPTokenizer on: stream.
 	
 	self
-		assert: tokenizer next tokenType equals: #identifier;
-		assert: tokenizer next tokenType equals: #special;
-		assert: tokenizer next tokenType equals: #identifier;
-		assert: tokenizer next tokenType equals: #special;
-		assert: tokenizer next tokenType equals: #identifier;
-		assert: tokenizer next tokenType equals: #assignment;
-		assert: tokenizer next tokenType equals: #number;
-		assert: tokenizer next tokenType equals: #binaryOperator;
-		assert: tokenizer next tokenType equals: #number;
-		assert: tokenizer next tokenType equals: #special;
-		assert: tokenizer next tokenType equals: #special
+		assert: {'someMessage'. #identifier} equalsToken: tokenizer next;
+		assert: {'|'. #special} equalsToken: tokenizer next;
+		assert: {'tmp'. #identifier} equalsToken: tokenizer next;
+		assert: {'|'. #special} equalsToken: tokenizer next;
+		assert: {'tmp'. #identifier} equalsToken: tokenizer next;
+		assert: {':='. #assignment} equalsToken: tokenizer next;
+		assert: {'123123'. #number} equalsToken: tokenizer next;
+		assert: {'*'. #binaryOperator} equalsToken: tokenizer next;
+		assert: {'2'. #number} equalsToken: tokenizer next;
+		assert: {'.'. #special} equalsToken: tokenizer next;
+		assert: {'^'. #special} equalsToken: tokenizer next;
+		assert: {'tmp'. #identifier} equalsToken: tokenizer next
