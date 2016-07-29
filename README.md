@@ -29,7 +29,7 @@ Make sure you have [metacello-work](https://github.com/dalehenrich/metacello-wor
 
 **Step 2**
 
-2. Load the project by running the following in your workspace:
+Load the project by running the following in your workspace:
 
 ```
 Metacello new
