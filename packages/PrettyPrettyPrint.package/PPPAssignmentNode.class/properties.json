@@ -4,12 +4,12 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "TB 7/28/2016 15:17",
+	"commentStamp" : "KB 7/29/2016 13:41",
 	"instvars" : [
 		"variable",
 		"value" ],
-	"literalType" : "normal",
 	"name" : "PPPAssignmentNode",
 	"pools" : [
 		 ],
-	"super" : "PPPValueNode" }
+	"super" : "PPPValueNode",
+	"type" : "normal" }

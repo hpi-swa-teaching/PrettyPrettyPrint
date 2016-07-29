@@ -8,8 +8,8 @@
 	"instvars" : [
 		"hasParentheses",
 		"precededByEmptyLine" ],
-	"literalType" : "normal",
 	"name" : "PPPValueNode",
 	"pools" : [
 		 ],
-	"super" : "PPPNode" }
+	"super" : "PPPNode",
+	"type" : "normal" }

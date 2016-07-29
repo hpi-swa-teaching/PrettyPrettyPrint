@@ -7,8 +7,8 @@
 	"commentStamp" : "TB 7/28/2016 15:27",
 	"instvars" : [
 		"comments" ],
-	"literalType" : "normal",
 	"name" : "PPPNode",
 	"pools" : [
 		 ],
-	"super" : "Object" }
+	"super" : "Object",
+	"type" : "normal" }
