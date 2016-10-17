@@ -1,4 +1,4 @@
-# SWT16-Project-08 [![Build Status](https://travis-ci.org/HPI-SWA-Teaching/SWT16-Project-08.svg?branch=master)](https://travis-ci.org/HPI-SWA-Teaching/SWT16-Project-08)
+# PrettyPrettyPrint [![Build Status](https://travis-ci.org/HPI-SWA-Teaching/PrettyPrettyPrint.svg?branch=master)](https://travis-ci.org/HPI-SWA-Teaching/PrettyPrettyPrint)
 
 Installation Guide
 =================
@@ -34,7 +34,7 @@ Load the project by running the following in your workspace:
 ```
 Metacello new
   baseline: 'PrettyPrettyPrint';
-  repository: 'github://HPI-SWA-Teaching/SWT16-Project-08:master/packages'; 
+  repository: 'github://HPI-SWA-Teaching/PrettyPrettyPrint:master/packages'; 
   onConflict: [:ex | ex allow];
   load
 ```
