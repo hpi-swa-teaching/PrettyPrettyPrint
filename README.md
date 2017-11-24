@@ -1,4 +1,4 @@
-# PrettyPrettyPrint [![Build Status](https://travis-ci.org/HPI-SWA-Teaching/PrettyPrettyPrint.svg?branch=master)](https://travis-ci.org/HPI-SWA-Teaching/PrettyPrettyPrint)
+# PrettyPrettyPrint [![Build Status](https://travis-ci.org/hpi-swa-teaching/PrettyPrettyPrint.svg?branch=master)](https://travis-ci.org/hpi-swa-teaching/PrettyPrettyPrint)
 
 Installation Guide
 =================
@@ -34,7 +34,7 @@ Load the project by running the following in your workspace:
 ```
 Metacello new
   baseline: 'PrettyPrettyPrint';
-  repository: 'github://HPI-SWA-Teaching/PrettyPrettyPrint:master/packages'; 
+  repository: 'github://hpi-swa-teaching/PrettyPrettyPrint:master/packages'; 
   onConflict: [:ex | ex allow];
   load
 ```
