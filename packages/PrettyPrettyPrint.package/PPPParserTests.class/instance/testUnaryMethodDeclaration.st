@@ -1,9 +1,8 @@
-testing
+as yet unclassified
 testUnaryMethodDeclaration
 	| tokens methodNode |
-	tokens := {
-		PPPToken type: #identifier content: 'someMessage'.
-		PPPToken type: #eof content: ''}.
+	tokens := {{#identifier. 'someMessage'}.
+		{#eof. ''}}.
 		
 	methodNode := PPPParser new parseTokenStream: (ReadStream on: tokens).
 	

@@ -1,12 +1,12 @@
-testing
+as yet unclassified
 testTemporaryDeclaration
 	| tokens methodNode |
 	tokens := {
-		PPPToken type: #identifier content: 'someMessage'.
-		PPPToken type: #special content: '|'.
-		PPPToken type: #identifier content: 'tmp'.
-		PPPToken type: #special content: '|'.
-		PPPToken type: #eof content: ''}.
+		{#identifier. 'someMessage'}.
+		{#special. '|'}.
+		{#identifier. 'tmp'}.
+		{#special. '|'}.
+		{#eof. ''}}.
 		
 	methodNode := PPPParser new parseTokenStream: (ReadStream on: tokens).
 	

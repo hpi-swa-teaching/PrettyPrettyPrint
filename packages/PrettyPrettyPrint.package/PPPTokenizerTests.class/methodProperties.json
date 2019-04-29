@@ -2,13 +2,4 @@
 	"class" : {
 		 },
 	"instance" : {
-		"assert:equalsToken:" : "TB 6/22/2016 10:33",
-		"testAssignmentInBlock" : "lcj 7/29/2016 13:42",
-		"testEscapedString" : "lcj 7/29/2016 18:28",
-		"testForAllTypes" : "lcj 7/29/2016 13:17",
-		"testNamedMessageTokens" : "TB 7/28/2016 08:59",
-		"testNumbers" : "TB 7/28/2016 08:59",
-		"testPragma" : "lcj 7/29/2016 18:11",
-		"testSymbols" : "lcj 7/29/2016 18:34",
-		"testTokenTypes" : "lcj 7/29/2016 13:37",
-		"testWhitesspaces" : "TB 7/28/2016 09:10" } }
+		"testTokenizeStream" : "KB 6/1/2016 19:26" } }
