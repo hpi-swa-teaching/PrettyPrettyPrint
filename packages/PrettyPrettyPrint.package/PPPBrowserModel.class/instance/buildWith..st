@@ -6,5 +6,6 @@ buildWith: aBuilder
 	label: 'PPP Browser'; 
 	extent: 500@400;
 	children: {self buildCategoryListWith: aBuilder .
-		self buildClassListWith: aBuilder};
+		self buildClassListWith: aBuilder .
+		self buildMethodListWith: aBuilder};
 	yourself)

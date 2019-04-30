@@ -9,6 +9,6 @@ buildCategoryListWith: aBuilder
 			topFraction: 0 offset: 0; 
 			rightFraction: self defaultLeftFraction offset: 0;
 			bottomFraction: 1 offset: 0);
-		getSelected: #currentSelection; 
-		setSelected: #currentSelection:;
+		getSelected: #selectedCategories; 
+		setSelected: #selectedCategories:;
 		yourself

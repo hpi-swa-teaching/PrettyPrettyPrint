@@ -6,9 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"currentSelection",
 		"categoryDictionary",
-		"selectedCategories" ],
+		"selectedCategories",
+		"selectedClasses",
+		"selectedMethods" ],
 	"name" : "PPPBrowserModel",
 	"pools" : [
 		 ],
