@@ -3,5 +3,5 @@ methods
 
 	^ (self selectedClasses gather: [:c | 
 		((Compiler evaluate: c) allSelectors) 
-			collect: [:s | s asString , ' (' , c asString , ')']]) 
+			collect: [:s | c asString , '  >>  ' , s asString]])
 				sort
