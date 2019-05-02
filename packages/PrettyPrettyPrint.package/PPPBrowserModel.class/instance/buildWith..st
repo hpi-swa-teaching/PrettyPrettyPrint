@@ -7,5 +7,7 @@ buildWith: aBuilder
 	extent: 500@400;
 	children: {self buildCategoryListWith: aBuilder .
 		self buildClassListWith: aBuilder .
-		self buildMethodListWith: aBuilder};
+		self buildMethodListWith: aBuilder .
+		self buildPPPButtonWith: aBuilder .
+		self buildPPPAllButSelectedButtonWith: aBuilder};
 	yourself)

@@ -1,4 +1,4 @@
 as yet unclassified
 defaultLeftFraction
 
-	^ 0.3
+	^ 0.25
