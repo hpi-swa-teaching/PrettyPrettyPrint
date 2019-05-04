@@ -1,7 +1,7 @@
 as yet unclassified
 buildCategoryListWith: aBuilder
 
-	^ aBuilder pluggableListSpec new 
+	^ aBuilder pluggableMultiSelectionListSpec new 
 		model: self;
 		list: #categories;
 		frame: (LayoutFrame new 
@@ -9,6 +9,6 @@ buildCategoryListWith: aBuilder
 			topFraction: 0 offset: 0; 
 			rightFraction: self defaultLeftFraction offset: 0;
 			bottomFraction: 1 offset: 0);
-		getSelected: #selectedCategories; 
-		setSelected: #selectedCategories:;
+		getSelectionList: #selectedCategories; 
+		setSelectionList: #selectedCategories:;
 		yourself

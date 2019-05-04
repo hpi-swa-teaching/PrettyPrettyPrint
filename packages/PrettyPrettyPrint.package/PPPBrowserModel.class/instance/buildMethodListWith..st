@@ -1,14 +1,14 @@
 as yet unclassified
 buildMethodListWith: aBuilder
 
-	^ aBuilder pluggableListSpec new 
+	^ aBuilder pluggableMultiSelectionListSpec new 
 		model: self;
-		list: #methods;
+		list: #methodDisplayNames;
 		frame: (LayoutFrame new 
 			leftFraction: self defaultMiddleFraction offset: 0;
 			topFraction: 0 offset: 0; 
 			rightFraction: 1 offset: 0;
 			bottomFraction: self defaultHorizontalFraction offset: 0);
-		getSelected: #selectedMethods; 
-		setSelected: #selectedMethods:;
+		getSelectionList: #selectedMethods; 
+		setSelectionList: #selectedMethods:;
 		yourself

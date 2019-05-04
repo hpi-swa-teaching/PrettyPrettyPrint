@@ -4,7 +4,7 @@ buildPPPButtonWith: aBuilder
 	^ aBuilder pluggableButtonSpec new 
 		model: self;
 		label: 'PrettyPrettyPrint selected Methods';
-		action: #prettyPrettyPrintSelectedMethods;
+		action: #pppSelectedMethods;
 		frame: (LayoutFrame new 
 			leftFraction: self defaultMiddleFraction offset: 0;
 			topFraction: self defaultHorizontalFraction offset: 0; 
