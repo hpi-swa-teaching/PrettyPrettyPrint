@@ -3,4 +3,4 @@ classes
 
 	self selectedCategories 
 		ifNil: [^ nil] 
-		ifNotNil: [^ self selectedCategories gather: [:c | self categoryDictionary at: c] sort]
+		ifNotNil: [^ self selectedCategories gather: [:c | (self categoryDictionary at: c) sort]]
