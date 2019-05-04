@@ -3,4 +3,4 @@ addCategoryIfNecessary: aSymbol
 
 	^ self categoryDictionary 
 		at: aSymbol 
-		ifAbsentPut: [OrderedCollection new]
+		ifAbsentPut: [{false . OrderedCollection new}]

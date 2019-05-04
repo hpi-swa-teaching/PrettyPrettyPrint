@@ -1,5 +1,5 @@
 as yet unclassified
-methodDisplayNames
+displayedMethodNames
 
 	self selectedClasses 
 		ifNil: [^ nil] 

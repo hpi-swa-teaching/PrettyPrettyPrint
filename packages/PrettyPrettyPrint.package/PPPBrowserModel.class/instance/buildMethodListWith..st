@@ -3,7 +3,7 @@ buildMethodListWith: aBuilder
 
 	^ aBuilder pluggableMultiSelectionListSpec new 
 		model: self;
-		list: #methodDisplayNames;
+		list: #displayedMethodNames;
 		frame: (LayoutFrame new 
 			leftFraction: self defaultMiddleFraction offset: 0;
 			topFraction: 0 offset: 0; 

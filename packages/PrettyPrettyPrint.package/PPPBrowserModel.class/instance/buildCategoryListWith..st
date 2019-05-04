@@ -9,6 +9,21 @@ buildCategoryListWith: aBuilder
 			topFraction: 0 offset: 0; 
 			rightFraction: self defaultLeftFraction offset: 0;
 			bottomFraction: 1 offset: 0);
-		getSelectionList: #selectedCategories; 
-		setSelectionList: #selectedCategories:;
+		getIndex: #categorySelected;
+		setIndex: #categorySelected:;
+		getSelectionList: #categoryAt:;
+		setSelectionList: #categoryAt:put:;
+		"getSelectionList: #selectedCategories; 
+		setSelectionList: #selectedCategories:;"
 		yourself
+		
+	"buildCategoriesWith: aBuilder
+	^ aBuilder pluggableMultiSelectionListSpec new
+		model: self;
+		list: #categoryList;
+		menu: #categoryMenu:;
+		getIndex: #categorySelected;
+		setIndex: #categorySelected:;
+		getSelectionList: #categoryAt:;
+		setSelectionList: #categoryAt:put:;
+		yourself."
