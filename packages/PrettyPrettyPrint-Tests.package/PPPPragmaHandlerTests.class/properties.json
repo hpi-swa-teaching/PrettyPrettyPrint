@@ -1,0 +1,16 @@
+{
+	"category" : "PrettyPrettyPrint-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"dummyAst",
+		"allPragmas",
+		"relevantParsedPragmas" ],
+	"name" : "PPPPragmaHandlerTests",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

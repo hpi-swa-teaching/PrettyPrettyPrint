@@ -1,0 +1,14 @@
+{
+	"category" : "PrettyPrettyPrint-Dummy",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "PPPDummi",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

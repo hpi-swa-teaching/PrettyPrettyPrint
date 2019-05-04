@@ -1,10 +1,15 @@
 format
 format: aString preferences: aBlock
-	| tokens printer |
+	|pragmas tokens printer abstractSyntaxTree |
 	
 	tokens := PPPTokenizer on: aString.
 	
 	printer := PPPPrinter new.
 	aBlock value: printer profile.
 	
-	^printer visitMethodNode: (PPPParser new parseTokenStream: (tokens))
+	abstractSyntaxTree := PPPParser new parseTokenStream: (tokens).	
+	
+	pragmas := abstractSyntaxTree getAllPragmas.
+	Transcript show: pragmas.
+	
+	^printer visitMethodNode: abstractSyntaxTree

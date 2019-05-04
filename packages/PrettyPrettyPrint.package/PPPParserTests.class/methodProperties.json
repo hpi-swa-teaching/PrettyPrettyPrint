@@ -23,6 +23,8 @@
 		"testNestedBlocks" : "lcj 7/3/2016 14:13",
 		"testNestedNamedMessage" : "TB 6/11/2016 15:43",
 		"testParseBinaryMessageDeclaration" : "TB 6/27/2016 23:05",
+		"testPragmaCollecting" : "gw 4/30/2019 17:26",
+		"testPragmaParsing" : "gw 5/4/2019 13:17",
 		"testReturnStatement" : "TB 6/10/2016 16:41",
 		"testSimpleAssignment" : "TB 6/10/2016 16:41",
 		"testSimpleMessagePrecedence" : "TB 7/28/2016 08:55",

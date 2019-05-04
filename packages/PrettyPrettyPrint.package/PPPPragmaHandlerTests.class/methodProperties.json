@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"allPragmas" : "gw 5/4/2019 09:56",
+		"allPragmas:" : "gw 5/4/2019 09:56",
+		"dummyAst" : "gw 5/4/2019 09:55",
+		"dummyAst:" : "gw 5/4/2019 09:54",
+		"relevantParsedPragmas" : "gw 5/4/2019 11:55",
+		"relevantParsedPragmas:" : "gw 5/4/2019 11:56",
+		"setUp" : "gw 5/4/2019 12:15",
+		"testBuildingPragmaInstructions" : "gw 5/4/2019 11:56",
+		"testPragmaFilter" : "gw 5/4/2019 11:56" } }
