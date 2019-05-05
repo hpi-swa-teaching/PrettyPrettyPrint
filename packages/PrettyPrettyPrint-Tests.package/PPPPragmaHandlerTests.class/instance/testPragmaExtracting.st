@@ -2,31 +2,25 @@ as yet unclassified
 testPragmaExtracting
 	| parsedPragmas relevantPragmas expectedRelevantPragmas |
 	
+	expectedRelevantPragmas := OrderedCollection new 
+		add: self validIgnoreParsedPragma;
+		yourself.
+
 	parsedPragmas := OrderedCollection new 
-		add: (PPPMethodNode new 
-			arguments: (OrderedCollection new 
-				add: #('PrettyPrint:' 'ignore');
-				add: #('option:' 'True');
-				yourself);
-			bodySequence: (PPPSequenceNode new);
-			selector: 'PrettyPrint:option:');
+		addAll: expectedRelevantPragmas;
 		add: (PPPMethodNode new
 			arguments: OrderedCollection new;
 			bodySequence: OrderedCollection new;
 			selector: 'hello');
+		add: (PPPMethodNode new 
+			arguments: (OrderedCollection new 
+				add: #('PrettyPrint:' 'ignore');
+				yourself);
+			bodySequence: (PPPSequenceNode new);
+			selector: 'PrettyPrint:');
 		yourself.
 			
 	relevantPragmas := PPPPragmaHandler new extractRelevantPragmasFrom: parsedPragmas.
 	
-	expectedRelevantPragmas := OrderedCollection new 
-		add: (PPPMethodNode new 
-			arguments: (OrderedCollection new 
-				add: #('PrettyPrint:' 'ignore');
-				add: #('option:' 'True');
-				yourself);
-			bodySequence: (PPPSequenceNode new);
-			selector: 'PrettyPrint:option:');
-		yourself.
-
 	self assert: expectedRelevantPragmas equals: relevantPragmas.
 	

@@ -2,6 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"extractRelevantPragmasFrom:" : "gw 5/5/2019 09:07",
+		"extractRelevantPragmasFrom:" : "gw 5/5/2019 09:31",
+		"formatTokenPart:" : "gw 5/5/2019 12:06",
 		"parseAllPragmasFrom:" : "gw 5/5/2019 08:46",
-		"parsePragma:" : "gw 5/5/2019 08:34" } }
+		"parsePragma:" : "gw 5/5/2019 12:04",
+		"pragmasToDict:" : "gw 5/5/2019 12:07",
+		"removeFirstAndLastChar:" : "gw 5/5/2019 12:03" } }
