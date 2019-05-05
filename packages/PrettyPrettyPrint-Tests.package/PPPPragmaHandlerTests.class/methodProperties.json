@@ -10,4 +10,6 @@
 		"relevantParsedPragmas:" : "gw 5/4/2019 11:56",
 		"setUp" : "gw 5/4/2019 12:15",
 		"testBuildingPragmaInstructions" : "gw 5/4/2019 11:56",
-		"testPragmaFilter" : "gw 5/4/2019 11:56" } }
+		"testPragmaExtracting" : "gw 5/5/2019 09:08",
+		"testPragmaFilter" : "gw 5/4/2019 11:56",
+		"testPragmaParsing" : "gw 5/5/2019 08:49" } }

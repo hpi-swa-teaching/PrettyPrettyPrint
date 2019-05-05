@@ -6,4 +6,4 @@ parsePragma: aPPPPragmaNode
 		copyFrom: 2 
 		to: aPPPPragmaNode content size - 1.
 	tokens := PPPTokenizer on: pragmaContent.
-	^ PPPParser new parseTokenStream: (tokens).
+	^ PPPParser new parsePragmaTokenStream: (tokens).

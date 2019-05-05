@@ -2,5 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"extractRelevantPragmasFrom:" : "gw 5/4/2019 11:39",
-		"parsePragma:" : "gw 5/4/2019 11:33" } }
+		"extractRelevantPragmasFrom:" : "gw 5/5/2019 09:07",
+		"parseAllPragmasFrom:" : "gw 5/5/2019 08:46",
+		"parsePragma:" : "gw 5/5/2019 08:34" } }

@@ -8,10 +8,10 @@ parsePragma
 	argument := self step.
 	argument isIdentifier ifFalse: [self syntaxError].
 	name := self step.
-	(name isLiteral or: [name isIdentifier]) ifFalse: [self syntaxError].
-		node
-			addArgument: argument content
-			name: name content ].
+	(name isIdentifier or: [name isLiteral]) ifFalse:[self syntaxError].
+	node
+		addArgument: argument content
+		name: name content ].
 	
 	^node
 		selector: (node arguments inject: '' into: [ :concat :part | concat, part first ]);

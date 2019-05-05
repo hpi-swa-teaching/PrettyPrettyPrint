@@ -1,11 +1,10 @@
 as yet unclassified
-extractRelevantPragmasFrom: aPPPMethodNode
+extractRelevantPragmasFrom: anOrderedCollection
+	| relevantPragmas |
 
-	| allPragmas parsedPragmas relevantPragmas |
-	allPragmas := aPPPMethodNode getAllPragmas.
-	parsedPragmas := allPragmas collect: [:pragma | self parsePragma: pragma].
-	relevantPragmas := parsedPragmas select: [:pragma |
-		pragma arguments first first = 'PrettyPrint:'].
-	
-	
+	relevantPragmas := anOrderedCollection select: [:pragma |
+		pragma arguments notEmpty 
+		and: [pragma arguments first notEmpty
+		and: [pragma arguments first first = 'PrettyPrint:']]].
+
 	^relevantPragmas
