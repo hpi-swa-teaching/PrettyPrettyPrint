@@ -1,4 +1,5 @@
 as yet unclassified
 testMessage
-	<hi>.
-	^self
+	<PrettyPrint: 'ignore' option: 'True'>
+	
+	^       self
