@@ -3,7 +3,8 @@ displayedMethodNames
 
 	self selectedClasses 
 		ifNil: [^ #()] 
-		ifNotNil: [^ ({self selectedClasses}
-			gather: [:c | (Smalltalk at: c) allSelectors 
-				collect: [:s | c asString , '  >>  ' , s asString]])
-					sort]
+		ifNotNil: [^ ((self selectedClasses
+			collect: [:index | self classes at: index])
+				gather: [:classname | (Smalltalk at: classname) allSelectors 
+					collect: [:selector | classname asString , '  >>  ' , selector asString]])
+						sort]

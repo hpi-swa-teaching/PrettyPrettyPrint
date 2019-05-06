@@ -1,4 +1,4 @@
 as yet unclassified
-categoryAt: aKey
+categoryAt: anIndex
 
-	^ self selectedCategories includes: aKey.
+	^ self selectedCategories includes: anIndex.
