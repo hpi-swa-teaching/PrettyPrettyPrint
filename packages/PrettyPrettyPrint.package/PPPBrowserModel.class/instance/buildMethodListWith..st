@@ -1,7 +1,7 @@
 as yet unclassified
 buildMethodListWith: aBuilder
 
-	^ aBuilder pluggableListSpec new 
+	^ aBuilder pluggableMultiSelectionListSpec new 
 		model: self;
 		list: #displayedMethodNames;
 		frame: (LayoutFrame new 
@@ -9,6 +9,6 @@ buildMethodListWith: aBuilder
 			topFraction: 0 offset: 0; 
 			rightFraction: 1 offset: 0;
 			bottomFraction: self defaultHorizontalFraction offset: 0);
-		getSelected: #selectedMethods; 
-		setSelected: #selectedMethods:;
+		getSelectionList: #methodAt:; 
+		setSelectionList: #methodAt:selected:;
 		yourself
