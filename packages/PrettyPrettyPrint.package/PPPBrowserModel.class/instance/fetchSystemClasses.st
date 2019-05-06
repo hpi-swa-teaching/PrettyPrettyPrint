@@ -5,5 +5,5 @@ fetchSystemClasses
 	
 	Smalltalk allClasses do: [ :class |
 		class category ifNotNil: [
-		(self addCategoryIfNecessary: class category) second
+		(self addCategoryIfNecessary: class category)
 			add: class name]].

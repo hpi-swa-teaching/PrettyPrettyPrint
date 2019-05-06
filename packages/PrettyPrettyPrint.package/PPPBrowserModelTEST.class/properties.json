@@ -1,0 +1,14 @@
+{
+	"category" : "PrettyPrettyPrint-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "PPPBrowserModelTEST",
+	"pools" : [
+		 ],
+	"super" : "PPPBrowserModel",
+	"type" : "normal" }

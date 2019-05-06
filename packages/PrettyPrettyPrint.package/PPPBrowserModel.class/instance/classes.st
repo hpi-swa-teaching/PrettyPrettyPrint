@@ -1,6 +1,8 @@
 as yet unclassified
 classes
-
-	self selectedCategories 
-		ifNil: [^ nil] 
-		ifNotNil: [^ self selectedCategories gather: [:c | (self categoryDictionary at: c) sort]]
+	self selectedCategories
+		ifNil: [^ #()]
+		ifNotNil: [^ ((self selectedCategories 
+			collect: [:index | self categories at: index]) 
+				gather: [:category | self categoryDictionary at: category]) 
+					sort]

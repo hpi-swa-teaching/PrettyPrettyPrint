@@ -1,7 +1,7 @@
 as yet unclassified
 buildClassListWith: aBuilder
 
-	^ aBuilder pluggableMultiSelectionListSpec new 
+	^ aBuilder pluggableListSpec new 
 		model: self;
 		list: #classes;
 		frame: (LayoutFrame new 
@@ -9,6 +9,6 @@ buildClassListWith: aBuilder
 			topFraction: 0 offset: 0; 
 			rightFraction: self defaultMiddleFraction offset: 0;
 			bottomFraction: 1 offset: 0);
-		getSelectionList: #selectedClasses; 
-		setSelectionList: #selectedClasses:;
+		getSelected: #selectedClasses; 
+		setSelected: #selectedClasses:;
 		yourself

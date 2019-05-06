@@ -2,5 +2,5 @@ as yet unclassified
 displayedClassNames
 
 	self selectedCategories 
-		ifNil: [^ nil] 
+		ifNil: [^ #()] 
 		ifNotNil: [^ self selectedCategories gather: [:c | (self categoryDictionary at: c) sort]]
