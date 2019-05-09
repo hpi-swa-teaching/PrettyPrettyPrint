@@ -1,0 +1,25 @@
+{
+	"class" : {
+		"initialize" : "kiwi 4/29/2019 18:29",
+		"labelString" : "kiwi 4/29/2019 18:29",
+		"open" : "kiwi 4/29/2019 18:30",
+		"open:" : "kiwi 4/29/2019 18:30",
+		"registerToMenu" : "kiwi 4/29/2019 18:30",
+		"unload" : "kiwi 4/29/2019 18:30" },
+	"instance" : {
+		"addCategoryIfNecessary:" : "kiwi 4/29/2019 18:26",
+		"buildCategoryListWith:" : "kiwi 4/29/2019 18:26",
+		"buildClassListWith:" : "kiwi 4/29/2019 18:26",
+		"buildWith:" : "kiwi 4/29/2019 18:31",
+		"categories" : "kiwi 4/29/2019 18:28",
+		"categoryDictionary" : "kiwi 4/29/2019 18:28",
+		"categoryDictionary:" : "kiwi 4/29/2019 18:28",
+		"classes" : "kiwi 4/29/2019 18:28",
+		"currentSelection" : "kiwi 4/29/2019 18:33",
+		"currentSelection:" : "kiwi 4/29/2019 18:33",
+		"defaultLeftFraction" : "kiwi 4/29/2019 18:28",
+		"defaultRightFraction" : "kiwi 4/29/2019 18:28",
+		"fetchSystemClasses" : "kiwi 4/29/2019 18:29",
+		"initialize" : "kiwi 4/29/2019 18:29",
+		"selectedCategories" : "kiwi 4/29/2019 18:35",
+		"selectedCategories:" : "kiwi 4/29/2019 18:29" } }

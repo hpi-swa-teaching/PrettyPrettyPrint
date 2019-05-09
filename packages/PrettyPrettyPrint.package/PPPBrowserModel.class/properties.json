@@ -1,0 +1,16 @@
+{
+	"category" : "PrettyPrettyPrint-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"currentSelection",
+		"categoryDictionary",
+		"selectedCategories" ],
+	"name" : "PPPBrowserModel",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }
