@@ -2,4 +2,9 @@ as yet unclassified
 testMessage
 	<PrettyPrint: 'ignore' option: 'True'>
 	
-	^       self
+	Transcript showln: 'hi'.
+	Transcript showln: 'hi'.
+	Transcript showln: 'hi'.
+	Transcript showln: 'hi'.
+	
+	^self
