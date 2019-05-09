@@ -1,0 +1,14 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"allParsedPragmas" : "gw 5/5/2019 10:52",
+		"allPragmas" : "gw 5/5/2019 10:36",
+		"dummyAst" : "gw 5/5/2019 09:51",
+		"invalidParsedPragmas" : "gw 5/5/2019 10:37",
+		"relevantParsedPragmas" : "gw 5/5/2019 10:37",
+		"relevantPragmasDict" : "gw 5/5/2019 11:30",
+		"testPragmaExtracting" : "gw 5/5/2019 09:37",
+		"testPragmaParsing" : "gw 5/5/2019 10:30",
+		"testPragmasToDict" : "gw 5/5/2019 11:30",
+		"validIgnoreParsedPragma" : "gw 5/5/2019 10:37" } }

@@ -1,0 +1,14 @@
+{
+	"category" : "PrettyPrettyPrint",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "PPPPragmaHandler",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
