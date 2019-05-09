@@ -1,4 +1,4 @@
-as yet unclassified
+list generation
 fetchSystemClasses
 	
 	self categoryDictionary: Dictionary new.

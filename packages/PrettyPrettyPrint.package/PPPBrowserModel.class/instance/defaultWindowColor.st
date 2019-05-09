@@ -1,4 +1,4 @@
-as yet unclassified
+UI design
 defaultWindowColor
 
 	^ Color yellow

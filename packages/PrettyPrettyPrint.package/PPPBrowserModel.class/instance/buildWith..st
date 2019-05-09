@@ -1,13 +1,12 @@
-as yet unclassified
+building
 buildWith: aBuilder
 	
 	^ aBuilder build: (aBuilder pluggableWindowSpec new 
 	model: self;
 	label: 'PPP Browser'; 
-	extent: 500@400;
+	extent: self initialExtent;
 	children: {self buildCategoryListWith: aBuilder .
 		self buildClassListWith: aBuilder .
 		self buildMethodListWith: aBuilder .
-		self buildPPPButtonWith: aBuilder .
-		self buildPPPAllButSelectedButtonWith: aBuilder};
+		self buildPPPButtonWith: aBuilder};
 	yourself)

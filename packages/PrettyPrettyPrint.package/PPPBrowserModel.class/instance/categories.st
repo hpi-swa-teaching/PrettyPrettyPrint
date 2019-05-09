@@ -1,4 +1,4 @@
-as yet unclassified
+list generation
 categories
 
 	^ self categoryDictionary keys sort

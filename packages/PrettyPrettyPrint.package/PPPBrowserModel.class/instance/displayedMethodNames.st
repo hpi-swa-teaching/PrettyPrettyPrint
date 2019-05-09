@@ -1,4 +1,4 @@
-as yet unclassified
+list generation
 displayedMethodNames
 
 	self selectedClasses 

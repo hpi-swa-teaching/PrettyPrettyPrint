@@ -1,4 +1,4 @@
-as yet unclassified
+list selection handling
 categoryAt: anIndex selected: aBoolean
 
 	aBoolean 

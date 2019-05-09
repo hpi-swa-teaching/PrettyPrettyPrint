@@ -1,4 +1,4 @@
-as yet unclassified
+list generation
 addCategoryIfNecessary: aSymbol
 
 	^ self categoryDictionary 

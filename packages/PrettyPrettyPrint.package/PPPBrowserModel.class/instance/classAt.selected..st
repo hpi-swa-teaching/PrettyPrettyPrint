@@ -1,4 +1,4 @@
-as yet unclassified
+list selection handling
 classAt: anIndex selected: aBoolean
 
 	aBoolean 

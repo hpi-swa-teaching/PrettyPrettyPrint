@@ -1,4 +1,4 @@
-as yet unclassified
+pretty printing
 referencesToSelectedMethods
 
 	| methodReferences class selector displayedMethodName |

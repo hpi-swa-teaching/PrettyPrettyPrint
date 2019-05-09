@@ -1,4 +1,4 @@
-as yet unclassified
+building
 buildPPPButtonWith: aBuilder
 
 	^ aBuilder pluggableButtonSpec new 
@@ -8,6 +8,6 @@ buildPPPButtonWith: aBuilder
 		frame: (LayoutFrame new 
 			leftFraction: self defaultMiddleFraction offset: 0;
 			topFraction: self defaultHorizontalFraction offset: 0; 
-			rightFraction: self defaultRightFraction offset: 0;
+			rightFraction: 1 offset: 0;
 			bottomFraction: 1 offset: 0);
 		yourself

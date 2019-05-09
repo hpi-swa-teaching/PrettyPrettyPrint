@@ -1,4 +1,4 @@
-as yet unclassified
+list selection handling
 checkIfCategoryIsSelected: aString
 
 	^ (self categoryDictionary at: aString) first

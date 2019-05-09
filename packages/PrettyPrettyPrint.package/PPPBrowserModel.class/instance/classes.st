@@ -1,4 +1,4 @@
-as yet unclassified
+list generation
 classes
 	self selectedCategories
 		ifNil: [^ #()]
