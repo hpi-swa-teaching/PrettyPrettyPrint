@@ -1,13 +1,10 @@
 parse-node
 parseSequence
 	| node precededByEmptyLine statement |
-	node := PPPSequenceNode new
-		temporaries: self parseTemporaries;
-		yourself.
-		
-	self parsePragmaFor: node.
 	
-	[self nextToken endsSequence] whileFalse: [
+	node := self sequenceNodeWithTemporariesAndPragmas.
+	
+	[ self nextToken endsSequence ] whileFalse: [
 		precededByEmptyLine := self nextToken precededByEmptyLine.
 		statement := (self parseStatement: PPPParserState new)
 			precededByEmptyLine: precededByEmptyLine;
@@ -20,4 +17,4 @@ parseSequence
 	node trailingComments: currentComments.
 	currentComments := OrderedCollection new.
 	
-	^node
+	^ node

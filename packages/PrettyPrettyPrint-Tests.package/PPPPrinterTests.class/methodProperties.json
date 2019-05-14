@@ -5,6 +5,8 @@
 		"testComments" : "TB 7/28/2016 10:17",
 		"testCustomProfileImportExport" : "lcj 7/29/2016 13:24",
 		"testKeepEmptyLines" : "TB 6/28/2016 17:20",
+		"testNoDotAfterPragma" : "kiwi 5/9/2019 20:11",
+		"testPragmaSkipFormatting" : "gw 5/5/2019 12:45",
 		"testPrintArray" : "TB 6/28/2016 12:18",
 		"testPrintAssignmentNode" : "lcj 7/29/2016 18:35",
 		"testPrintBinaryMessageNode" : "lcj 6/22/2016 14:36",
