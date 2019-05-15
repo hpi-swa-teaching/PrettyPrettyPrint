@@ -1,0 +1,3 @@
+accessing
+newlineAfterSelector
+	^ newlineAfterSelector
