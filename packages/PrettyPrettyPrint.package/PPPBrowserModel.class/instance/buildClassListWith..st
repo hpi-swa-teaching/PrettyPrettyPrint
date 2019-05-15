@@ -9,6 +9,7 @@ buildClassListWith: aBuilder
 			topFraction: 0 offset: 0; 
 			rightFraction: self defaultMiddleFraction offset: 0;
 			bottomFraction: 1 offset: 0);
+		menu: #classMenu:;
 		getSelectionList: #classAt:;
 		setSelectionList: #classAt:selected:;
 		yourself.

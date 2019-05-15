@@ -9,6 +9,7 @@ buildCategoryListWith: aBuilder
 			topFraction: 0 offset: 0; 
 			rightFraction: self defaultLeftFraction offset: 0;
 			bottomFraction: 1 offset: 0);
+		menu: #categoryMenu:;
 		getSelectionList: #categoryAt:;
 		setSelectionList: #categoryAt:selected:;
 		yourself.

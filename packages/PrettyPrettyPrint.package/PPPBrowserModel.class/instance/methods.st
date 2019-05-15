@@ -1,5 +1,5 @@
 list generation
-displayedMethodNames
+methods
 
 	self selectedClasses 
 		ifNil: [^ #()] 

@@ -1,4 +1,4 @@
 accessing
-selectedCategories: anObject
+selectedCategories: anArray
 
-	selectedCategories := anObject
+	selectedCategories := anArray

@@ -1,3 +1,3 @@
 accessing
-categoryDictionary: anObject
-	categoryDictionary := anObject
+categoryDictionary: aDictionary
+	categoryDictionary := aDictionary

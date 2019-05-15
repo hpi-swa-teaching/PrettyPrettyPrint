@@ -1,4 +1,4 @@
 accessing
-selectedMethods: anObject
+selectedMethods: anArray
 
-	selectedMethods := anObject
+	selectedMethods := anArray
