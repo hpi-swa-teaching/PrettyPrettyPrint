@@ -6,6 +6,8 @@ visitMethodNode: aNode
 	aNode arguments
 		ifEmpty: [ buffer nextPutAll: aNode selector ]
 		ifNotEmpty: [ aNode arguments do: [ :z | buffer nextPutAll: z first , ' ' , z second , ' ' ] ].
+		
+	self profile newlineAfterSelector ifTrue: [buffer cr].
 	
 	self
 		incrementIndent;
