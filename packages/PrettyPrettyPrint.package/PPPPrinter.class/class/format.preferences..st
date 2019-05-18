@@ -1,5 +1,6 @@
 format
-format: aString preferences: aBlock
+format: aString preferences: aBlock 
+
 	| tokens printer abstractSyntaxTree pragmaPreferences |
 	
 	tokens := PPPTokenizer on: aString.
@@ -7,8 +8,10 @@ format: aString preferences: aBlock
 	printer := PPPPrinter new.
 	aBlock value: printer profile.
 	
-	abstractSyntaxTree := PPPParser new parseTokenStream: (tokens).	
+	abstractSyntaxTree := PPPParser new parseTokenStream: (tokens).
 	pragmaPreferences := PPPPragmaHandler new getPragmaPreferencesFrom: abstractSyntaxTree.
 	
-	 (pragmaPreferences at: #ignore ifAbsent: []) = 'True' ifTrue:[^ aString].
-	^printer visitMethodNode: abstractSyntaxTree
+	self flag: 'We should try to extract this method (since it is very low-level)'.
+	(pragmaPreferences at: #ignore ifAbsent: [  ]) = 'True' ifTrue: [
+		^ aString ].
+	^ printer visitMethodNode: abstractSyntaxTree
