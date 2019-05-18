@@ -1,12 +1,21 @@
 testing
 testNewlineAfterSelectorWithKeepEmptyLines
 
-	| method formattedMethod correctlyFormattedMethod |
-	method := 'visitMethodNode: aNode
+	| methodWithReturn methodWithoutReturn formattedMethod correctlyFormattedMethodWithReturn correctlyFormattedMethodWithoutReturn |
+	methodWithReturn := 'visitMethodNode: aNode
+
+^self hello'.
+	formattedMethod := PPPPrinter format: methodWithReturn preferences: [ :profile | profile newlineAfterSelector: true; keepEmptyLines: true; dotAfterReturn: false ].
+	correctlyFormattedMethodWithReturn := 'visitMethodNode: aNode
+	
+	^self hello'.
+	self assert: correctlyFormattedMethodWithReturn equals: formattedMethod.
+	
+	methodWithoutReturn := 'visitMethodNode: aNode
 
 self hello'.
-	formattedMethod := PPPPrinter format: method preferences: [ :profile | profile newlineAfterSelector: true; keepEmptyLines: true; dotAfterReturn: false ].
-	correctlyFormattedMethod := 'visitMethodNode: aNode
+	formattedMethod := PPPPrinter format: methodWithoutReturn.
+	correctlyFormattedMethodWithoutReturn := 'visitMethodNode: aNode
 
 	self hello'.
-	self assert: correctlyFormattedMethod equals: formattedMethod.
+	self assert: correctlyFormattedMethodWithoutReturn equals: formattedMethod.

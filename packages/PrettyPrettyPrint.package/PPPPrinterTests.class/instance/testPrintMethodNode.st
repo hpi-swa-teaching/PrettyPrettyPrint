@@ -28,7 +28,7 @@ testPrintMethodNode
 		yourself.
 	
 	self
-		assert: 'ourMethod: argument with: anotherArgument 
+		assert: 'ourMethod: argument with: anotherArgument
 	| temp1 temp2 |
 	variable := 4.
 	^self'
