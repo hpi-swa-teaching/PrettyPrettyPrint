@@ -7,5 +7,5 @@ selectAllCategories
 	self deselectAllCategories.
 	1 to: numberOfCategories do: [:num | selectedCategoriesCollection add: num].
 	self selectedCategories: selectedCategoriesCollection asArray.
+	self changed: #categories.
 	self changed: #classes.
-	

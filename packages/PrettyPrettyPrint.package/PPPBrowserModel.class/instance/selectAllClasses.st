@@ -7,5 +7,6 @@ selectAllClasses
 	self deselectAllClasses.
 	1 to: numberOfClasses do: [:num | selectedClassesCollection add: num].
 	self selectedClasses: selectedClassesCollection asArray.
+	self changed: #classes.
 	self changed: #methods.
 	

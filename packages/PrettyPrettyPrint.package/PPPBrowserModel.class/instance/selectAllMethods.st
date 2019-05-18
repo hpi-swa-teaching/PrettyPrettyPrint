@@ -7,4 +7,4 @@ selectAllMethods
 	self deselectAllMethods.
 	1 to: numberOfMethods do: [:num | selectedMethodsCollection add: num].
 	self selectedMethods: selectedMethodsCollection asArray.
-	
+	self changed: #methods.

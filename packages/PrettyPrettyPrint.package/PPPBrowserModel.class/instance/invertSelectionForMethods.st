@@ -7,4 +7,5 @@ invertSelectionForMethods
 	1 to: numberOfMethods do: [:num | selectedMethodsCollection remove: num 
 		ifAbsent: [selectedMethodsCollection add: num]].
 	self selectedMethods: selectedMethodsCollection asArray.
+	self changed: #methods.
 	
