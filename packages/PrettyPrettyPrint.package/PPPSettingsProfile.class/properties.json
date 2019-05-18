@@ -10,6 +10,7 @@
 		"MaxLineLength",
 		"NewlineAfterSelector",
 		"NewlineAfterTemporaryDeclaration",
+		"NewlineBeforeReturn",
 		"SpaceAroundBinaryOperator",
 		"SpaceBeforeReturn" ],
 	"commentStamp" : "TB 7/28/2016 16:11",
@@ -21,7 +22,8 @@
 		"maxLineLength",
 		"keepEmptyLines",
 		"encloseBlockSequenceWithSpace",
-		"newlineAfterSelector" ],
+		"newlineAfterSelector",
+		"newlineBeforeReturn" ],
 	"name" : "PPPSettingsProfile",
 	"pools" : [
 		 ],

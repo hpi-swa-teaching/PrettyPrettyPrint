@@ -7,5 +7,4 @@ visitAssignmentNode: aNode
 	self profile spaceAroundBinaryOperator ifTrue: [ buffer nextPutAll: ' := ' ] ifFalse: [ buffer nextPutAll: ':=' ].
 	
 	buffer nextPutAll: (self visitValueNode: aNode value).
-	
 	^buffer contents

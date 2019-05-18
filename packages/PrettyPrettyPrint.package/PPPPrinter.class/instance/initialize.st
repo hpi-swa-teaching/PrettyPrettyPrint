@@ -1,4 +1,7 @@
 initialize-release
 initialize
-	currentIndent := 0.
-	profile := PPPSettingsProfile userProfile
+	
+	self
+		currentIndent: 0;
+		profile: PPPSettingsProfile userProfile;
+		currentBlockLevel: 0
