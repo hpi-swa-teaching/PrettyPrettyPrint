@@ -1,5 +1,6 @@
 testing
 testKeepEmptyLines
+
 	self
 		assert: 'testMethod
 	1.
@@ -15,4 +16,8 @@ testKeepEmptyLines
 	3.
 	
 	
-	4')
+	4' preferences: [ :profile | profile 
+	newlineAfterSelector: false; 
+	dotAfterReturn: false;
+	newlineBeforeReturn: false;
+	spaceBeforeReturn: false ]).

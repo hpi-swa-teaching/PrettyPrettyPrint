@@ -1,5 +1,6 @@
 testing
 testPrintMultilineMessage
+
 	| string shortString |
 	
 	string := 'testMethod
@@ -12,6 +13,21 @@ testPrintMultilineMessage
 	
 	self
 		assert: string
-		equals: (PPPPrinter format: string preferences: [ :profile | profile maxLineLength: 10 ]);
+		equals: (PPPPrinter
+			format: string
+			preferences: [ :profile | profile
+				maxLineLength: 10;
+				newlineAfterSelector: false;
+				dotAfterReturn: false;
+				newlineBeforeReturn: false;
+				spaceBeforeReturn: false. ]);
+			
 	assert: shortString
-	equals: (PPPPrinter format: string preferences: [ :profile | profile maxLineLength: 1000 ])
+	equals: (PPPPrinter
+		format: string
+		preferences: [ :profile | profile
+			maxLineLength: 1000;
+			newlineAfterSelector: false;
+			dotAfterReturn: false;
+			newlineBeforeReturn: false;
+			spaceBeforeReturn: false. ]).

@@ -1,8 +1,13 @@
 testing
 testPrintMethodNode
+
 	| sequenceNode printer statements temporaries methodNode |
 	
 	printer := PPPPrinter new.
+	printer profile newlineAfterSelector: false; 
+	dotAfterReturn: false;
+	newlineBeforeReturn: false;
+	spaceBeforeReturn: false.
 	
 	sequenceNode := PPPSequenceNode new.
 	temporaries := OrderedCollection new
@@ -27,4 +32,4 @@ testPrintMethodNode
 	| temp1 temp2 |
 	variable := 4.
 	^self'
-		equals: (methodNode accept: printer)
+		equals: (methodNode accept: printer).
