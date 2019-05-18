@@ -5,11 +5,11 @@ printStatementsOf: aNode on: aBuffer
 	
 	aNode statements
 		do: [ :statement |
-			(statement precededByEmptyLine and: [ self profile keepEmptyLines ]) ifTrue: [ self newLineIndentOn: aBuffer ].
+			(self newLineNeededBefore: statement of: aNode) ifTrue: [self newLineIndentOn: aBuffer].
 			aBuffer nextPutAll: (self visitValueNode: statement).
-			statementIsPragmaNode := statement isPragmaNode ]
+			statementIsPragmaNode := statement isPragmaNode. ]
 		separatedBy: [
-			statementIsPragmaNode ifFalse: [ aBuffer nextPut: $. ].
-			self newLineIndentOn: aBuffer ].
+			statementIsPragmaNode ifFalse: [ aBuffer nextPut: $.. ].
+			self newLineIndentOn: aBuffer. ].
 	
-	self profile dotAfterReturn ifTrue: [ aBuffer nextPut: $. ]
+	self profile dotAfterReturn ifTrue: [ aBuffer nextPut: $.. ].
