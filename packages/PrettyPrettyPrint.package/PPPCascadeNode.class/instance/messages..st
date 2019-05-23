@@ -1,3 +1,4 @@
 accessing
-messages: anObject
-	messages := anObject
+messages: aCollection
+	"aCollection should consist of MessageNodes"
+	messages := aCollection

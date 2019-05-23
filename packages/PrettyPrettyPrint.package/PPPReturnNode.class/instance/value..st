@@ -1,3 +1,3 @@
 accessing
-value: aNode
-	value := aNode
+value: aValueNode
+	value := aValueNode
