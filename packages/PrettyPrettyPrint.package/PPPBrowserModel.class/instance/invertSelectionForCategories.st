@@ -1,13 +1,12 @@
 list selection handling
 invertSelectionForCategories
 
-	| numberOfCategories selectedCategoriesCollection |
+	| selectedCategoriesCollection |
 		
 	self deselectAllClasses.
-	numberOfCategories := self categories size.
 	selectedCategoriesCollection := self selectedCategories asOrderedCollection.
-	1 to: numberOfCategories do: [:num | selectedCategoriesCollection remove: num 
-		ifAbsent: [selectedCategoriesCollection add: num]].
+	self categories do: [:cat | selectedCategoriesCollection remove: cat 
+		ifAbsent: [selectedCategoriesCollection add: cat]].
 	self selectedCategories: selectedCategoriesCollection asArray.
 	self changed: #categories.
 	self changed: #classes.

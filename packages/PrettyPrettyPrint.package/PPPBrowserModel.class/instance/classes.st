@@ -2,7 +2,6 @@ list generation
 classes
 	self selectedCategories
 		ifNil: [^ #()]
-		ifNotNil: [^ ((self selectedCategories 
-			collect: [:index | self categories at: index]) 
-				gather: [:category | self categoryDictionary at: category]) 
-					sort]
+		ifNotNil: [^ (self selectedCategories 
+			gather: [:category | self categoryDictionary at: category]) 
+				sort]

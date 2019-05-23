@@ -5,11 +5,9 @@ deselectClassesOfCategory: aCategory
 	
 	newSelectedClasses := self selectedClasses asOrderedCollection.
 	classesOfCategory := self categoryDictionary at: aCategory.
-	newSelectedClasses do: [:index |
-		| aClass |
-		aClass := self classes at: index.
-		(classesOfCategory includes: aClass)
-			ifTrue: [newSelectedClasses remove: index.
-				self deselectMethodsOfClass: aClass]].
+	self selectedClasses do: [:class |
+		(classesOfCategory includes: class) 
+			ifTrue: [newSelectedClasses remove: class.
+				self deselectMethodsOfClass: class]].
 	self selectedClasses: newSelectedClasses asArray.
 	self changed: #classes.

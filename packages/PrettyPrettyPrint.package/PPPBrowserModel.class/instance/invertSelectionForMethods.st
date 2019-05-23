@@ -1,11 +1,10 @@
 list selection handling
 invertSelectionForMethods
 
-	| numberOfMethods selectedMethodsCollection |
-	numberOfMethods := self methods size.
+	| selectedMethodsCollection |
 	selectedMethodsCollection := self selectedMethods asOrderedCollection.
-	1 to: numberOfMethods do: [:num | selectedMethodsCollection remove: num 
-		ifAbsent: [selectedMethodsCollection add: num]].
+	self methods do: [:meth | selectedMethodsCollection remove: meth 
+		ifAbsent: [selectedMethodsCollection add: meth]].
 	self selectedMethods: selectedMethodsCollection asArray.
 	self changed: #methods.
 	

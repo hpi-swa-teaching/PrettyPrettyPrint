@@ -1,12 +1,11 @@
 list selection handling
 invertSelectionForClasses
 
-	| numberOfClasses selectedClassesCollection |
+	| selectedClassesCollection |
 	self deselectAllMethods.
-	numberOfClasses := self classes size.
 	selectedClassesCollection := self selectedClasses asOrderedCollection.
-	1 to: numberOfClasses do: [:num | selectedClassesCollection remove: num 
-		ifAbsent: [selectedClassesCollection add: num]].
+	self classes do: [:class | selectedClassesCollection remove: class 
+		ifAbsent: [selectedClassesCollection add: class]].
 	self selectedClasses: selectedClassesCollection asArray.
 	self changed: #classes.
 	self changed: #methods.
