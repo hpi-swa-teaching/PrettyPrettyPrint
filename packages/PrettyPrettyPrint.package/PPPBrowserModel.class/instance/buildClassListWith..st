@@ -1,14 +1,15 @@
-as yet unclassified
+building
 buildClassListWith: aBuilder
 
-	^ aBuilder pluggableListSpec new 
+	^ aBuilder pluggableMultiSelectionListSpec new
 		model: self;
 		list: #classes;
 		frame: (LayoutFrame new 
 			leftFraction: self defaultLeftFraction offset: 0;
 			topFraction: 0 offset: 0; 
-			rightFraction: self defaultRightFraction offset: 0;
+			rightFraction: self defaultMiddleFraction offset: 0;
 			bottomFraction: 1 offset: 0);
-		getSelected: #currentSelection; 
-		setSelected: #currentSelection:;
-		yourself
+		menu: #classMenu:;
+		getSelectionList: #classAt:;
+		setSelectionList: #classAt:selected:;
+		yourself.

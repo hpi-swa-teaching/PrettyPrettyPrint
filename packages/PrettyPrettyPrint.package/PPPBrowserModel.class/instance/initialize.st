@@ -1,5 +1,7 @@
-as yet unclassified
+initialization
 initialize
 
 	super initialize.
-	self fetchSystemClasses.
+	self 
+		fetchSystemClasses; 
+		initializeSelections.

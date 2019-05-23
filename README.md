@@ -60,32 +60,6 @@ To pretty pretty print an entire package with your userProfile execute the follo
 PPPPrinter userFormatPackage: 'name of package'
 ```
 
-#### Using Pragmas
-With pragmas you can control the settings of the PPP individually for a single method. Pragmas are placed in the method's code, either directly before or directly after the declaration of the temporaries. Here are two examples:
-
-```
-someMessage
-   <PrettyPrint: 'ignore' option: 'True'>
-   | someTemporary |
-   ...
-```
-```
-someOtherMessage
-   | someTemporary |
-   <PrettyPrint: 'ignore' option: 'True'>
-   ...
-```
-The PPP will only recognize pragmas that match the following pattern:
-
-```<PrettyPrint: 'ruleName' option: 'theOptionYouPrefer'>```
-
-**Supported Rules** | **Supported Options**
---- | ---
-ignore | True
-
-
-
-
 Implementation Details
 =================
 The project contains four classes that aggregate most logic and a set of classes used to represent the nodes in the abstract syntax tree (AST) of a method.

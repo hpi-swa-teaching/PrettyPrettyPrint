@@ -1,4 +1,7 @@
-as yet unclassified
+list generation
 classes
-
-	^ (self selectedCategories gather: [:c | self categoryDictionary at: c]) sort
+	self selectedCategories
+		ifNil: [^ #()]
+		ifNotNil: [^ (self selectedCategories 
+			gather: [:category | self categoryDictionary at: category]) 
+				sort]
