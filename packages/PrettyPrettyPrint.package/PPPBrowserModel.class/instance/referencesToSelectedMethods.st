@@ -1,11 +1,10 @@
 pretty printing
 referencesToSelectedMethods
 
-	| methodReferences class selector displayedMethodName |
+	| methodReferences class selector |
 	methodReferences := OrderedCollection new. 
-	self selectedMethods do: [:index |
-		displayedMethodName := self methods at: index.
-		class := Compiler evaluate: (displayedMethodName subStrings: '  >>  ') first.
-		selector := (displayedMethodName subStrings: '  >>  ') second asSymbol.
+	self selectedMethods do: [:meth |
+		class := Compiler evaluate: (meth subStrings: '  >>  ') first.
+		selector := (meth subStrings: '  >>  ') second asSymbol.
 		methodReferences add: (MethodReference class: class selector: selector)].
 	^ methodReferences
