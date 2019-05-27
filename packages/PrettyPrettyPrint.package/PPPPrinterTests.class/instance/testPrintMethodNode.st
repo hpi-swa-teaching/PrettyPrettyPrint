@@ -4,10 +4,7 @@ testPrintMethodNode
 	| sequenceNode printer statements temporaries methodNode |
 	
 	printer := PPPPrinter new.
-	printer profile newlineAfterSelector: false; 
-	dotAfterReturn: false;
-	newlineBeforeReturn: false;
-	spaceBeforeReturn: false.
+	self preferenceBlock value: printer profile.
 	
 	sequenceNode := PPPSequenceNode new.
 	temporaries := OrderedCollection new

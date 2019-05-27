@@ -3,11 +3,7 @@ testPrintSequenceNode
 	| sequenceNode printer statements temporaries |
 	
 	printer := PPPPrinter new.
-	printer profile
-		newlineAfterSelector: false; 
-		dotAfterReturn: false;
-		newlineBeforeReturn: false;
-		spaceBeforeReturn: false.
+	self preferenceBlock value: printer profile.
 	sequenceNode := PPPSequenceNode new.
 	temporaries := OrderedCollection new
 		add: 'temp1';

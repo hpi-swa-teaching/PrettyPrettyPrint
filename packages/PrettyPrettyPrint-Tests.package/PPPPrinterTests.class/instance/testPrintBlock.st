@@ -4,10 +4,7 @@ testPrintBlock
 	| sequenceNode printer |
 	
 	printer := PPPPrinter new.
-	printer profile newlineAfterSelector: false; 
-	dotAfterReturn: false;
-	newlineBeforeReturn: false;
-	spaceBeforeReturn: false.
+	self preferenceBlock value: printer profile.
 	
 	sequenceNode := PPPBlockNode new
 		bindings: (OrderedCollection with: ':b1' with: ':b2');

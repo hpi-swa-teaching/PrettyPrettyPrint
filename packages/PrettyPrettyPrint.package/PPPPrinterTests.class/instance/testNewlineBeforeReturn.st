@@ -10,7 +10,7 @@ testNewlineBeforeReturn
 	^*'.
 	self assert: (newlineWithReturnStatement match: formattedMethod).
 	
-	formattedMethod := PPPPrinter format: method preferences: [ :profile | profile newlineBeforeReturn: false; newlineAfterSelector: false].
+	formattedMethod := PPPPrinter format: method preferences: self preferenceBlock.
 	returnStatementWithoutNewline := 'visitMethodNode: aNode
 	^'.
 	self assert: (formattedMethod beginsWith: returnStatementWithoutNewline).

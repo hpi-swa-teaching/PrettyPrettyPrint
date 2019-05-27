@@ -14,8 +14,4 @@ testComments
 	"blbl"'
 		equals: (PPPPrinter format: '" hi " test " blah " 4.
 	self "i" printTest "l" "asdasd".
-	"lkjh" "blbl"' preferences: [ :profile | profile 
-	newlineAfterSelector: false; 
-	dotAfterReturn: false;
-	newlineBeforeReturn: false;
-	spaceBeforeReturn: false ]).
+	"lkjh" "blbl"' preferences: self preferenceBlock).

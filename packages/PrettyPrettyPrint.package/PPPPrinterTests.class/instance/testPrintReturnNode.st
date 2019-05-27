@@ -3,11 +3,7 @@ testPrintReturnNode
 	| returnNode printer |
 	
 	printer := PPPPrinter new.
-	printer profile
-		newlineAfterSelector: false; 
-		dotAfterReturn: false;
-		newlineBeforeReturn: false;
-		spaceBeforeReturn: false.
+	self preferenceBlock value: printer profile.
 	
 	returnNode := PPPSequenceNode
 		temporaries: OrderedCollection new
