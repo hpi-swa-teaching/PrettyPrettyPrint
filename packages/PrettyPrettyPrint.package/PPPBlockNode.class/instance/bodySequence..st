@@ -1,3 +1,3 @@
 accessing
-bodySequence: anObject
-	bodySequence := anObject
+bodySequence: aSequenceNode
+	bodySequence := aSequenceNode

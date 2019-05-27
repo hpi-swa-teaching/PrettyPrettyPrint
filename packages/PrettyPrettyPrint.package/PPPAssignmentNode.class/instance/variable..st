@@ -1,3 +1,3 @@
 accessing
-variable: anObject 
-	variable := anObject
+variable: aString
+	variable := aString

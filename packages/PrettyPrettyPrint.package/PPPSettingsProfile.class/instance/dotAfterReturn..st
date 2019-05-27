@@ -1,3 +1,3 @@
 accessing
-dotAfterReturn: anObject
-	dotAfterReturn := anObject
+dotAfterReturn: aBoolean
+	dotAfterReturn := aBoolean

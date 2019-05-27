@@ -1,6 +1,6 @@
 instance creation
-variable: aString value: aNode 
+variable: aString value: aValueNode 
 	^self new
 		variable: aString;
-		value: aNode;
+		value: aValueNode;
 		yourself

@@ -1,3 +1,3 @@
 accessing
-spaceAroundBinaryOperator: anObject
-	spaceAroundBinaryOperator := anObject
+spaceAroundBinaryOperator: aBoolean
+	spaceAroundBinaryOperator := aBoolean

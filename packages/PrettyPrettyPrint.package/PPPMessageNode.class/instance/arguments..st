@@ -1,3 +1,4 @@
 accessing
-arguments: anObject 
-	arguments := anObject
+arguments: anArray 
+	"anArray should consist of Strings"
+	arguments := anArray

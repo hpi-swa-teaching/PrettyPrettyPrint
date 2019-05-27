@@ -1,3 +1,3 @@
 accessing
-spaceBeforeReturn: anObject
-	spaceBeforeReturn := anObject
+spaceBeforeReturn: aBoolean
+	spaceBeforeReturn := aBoolean

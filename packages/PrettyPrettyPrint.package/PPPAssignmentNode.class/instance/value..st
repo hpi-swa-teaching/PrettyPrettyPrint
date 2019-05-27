@@ -1,3 +1,3 @@
 accessing
-value: anObject 
-	value := anObject
+value: aValueNode 
+	value := aValueNode

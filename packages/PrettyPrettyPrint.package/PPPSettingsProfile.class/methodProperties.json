@@ -32,7 +32,7 @@
 	"instance" : {
 		"=" : "lcj 7/6/2016 15:43",
 		"dotAfterReturn" : "lcj 7/29/2016 19:34",
-		"dotAfterReturn:" : "TB 6/17/2016 21:06",
+		"dotAfterReturn:" : "gw 5/27/2019 10:32",
 		"encloseBlockSequenceWithSpace" : "TB 6/29/2016 14:02",
 		"encloseBlockSequenceWithSpace:" : "TB 6/29/2016 14:02",
 		"exportProfileNamed:" : "lcj 7/6/2016 15:47",
@@ -44,11 +44,11 @@
 		"newlineAfterSelector" : "kiwi 5/15/2019 18:26",
 		"newlineAfterSelector:" : "kiwi 5/15/2019 18:26",
 		"newlineAfterTemporaryDeclaration" : "lcj 7/29/2016 19:34",
-		"newlineAfterTemporaryDeclaration:" : "TB 6/17/2016 21:06",
+		"newlineAfterTemporaryDeclaration:" : "gw 5/27/2019 10:32",
 		"newlineBeforeReturn" : "kiwi 5/18/2019 10:13",
 		"newlineBeforeReturn:" : "kiwi 5/18/2019 10:13",
 		"spaceAroundBinaryOperator" : "lcj 7/29/2016 19:34",
-		"spaceAroundBinaryOperator:" : "TB 6/20/2016 10:33",
+		"spaceAroundBinaryOperator:" : "gw 5/27/2019 10:32",
 		"spaceBeforeReturn" : "lcj 7/29/2016 19:34",
-		"spaceBeforeReturn:" : "TB 6/17/2016 21:06",
+		"spaceBeforeReturn:" : "gw 5/27/2019 10:32",
 		"storeOn:" : "lcj 7/6/2016 14:33" } }
