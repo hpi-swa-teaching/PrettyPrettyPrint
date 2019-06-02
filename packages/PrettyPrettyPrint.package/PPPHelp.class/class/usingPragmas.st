@@ -18,7 +18,9 @@ someMessage
 The PPP will only recognize pragmas that match the following pattern:
 	<PrettyPrint: #ruleName option: theOptionYouPrefer>
 
+-------------------
+
 Supported Rules (with options):
 - #ignore (true)!
-]style[(229 11 3 12 1 7 1 7 1 4 3 1 1 13 1 1 2 11 2 1 1 13 1 1 3 12 1 7 1 7 1 4 75 12 1 9 1 7 1 18 37 7 2 4 1),b,,c000124000b,,c000000124,,c000124000b,,c124000000,,cgray;,,c104104104,,cgray;,,b,,cgray;,,c104104104,,cgray;,,c000124000b,,c000000124,,c000124000b,,c124000000,,c000124000b,,c000000124,,c000124000b,,c104104104,,c000000124,,c124000000,!' readStream nextChunkText)
+]style[(229 11 3 12 1 7 1 7 1 4 3 1 1 13 1 1 2 11 2 1 1 13 1 1 3 12 1 7 1 7 1 4 75 12 1 9 1 7 1 18 58 7 2 4 1),b,,c000123000b,,c000000123,,c000123000b,,c123000000,,cgray;,,c103103103,,cgray;,,b,,cgray;,,c103103103,,cgray;,,c000123000b,,c000000123,,c000123000b,,c123000000,,c000123000b,,c000000123,,c000123000b,,c103103103,,c000000123,,c123000000,!' readStream nextChunkText)
 			key: #usingPragmas
