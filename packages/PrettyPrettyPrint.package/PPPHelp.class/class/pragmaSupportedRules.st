@@ -1,5 +1,7 @@
 as yet unclassified
 pragmaSupportedRules
 
-	^ 'Supported Rules (with options):
-- ignore (True)' asText
+	^ '----------------------
+
+Supported Rules (with options):
+- #ignore (true)' asText
