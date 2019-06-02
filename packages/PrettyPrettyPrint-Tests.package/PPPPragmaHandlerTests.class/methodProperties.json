@@ -3,12 +3,12 @@
 		 },
 	"instance" : {
 		"allParsedPragmas" : "gw 5/5/2019 10:52",
-		"allPragmas" : "gw 5/5/2019 10:36",
+		"allPragmas" : "kiwi 6/2/2019 11:19",
 		"dummyAst" : "gw 5/5/2019 09:51",
-		"invalidParsedPragmas" : "gw 5/5/2019 10:37",
-		"relevantParsedPragmas" : "gw 5/5/2019 10:37",
-		"relevantPragmasDict" : "gw 5/5/2019 11:30",
-		"testPragmaExtracting" : "gw 5/5/2019 09:37",
+		"invalidParsedPragmas" : "kiwi 6/2/2019 11:26",
+		"relevantParsedPragmas" : "kiwi 6/2/2019 11:26",
+		"relevantPragmasDict" : "kiwi 6/2/2019 11:21",
+		"testPragmaExtracting" : "kiwi 6/2/2019 11:22",
 		"testPragmaParsing" : "gw 5/5/2019 10:30",
 		"testPragmasToDict" : "gw 5/5/2019 11:30",
-		"validIgnoreParsedPragma" : "gw 5/5/2019 10:37" } }
+		"validIgnoreParsedPragma" : "kiwi 6/2/2019 11:26" } }
