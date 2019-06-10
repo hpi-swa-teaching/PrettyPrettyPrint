@@ -4,13 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "TB 7/28/2016 15:27",
+	"commentStamp" : "",
 	"instvars" : [
-		"comments",
-		"length",
-		"depth" ],
-	"name" : "PPPNode",
+		 ],
+	"name" : "PPPPreprocessor",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "PPPVisitor",
 	"type" : "normal" }

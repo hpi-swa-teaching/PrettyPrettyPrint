@@ -1,0 +1,18 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"additionalDepthForParentheses:" : "MiB 5/25/2019 14:58",
+		"additionalLengthForParentheses:" : "MiB 5/25/2019 14:58",
+		"collectMaximumOn:with:" : "MiB 5/25/2019 16:01",
+		"visitArrayNode:" : "MiB 5/25/2019 16:05",
+		"visitAssignmentNode:" : "MiB 5/25/2019 15:51",
+		"visitBlockNode:" : "MiB 5/25/2019 15:52",
+		"visitCascadeNode:" : "MiB 5/25/2019 16:03",
+		"visitLiteralNode:" : "MiB 5/25/2019 15:38",
+		"visitMessageNode:" : "MiB 5/25/2019 16:06",
+		"visitMethodNode:" : "MiB 5/25/2019 16:11",
+		"visitPragmaNode:" : "MiB 5/25/2019 15:40",
+		"visitReturnNode:" : "MiB 5/25/2019 15:42",
+		"visitSequenceNode:" : "MiB 5/25/2019 16:05",
+		"visitVariableNode:" : "MiB 5/25/2019 15:45" } }

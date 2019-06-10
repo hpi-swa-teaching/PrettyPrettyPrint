@@ -2,4 +2,8 @@ initialize-release
 initialize
 	super initialize.
 	
-	arguments := OrderedCollection new
+	self 
+		arguments: OrderedCollection new;
+		receiverDepth: 0;
+		argumentDepth: 0
+	
