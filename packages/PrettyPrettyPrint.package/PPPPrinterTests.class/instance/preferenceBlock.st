@@ -4,4 +4,5 @@ preferenceBlock
 		newlineAfterSelector: false; 
 		dotAfterReturn: false;
 		newlineBeforeReturn: false;
-		spaceBeforeReturn: false]
+		spaceBeforeReturn: false;
+		newlineAfterTemporaryDeclaration: false]

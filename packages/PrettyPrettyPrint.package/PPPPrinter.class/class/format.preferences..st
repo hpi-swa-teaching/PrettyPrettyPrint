@@ -11,9 +11,7 @@ format: aString preferences: aBlock
 	abstractSyntaxTree := PPPParser new parseTokenStream: (tokens).
 	pragmaPreferences := PPPPragmaHandler new getPragmaPreferencesFrom: abstractSyntaxTree.
 	PPPPreprocessor new visitMethodNode: abstractSyntaxTree.
-	self halt.
-	self flag: 'We should try to extract this method (since it is very low-level)'.
-	(pragmaPreferences at: #ignore ifAbsent: [  ]) = 'True' ifTrue: [
-		^ aString ].
-	^ printer visitMethodNode: abstractSyntaxTree
 	
+	(self methodIgnoredBy: pragmaPreferences) ifTrue: [^ aString ].
+	
+	^ printer visitMethodNode: abstractSyntaxTree
