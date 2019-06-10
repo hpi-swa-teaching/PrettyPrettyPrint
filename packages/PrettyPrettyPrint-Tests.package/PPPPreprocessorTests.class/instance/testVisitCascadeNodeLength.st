@@ -1,5 +1,5 @@
 as yet unclassified
-testVisitCascadeNode
+testVisitCascadeNodeLength
 	
 	| aCascadeNode |
 	aCascadeNode := PPPCascadeNode new 
@@ -12,8 +12,4 @@ testVisitCascadeNode
 	PPPPreprocessor new visitCascadeNode: aCascadeNode.
 	
 	
-	self 
-		assert: 38 equals: aCascadeNode length;
-		assert: 0 equals: aCascadeNode depth;
-		assert: 0 equals: aCascadeNode messageDepth;
-		assert: 0 equals: aCascadeNode receiverDepth.
+	self assert: 37 equals: aCascadeNode length
