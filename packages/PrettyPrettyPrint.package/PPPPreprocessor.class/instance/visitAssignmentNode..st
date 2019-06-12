@@ -3,7 +3,7 @@ visitAssignmentNode: anAssignmentNode
 	
 	| length |
 	length := self additionalLengthForParentheses: anAssignmentNode.
-	length := length + 4.
+	length := length + self additionalLengthForAssignment.
 	
 	anAssignmentNode value accept: self.
 	

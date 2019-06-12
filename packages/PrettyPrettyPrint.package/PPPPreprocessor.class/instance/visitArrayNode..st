@@ -3,14 +3,17 @@ visitArrayNode: anArrayNode
 	
 	| length depth |
 	length := self additionalLengthForParentheses: anArrayNode.
-	anArrayNode constant ifTrue: [length := length + 3] ifFalse: [length := length + 2].
+	length := length + (self additionalLengthForArray: anArrayNode).
 	
 	anArrayNode contents do: [:element | element accept: self].
 	
-	anArrayNode contents do: [:element | length := length + element length] separatedBy: [length := length + 1].
+	anArrayNode contents 
+		do: [:element | length := length + element length] 
+		separatedBy: [length := length + (self separationBetweenArrayElements: anArrayNode)].
 	
 	depth := (self collectMaximumOn: anArrayNode contents with: [:element | element depth])
-			+ 1 + (self additionalDepthForParentheses: anArrayNode).
+			+ (self additionalArrayDepth)
+			+ (self additionalDepthForParentheses: anArrayNode).
 			
 	anArrayNode 
 		depth: depth;
