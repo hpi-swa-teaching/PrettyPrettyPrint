@@ -13,7 +13,7 @@ visitBlockNode: aBlockNode
 	
 	aBlockNode 
 		length: (length + aBlockNode bodySequence childLength + aBlockNode bodySequence length);
-		depth: (aBlockNode bodySequence maxChildDepth 
+		depth: (aBlockNode bodySequence depth 
 			+ (self additionalBlockDepth) 
 			+ (self additionalDepthForParentheses: aBlockNode))
 	

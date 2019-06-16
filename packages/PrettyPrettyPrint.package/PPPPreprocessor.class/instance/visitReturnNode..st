@@ -3,6 +3,6 @@ visitReturnNode: aReturnNode
 	
 	aReturnNode value accept: self.
 	aReturnNode 
-		length: 1 + aReturnNode value length;
+		length: self additionalLengthForCircumflex + aReturnNode value length;
 		depth: aReturnNode value depth
 	

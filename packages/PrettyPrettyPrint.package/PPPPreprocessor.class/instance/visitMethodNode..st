@@ -9,8 +9,8 @@ visitMethodNode: aMethodNode
 		ifNotEmpty: [aMethodNode arguments 
 			do: [:selectorAndVar |
 				selectorAndVar do: [:element | length := length + element size]. 
-				length := length + 1]
-			separatedBy: [length := length +1]].
+				length := length + self additionalLengthForSpace]
+			separatedBy: [length := length + self additionalLengthForSpace]].
 	aMethodNode length: length.
 	
 	aMethodNode bodySequence accept: self

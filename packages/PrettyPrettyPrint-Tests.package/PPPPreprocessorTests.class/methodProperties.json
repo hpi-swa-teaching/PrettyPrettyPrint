@@ -13,4 +13,14 @@
 		"testVisitLiteralNodeDepth" : "gw 6/12/2019 16:56",
 		"testVisitLiteralNodeLength" : "gw 6/12/2019 16:54",
 		"testVisitMessageNodeDepth" : "gw 6/12/2019 17:03",
-		"testVisitMessageNodeLength" : "gw 6/12/2019 17:02" } }
+		"testVisitMessageNodeLength" : "gw 6/12/2019 17:02",
+		"testVisitMethodNodeDepth" : "MiB 6/16/2019 17:11",
+		"testVisitMethodNodeLength" : "MiB 6/16/2019 17:10",
+		"testVisitPragmaNodeDepth" : "MiB 6/16/2019 17:17",
+		"testVisitPragmaNodeLength" : "MiB 6/16/2019 17:17",
+		"testVisitReturnNodeDepth" : "MiB 6/16/2019 17:26",
+		"testVisitReturnNodeLength" : "MiB 6/16/2019 17:22",
+		"testVisitSequenceNodeChildLength" : "MiB 6/16/2019 17:38",
+		"testVisitSequenceNodeDepth" : "MiB 6/16/2019 17:46",
+		"testVisitSequenceNodeLength" : "MiB 6/16/2019 17:44",
+		"testVisitVariableNodeDepth" : "MiB 6/16/2019 17:49" } }
