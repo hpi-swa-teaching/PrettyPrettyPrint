@@ -1,12 +1,14 @@
 visit-node
-visitMessageNode: aNode 
-	| buffer |
-	buffer := WriteStream on: ''.
+visitMessageNode: aPPPMessageNode 
 	
-	aNode ifNotInCascade: [ buffer nextPutAll: (self visitValueNode: aNode receiver) ].
+	|previousMultilineState prettyMessage |
 	
-	aNode isUnaryMessage ifTrue: [ buffer nextPutAll: (self printUnaryMessage: aNode) ].
-	aNode isBinaryMessage ifTrue: [ buffer nextPutAll: (self printBinaryMessage: aNode) ].
-	aNode isNamedMessage ifTrue: [ buffer nextPutAll: (self printNamedMessage: aNode) ].
+	previousMultilineState := self printingMultiline.
+	self printingMultiline: (self nodeFitsInLine: aPPPMessageNode) not.
+	self printingMultiline 
+		ifTrue: [ prettyMessage := self printMessageNodeMultiline: aPPPMessageNode]
+		ifFalse: [prettyMessage := self printMessageNode: aPPPMessageNode].
+		
+	self printingMultiline: previousMultilineState.
 	
-	^buffer contents
+	^ prettyMessage

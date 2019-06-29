@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"preferenceBlock" : "gw 6/10/2019 10:27",
+		"preferenceBlock" : "MiB 6/29/2019 11:02",
 		"testComments" : "gw 5/27/2019 10:14",
 		"testCustomProfileImportExport" : "lcj 7/29/2016 13:24",
 		"testKeepEmptyLines" : "gw 5/27/2019 10:15",
@@ -20,7 +20,7 @@
 		"testPrintBinaryMessageNode" : "lcj 6/22/2016 14:36",
 		"testPrintBlock" : "gw 5/27/2019 10:18",
 		"testPrintCascade" : "TB 6/27/2016 22:08",
-		"testPrintComplexBlocks" : "gw 5/27/2019 10:21",
+		"testPrintComplexBlocks" : "MiB 6/29/2019 13:37",
 		"testPrintLiteralNode" : "lcj 7/29/2016 18:35",
 		"testPrintMethodNode" : "gw 5/27/2019 10:20",
 		"testPrintMultilineMessage" : "kiwi 5/18/2019 11:16",
@@ -29,6 +29,9 @@
 		"testPrintReturnNode" : "gw 5/27/2019 10:21",
 		"testPrintSequenceNode" : "gw 5/27/2019 10:22",
 		"testPrintShortNamedMessage" : "gw 5/27/2019 10:22",
+		"testPrintTooLongMessageNode" : "MiB 6/29/2019 13:20",
+		"testPrintTooLongReturnNode" : "MiB 6/29/2019 12:53",
+		"testPrintTooLongVariableNode" : "MiB 6/29/2019 11:07",
 		"testPrintUnaryMessageNode" : "lcj 6/22/2016 14:31",
 		"testPrintVariableNode" : "lcj 6/22/2016 13:22",
 		"testSpaceAroundBinaryOperator" : "kiwi 5/15/2019 19:38",

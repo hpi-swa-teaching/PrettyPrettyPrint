@@ -8,7 +8,8 @@
 	"instvars" : [
 		"currentBlockLevel",
 		"currentIndent",
-		"profile" ],
+		"profile",
+		"printingMultiline" ],
 	"name" : "PPPPrinter",
 	"pools" : [
 		 ],

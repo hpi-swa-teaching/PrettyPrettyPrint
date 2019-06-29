@@ -1,9 +1,11 @@
 helpers-printing
-printNamedMessage: aPPPMessageNode 
+printNamedMessageMultiline: aPPPMessageNode 
 	| buffer |
 	buffer := WriteStream on: ''.
 	
-	aPPPMessageNode ifNotInCascade: [ buffer space ].
+	aPPPMessageNode ifNotInCascade: [ 
+		self incrementIndent;
+			newLineIndentOn: buffer].
 	
 	self
 		each: (aPPPMessageNode selector subStrings: ':')
@@ -12,6 +14,7 @@ printNamedMessage: aPPPMessageNode
 			nextPutAll: messagePart;
 			nextPutAll: ': ';
 			nextPutAll: (self visitValueNode: argument) ]
-		separatedBy: [ buffer space ].
+		separatedBy: [ self newLineIndentOn: buffer ].
+	self decrementIndent.
 		
 	^buffer contents
