@@ -6,6 +6,7 @@
 		 ],
 	"commentStamp" : "TB 7/28/2016 15:07",
 	"instvars" : [
+		"currentBlockLevel",
 		"currentIndent",
 		"profile" ],
 	"name" : "PPPPrinter",

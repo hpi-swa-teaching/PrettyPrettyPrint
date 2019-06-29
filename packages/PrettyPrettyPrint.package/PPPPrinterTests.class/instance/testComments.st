@@ -1,5 +1,6 @@
 testing
 testComments
+
 	self
 		assert: 'test
 	" hi "
@@ -13,4 +14,4 @@ testComments
 	"blbl"'
 		equals: (PPPPrinter format: '" hi " test " blah " 4.
 	self "i" printTest "l" "asdasd".
-	"lkjh" "blbl"')
+	"lkjh" "blbl"' preferences: self preferenceBlock).

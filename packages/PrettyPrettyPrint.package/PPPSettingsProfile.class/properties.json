@@ -8,8 +8,10 @@
 		"FreezeCodeHolderRefresh",
 		"KeepEmptyLines",
 		"MaxLineLength",
+		"NewlineAfterSelector",
 		"NewlineAfterTemporaryDeclaration",
-		"ReturnAfterTemporaryDeclaration",
+		"NewlineBeforeReturn",
+		"SpaceAroundBinaryOperator",
 		"SpaceBeforeReturn" ],
 	"commentStamp" : "TB 7/28/2016 16:11",
 	"instvars" : [
@@ -19,7 +21,9 @@
 		"newlineAfterTemporaryDeclaration",
 		"maxLineLength",
 		"keepEmptyLines",
-		"encloseBlockSequenceWithSpace" ],
+		"encloseBlockSequenceWithSpace",
+		"newlineAfterSelector",
+		"newlineBeforeReturn" ],
 	"name" : "PPPSettingsProfile",
 	"pools" : [
 		 ],

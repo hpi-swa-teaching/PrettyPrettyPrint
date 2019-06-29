@@ -1,8 +1,10 @@
 testing
 testPrintMethodNode
+
 	| sequenceNode printer statements temporaries methodNode |
 	
 	printer := PPPPrinter new.
+	self preferenceBlock value: printer profile.
 	
 	sequenceNode := PPPSequenceNode new.
 	temporaries := OrderedCollection new
@@ -23,8 +25,8 @@ testPrintMethodNode
 		yourself.
 	
 	self
-		assert: 'ourMethod: argument with: anotherArgument 
+		assert: 'ourMethod: argument with: anotherArgument
 	| temp1 temp2 |
 	variable := 4.
 	^self'
-		equals: (methodNode accept: printer)
+		equals: (methodNode accept: printer).

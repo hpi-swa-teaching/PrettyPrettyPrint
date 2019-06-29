@@ -8,7 +8,9 @@
 	"instvars" : [
 		"temporaries",
 		"statements",
-		"trailingComments" ],
+		"trailingComments",
+		"childLength",
+		"maxChildDepth" ],
 	"name" : "PPPSequenceNode",
 	"pools" : [
 		 ],

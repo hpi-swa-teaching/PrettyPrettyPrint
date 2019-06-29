@@ -1,8 +1,10 @@
 testing
 testPrintBlock
+
 	| sequenceNode printer |
 	
 	printer := PPPPrinter new.
+	self preferenceBlock value: printer profile.
 	
 	sequenceNode := PPPBlockNode new
 		bindings: (OrderedCollection with: ':b1' with: ':b2');
@@ -18,4 +20,4 @@ testPrintBlock
 	| temp1 temp2 |
 	variable := 4.
 	^self ]'
-		equals: (sequenceNode accept: printer)
+		equals: (sequenceNode accept: printer).

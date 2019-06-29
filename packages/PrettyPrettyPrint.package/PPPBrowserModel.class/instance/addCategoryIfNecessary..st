@@ -1,6 +1,6 @@
-as yet unclassified
+list generation
 addCategoryIfNecessary: aSymbol
 
 	^ self categoryDictionary 
 		at: aSymbol 
-		ifAbsentPut: [OrderedCollection new]
+		ifAbsentPut: OrderedCollection new

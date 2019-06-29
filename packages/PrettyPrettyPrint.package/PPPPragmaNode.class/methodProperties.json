@@ -3,9 +3,10 @@
 		 },
 	"instance" : {
 		"=" : "gw 4/30/2019 17:12",
-		"accept:" : "lcj 7/29/2016 19:04",
+		"accept:" : "kiwi 5/23/2019 10:23",
 		"content" : "lcj 7/29/2016 18:41",
 		"content:" : "lcj 7/29/2016 18:41",
 		"getAllPragmas" : "gw 4/30/2019 16:30",
+		"isPragmaNode" : "kiwi 5/9/2019 19:42",
 		"matches:" : "lcj 7/29/2016 18:40",
 		"shallowMatch:" : "lcj 7/29/2016 18:41" } }

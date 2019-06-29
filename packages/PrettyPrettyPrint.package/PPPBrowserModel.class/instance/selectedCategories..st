@@ -1,3 +1,4 @@
-as yet unclassified
-selectedCategories: anObject
-	selectedCategories := anObject
+accessing
+selectedCategories: anArray
+
+	selectedCategories := anArray

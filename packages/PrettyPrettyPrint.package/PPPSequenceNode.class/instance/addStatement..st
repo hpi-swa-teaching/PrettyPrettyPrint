@@ -1,3 +1,3 @@
 accessing
-addStatement: aStatementNode 
-	statements add: aStatementNode
+addStatement: aValueNode 
+	statements add: aValueNode

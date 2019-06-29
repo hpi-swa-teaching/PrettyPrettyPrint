@@ -8,5 +8,4 @@ printBinaryMessage: aNode
 	self profile spaceAroundBinaryOperator ifTrue: [ buffer space ].
 	
 	buffer nextPutAll: (self visitValueNode: aNode arguments first).
-	
 	^buffer contents

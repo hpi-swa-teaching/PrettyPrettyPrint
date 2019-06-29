@@ -1,3 +1,3 @@
 accessing
-newlineAfterTemporaryDeclaration: anObject
-	newlineAfterTemporaryDeclaration := anObject
+newlineAfterTemporaryDeclaration: aBoolean
+	newlineAfterTemporaryDeclaration := aBoolean

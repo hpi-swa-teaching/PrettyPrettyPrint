@@ -3,9 +3,9 @@
 		 },
 	"instance" : {
 		"extractRelevantPragmasFrom:" : "gw 5/5/2019 09:31",
-		"formatTokenPart:" : "gw 5/5/2019 12:06",
+		"formatTokenPart:" : "gw 6/4/2019 11:16",
 		"getPragmaPreferencesFrom:" : "gw 5/5/2019 12:17",
 		"parseAllPragmasFrom:" : "gw 5/5/2019 08:46",
-		"parsePragma:" : "gw 5/5/2019 12:04",
-		"pragmasToDict:" : "gw 5/5/2019 12:07",
+		"parsePragma:" : "kiwi 5/28/2019 11:20",
+		"pragmasToDict:" : "kiwi 5/28/2019 12:05",
 		"removeFirstAndLastChar:" : "gw 5/5/2019 12:03" } }

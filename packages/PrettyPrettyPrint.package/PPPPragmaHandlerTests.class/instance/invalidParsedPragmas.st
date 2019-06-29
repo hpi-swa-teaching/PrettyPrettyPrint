@@ -8,7 +8,7 @@ invalidParsedPragmas
 			selector: 'hello');
 		add: (PPPMethodNode new 
 			arguments: (OrderedCollection new 
-				add: #('PrettyPrint:' '''ignore''');
+				add: #('PrettyPrint:' '#ignore');
 				yourself);
 			bodySequence: (PPPSequenceNode new);
 			selector: 'PrettyPrint:');

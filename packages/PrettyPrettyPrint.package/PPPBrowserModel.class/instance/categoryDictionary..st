@@ -1,3 +1,3 @@
-as yet unclassified
-categoryDictionary: anObject
-	categoryDictionary := anObject
+accessing
+categoryDictionary: aDictionary
+	categoryDictionary := aDictionary

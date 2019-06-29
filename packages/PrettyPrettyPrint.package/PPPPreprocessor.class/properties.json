@@ -1,0 +1,14 @@
+{
+	"category" : "PrettyPrettyPrint",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "PPPPreprocessor",
+	"pools" : [
+		 ],
+	"super" : "PPPVisitor",
+	"type" : "normal" }

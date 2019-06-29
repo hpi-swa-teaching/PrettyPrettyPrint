@@ -1,3 +1,3 @@
 accessing
-receiver: aNode
-	receiver := aNode
+receiver: aVariableNode
+	receiver := aVariableNode

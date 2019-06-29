@@ -3,6 +3,7 @@ testPrintReturnNode
 	| returnNode printer |
 	
 	printer := PPPPrinter new.
+	self preferenceBlock value: printer profile.
 	
 	returnNode := PPPSequenceNode
 		temporaries: OrderedCollection new

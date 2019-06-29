@@ -3,6 +3,7 @@ testPrintSequenceNode
 	| sequenceNode printer statements temporaries |
 	
 	printer := PPPPrinter new.
+	self preferenceBlock value: printer profile.
 	sequenceNode := PPPSequenceNode new.
 	temporaries := OrderedCollection new
 		add: 'temp1';
