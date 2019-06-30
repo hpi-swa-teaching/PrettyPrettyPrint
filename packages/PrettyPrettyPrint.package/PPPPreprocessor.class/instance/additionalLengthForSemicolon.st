@@ -1,4 +1,4 @@
-visit-node
+special characters
 additionalLengthForSemicolon
 	
 	^ 1

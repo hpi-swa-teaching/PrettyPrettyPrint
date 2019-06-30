@@ -1,4 +1,4 @@
-visit-node
+collect maximum
 collectMaximumOn: aCollection with: aBlock
 	
 	aCollection isEmpty 

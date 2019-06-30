@@ -1,11 +1,11 @@
-visit-node
+calculate depth
 depthForMessageNode: aMessageNode
 
 	| depth |
 	
 	self 
-		calculateMessageReceiverDepth: aMessageNode;
-		calculateMessageArgumentDepth: aMessageNode.
+		calculateReceiverDepth: aMessageNode;
+		calculateArgumentDepth: aMessageNode.
 
 	depth := aMessageNode receiverDepth max: aMessageNode argumentDepth
 		+ (self additionalDepthForParentheses: aMessageNode).

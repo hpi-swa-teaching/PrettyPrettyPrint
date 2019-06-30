@@ -1,4 +1,4 @@
-visit-node
+special characters
 additionalLengthForCircumflex 
 	
 	^ 1

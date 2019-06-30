@@ -1,5 +1,5 @@
-visit-node
-calculateMessageArgumentDepth: aMessageNode
+calculate depth
+calculateArgumentDepth: aMessageNode
 
 	aMessageNode 
 		argumentDepth: (self 

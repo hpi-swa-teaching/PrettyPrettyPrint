@@ -1,4 +1,4 @@
-visit-node
+calculate length
 lengthForMessageNode: aMessageNode
 	
 	| length |

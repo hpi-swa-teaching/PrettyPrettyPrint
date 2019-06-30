@@ -1,5 +1,5 @@
 calculate depth
-calculateReceiverDepth: aCascadeNode
+calculateReceiverDepth: aCascadeOrMessageNode
 
-	aCascadeNode receiverDepth: aCascadeNode receiver depth
-	
+	aCascadeOrMessageNode receiver ifNotNil: [ 
+		aCascadeOrMessageNode receiverDepth: aCascadeOrMessageNode receiver depth ]
