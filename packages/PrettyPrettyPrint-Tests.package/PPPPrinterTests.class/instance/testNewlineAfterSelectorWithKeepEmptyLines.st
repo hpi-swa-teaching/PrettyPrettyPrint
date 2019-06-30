@@ -5,7 +5,7 @@ testNewlineAfterSelectorWithKeepEmptyLines
 	methodWithReturn := 'visitMethodNode: aNode
 
 ^self hello'.
-	formattedMethod := PPPPrinter format: methodWithReturn preferences: [ :profile | profile newlineAfterSelector: true; keepEmptyLines: true; dotAfterReturn: false ].
+	formattedMethod := PPPPrinter format: methodWithReturn preferences: [ :profile | profile newlineAfterSelector: true; keepEmptyLines: true; dotAfterReturn: false; spaceBeforeReturn: false ].
 	correctlyFormattedMethodWithReturn := 'visitMethodNode: aNode
 	
 	^self hello'.
