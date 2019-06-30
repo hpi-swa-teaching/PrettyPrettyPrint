@@ -1,4 +1,4 @@
-visit-node
+calculate length
 additionalLengthForColon
 	
 	^ 1

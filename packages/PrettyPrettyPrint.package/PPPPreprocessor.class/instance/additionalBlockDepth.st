@@ -1,3 +1,3 @@
-visit-node
+calculate depth
 additionalBlockDepth
 	^ 1

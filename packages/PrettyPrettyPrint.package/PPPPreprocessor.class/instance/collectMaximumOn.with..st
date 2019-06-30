@@ -1,4 +1,4 @@
-visit-node
+calculate depth
 collectMaximumOn: aCollection with: aBlock
 	
 	aCollection isEmpty 

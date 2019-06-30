@@ -1,3 +1,3 @@
-visit-node
+calculate depth
 additionalArrayDepth
 	^ 1

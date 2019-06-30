@@ -1,4 +1,4 @@
-visit-node
+calculate length
 additionalLengthForArray: aPPPArrayNode
 
 	aPPPArrayNode constant

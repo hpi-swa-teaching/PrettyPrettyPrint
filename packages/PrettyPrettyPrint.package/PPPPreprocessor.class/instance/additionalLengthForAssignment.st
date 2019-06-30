@@ -1,4 +1,4 @@
-visit-node
+calculate length
 additionalLengthForAssignment
 
 	^ 4
