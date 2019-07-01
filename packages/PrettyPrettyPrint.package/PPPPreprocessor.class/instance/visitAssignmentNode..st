@@ -1,9 +1,9 @@
 visit-node
 visitAssignmentNode: anAssignmentNode
-	
+
 	anAssignmentNode value accept: self.
 	
-	anAssignmentNode 
+	anAssignmentNode
+		setParenthesesForAssignmentNode: anAssignmentNode;
 		length: (self lengthForAssignmentNode: anAssignmentNode);
 		depth: (self depthForAssignmentNode: anAssignmentNode)
-	
