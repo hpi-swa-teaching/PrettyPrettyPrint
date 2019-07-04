@@ -1,4 +1,4 @@
-visit-node
+special characters
 additionalLengthForColon
 	
 	^ 1

@@ -1,4 +1,4 @@
-visit-node
+special characters
 additionalLengthForPipe
 
 	^ 3
