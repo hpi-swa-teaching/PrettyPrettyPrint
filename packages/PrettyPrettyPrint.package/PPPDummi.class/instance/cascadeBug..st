@@ -1,9 +1,12 @@
 as yet unclassified
 cascadeBug: aBuilder
-	| ewngrjielgnzwirltzuiwrlzhurwilnzb1 qewzucrkbghjfkdgfhkuewgzcrubzfukbcfgukebgrzue bezwubhjfvknfhjgilnafhjlnhfgjd ewnerzuilnfueilgnzeuilgzruei freuiglnzeuilgnzrueil grewzgurielwngzrueilw grewnzguirlewngzrueilw grewngzureiwgezui wcnrezuwicrlenrzui crenwuzqiclrnewzuilc bczrueiwl crnewzuiclnrzuwie crewzucilnhrje crbewzuirlnczuri |
+	| ewngrjielgnzwirltzuiwrlzhurwilnzb1 
+	qewzucrkbghjfkdgfhkuewgzcrubzfukbcfgukebgrzue bezwubhjfvknfhjgilnafhjlnhfgjd ewnerzuilnfueilgnzeuilgzruei freuiglnzeuilgnzrueil grewzgurielwngzrueilw grewnzguirlewngzrueilw grewngzureiwgezui 
 	
 	
-	^aBuilder pluggableListSpec new
+	wcnrezuwicrlenrzui crenwuzqiclrnewzuilc bczrueiwl crnewzuiclnrzuwie crewzucilnhrje crbewzuirlnczuri |
+	
+	^ aBuilder pluggableListSpec new
 		model: self;
 		list: #categories;
 		frame: (LayoutFrame new
@@ -13,4 +16,4 @@ cascadeBug: aBuilder
 			bottomFraction: 1 offset: 0);
 		getSelected: #currentSelection;
 		setSelected: #currentSelection:;
-		yourself
+		yourself.
