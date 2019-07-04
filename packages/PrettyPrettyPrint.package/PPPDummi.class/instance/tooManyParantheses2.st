@@ -1,4 +1,4 @@
 as yet unclassified
-tooManyParantheses
+tooManyParantheses2
 
 	^ ((((((1 + 1) * 2) + 3) * (4 + 5)) * 6))

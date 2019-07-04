@@ -7,8 +7,8 @@ setParanthesesForMessageNode: aMessageNode
 	receiver := aMessageNode receiver.
 	arguments := aMessageNode arguments.
 	
-	aMessageNode isBinaryMessage 
-		ifTrue: [receiver needsParantheses: receiver precedence > selectorPrecedence] 
+	aMessageNode isBinaryMessage
+		ifTrue: [self setParanthesesForBinaryReceiver: receiver precedence: selectorPrecedence] 
 		ifFalse: [self setParanthesesForChildNode: receiver precedence: selectorPrecedence].
 	
 	arguments do: [:node | 
