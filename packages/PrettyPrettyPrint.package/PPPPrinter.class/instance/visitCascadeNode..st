@@ -1,17 +1,14 @@
 visit-node
-visitCascadeNode: aNode 
-	| buffer |
-	buffer := WriteStream on: ''.
+visitCascadeNode: aPPPCascadeNode 
 	
-	buffer nextPutAll: (self visitValueNode: aNode receiver).
-	self incrementIndent.
+	|previousMultilineState prettyCascade |
 	
-	aNode messages
-		do: [ :message |
-			self newLineIndentOn: buffer.
-			buffer nextPutAll: (self visitValueNode: message) ]
-		separatedBy: [ buffer nextPut: $; ].
+	previousMultilineState := self printingMultiline.
+	self printingMultiline: (self nodeFitsInLine: aPPPCascadeNode) not.
+	self printingMultiline 
+		ifTrue: [ prettyCascade := self printCascadeNodeMultiline: aPPPCascadeNode]
+		ifFalse: [prettyCascade := self printCascadeNode: aPPPCascadeNode].
+		
+	self printingMultiline: previousMultilineState.
 	
-	self decrementIndent.
-	
-	^buffer contents
+	^ prettyCascade

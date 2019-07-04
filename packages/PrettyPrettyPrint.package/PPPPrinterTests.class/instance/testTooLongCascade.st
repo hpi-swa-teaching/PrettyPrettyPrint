@@ -10,15 +10,16 @@ testTooLongCascade
 			with: (PPPMessageNode receiver: nil selector: 'iAmAVeryVeryVeryVeryLongSelector')
 			with: (PPPMessageNode
 				receiver: nil
-				selector: 'toBuffer:and:'
+				selector: 'iAmAlsoVeryVery:YeryLong:'
 				arguments: (OrderedCollection
-					with: (PPPLiteralNode value: '5' literalType: #number)
-					with: (PPPLiteralNode value: '3' literalType: #number)))
+					with: (PPPLiteralNode value: '5123' literalType: #number)
+					with: (PPPLiteralNode value: '31234' literalType: #number)))
 			with: (PPPMessageNode receiver: nil selector: 'yourself')).
-	
+	cascadeNode needsStructuralLinebreak: false.
+		
 	self
 		assert: 'self
-	asString;
-	toBuffer: 5 and: 3;
+	iAmAVeryVeryVeryVeryLongSelector;
+	iAmAlsoVeryVery: 5123 YeryLong: 31234;
 	yourself'
 		equals: (cascadeNode accept: printer)
