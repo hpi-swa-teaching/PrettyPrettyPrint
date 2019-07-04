@@ -5,7 +5,8 @@ visitBlockNode: aBlockNode
 	
 	aBlockNode 
 		length: (self lengthForBlockNode: aBlockNode);
-		depth: (self depthForBlockNode: aBlockNode)
+		depth: (self depthForBlockNode: aBlockNode);
+		needsStructuralLinebreak: (self structuralLinebreakForBlockNode: aBlockNode)
 	
 	
 	

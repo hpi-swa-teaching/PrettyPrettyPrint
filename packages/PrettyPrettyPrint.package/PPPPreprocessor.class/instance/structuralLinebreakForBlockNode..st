@@ -1,0 +1,5 @@
+calculate structuralLinebreak
+structuralLinebreakForBlockNode: aBlockNode
+
+	aBlockNode needsStructuralLinebreak: aBlockNode bodySequence needsStructuralLinebreak
+	

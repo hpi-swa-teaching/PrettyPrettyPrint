@@ -5,5 +5,6 @@ visitAssignmentNode: anAssignmentNode
 	
 	anAssignmentNode 
 		length: (self lengthForAssignmentNode: anAssignmentNode);
-		depth: (self depthForAssignmentNode: anAssignmentNode)
+		depth: (self depthForAssignmentNode: anAssignmentNode);
+		needsStructuralLinebreak: (self structuralLinebreakForAssignmentNode: anAssignmentNode)
 	
