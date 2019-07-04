@@ -1,4 +1,4 @@
-visit-node
+special characters
 separationBetweenArrayElements: aPPPArrayNode
 
 	aPPPArrayNode constant 

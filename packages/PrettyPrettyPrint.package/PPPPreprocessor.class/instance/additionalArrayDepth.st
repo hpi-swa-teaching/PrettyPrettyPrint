@@ -1,3 +1,3 @@
-visit-node
+special characters
 additionalArrayDepth
 	^ 1
