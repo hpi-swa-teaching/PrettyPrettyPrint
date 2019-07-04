@@ -1,8 +1,7 @@
 calculate structuralLinebreak
 structuralLinebreakForCascadeNode: aCascadeNode
 
-	aCascadeNode 
-		needsStructuralLinebreak: ((aCascadeNode messages 
+	^ (aCascadeNode messages 
 			anySatisfy: [:message | message isUnaryMessage not]) 
-				or: [aCascadeNode receiver needsStructuralLinebreak])
+				or: [aCascadeNode receiver needsStructuralLinebreak]
 	

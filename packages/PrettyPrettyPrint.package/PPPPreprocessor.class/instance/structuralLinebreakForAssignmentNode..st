@@ -1,5 +1,5 @@
 calculate structuralLinebreak
 structuralLinebreakForAssignmentNode: anAssignmentNode
 
-	anAssignmentNode needsStructuralLinebreak: anAssignmentNode value needsStructuralLinebreak
+	^ anAssignmentNode value needsStructuralLinebreak
 	

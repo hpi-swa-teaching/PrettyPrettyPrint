@@ -1,5 +1,5 @@
 calculate structuralLinebreak
 structuralLinebreakForReturnNode: aReturnNode
 
-	aReturnNode needsStructuralLinebreak: aReturnNode value needsStructuralLinebreak
+	^ aReturnNode value needsStructuralLinebreak
 	
