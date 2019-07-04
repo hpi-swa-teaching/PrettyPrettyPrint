@@ -1,10 +1,10 @@
 visit-node
 visitAssignmentNode: anAssignmentNode
-
+	
 	anAssignmentNode value accept: self.
 	
-	self setParenthesesForAssignmentNode: anAssignmentNode.
-	
-	anAssignmentNode
+	anAssignmentNode 
 		length: (self lengthForAssignmentNode: anAssignmentNode);
-		depth: (self depthForAssignmentNode: anAssignmentNode)
+		depth: (self depthForAssignmentNode: anAssignmentNode);
+		needsStructuralLinebreak: (self structuralLinebreakForAssignmentNode: anAssignmentNode)
+	

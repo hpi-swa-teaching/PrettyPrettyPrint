@@ -5,6 +5,7 @@ visitArrayNode: anArrayNode
 			
 	anArrayNode 
 		depth: (self depthForArrayNode: anArrayNode);
-		length: (self lengthForArrayNode: anArrayNode)
+		length: (self lengthForArrayNode: anArrayNode);
+		needsStructuralLinebreak: (self structuralLinebreakForArrayNode: anArrayNode)
 		
 	

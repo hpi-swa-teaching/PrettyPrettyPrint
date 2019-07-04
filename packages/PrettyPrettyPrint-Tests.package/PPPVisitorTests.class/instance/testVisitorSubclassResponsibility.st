@@ -17,4 +17,4 @@ testVisitorSubclassResponsibility
 		should: [visitor visitPragmaNode: PPPPragmaNode new] raise: SubclassResponsibility;
 		should: [visitor visitBlockNode: PPPBlockNode new] raise: SubclassResponsibility.
 		
-	self should: [visitor visitValueNode: PPPValueNode new] raise: NotImplemented.
+	self should: [visitor visitValueNode: PPPValueNode new] raise: NotImplemented

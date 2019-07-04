@@ -6,6 +6,7 @@ visitSequenceNode: aSequenceNode
 	aSequenceNode 
 		length: (self lengthForSequenceNode: aSequenceNode);
 		childLength: (self childLengthForSequenceNode: aSequenceNode);
-		depth: (self depthForSequenceNode: aSequenceNode)
+		depth: (self depthForSequenceNode: aSequenceNode);
+		needsStructuralLinebreak: (self structuralLinebreakForSequenceNode: aSequenceNode)
 		
 	
