@@ -1,14 +1,10 @@
 visit-node
-visitSequenceNode: aNode 
-	| buffer |
-	buffer := WriteStream on: ''.
+visitSequenceNode: aPPPSequenceNode 
 	
 	self
-		printTemporariesOf: aNode on: buffer;
-		printStatementsOf: aNode on: buffer.
+		printTemporariesOf: aPPPSequenceNode;
+		printStatementsOf: aPPPSequenceNode.
 	
-	aNode trailingComments do: [ :comment |
-		self newLineIndentOn: buffer.
-		buffer nextPutAll: comment content ].
-	
-	^buffer contents
+	aPPPSequenceNode trailingComments do: [ :comment |
+		self newLineIndent.
+		self currentLine nextPutAll: comment content ]

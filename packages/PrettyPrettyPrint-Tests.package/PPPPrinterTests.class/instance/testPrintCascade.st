@@ -1,6 +1,6 @@
 testing
 testPrintCascade
-	| printer cascadeNode |
+	| printer cascadeNode formattedCascade |
 	
 	printer := PPPPrinter new.
 	self preferenceBlock value: printer profile.
@@ -18,9 +18,11 @@ testPrintCascade
 			with: (PPPMessageNode receiver: nil selector: 'yourself')).
 	cascadeNode needsStructuralLinebreak: true.
 	
+	cascadeNode accept: printer.
+	formattedCascade := printer wholeContent.
 	self
 		assert: 'self
 	asString;
 	toBuffer: 5 and: 3;
 	yourself'
-		equals: (cascadeNode accept: printer)
+		equals: formattedCascade

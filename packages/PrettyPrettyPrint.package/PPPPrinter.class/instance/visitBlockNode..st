@@ -1,25 +1,22 @@
 visit-node
-visitBlockNode: aNode 
+visitBlockNode: aPPPBlockNode 
 
-	| buffer multiLine |
-	buffer := WriteStream on: ''.
-	multiLine := aNode bodySequence statements size + (aNode bodySequence return notNil ifTrue: [ 1. ] ifFalse: [ 0. ]) > 1.
+	| multiline |
 	
 	self 
 		incrementBlockLevel;
-		printBlockOf: aNode on: buffer.
+		printBindingsOf: aPPPBlockNode.
 	
-	multiLine
+	multiline := (self nodeFitsInLine: aPPPBlockNode) not.
+	multiline
 		ifTrue: [ self
 			incrementIndent;
-			newLineIndentOn: buffer. ]
-		ifFalse: [ self profile encloseBlockSequenceWithSpace ifTrue: [ buffer space. ]. ].
+			newLineIndent ]
+		ifFalse: [ self profile encloseBlockSequenceWithSpace ifTrue: [ self currentLine space ] ].
 	
-	buffer nextPutAll: (aNode bodySequence accept: self).
+	aPPPBlockNode bodySequence accept: self.
 	
-	self profile encloseBlockSequenceWithSpace ifTrue: [ buffer space. ].
-	buffer nextPut: $].
+	self profile encloseBlockSequenceWithSpace ifTrue: [ self currentLine space ].
+	self currentLine nextPut: $].
 	self decrementBlockLevel.
-	multiLine ifTrue: [ self decrementIndent. ].
-	
-	^ buffer contents.
+	multiline ifTrue: [ self decrementIndent ]

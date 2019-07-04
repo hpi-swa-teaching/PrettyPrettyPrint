@@ -1,7 +1,7 @@
 testing
 testPrintTooLongReturnNode
 
-	| variableNode returnNode messageNode printer variableName firstMessageSelector secondMessageSelector firstArgumentNode secondArgumentNode |
+	| variableNode returnNode messageNode printer variableName firstMessageSelector secondMessageSelector firstArgumentNode secondArgumentNode formattedReturn |
 	
 	printer := PPPPrinter new.
 	self preferenceBlock value: printer profile.
@@ -11,7 +11,10 @@ testPrintTooLongReturnNode
 	returnNode := PPPReturnNode value: variableNode.
 	returnNode length: 63.
 	
-	self assert: '^' , variableName equals: (printer visitReturnNode: returnNode).
+	printer visitReturnNode: returnNode.
+	formattedReturn := printer wholeContent.
+	
+	self assert: '^' , variableName equals: formattedReturn.
 	
 	variableName := 'joisajfsapodjfposasadfsadfsfjdfpoj'.
 	variableNode := PPPVariableNode name: variableName.
@@ -30,9 +33,14 @@ testPrintTooLongReturnNode
 	returnNode := PPPReturnNode value: messageNode.
 	returnNode length: 160.
 	
+	printer := PPPPrinter new.
+	self preferenceBlock value: printer profile.
+	printer visitReturnNode: returnNode.
+	formattedReturn := printer wholeContent.
+	
 	self 
 		assert: '^' , variableName , Character cr ,
 			Character tab , firstMessageSelector, ' ' , firstArgumentNode name ,
 			Character cr , Character tab, secondMessageSelector , ' ' , secondArgumentNode name
-		equals: (printer visitReturnNode: returnNode)
+		equals: formattedReturn
 	

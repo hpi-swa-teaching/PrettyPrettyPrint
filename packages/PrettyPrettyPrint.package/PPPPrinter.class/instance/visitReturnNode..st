@@ -1,18 +1,8 @@
 visit-node
-visitReturnNode: aReturnNode 
+visitReturnNode: aPPPReturnNode 
 
-	| buffer offset previousMultilineState |
-	buffer := WriteStream on: ''.
-	offset := 0.
-	(self currentBlockLevel = 0 and: self profile newlineBeforeReturn) ifTrue: [ self newLineIndentOn: buffer. ].
-	buffer nextPutAll: '^'.
+	(self currentBlockLevel = 0 and: self profile newlineBeforeReturn) ifTrue: [ self newLineIndent ].
+	self currentLine nextPutAll: '^'.
+	self profile spaceBeforeReturn ifTrue: [ self currentLine space ].
 	
-	self profile spaceBeforeReturn ifTrue: [ buffer space. offset := 1].
-	previousMultilineState := self printingMultiline.
-	(self nodeFitsInLine: aReturnNode withOffset: offset)
-		ifFalse: [self printingMultiline: true].
-	
-	buffer nextPutAll: (self visitValueNode: aReturnNode value).
-	self printingMultiline: previousMultilineState.
-	
-	^ buffer contents.
+	self visitValueNode: aPPPReturnNode value

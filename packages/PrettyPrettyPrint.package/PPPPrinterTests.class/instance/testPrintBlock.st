@@ -1,7 +1,7 @@
 testing
 testPrintBlock
 
-	| blockNode printer |
+	| blockNode printer formattedBlock |
 	
 	printer := PPPPrinter new.
 	self preferenceBlock value: printer profile.
@@ -15,10 +15,12 @@ testPrintBlock
 				value: (PPPVariableNode new name: '4');
 				yourself. PPPReturnNode value: (PPPVariableNode new name: 'self') }).
 	blockNode needsStructuralLinebreak: true.
+	blockNode accept: printer.
+	formattedBlock := printer wholeContent.
 	
 	self
 		assert: '[ :b1 :b2 |
 	| temp1 temp2 |
 	variable := 4.
 	^self ]'
-		equals: (blockNode accept: printer).
+		equals: formattedBlock.

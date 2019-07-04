@@ -9,7 +9,8 @@
 		"currentBlockLevel",
 		"currentIndent",
 		"profile",
-		"printingMultiline" ],
+		"currentLine",
+		"printedLinesBuffer" ],
 	"name" : "PPPPrinter",
 	"pools" : [
 		 ],

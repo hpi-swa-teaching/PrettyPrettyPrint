@@ -1,6 +1,6 @@
 testing
 testVeryShortCascade
-	| printer cascadeNode |
+	| printer cascadeNode formattedCascade |
 	
 	printer := PPPPrinter new.
 	
@@ -16,7 +16,9 @@ testVeryShortCascade
 					with: (PPPLiteralNode value: '2' literalType: #number)))
 			with: (PPPMessageNode receiver: nil selector: 'yourself')).
 	cascadeNode needsStructuralLinebreak: false.
-		
+	cascadeNode accept: printer.
+	formattedCascade := printer wholeContent.
+	
 	self
 		assert: 'self hi; ho: 1 hu: 2; yourself'
-		equals: (cascadeNode accept: printer)
+		equals: formattedCascade

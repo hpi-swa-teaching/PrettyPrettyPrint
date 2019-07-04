@@ -5,4 +5,5 @@ initialize
 		currentIndent: 0;
 		profile: PPPSettingsProfile userProfile;
 		currentBlockLevel: 0;
-		printingMultiline: false
+		currentLine: (WriteStream on: '');
+		printedLinesBuffer: (WriteStream on: '')

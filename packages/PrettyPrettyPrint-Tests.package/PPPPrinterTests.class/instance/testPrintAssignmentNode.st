@@ -1,6 +1,6 @@
 testing
 testPrintAssignmentNode
-	| printer assignmentNode valueNode |
+	| printer assignmentNode valueNode formattedAssignment |
 	
 	valueNode := PPPLiteralNode new
 		literalType: #string;
@@ -13,9 +13,10 @@ testPrintAssignmentNode
 		yourself.
 	
 	printer := PPPPrinter new.
-	
-	assignmentNode accept: printer.
+	self preferenceBlock value: printer profile.
+	printer visitAssignmentNode: assignmentNode.
+	formattedAssignment := printer wholeContent.
 	
 	self
 		assert: 'myVar := ''myValue'''
-		equals: (printer visitAssignmentNode: assignmentNode)
+		equals: formattedAssignment

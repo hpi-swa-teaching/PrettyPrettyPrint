@@ -1,11 +1,12 @@
 testing
 testPrintTooLongVariableNode
 
-	| variableNode printer variableName |
+	| variableNode printer variableName formattedVariable |
 	
 	printer := PPPPrinter new.
 	self preferenceBlock value: printer profile.
 	variableName := 'joisajfsapodjfposajdfpojsafjpsajfpoasjfdpaspofdjsapojfpoajsfpo'.
 	variableNode := PPPVariableNode name: variableName.
-	
-	self assert: variableName equals: (printer visitVariableNode: variableNode)
+	printer visitVariableNode: variableNode.
+	formattedVariable := printer wholeContent. 
+	self assert: variableName equals: formattedVariable

@@ -1,20 +1,15 @@
 helpers-printing
 printNamedMessageMultiline: aPPPMessageNode 
-	| buffer |
-	buffer := WriteStream on: ''.
 	
-	aPPPMessageNode ifNotInCascade: [ 
-		self incrementIndent;
-			newLineIndentOn: buffer].
+	self incrementIndent.
+	aPPPMessageNode ifNotInCascade: [ self newLineIndent] .
 	
 	self
 		each: (aPPPMessageNode selector subStrings: ':')
 		and: aPPPMessageNode arguments
-		do: [ :messagePart :argument | buffer
+		do: [ :messagePart :argument | self currentLine
 			nextPutAll: messagePart;
-			nextPutAll: ': ';
-			nextPutAll: (self visitValueNode: argument) ]
-		separatedBy: [ self newLineIndentOn: buffer ].
-	self decrementIndent.
-		
-	^buffer contents
+			nextPutAll: ': '.
+			self visitValueNode: argument ]
+		separatedBy: [ self newLineIndent ].
+	self decrementIndent

@@ -1,21 +1,16 @@
 visit-node
-visitMethodNode: aNode
-
-	| buffer |
-	buffer := WriteStream on: ''.
+visitMethodNode: aPPPMethodNode
 	
-	aNode arguments
-		ifEmpty: [ buffer nextPutAll: aNode selector ]
-		ifNotEmpty: [ aNode arguments
-			do: [ :arg | buffer nextPutAll: arg first , ' ' , arg second ]
-			separatedBy: [ buffer nextPut: $  ] ].
+	self incrementIndent.
+	aPPPMethodNode arguments
+		ifEmpty: [ self currentLine nextPutAll: aPPPMethodNode selector ]
+		ifNotEmpty: [ aPPPMethodNode arguments
+			do: [ :arg | (self argumentFitsInLine: arg) ifFalse: [ self newLineIndent ].
+				self currentLine nextPutAll: arg first , ' ' , arg second ]
+			separatedBy: [ self currentLine space ] ].
 	
-	(self newLineAfterSelectorNeededFor: aNode) ifTrue: [ self newLineIndentOn: buffer ].
+	(self newLineAfterSelectorNeededFor: aPPPMethodNode) ifTrue: [ self newLineIndent ].
 	
-	self
-		incrementIndent;
-		newLineIndentOn: buffer.
+	self newLineIndent.
 	
-	buffer nextPutAll: (aNode bodySequence accept: self).
-	
-	^ buffer contents
+	aPPPMethodNode bodySequence accept: self

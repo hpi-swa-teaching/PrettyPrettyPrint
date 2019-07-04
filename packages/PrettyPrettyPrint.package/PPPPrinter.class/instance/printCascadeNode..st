@@ -1,14 +1,10 @@
 visit-node
 printCascadeNode: aPPPCascadeNode 
-	| buffer |
-	buffer := WriteStream on: ''.
 	
-	buffer nextPutAll: (self visitValueNode: aPPPCascadeNode receiver).
-	buffer nextPut: Character space.
+	self visitValueNode: aPPPCascadeNode receiver.
+	self currentLine space.
 	
 	aPPPCascadeNode messages
 		do: [ :message |
-			buffer nextPutAll: (self visitValueNode: message) ]
-		separatedBy: [ buffer nextPutAll: '; ' ].
-	
-	^buffer contents
+			self visitValueNode: message ]
+		separatedBy: [ self currentLine nextPutAll: '; ' ]

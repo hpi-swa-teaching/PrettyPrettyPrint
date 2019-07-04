@@ -1,17 +1,12 @@
 helpers-printing
 printNamedMessage: aPPPMessageNode 
-	| buffer |
-	buffer := WriteStream on: ''.
 	
-	aPPPMessageNode ifNotInCascade: [ buffer space ].
-	
+	aPPPMessageNode ifNotInCascade: [ self currentLine space ].	
 	self
 		each: (aPPPMessageNode selector subStrings: ':')
 		and: aPPPMessageNode arguments
-		do: [ :messagePart :argument | buffer
+		do: [ :messagePart :argument | self currentLine
 			nextPutAll: messagePart;
-			nextPutAll: ': ';
-			nextPutAll: (self visitValueNode: argument) ]
-		separatedBy: [ buffer space ].
-		
-	^buffer contents
+			nextPutAll: ': '.
+			self visitValueNode: argument ]
+		separatedBy: [ self currentLine space ]

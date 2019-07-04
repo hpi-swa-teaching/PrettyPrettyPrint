@@ -1,8 +1,8 @@
 testing
 testPrintTooLongMessageNode
 
-	| variableNode messageNode printer variableName firstMessageSelector 
-	secondMessageSelector firstArgumentNode secondArgumentNode shortMessageNode |
+	| variableNode messageNode printer variableName firstMessageSelector secondMessageSelector
+	firstArgumentNode secondArgumentNode shortMessageNode formattedMessage |
 	
 	printer := PPPPrinter new.
 	self preferenceBlock value: printer profile.
@@ -25,10 +25,13 @@ testPrintTooLongMessageNode
 		arguments: { firstArgumentNode . secondArgumentNode }.
 	messageNode length: 218.
 	
+	printer visitMessageNode: messageNode.
+	formattedMessage:= printer wholeContent.
+	
 	self 
 		assert: variableName , Character cr ,
 			Character tab , firstMessageSelector, ': (' , variableNode name, Character cr , Character tab , Character tab ,
 			firstMessageSelector , ';',  Character cr , Character tab , Character tab , firstMessageSelector , ')' ,
 			Character cr , Character tab, secondMessageSelector , ' ' , secondArgumentNode name
-		equals: (printer visitMessageNode: messageNode)
+		equals: formattedMessage
 	

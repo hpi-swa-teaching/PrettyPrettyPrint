@@ -1,12 +1,8 @@
 visit-node
-printMessageNode: aNode 
-	| buffer |
-	buffer := WriteStream on: ''.
+printMessageNode: aPPPMessageNode 
 	
-	aNode ifNotInCascade: [ buffer nextPutAll: (self visitValueNode: aNode receiver) ].
+	aPPPMessageNode ifNotInCascade: [ self visitValueNode: aPPPMessageNode receiver ].
 	
-	aNode isUnaryMessage ifTrue: [ buffer nextPutAll: (self printUnaryMessage: aNode) ].
-	aNode isBinaryMessage ifTrue: [ buffer nextPutAll: (self printBinaryMessage: aNode) ].
-	aNode isNamedMessage ifTrue: [ buffer nextPutAll: (self printNamedMessage: aNode) ].
-	
-	^buffer contents
+	aPPPMessageNode isUnaryMessage ifTrue: [ self printUnaryMessage: aPPPMessageNode ].
+	aPPPMessageNode isBinaryMessage ifTrue: [ self printBinaryMessage: aPPPMessageNode ].
+	aPPPMessageNode isNamedMessage ifTrue: [ self printNamedMessage: aPPPMessageNode ]
