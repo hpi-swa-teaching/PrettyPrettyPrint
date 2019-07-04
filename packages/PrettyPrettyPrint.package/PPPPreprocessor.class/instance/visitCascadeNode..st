@@ -1,8 +1,8 @@
 visit-node
 visitCascadeNode: aCascadeNode
 	
-	aCascadeNode messages do: [:message | message accept: self].
 	aCascadeNode receiver accept: self.
+	aCascadeNode messages do: [:message | message accept: self].
 	
 	aCascadeNode 
 		length: (self lengthForCascadeNode: aCascadeNode);
