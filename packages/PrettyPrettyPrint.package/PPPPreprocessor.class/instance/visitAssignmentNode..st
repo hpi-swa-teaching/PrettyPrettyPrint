@@ -3,7 +3,8 @@ visitAssignmentNode: anAssignmentNode
 
 	anAssignmentNode value accept: self.
 	
+	self setParenthesesForAssignmentNode: anAssignmentNode.
+	
 	anAssignmentNode
-		setParenthesesForAssignmentNode: anAssignmentNode;
 		length: (self lengthForAssignmentNode: anAssignmentNode);
 		depth: (self depthForAssignmentNode: anAssignmentNode)

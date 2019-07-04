@@ -1,4 +1,4 @@
-visit-node
+parantheses
 setParanthesesForMessageNode: aMessageNode
 
 	| selectorPrecedence receiver arguments |
@@ -7,7 +7,10 @@ setParanthesesForMessageNode: aMessageNode
 	receiver := aMessageNode receiver.
 	arguments := aMessageNode arguments.
 	
-	self setParanthesesForChildNode: receiver precedence: selectorPrecedence.
+	aMessageNode isBinaryMessage 
+		ifTrue: [receiver needsParantheses: receiver precedence > selectorPrecedence] 
+		ifFalse: [self setParanthesesForChildNode: receiver precedence: selectorPrecedence].
+	
 	arguments do: [:node | 
 		self setParanthesesForChildNode: node precedence: selectorPrecedence]
 		

@@ -1,12 +1,14 @@
 visit-node
 visitValueNode: aNode 
-	| buffer |
+
+	| buffer paranthesesNeeded |
 	buffer := WriteStream on: ''.
+	paranthesesNeeded := self shouldHaveParantheses: aNode.
 	
 	self printCommentsOf: aNode on: buffer.
 	
-	aNode hasParentheses ifTrue: [ buffer nextPut: $( ].
+	paranthesesNeeded ifTrue: [ buffer nextPut: $( ].
 	buffer nextPutAll: (aNode accept: self).
-	aNode hasParentheses ifTrue: [ buffer nextPut: $) ].
+	paranthesesNeeded ifTrue: [ buffer nextPut: $) ].
 	
 	^buffer contents

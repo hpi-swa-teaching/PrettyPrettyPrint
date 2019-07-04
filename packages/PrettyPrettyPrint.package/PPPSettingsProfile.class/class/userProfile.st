@@ -10,4 +10,5 @@ userProfile
 		maxLineLength: self maxLineLength;
 		keepEmptyLines: self keepEmptyLines;
 		encloseBlockSequenceWithSpace: self encloseBlockSequenceWithSpace;
+		minimalParanthesis: self minimalParanthesis;
 		yourself

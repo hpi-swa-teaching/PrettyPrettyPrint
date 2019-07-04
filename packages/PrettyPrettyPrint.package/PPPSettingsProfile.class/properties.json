@@ -8,6 +8,7 @@
 		"FreezeCodeHolderRefresh",
 		"KeepEmptyLines",
 		"MaxLineLength",
+		"MinimalParanthesis",
 		"NewlineAfterSelector",
 		"NewlineAfterTemporaryDeclaration",
 		"NewlineBeforeReturn",
@@ -23,7 +24,8 @@
 		"keepEmptyLines",
 		"encloseBlockSequenceWithSpace",
 		"newlineAfterSelector",
-		"newlineBeforeReturn" ],
+		"newlineBeforeReturn",
+		"minimalParanthesis" ],
 	"name" : "PPPSettingsProfile",
 	"pools" : [
 		 ],

@@ -1,4 +1,4 @@
-visit-node
+parantheses
 setParanthesesForAssignmentNode: anAssignmentNode
 
 	anAssignmentNode value isAssignmentNode ifTrue: [

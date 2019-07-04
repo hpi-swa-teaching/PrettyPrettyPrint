@@ -1,4 +1,4 @@
-visit-node
+parantheses
 setParanthesesForChildNode: aValueNode precedence: aSmallInteger
 
 	| selectorPrecedence childPrecedence |
