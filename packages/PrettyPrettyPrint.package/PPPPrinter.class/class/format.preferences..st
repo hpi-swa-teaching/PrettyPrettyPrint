@@ -10,8 +10,9 @@ format: aString preferences: aBlock
 	
 	abstractSyntaxTree := PPPParser new parseTokenStream: (tokens).
 	pragmaPreferences := PPPPragmaHandler new getPragmaPreferencesFrom: abstractSyntaxTree.
-	PPPPreprocessor new visitMethodNode: abstractSyntaxTree.
 	
 	(self methodIgnoredBy: pragmaPreferences) ifTrue: [^ aString ].
+	
+	PPPPreprocessor new visitMethodNode: abstractSyntaxTree.
 	
 	^ printer visitMethodNode: abstractSyntaxTree

@@ -1,0 +1,3 @@
+accessing
+isConstant
+	^self constant
