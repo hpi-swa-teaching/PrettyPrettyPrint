@@ -1,7 +1,5 @@
 visit-node
-visitLiteralNode: aNode 
-	| buffer |
-	buffer := WriteStream on: ''.
-	buffer nextPutAll: aNode value.
+visitLiteralNode: aPPPLiteralNode 
 	
-	^buffer contents
+	(self nodeFitsInLine: aPPPLiteralNode) ifFalse: [self newLineIndent].
+	self currentLine nextPutAll: aPPPLiteralNode value

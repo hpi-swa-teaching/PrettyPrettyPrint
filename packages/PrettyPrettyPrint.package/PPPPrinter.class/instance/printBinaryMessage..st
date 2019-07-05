@@ -1,11 +1,8 @@
 helpers-printing
-printBinaryMessage: aNode 
-	| buffer |
-	buffer := WriteStream on: ''.
+printBinaryMessage: aPPPMessageNode
 	
-	(aNode isInCascade not and: [ self profile spaceAroundBinaryOperator ]) ifTrue: [ buffer space ].
-	buffer nextPutAll: aNode selector.
-	self profile spaceAroundBinaryOperator ifTrue: [ buffer space ].
+	(aPPPMessageNode isInCascade not and: [ self profile spaceAroundBinaryOperator ]) ifTrue: [ self currentLine space ].
+	self currentLine nextPutAll: aPPPMessageNode selector.
+	self profile spaceAroundBinaryOperator ifTrue: [ self currentLine space ].
 	
-	buffer nextPutAll: (self visitValueNode: aNode arguments first).
-	^buffer contents
+	self visitValueNode: aPPPMessageNode arguments first

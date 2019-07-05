@@ -1,6 +1,6 @@
 testing
 testPrintSequenceNode
-	| sequenceNode printer statements temporaries |
+	| sequenceNode printer statements temporaries formattedSequence |
 	
 	printer := PPPPrinter new.
 	self preferenceBlock value: printer profile.
@@ -14,9 +14,11 @@ testPrintSequenceNode
 	sequenceNode
 		temporaries: temporaries;
 		statements: statements.
+	sequenceNode accept: printer.
+	formattedSequence := printer wholeContent.
 	
 	self
 		assert: '| temp1 temp2 |
 variable := 4.
 ^self'
-		equals: (sequenceNode accept: printer)
+		equals: formattedSequence

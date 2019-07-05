@@ -1,9 +1,5 @@
 visit-node
-printUnaryMessage: aNode 
-	| buffer |
-	buffer := WriteStream on: ''.
+printUnaryMessage: aPPMessageNode 
 	
-	aNode ifNotInCascade: [ buffer space ].
-	buffer nextPutAll: aNode selector.
-	
-	^buffer contents
+	aPPMessageNode ifNotInCascade: [ self currentLine space ].
+	self currentLine nextPutAll: aPPMessageNode selector
