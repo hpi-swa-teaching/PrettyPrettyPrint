@@ -1,0 +1,31 @@
+{
+	"category" : "PrettyPrettyPrint-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"DotAfterReturn",
+		"EncloseBlockSequenceWithSpace",
+		"FreezeCodeHolderRefresh",
+		"KeepEmptyLines",
+		"MaxLineLength",
+		"NewlineAfterSelector",
+		"NewlineAfterTemporaryDeclaration",
+		"NewlineBeforeReturn",
+		"SpaceAroundBinaryOperator",
+		"SpaceBeforeReturn" ],
+	"commentStamp" : "TB 7/28/2016 16:11",
+	"instvars" : [
+		"spaceBeforeReturn",
+		"dotAfterReturn",
+		"spaceAroundBinaryOperator",
+		"newlineAfterTemporaryDeclaration",
+		"maxLineLength",
+		"keepEmptyLines",
+		"encloseBlockSequenceWithSpace",
+		"newlineAfterSelector",
+		"newlineBeforeReturn" ],
+	"name" : "PPPSettingsProfile",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,3 @@
+testing
+isUnaryMessage
+	^arguments isEmpty

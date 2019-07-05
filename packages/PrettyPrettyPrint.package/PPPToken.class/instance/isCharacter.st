@@ -1,0 +1,3 @@
+testing
+isCharacter
+	^tokenType = #character

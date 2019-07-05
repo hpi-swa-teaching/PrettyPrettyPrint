@@ -1,0 +1,3 @@
+comparing
+getAllPragmas
+	^ OrderedCollection new

@@ -1,0 +1,18 @@
+{
+	"category" : "PrettyPrettyPrint-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "KB 7/29/2016 13:50",
+	"instvars" : [
+		"stream",
+		"nextToken",
+		"currentToken",
+		"nextNextToken",
+		"currentComments" ],
+	"name" : "PPPParser",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
