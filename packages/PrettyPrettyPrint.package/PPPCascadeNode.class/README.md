@@ -1,1 +1,0 @@
-A PPPCascadeNode is the representation of a cascade in the AST, aggregating multiple message sends (PPPMessageNodes) to a common receiver.

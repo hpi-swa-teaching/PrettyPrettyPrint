@@ -1,3 +1,0 @@
-testing
-isUnaryMessage
-	^arguments isEmpty
