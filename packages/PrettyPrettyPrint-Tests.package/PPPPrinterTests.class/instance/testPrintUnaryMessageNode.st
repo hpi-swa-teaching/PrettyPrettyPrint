@@ -1,6 +1,6 @@
 testing
 testPrintUnaryMessageNode
-	| messageNode argumentNodes selector printer receiverNode |
+	| messageNode argumentNodes selector printer receiverNode formattedMessage |
 	
 	printer := PPPPrinter new.
 	messageNode := PPPMessageNode new.
@@ -12,5 +12,6 @@ testPrintUnaryMessageNode
 		receiver: receiverNode;
 		selector: selector;
 		arguments: argumentNodes.
-	
-	self assert: 'self send' equals: (messageNode accept: printer)
+	messageNode accept: printer.
+	formattedMessage := printer wholeContent.
+	self assert: 'self send' equals: formattedMessage

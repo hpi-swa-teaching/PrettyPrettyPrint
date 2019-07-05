@@ -1,25 +1,12 @@
 helpers-printing
-printNamedMessage: aNode 
-	| buffer multiLine |
-	buffer := WriteStream on: ''.
+printNamedMessage: aPPPMessageNode 
 	
-	multiLine := (self messageExceedsLineLimit: aNode) and: [ aNode arguments size > 1 ].
-	
-	aNode ifNotInCascade: [ multiLine
-		ifTrue: [ self
-			incrementIndent;
-			newLineIndentOn: buffer ]
-		ifFalse: [ buffer space ] ].
-	
+	aPPPMessageNode ifNotInCascade: [ self currentLine space ].	
 	self
-		each: (aNode selector subStrings: ':')
-		and: aNode arguments
-		do: [ :messagePart :argument | buffer
+		each: (aPPPMessageNode selector subStrings: ':')
+		and: aPPPMessageNode arguments
+		do: [ :messagePart :argument | self currentLine
 			nextPutAll: messagePart;
-			nextPutAll: ': ';
-			nextPutAll: (self visitValueNode: argument) ]
-		separatedBy: [ multiLine ifFalse: [ buffer space ] ifTrue: [ self newLineIndentOn: buffer ] ].
-	
-	multiLine ifTrue: [ self decrementIndent ].
-	
-	^buffer contents
+			nextPutAll: ': '.
+			self visitValueNode: argument ]
+		separatedBy: [ self currentLine space ]

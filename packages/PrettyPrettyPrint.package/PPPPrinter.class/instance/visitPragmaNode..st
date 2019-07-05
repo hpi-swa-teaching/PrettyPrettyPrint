@@ -1,3 +1,4 @@
 visit-node
-visitPragmaNode: aNode 
-	^aNode content
+visitPragmaNode: aPPPPragmaNode
+
+	self currentLine nextPutAll: aPPPPragmaNode content

@@ -15,4 +15,4 @@ format: aString preferences: aBlock
 	
 	PPPPreprocessor new visitMethodNode: abstractSyntaxTree.
 	
-	^ printer visitMethodNode: abstractSyntaxTree
+	^ printer prettyPrintMethod: abstractSyntaxTree

@@ -1,7 +1,7 @@
 testing
 testPrintMethodNode
 
-	| sequenceNode printer statements temporaries methodNode |
+	| sequenceNode printer statements temporaries methodNode formattedMethod |
 	
 	printer := PPPPrinter new.
 	self preferenceBlock value: printer profile.
@@ -23,10 +23,12 @@ testPrintMethodNode
 		addArgument: 'ourMethod:' name: 'argument';
 		addArgument: 'with:' name: 'anotherArgument';
 		yourself.
+	methodNode accept: printer.
+	formattedMethod := printer wholeContent.
 	
 	self
 		assert: 'ourMethod: argument with: anotherArgument
 	| temp1 temp2 |
 	variable := 4.
 	^self'
-		equals: (methodNode accept: printer).
+		equals: formattedMethod

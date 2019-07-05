@@ -16,7 +16,7 @@ testPrintMultilineMessage
 		equals: (PPPPrinter
 			format: string
 			preferences: [ :profile | profile
-				maxLineLength: 10;
+				maxLineLength: 25;
 				newlineAfterSelector: false;
 				dotAfterReturn: false;
 				newlineBeforeReturn: false;

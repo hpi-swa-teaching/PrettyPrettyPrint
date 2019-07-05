@@ -7,8 +7,9 @@ testNewlineAfterSelector
 	formattedMethod := PPPPrinter 
 		format: method 
 		preferences: [:profile | profile newlineAfterSelector: true; newlineBeforeReturn: false; keepEmptyLines: false].
-	selectorWithNewline := 'visitMethodNode: aNode
 
+	selectorWithNewline := 'visitMethodNode: aNode
+	
 	*'.
 	self assert: (selectorWithNewline match: formattedMethod).
 	

@@ -1,12 +1,8 @@
 visit-node
-visitValueNode: aNode 
-	| buffer |
-	buffer := WriteStream on: ''.
+visitValueNode: aPPPValueNode 
 	
-	self printCommentsOf: aNode on: buffer.
+	self printCommentsOf: aPPPValueNode.
 	
-	aNode hasParentheses ifTrue: [ buffer nextPut: $( ].
-	buffer nextPutAll: (aNode accept: self).
-	aNode hasParentheses ifTrue: [ buffer nextPut: $) ].
-	
-	^buffer contents
+	aPPPValueNode hasParentheses ifTrue: [ self currentLine nextPut: $( ].
+	aPPPValueNode accept: self.
+	aPPPValueNode hasParentheses ifTrue: [ self currentLine nextPut: $) ]
