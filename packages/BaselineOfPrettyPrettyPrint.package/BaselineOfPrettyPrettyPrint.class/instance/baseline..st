@@ -5,9 +5,9 @@ baseline: spec
 	spec for: #common do: [
 		spec
 			package: 'PrettyPrettyPrint' with: [];
-			package: 'PrettyPrettyPrint-UI' with: [spec 
+			package: 'PrettyPrettyPrint-UI' with: [ spec 
 				requires: #('PrettyPrettyPrint');
-				postLoadDo: [:postloadDirective | PPPPrinter askUserToSetPrettyPrinterAsStandart]];
+				postLoadDoIt: #onReleasePostLoad ];
 			package: 'PrettyPrettyPrint-Help' with: [	spec requires: #('PrettyPrettyPrint' 'PrettyPrettyPrint-UI')];
 			package: 'PrettyPrettyPrint-Tests' with: [ spec requires: #('PrettyPrettyPrint') ].
 		
