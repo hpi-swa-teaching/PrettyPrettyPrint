@@ -1,0 +1,1 @@
+A PPPSequenceNode contains a list of statements (PPPValueNodes) and temporary variable declarations that form either a method body or a block body. It may hold a PPPReturnNode as its last statement.
