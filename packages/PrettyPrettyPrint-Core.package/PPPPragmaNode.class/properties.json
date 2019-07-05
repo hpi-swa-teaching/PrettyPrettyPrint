@@ -1,14 +1,14 @@
 {
-	"category" : "BaselineOfPrettyPrettyPrint",
+	"category" : "PrettyPrettyPrint-Core",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "BaselineOfPrettyPrettyPrint",
+		"content" ],
+	"name" : "PPPPragmaNode",
 	"pools" : [
 		 ],
-	"super" : "BaselineOf",
+	"super" : "PPPValueNode",
 	"type" : "normal" }

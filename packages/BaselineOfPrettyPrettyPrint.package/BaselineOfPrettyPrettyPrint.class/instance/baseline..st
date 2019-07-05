@@ -4,10 +4,17 @@ baseline: spec
 
 	spec for: #common do: [
 		spec
-			package: 'PrettyPrettyPrint' with: []";
-			package: 'PrettyPrettyPrint-Tests' with: [ spec requires: #('Core') ]".
+			package: 'PrettyPrettyPrint-Core' with: [];
+			package: 'PrettyPrettyPrint-UI' with: [ spec 
+				requires: #('PrettyPrettyPrint-Core');
+				postLoadDoIt: #onReleasePostLoad ];
+			package: 'PrettyPrettyPrint-Help' with: [	spec requires: #('PrettyPrettyPrint-Core' 'PrettyPrettyPrint-UI')];
+			package: 'PrettyPrettyPrint-Tests' with: [ spec requires: #('PrettyPrettyPrint-Core') ].
 		
 		spec
-			group: 'Core' with: #('PrettyPrettyPrint')";
+			group: 'default' with: #('release');
+			group: 'release' with: #('Core' 'UI');
+			group: 'Core' with: #('PrettyPrettyPrint-Core');
+			group: 'UI' with: #('PrettyPrettyPrint-Help' 'PrettyPrettyPrint-UI');
 			group: 'Tests' with: #('PrettyPrettyPrint-Tests');
-			group: 'TravisCI' with: #('Tests')" ]
+			group: 'TravisCI' with: #('Tests') ]
