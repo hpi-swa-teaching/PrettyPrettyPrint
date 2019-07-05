@@ -1,6 +1,5 @@
 installation
-initialize
+askUserToSetPrettyPrinterAsStandart
 
-	super initialize.
 	self isChosenAsStandardPrettyPrinter 
 		ifTrue: [self setAsStandardPrettyPrinter]

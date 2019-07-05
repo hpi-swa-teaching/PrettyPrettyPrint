@@ -1,5 +1,5 @@
 OrderedDictionary {
-	'packages\/BaselineOfPrettyPrettyPrint.package' : nil,
+	'packages\/BaselineOfPrettyPrettyPrint.package' : #SquotCypressCodeSerializer,
 	'packages\/PrettyPrettyPrint-Tests.package' : #SquotCypressCodeSerializer,
 	'packages\/PrettyPrettyPrint.package' : #SquotCypressCodeSerializer
 }
