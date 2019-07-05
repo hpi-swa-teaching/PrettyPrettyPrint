@@ -1,3 +1,0 @@
-accessing
-isConstant
-	^self constant

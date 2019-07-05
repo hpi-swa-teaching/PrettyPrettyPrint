@@ -1,3 +1,0 @@
-comparing
-getAllPragmas
-	^ self subclassResponsibility
