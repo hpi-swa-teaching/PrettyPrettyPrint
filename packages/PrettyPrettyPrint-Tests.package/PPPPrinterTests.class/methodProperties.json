@@ -41,5 +41,6 @@
 		"testTooLongAssignmentNode" : "MiB 7/4/2019 19:20",
 		"testTooLongCascade" : "MiB 7/4/2019 19:07",
 		"testTooLongLiteralNode" : "MiB 7/4/2019 20:03",
+		"testTooMuchIndentForAssignmentNodeBug" : "MiB 7/5/2019 23:44",
 		"testUserProfileImportExport" : "lcj 7/6/2016 23:13",
 		"testVeryShortCascade" : "MiB 7/4/2019 20:12" } }

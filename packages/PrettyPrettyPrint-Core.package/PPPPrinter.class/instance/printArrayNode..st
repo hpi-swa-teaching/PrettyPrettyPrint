@@ -2,7 +2,6 @@ visit-node
 printArrayNode: aPPPArrayNode 
 
 	self currentLine nextPutAll: (aPPPArrayNode constant ifTrue: [ '#( ' ] ifFalse: [ '{ ' ]).
-	self incrementIndent.
 	
 	aPPPArrayNode contents
 		do: [ :content | self visitValueNode: content ]
@@ -11,5 +10,4 @@ printArrayNode: aPPPArrayNode
 			nextPut: $.;
 			space ] ].
 	
-	self currentLine nextPutAll: (aPPPArrayNode constant ifTrue: [ ' )' ] ifFalse: [ ' }' ]).
-	self decrementIndent
+	self currentLine nextPutAll: (aPPPArrayNode constant ifTrue: [ ' )' ] ifFalse: [ ' }' ])
