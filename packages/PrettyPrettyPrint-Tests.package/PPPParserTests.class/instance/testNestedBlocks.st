@@ -17,21 +17,21 @@ testNestedBlocks
 									statements: { 
 										(PPPMessageNode
 											receiver: (
-												PPPVariableNode
+													PPPVariableNode
 												name: 
 													'true')
 											selector: 
 												'ifTrue:'
 											arguments: { 
 												(
-													PPPBlockNode
+														PPPBlockNode
 													bodySequence: (
-														PPPSequenceNode
+															PPPSequenceNode
 														statements: { 
 															(
-																PPPMessageNode
+																	PPPMessageNode
 																receiver: (
-																	PPPVariableNode
+																		PPPVariableNode
 																	name: 
 																		'e')
 																selector: 

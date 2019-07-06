@@ -3,14 +3,14 @@ testAssignmentNodeMatches
 	
 	self
 		assert: ((PPPAssignmentNode
-				variable: 'Dieter'
-				value: (PPPVariableNode name: 'Hans'))
+					variable: 'Dieter'
+					value: (PPPVariableNode name: 'Hans'))
 				matches: (PPPAssignmentNode
 					variable: 'Dieter'
 					value: (PPPVariableNode name: 'Hans')));
 		assert: ((PPPAssignmentNode
-				variable: 'Dieter'
-				value: (PPPVariableNode name: 'Paul'))
-				matches: (PPPAssignmentNode
-					variable: 'Dieter'
-					value: (PPPVariableNode name: 'Hans'))) not
+						variable: 'Dieter'
+						value: (PPPVariableNode name: 'Paul'))
+					matches: (PPPAssignmentNode
+						variable: 'Dieter'
+						value: (PPPVariableNode name: 'Hans'))) not

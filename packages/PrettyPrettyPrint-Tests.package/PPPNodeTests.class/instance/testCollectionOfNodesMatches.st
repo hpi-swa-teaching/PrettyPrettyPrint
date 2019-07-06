@@ -20,5 +20,5 @@ testCollectionOfNodesMatches
 	otherNodeCollection add: (PPPVariableNode new name: 'variable').
 	self
 		assert: (PPPNode new
-			collectionOfNodes: aNodeCollection
-			matches: otherNodeCollection) not
+				collectionOfNodes: aNodeCollection
+				matches: otherNodeCollection) not
