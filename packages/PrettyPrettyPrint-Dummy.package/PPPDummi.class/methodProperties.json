@@ -8,4 +8,5 @@
 		"testMethod" : "gw 5/9/2019 15:36",
 		"testNewlineAfterSelectorWithKeepEmptyLines" : "MiB 7/4/2019 20:42",
 		"testNewlineAfterSelectorWithNewlineBeforeReturn" : "MiB 7/4/2019 20:40",
+		"testPragmaExtracting" : "MiB 7/5/2019 23:36",
 		"testPrintMultilineMessage" : "MiB 7/4/2019 20:40" } }

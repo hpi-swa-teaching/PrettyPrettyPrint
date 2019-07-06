@@ -22,8 +22,7 @@ testIfTrueIfFalse
 	self
 		assert: 'ifTrue:ifFalse:'
 			equals: methodNode bodySequence statements first selector;
-		assert: 2
-			equals: methodNode bodySequence statements first arguments size;
+		assert: 2 equals: methodNode bodySequence statements first arguments size;
 		assert: PPPBlockNode
 			equals: methodNode bodySequence statements first arguments first class;
 		assert: PPPBlockNode

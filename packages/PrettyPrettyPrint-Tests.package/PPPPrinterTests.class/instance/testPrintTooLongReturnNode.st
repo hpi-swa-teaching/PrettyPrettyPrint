@@ -42,5 +42,5 @@ testPrintTooLongReturnNode
 	formattedReturn := printer wholeContent.
 	self assert: '^' , variableName , Character cr , Character tab
 		, firstMessageSelector , ' ' , firstArgumentNode name , Character cr
-		, Character tab , secondMessageSelector , ' '
-		, secondArgumentNode name equals: formattedReturn
+		, Character tab , secondMessageSelector , ' ' , secondArgumentNode name equals: 
+		formattedReturn

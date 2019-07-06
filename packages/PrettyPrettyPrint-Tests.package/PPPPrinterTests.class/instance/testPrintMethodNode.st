@@ -13,10 +13,8 @@ testPrintMethodNode
 		add: 'temp2';
 		yourself.
 	statements := { 
-		PPPAssignmentNode
-			variable: 'variable'
-			value: (PPPVariableNode new name: '4') . 
-		PPPReturnNode value: (PPPVariableNode new name: 'self') }.
+		PPPAssignmentNode variable: 'variable' value: (PPPVariableNode new
+			name: '4') . PPPReturnNode value: (PPPVariableNode new name: 'self') }.
 	
 	sequenceNode
 		temporaries: temporaries;

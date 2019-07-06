@@ -9,8 +9,8 @@ testPragmaParsing
 		PPPToken type: #identifier content: 'True' . 
 		PPPToken type: #eof content: '' }.
 	
-	methodNode := PPPParser new
-		parsePragmaTokenStream: (ReadStream on: tokens).
+	methodNode := PPPParser new parsePragmaTokenStream: (ReadStream
+		on: tokens).
 	
 	expectedParsedPragmaNode := PPPMethodNode new
 		arguments: (OrderedCollection new

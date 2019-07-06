@@ -12,10 +12,9 @@ testCollectionOfNodesMatches
 		add: (PPPPragmaNode new content: '<Welt>');
 		yourself.
 	
-	self
-		assert: (PPPNode new
-			collectionOfNodes: aNodeCollection
-			matches: otherNodeCollection).
+	self assert: (PPPNode new
+		collectionOfNodes: aNodeCollection
+		matches: otherNodeCollection).
 	
 	otherNodeCollection add: (PPPVariableNode new name: 'variable').
 	self

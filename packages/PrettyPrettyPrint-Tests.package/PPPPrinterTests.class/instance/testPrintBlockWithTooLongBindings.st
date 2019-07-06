@@ -8,22 +8,21 @@ testPrintBlockWithTooLongBindings
 	
 	blockNode := PPPBlockNode new
 		bindings: (OrderedCollection
-				with: ':veryveryverylongbinding1'
-				with: ':veryveryverylongbinding2'
-				with: ':veryveryverylongbinding3'
-				with: ':veryveryverylongbinding4');
+			with: ':veryveryverylongbinding1'
+			with: ':veryveryverylongbinding2'
+			with: ':veryveryverylongbinding3'
+			with: ':veryveryverylongbinding4');
 		bodySequence: (PPPSequenceNode new
 				temporaries: (OrderedCollection
-						with: 'temp1'
-						with: 'temp2');
+					with: 'temp1'
+					with: 'temp2');
 				statements: { PPPAssignmentNode new
 							variable: 'variable';
 							value: (PPPVariableNode new
 								name: '4');
 							yourself . 
-						PPPReturnNode
-							value: (PPPVariableNode new
-								name: 'self') }).
+						PPPReturnNode value: (PPPVariableNode new
+							name: 'self') }).
 	blockNode needsStructuralLinebreak: true.
 	blockNode accept: printer.
 	formattedBlock := printer wholeContent.

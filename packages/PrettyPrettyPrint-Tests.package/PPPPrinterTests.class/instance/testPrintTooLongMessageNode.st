@@ -32,39 +32,9 @@ testPrintTooLongMessageNode
 	
 	printer visitMessageNode: messageNode.
 	formattedMessage := printer wholeContent.
-	
-	self
-		assert: variableName
-			, Character cr
-				, Character tab
-					, firstMessageSelector
-						, ': ('
-							, variableNode name
-								, Character cr
-									, Character tab
-										, Character tab
-											, 
-												firstMessageSelector
-												, ';'
-													, 
-														Character cr
-														, 
-															Character tab
-															, 
-																Character tab
-																, 
-																	firstMessageSelector
-																	, 
-																		')'
-																		, 
-																			Character cr
-																			, 
-																				Character tab
-																				, 
-																					secondMessageSelector
-																					, 
-																						' '
-																						, 
-																							secondArgumentNode name
-																						equals: 
-																							formattedMessage
+	self assert: variableName , Character cr , Character tab
+		, firstMessageSelector , ': (' , variableNode name , Character cr
+		, Character tab , Character tab , firstMessageSelector , ';'
+		, Character cr , Character tab , Character tab , firstMessageSelector
+		, ')' , Character cr , Character tab , secondMessageSelector , ' '
+		, secondArgumentNode name equals: formattedMessage

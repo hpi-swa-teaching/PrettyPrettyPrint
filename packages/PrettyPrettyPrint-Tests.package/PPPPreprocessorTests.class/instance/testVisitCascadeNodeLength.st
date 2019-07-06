@@ -10,8 +10,8 @@ testVisitCascadeNodeLength
 					receiver: nil
 					selector: 'sayHello');
 				add: (PPPMessageNode
-						receiver: nil
-						selector: 'sayByeByeBaby');
+					receiver: nil
+					selector: 'sayByeByeBaby');
 				yourself).
 	
 	PPPPreprocessor new visitCascadeNode: aCascadeNode.

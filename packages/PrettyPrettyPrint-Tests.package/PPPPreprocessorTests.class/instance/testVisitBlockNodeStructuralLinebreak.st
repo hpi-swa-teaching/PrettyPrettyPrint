@@ -3,8 +3,7 @@ testVisitBlockNodeStructuralLinebreak
 	
 	| aBlockNode |
 	
-	aBlockNode := PPPBlockNode
-		bodySequence: self sequenceNodeWithoutStructuralLinebreak.
+	aBlockNode := PPPBlockNode bodySequence: self sequenceNodeWithoutStructuralLinebreak.
 	PPPPreprocessor new visitBlockNode: aBlockNode.
 	
 	self assert: false equals: aBlockNode needsStructuralLinebreak.

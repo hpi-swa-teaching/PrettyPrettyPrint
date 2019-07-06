@@ -23,11 +23,9 @@ testComplexMethod
 		assert: 'assert:equals:' equals: firstNamedMsgSend selector;
 		assert: 'assert:equals:' equals: secondNamedMsgSend selector;
 		assert: 2 equals: secondNamedMsgSend arguments size;
-		assert: PPPMessageNode
-			equals: secondNamedMsgSend arguments first class;
+		assert: PPPMessageNode equals: secondNamedMsgSend arguments first class;
 		assert: secondNamedMsgSend arguments first hasParentheses;
-		assert: '''test2'''
-			equals: secondNamedMsgSend arguments second value;
+		assert: '''test2''' equals: secondNamedMsgSend arguments second value;
 		assert: PPPMessageNode equals: condition class;
 		assert: 'true' equals: condition receiver name;
 		assert: 'ifTrue:ifFalse:' equals: condition selector;

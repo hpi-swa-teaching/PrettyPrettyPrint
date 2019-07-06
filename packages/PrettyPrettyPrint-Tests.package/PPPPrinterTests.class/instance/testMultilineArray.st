@@ -6,9 +6,8 @@ testMultilineArray
 	content := OrderedCollection
 		with: (PPPLiteralNode value: '1' literalType: #number)
 		with: (PPPLiteralNode value: '5' literalType: #number)
-		with: (PPPMessageNode
-			receiver: (PPPVariableNode name: 'Hans')
-			selector: 'hallo').
+		with: (PPPMessageNode receiver: (PPPVariableNode name: 'Hans') selector: 
+			'hallo').
 	anArrayNode := PPPArrayNode contents: content constant: true.
 	anArrayNode needsStructuralLinebreak: true.
 	

@@ -3,18 +3,18 @@ testBinaryMessageLength
 	
 	| firstBinaryMessageNode secondBinaryMessageNode |
 	
-	firstBinaryMessageNode :=  PPPMessageNode
+	firstBinaryMessageNode := PPPMessageNode
 		receiver: (PPPVariableNode name: 'variableName')
 		selector: ','
-		arguments: {PPPLiteralNode value: '''someStuff''' literalType: #string}.
+		arguments: { 
+			PPPLiteralNode value: '''someStuff''' literalType: #string }.
 	
 	secondBinaryMessageNode := PPPMessageNode
 		receiver: (PPPLiteralNode value: '''^''' literalType: #string)
 		selector: ','
-		arguments: {firstBinaryMessageNode}.
-		
+		arguments: { firstBinaryMessageNode }.
+	
 	PPPPreprocessor new visitMessageNode: secondBinaryMessageNode.
-	self 
+	self
 		assert: 18 equals: secondBinaryMessageNode length;
 		assert: 26 equals: firstBinaryMessageNode length
-	
