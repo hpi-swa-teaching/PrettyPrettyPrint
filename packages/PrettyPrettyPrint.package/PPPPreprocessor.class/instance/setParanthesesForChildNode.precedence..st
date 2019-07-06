@@ -1,10 +1,7 @@
 parantheses
-setParanthesesForChildNode: aValueNode precedence: aSmallInteger
-
-	| selectorPrecedence childPrecedence |
+setParanthesesForChildNode: aValueNode precedence: aSmallInteger "precedence of the surrounding operator"
 	
 	aValueNode ifNotNil: [
-		selectorPrecedence := aSmallInteger.
-		childPrecedence := aValueNode precedence.
-		childPrecedence >= selectorPrecedence ifTrue: [aValueNode needsParantheses: true]]
+		aValueNode precedence >= aSmallInteger ifTrue: [
+			aValueNode needsParantheses: true]]
 	

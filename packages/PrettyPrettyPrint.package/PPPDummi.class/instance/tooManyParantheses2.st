@@ -1,4 +1,6 @@
 as yet unclassified
 tooManyParantheses2
 
-	^ ((((((1 + 1) * 2) + 3) * (4 + 5)) * 6))
+	| a b |
+	
+	(a := (b := 42 floorLog: ((1*1)+((0.5 factorial) - 1) )))

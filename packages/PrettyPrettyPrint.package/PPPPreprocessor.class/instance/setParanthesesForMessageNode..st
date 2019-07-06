@@ -1,17 +1,10 @@
 parantheses
 setParanthesesForMessageNode: aMessageNode
 
-	| selectorPrecedence receiver arguments |
+	aMessageNode receiver ifNotNil: [
+		self setParanthesesForChildNode: aMessageNode receiver ofMessage: aMessageNode].
 	
-	selectorPrecedence := aMessageNode precedence.
-	receiver := aMessageNode receiver.
-	arguments := aMessageNode arguments.
-	
-	aMessageNode isBinaryMessage
-		ifTrue: [self setParanthesesForBinaryReceiver: receiver precedence: selectorPrecedence] 
-		ifFalse: [self setParanthesesForChildNode: receiver precedence: selectorPrecedence].
-	
-	arguments do: [:node | 
-		self setParanthesesForChildNode: node precedence: selectorPrecedence]
+	aMessageNode arguments do: [:node | 
+		self setParanthesesForChildNode: node ofMessage: aMessageNode]
 		
 	
