@@ -3,8 +3,7 @@ testPragma
 	
 	| stream tokenizer |
 	
-	stream := 
-		'newlineAfterTemporaryDeclaration
+	stream := 'newlineAfterTemporaryDeclaration
 	<preference: ''Add a newline after declaration of temporaries''
 		category: ''PrettyPrettyPrint<<>>>>''
 		type: #Boolean>

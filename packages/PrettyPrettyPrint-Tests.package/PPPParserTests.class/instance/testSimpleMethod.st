@@ -31,6 +31,6 @@ testSimpleMethod
 		assert: methodNode bodySequence statements first value arguments first value
 			equals: '2';
 		assert: methodNode bodySequence return notNil equals: true;
-		assert: methodNode bodySequence return value class equals: 
-			PPPVariableNode;
+		assert: methodNode bodySequence return value class
+			equals: PPPVariableNode;
 		assert: methodNode bodySequence return value name equals: 'tmp'

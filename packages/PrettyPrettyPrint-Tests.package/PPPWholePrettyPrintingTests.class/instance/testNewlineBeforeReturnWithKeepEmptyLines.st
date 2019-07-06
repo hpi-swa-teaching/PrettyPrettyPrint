@@ -15,8 +15,7 @@ testNewlineBeforeReturnWithKeepEmptyLines
 				newlineAfterSelector: false;
 				spaceBeforeReturn: true;
 				dotAfterReturn: false ].
-	correctlyFormattedMethodPattern := 
-		'visitMethodNode: aNode
+	correctlyFormattedMethodPattern := 'visitMethodNode: aNode
 	
 	^ self hello'.
 	self assert: correctlyFormattedMethodPattern equals: formattedMethod

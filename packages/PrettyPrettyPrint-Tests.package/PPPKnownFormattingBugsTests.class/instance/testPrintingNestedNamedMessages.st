@@ -3,8 +3,7 @@ testPrintingNestedNamedMessages
 	
 	| method |
 	
-	method := 
-		'testMethod
+	method := 'testMethod
 	
 	self
 		assert: methodWithArray

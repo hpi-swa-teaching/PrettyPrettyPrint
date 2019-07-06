@@ -3,8 +3,7 @@ testPragmaSkipFormatting
 	
 	| method |
 	
-	method := 
-		'testMeth
+	method := 'testMeth
 <PrettyPrint: #ignore option: true> 
 
 

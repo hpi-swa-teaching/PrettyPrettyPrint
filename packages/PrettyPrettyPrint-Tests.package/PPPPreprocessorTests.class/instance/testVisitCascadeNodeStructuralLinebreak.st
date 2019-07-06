@@ -6,8 +6,12 @@ testVisitCascadeNodeStructuralLinebreak
 	aCascadeNode := PPPCascadeNode new
 		receiver: self nodeWithoutStructuralLinebreak;
 		messages: (OrderedCollection
-			with: (PPPMessageNode receiver: nil selector: 'sayQuak')
-			with: (PPPMessageNode receiver: nil selector: 'sayHello')).
+				with: (PPPMessageNode
+					receiver: nil
+					selector: 'sayQuak')
+				with: (PPPMessageNode
+					receiver: nil
+					selector: 'sayHello')).
 	PPPPreprocessor new visitCascadeNode: aCascadeNode.
 	self assert: false equals: aCascadeNode needsStructuralLinebreak.
 	
@@ -18,10 +22,12 @@ testVisitCascadeNodeStructuralLinebreak
 	aCascadeNode
 		receiver: self nodeWithoutStructuralLinebreak;
 		messages: (OrderedCollection
-			with: (PPPMessageNode
-				receiver: nil
-				selector: 'say'
-				argument: self nodeWithoutStructuralLinebreak)
-			with: (PPPMessageNode receiver: nil selector: 'sayHello')).
+				with: (PPPMessageNode
+					receiver: nil
+					selector: 'say'
+					argument: self nodeWithoutStructuralLinebreak)
+				with: (PPPMessageNode
+					receiver: nil
+					selector: 'sayHello')).
 	PPPPreprocessor new visitCascadeNode: aCascadeNode.
 	self assert: true equals: aCascadeNode needsStructuralLinebreak

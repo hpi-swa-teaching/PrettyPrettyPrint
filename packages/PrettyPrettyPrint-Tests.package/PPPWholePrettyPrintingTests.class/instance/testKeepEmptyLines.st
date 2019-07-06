@@ -1,14 +1,16 @@
 as yet unclassified
 testKeepEmptyLines
 	
-	self assert: 'testMethod
+	self
+		assert: 'testMethod
 	1.
 	
 	2.
 	3.
 	
-	4' equals: (PPPPrinter
-		format: 'testMethod
+	4'
+		equals: (PPPPrinter
+			format: 'testMethod
 	1.
 	
 	2.
@@ -16,4 +18,4 @@ testKeepEmptyLines
 	
 	
 	4'
-		preferences: PPPPrinterTests new preferenceBlock)
+			preferences: PPPPrinterTests new preferenceBlock)

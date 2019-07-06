@@ -1,13 +1,12 @@
 as yet unclassified
-testPrintingMultilineStringLiterals	
+testPrintingMultilineStringLiterals
+	
 	| method |
 	
-	method := 
-		'testMethod
+	method := 'testMethod
 	
 	method := ''very very very long multiline
 	string that still fits in the assignment line'''.
-	
 	self
 		assert: method
 		equals: (PPPPrinter

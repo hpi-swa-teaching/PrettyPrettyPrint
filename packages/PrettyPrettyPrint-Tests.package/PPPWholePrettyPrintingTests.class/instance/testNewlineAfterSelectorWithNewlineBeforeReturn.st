@@ -13,8 +13,7 @@ testNewlineAfterSelectorWithNewlineBeforeReturn
 				newlineBeforeReturn: true;
 				keepEmptyLines: true;
 				newlineAfterSelector: true ].
-	correctlyFormattedMethodPattern := 
-		'visitMethodNode: aNode
+	correctlyFormattedMethodPattern := 'visitMethodNode: aNode
 	
 	^*self hello*'.
 	self assert: (correctlyFormattedMethodPattern match: formattedMethod)

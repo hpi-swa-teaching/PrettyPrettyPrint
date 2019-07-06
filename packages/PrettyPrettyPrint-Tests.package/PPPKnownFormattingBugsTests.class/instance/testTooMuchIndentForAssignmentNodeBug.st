@@ -3,8 +3,7 @@ testTooMuchIndentForAssignmentNodeBug
 	
 	| method formattedAssignment |
 	
-	method := 
-		'testPragmaExtracting
+	method := 'testPragmaExtracting
 	| test |
 	
 	test := OrderedCollection new

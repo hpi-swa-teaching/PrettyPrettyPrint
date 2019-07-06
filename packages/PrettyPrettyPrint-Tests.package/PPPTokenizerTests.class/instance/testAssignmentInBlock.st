@@ -3,8 +3,7 @@ testAssignmentInBlock
 	
 	| tokenizer |
 	
-	tokenizer := PPPTokenizer
-		on: 'peek
+	tokenizer := PPPTokenizer on: 'peek
 	^nextObject ifNil: [ nextObject := self next ]'.
 	self
 		assert: { 'peek' . #identifier } equalsToken: tokenizer next;

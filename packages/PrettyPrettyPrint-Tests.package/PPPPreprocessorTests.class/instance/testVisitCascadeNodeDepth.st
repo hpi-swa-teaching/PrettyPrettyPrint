@@ -7,16 +7,16 @@ testVisitCascadeNodeDepth
 		receiver: (PPPVariableNode new name: 'grosserDieter');
 		messages: (OrderedCollection new
 				add: (PPPMessageNode
-					receiver: nil
-					selector: 'first:'
-					argument: ((PPPMessageNode
-						receiver: (PPPVariableNode new
-							name: 'self')
-						selector: 'sayHello')
-						hasParentheses: true));
+						receiver: nil
+						selector: 'first:'
+						argument: ((PPPMessageNode
+							receiver: (PPPVariableNode new
+								name: 'self')
+							selector: 'sayHello')
+							hasParentheses: true));
 				add: (PPPMessageNode
-					receiver: nil
-					selector: 'sayByeByeBaby');
+						receiver: nil
+						selector: 'sayByeByeBaby');
 				yourself).
 	
 	PPPPreprocessor new visitCascadeNode: aCascadeNode.

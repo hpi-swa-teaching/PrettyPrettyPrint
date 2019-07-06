@@ -2,8 +2,7 @@ as yet unclassified
 testComments
 	
 	self
-		assert: 
-			'test
+		assert: 'test
 	" hi "
 	" blah "
 	4.
@@ -14,8 +13,7 @@ testComments
 	"lkjh"
 	"blbl"'
 		equals: (PPPPrinter
-			format: 
-				'" hi " test " blah " 4.
+			format: '" hi " test " blah " 4.
 	self "i" printTest "l" "asdasd".
 	"lkjh" "blbl"'
 			preferences: PPPPrinterTests new preferenceBlock)

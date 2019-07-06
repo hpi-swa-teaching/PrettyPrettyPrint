@@ -3,8 +3,9 @@ testVisitArrayNodeStructuralLinebreak
 	
 	| anArrayNode content |
 	
-	content := OrderedCollection with: self nodeWithoutStructuralLinebreak with: 
-		self nodeWithoutStructuralLinebreak.
+	content := OrderedCollection
+		with: self nodeWithoutStructuralLinebreak
+		with: self nodeWithoutStructuralLinebreak.
 	anArrayNode := PPPArrayNode contents: content constant: true.
 	
 	PPPPreprocessor new visitArrayNode: anArrayNode.

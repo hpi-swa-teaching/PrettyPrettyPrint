@@ -13,8 +13,10 @@ testPrintMethodNode
 		add: 'temp2';
 		yourself.
 	statements := { 
-		PPPAssignmentNode variable: 'variable' value: (PPPVariableNode new
-			name: '4') . PPPReturnNode value: (PPPVariableNode new name: 'self') }.
+		PPPAssignmentNode
+			variable: 'variable'
+			value: (PPPVariableNode new name: '4') . 
+		PPPReturnNode value: (PPPVariableNode new name: 'self') }.
 	
 	sequenceNode
 		temporaries: temporaries;
@@ -29,8 +31,7 @@ testPrintMethodNode
 	methodNode accept: printer.
 	formattedMethod := printer wholeContent.
 	self
-		assert: 
-			'ourMethod: argument with: anotherArgument
+		assert: 'ourMethod: argument with: anotherArgument
 	| temp1 temp2 |
 	variable := 4.
 	^self'

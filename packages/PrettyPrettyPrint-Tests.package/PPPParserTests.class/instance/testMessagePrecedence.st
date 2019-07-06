@@ -9,9 +9,9 @@ testMessagePrecedence
 	methodNode := PPPParser new parseTokenStream: tokens.
 	
 	firstArg := PPPMessageNode
-		receiver: (PPPMessageNode receiver: (PPPLiteralNode
-			value: '5'
-			literalType: #number) selector: 'hi')
+		receiver: (PPPMessageNode
+			receiver: (PPPLiteralNode value: '5' literalType: #number)
+			selector: 'hi')
 		selector: '+'
 		argument: (PPPMessageNode
 			receiver: (PPPMessageNode

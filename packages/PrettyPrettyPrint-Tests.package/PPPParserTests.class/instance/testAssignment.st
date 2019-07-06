@@ -18,9 +18,9 @@ testAssignment
 	self
 		assert: methodNode bodySequence statements first class
 			equals: PPPAssignmentNode;
-		assert: methodNode bodySequence statements first variable equals: 
-			'tmp';
+		assert: methodNode bodySequence statements first variable
+			equals: 'tmp';
 		assert: methodNode bodySequence statements first value class
 			equals: PPPMessageNode;
-		assert: methodNode bodySequence statements first value selector equals: 
-			'*'
+		assert: methodNode bodySequence statements first value selector
+			equals: '*'

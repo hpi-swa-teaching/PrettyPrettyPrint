@@ -3,8 +3,7 @@ testPrintingArrayCorrectly
 	
 	| methodWithArray |
 	
-	methodWithArray := 
-		'testMultipleTemporariesDeclaration
+	methodWithArray := 'testMultipleTemporariesDeclaration
 	| tokens methodNode |
 	
 	tokens := { PPPToken type: #identifier content: ''someMessage'' . 

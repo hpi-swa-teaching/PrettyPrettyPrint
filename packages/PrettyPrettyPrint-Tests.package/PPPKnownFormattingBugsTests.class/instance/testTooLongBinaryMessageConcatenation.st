@@ -1,18 +1,20 @@
 as yet unclassified
 testTooLongBinaryMessageConcatenation
 	
-	| method formattedAssignment |
+	| method formatteMethod |
 	
-	method := 
-		'testMethod
+	method := 'testMethod
 	| test |
 	
-	test := ''^'' , variableName , Character cr , Character tab
-		, firstMessageSelector , '' '' , firstArgumentNode name , Character cr
-		, Character tab , secondMessageSelector , '' ''.
-	Transcript showln: ''test'''.
+	self
+		assert: ((PPPAssignmentNode
+				variable: ''Dieter''
+				value: (PPPVariableNode name: ''Hans''))
+			matches: (PPPAssignmentNode
+				variable: ''Dieter''
+				value: (PPPVariableNode name: ''Hans'')))'.
 	
-	formattedAssignment := PPPPrinter
+	formatteMethod := PPPPrinter
 		format: method
 		preferences: PPPPrinterTests new preferenceBlock.
-	self assert: method equals: formattedAssignment
+	self assert: method equals: formatteMethod

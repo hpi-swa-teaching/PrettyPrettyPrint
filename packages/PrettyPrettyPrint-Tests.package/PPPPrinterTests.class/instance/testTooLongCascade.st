@@ -28,10 +28,8 @@ testTooLongCascade
 		length: 86.
 	cascadeNode accept: printer.
 	formattedCascade := printer wholeContent.
-	self
-		assert: 
-			'self
+	self assert: 'self
 	iAmAVeryVeryVeryVeryLongSelector;
 	iAmAlsoVeryVery: 5123 VeryLong: 31234;
-	yourself'
-		equals: formattedCascade
+	yourself' equals: 
+		formattedCascade

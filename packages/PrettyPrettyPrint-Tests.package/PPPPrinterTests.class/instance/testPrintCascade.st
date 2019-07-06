@@ -25,9 +25,8 @@ testPrintCascade
 	
 	cascadeNode accept: printer.
 	formattedCascade := printer wholeContent.
-	self
-		assert: 'self
+	self assert: 'self
 	asString;
 	toBuffer: 5 and: 3;
-	yourself'
-		equals: formattedCascade
+	yourself' equals: 
+		formattedCascade

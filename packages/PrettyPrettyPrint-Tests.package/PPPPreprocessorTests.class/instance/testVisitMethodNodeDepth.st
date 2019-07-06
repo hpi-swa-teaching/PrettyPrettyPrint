@@ -3,10 +3,11 @@ testVisitMethodNodeDepth
 	
 	| aMethodNode bodySequence aBlockNode |
 	
-	aBlockNode := PPPBlockNode bodySequence: (PPPSequenceNode
-		statements: (OrderedCollection
-			with: (PPPVariableNode name: 'Dieter')
-			with: (PPPLiteralNode value: '1' literalType: #number))).
+	aBlockNode := PPPBlockNode
+		bodySequence: (PPPSequenceNode
+			statements: (OrderedCollection
+				with: (PPPVariableNode name: 'Dieter')
+				with: (PPPLiteralNode value: '1' literalType: #number))).
 	bodySequence := PPPSequenceNode
 		statements: { PPPVariableNode name: 'DieterReturns' . aBlockNode }.
 	aMethodNode := PPPMethodNode

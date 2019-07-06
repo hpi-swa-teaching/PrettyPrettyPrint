@@ -6,5 +6,5 @@
 		"testPrintingArrayCorrectly" : "MiB 7/6/2019 11:16",
 		"testPrintingMultilineStringLiterals" : "MiB 7/6/2019 16:56",
 		"testPrintingNestedNamedMessages" : "MiB 7/6/2019 16:53",
-		"testTooLongBinaryMessageConcatenation" : "MiB 7/6/2019 16:27",
+		"testTooLongBinaryMessageConcatenation" : "MiB 7/6/2019 17:32",
 		"testTooMuchIndentForAssignmentNodeBug" : "MiB 7/6/2019 11:35" } }

@@ -16,8 +16,7 @@ testNewlineAfterSelectorWithKeepEmptyLines
 				keepEmptyLines: true;
 				dotAfterReturn: false;
 				spaceBeforeReturn: false ].
-	correctlyFormattedMethodWithReturn := 
-		'visitMethodNode: aNode
+	correctlyFormattedMethodWithReturn := 'visitMethodNode: aNode
 	
 	^self hello'.
 	self assert: correctlyFormattedMethodWithReturn equals: formattedMethod.
@@ -26,8 +25,7 @@ testNewlineAfterSelectorWithKeepEmptyLines
 
 self hello'.
 	formattedMethod := PPPPrinter format: methodWithoutReturn.
-	correctlyFormattedMethodWithoutReturn := 
-		'visitMethodNode: aNode
+	correctlyFormattedMethodWithoutReturn := 'visitMethodNode: aNode
 	
 	self hello'.
 	self assert: correctlyFormattedMethodWithoutReturn equals: formattedMethod

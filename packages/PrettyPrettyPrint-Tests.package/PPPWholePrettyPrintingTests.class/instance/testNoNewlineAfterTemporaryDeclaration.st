@@ -14,8 +14,7 @@ testNoNewlineAfterTemporaryDeclaration
 				newlineAfterTemporaryDeclaration: false;
 				newlineAfterSelector: false ].
 	
-	correctlyFormattedMethod := 
-		'someMessage
+	correctlyFormattedMethod := 'someMessage
 	| someTemporary |
 	self anotherMessage'.
 	self assert: correctlyFormattedMethod equals: formattedMethod
