@@ -1,6 +1,6 @@
-testing
+as yet unclassified
 testNoDotAfterPragma
-
+	
 	| aMethodAsString |
 	
 	aMethodAsString := 'testMethod <some: Pragma> ^ self'.

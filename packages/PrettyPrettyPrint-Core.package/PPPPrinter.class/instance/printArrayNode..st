@@ -4,7 +4,14 @@ printArrayNode: aPPPArrayNode
 	self currentLine nextPutAll: (aPPPArrayNode constant ifTrue: [ '#( ' ] ifFalse: [ '{ ' ]).
 	
 	aPPPArrayNode contents
-		do: [ :content | self visitValueNode: content ]
+		do: [ :content | 
+			| fitsInLine |
+			fitsInLine := self nodeFitsInLine: content.
+			fitsInLine ifFalse: [self 
+				incrementIndent;
+				newLineIndent].
+			self visitValueNode: content.
+			fitsInLine ifFalse: [self decrementIndent] ]
 		separatedBy: [ self currentLine space.
 			aPPPArrayNode constant ifFalse: [ self currentLine
 			nextPut: $.;

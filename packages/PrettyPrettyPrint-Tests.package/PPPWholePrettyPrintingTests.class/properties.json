@@ -1,0 +1,14 @@
+{
+	"category" : "PrettyPrettyPrint-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "PPPWholePrettyPrintingTests",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

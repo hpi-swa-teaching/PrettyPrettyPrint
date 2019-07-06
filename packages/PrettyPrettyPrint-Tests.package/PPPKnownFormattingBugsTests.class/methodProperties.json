@@ -1,0 +1,8 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testNoDotAfterPragma" : "MiB 7/6/2019 11:22",
+		"testPrintingArrayCorrectly" : "MiB 7/6/2019 11:16",
+		"testTooLongBinaryMessageConcatenation" : "MiB 7/6/2019 16:27",
+		"testTooMuchIndentForAssignmentNodeBug" : "MiB 7/6/2019 11:35" } }

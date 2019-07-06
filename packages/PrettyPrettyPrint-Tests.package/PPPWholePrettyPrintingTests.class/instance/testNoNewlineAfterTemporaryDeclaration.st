@@ -1,20 +1,21 @@
-testing
-testNewlineAfterTemporaryDeclaration
-
+as yet unclassified
+testNoNewlineAfterTemporaryDeclaration
+	
 	| method formattedMethod correctlyFormattedMethod |
 	
 	method := 'someMessage
-	| someTemporary | 
+	| someTemporary |
 	self anotherMessage'.
 	
 	formattedMethod := PPPPrinter
 		format: method
-		preferences: [ :profile | profile
-			newlineAfterTemporaryDeclaration: true;
-			newlineAfterSelector: false ].
+		preferences: [ :profile |
+			profile
+				newlineAfterTemporaryDeclaration: false;
+				newlineAfterSelector: false ].
 	
-	correctlyFormattedMethod := 'someMessage
+	correctlyFormattedMethod := 
+		'someMessage
 	| someTemporary |
-	
 	self anotherMessage'.
 	self assert: correctlyFormattedMethod equals: formattedMethod

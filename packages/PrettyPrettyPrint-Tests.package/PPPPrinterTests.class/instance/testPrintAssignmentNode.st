@@ -1,5 +1,6 @@
 testing
 testPrintAssignmentNode
+	
 	| printer assignmentNode valueNode formattedAssignment |
 	
 	valueNode := PPPLiteralNode new
@@ -16,7 +17,4 @@ testPrintAssignmentNode
 	self preferenceBlock value: printer profile.
 	printer visitAssignmentNode: assignmentNode.
 	formattedAssignment := printer wholeContent.
-	
-	self
-		assert: 'myVar := ''myValue'''
-		equals: formattedAssignment
+	self assert: 'myVar := ''myValue''' equals: formattedAssignment

@@ -1,10 +1,11 @@
 testing
 testPrintCascade
+	
 	| printer cascadeNode formattedCascade |
 	
 	printer := PPPPrinter new.
 	self preferenceBlock value: printer profile.
-		
+	
 	cascadeNode := PPPCascadeNode
 		receiver: (PPPVariableNode name: 'self')
 		messages: (OrderedCollection
@@ -13,8 +14,12 @@ testPrintCascade
 				receiver: nil
 				selector: 'toBuffer:and:'
 				arguments: (OrderedCollection
-					with: (PPPLiteralNode value: '5' literalType: #number)
-					with: (PPPLiteralNode value: '3' literalType: #number)))
+					with: (PPPLiteralNode
+						value: '5'
+						literalType: #number)
+					with: (PPPLiteralNode
+						value: '3'
+						literalType: #number)))
 			with: (PPPMessageNode receiver: nil selector: 'yourself')).
 	cascadeNode needsStructuralLinebreak: true.
 	

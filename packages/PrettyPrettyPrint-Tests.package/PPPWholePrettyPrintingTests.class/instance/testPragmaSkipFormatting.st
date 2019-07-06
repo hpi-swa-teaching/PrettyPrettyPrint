@@ -1,8 +1,10 @@
-testing
+as yet unclassified
 testPragmaSkipFormatting
-
+	
 	| method |
-	method := 'testMeth
+	
+	method := 
+		'testMeth
 <PrettyPrint: #ignore option: true> 
 
 
@@ -10,4 +12,4 @@ testPragmaSkipFormatting
 
 
 				Transcript show: ''hshshshs'' .'.
-	self assert: method equals: (PPPPrinter format: method).
+	self assert: method equals: (PPPPrinter format: method)
