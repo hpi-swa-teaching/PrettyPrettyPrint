@@ -1,3 +1,0 @@
-stepping
-currentToken
-	^currentToken

@@ -1,3 +1,0 @@
-accsessing
-selector
-	^selector

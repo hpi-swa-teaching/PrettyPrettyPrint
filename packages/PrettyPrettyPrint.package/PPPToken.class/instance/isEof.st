@@ -1,3 +1,0 @@
-testing
-isEof
-	^tokenType = #eof

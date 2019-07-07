@@ -1,3 +1,0 @@
-testing
-isBinaryOperator
-	^tokenType = #binaryOperator
