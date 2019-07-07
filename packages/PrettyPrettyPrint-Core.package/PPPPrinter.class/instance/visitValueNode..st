@@ -1,8 +1,11 @@
 visit-node
-visitValueNode: aPPPValueNode 
+visitValueNode: aPPPValueNode
+
+	| paranthesesNeeded |
+	paranthesesNeeded := self shouldHaveParantheses: aPPPValueNode.
 	
 	self printCommentsOf: aPPPValueNode.
 	
-	aPPPValueNode hasParentheses ifTrue: [ self currentLine nextPut: $( ].
+	paranthesesNeeded ifTrue: [ self currentLine nextPut: $( ].
 	aPPPValueNode accept: self.
-	aPPPValueNode hasParentheses ifTrue: [ self currentLine nextPut: $) ]
+	paranthesesNeeded ifTrue: [ self currentLine nextPut: $) ]
