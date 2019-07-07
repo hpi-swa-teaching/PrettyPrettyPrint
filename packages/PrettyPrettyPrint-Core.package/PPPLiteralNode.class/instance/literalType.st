@@ -1,0 +1,3 @@
+accessing
+literalType
+	^literalType

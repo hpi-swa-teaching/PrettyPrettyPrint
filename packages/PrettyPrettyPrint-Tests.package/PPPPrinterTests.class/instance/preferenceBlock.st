@@ -5,4 +5,5 @@ preferenceBlock
 		dotAfterReturn: false;
 		newlineBeforeReturn: false;
 		spaceBeforeReturn: false;
-		newlineAfterTemporaryDeclaration: false]
+		newlineAfterTemporaryDeclaration: false;
+		maxLineLength: 80]

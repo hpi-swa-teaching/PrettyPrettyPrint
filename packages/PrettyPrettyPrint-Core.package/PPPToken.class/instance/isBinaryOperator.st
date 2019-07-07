@@ -1,0 +1,3 @@
+testing
+isBinaryOperator
+	^tokenType = #binaryOperator

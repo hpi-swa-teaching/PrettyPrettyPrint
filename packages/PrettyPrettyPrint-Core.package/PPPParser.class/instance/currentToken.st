@@ -1,0 +1,3 @@
+stepping
+currentToken
+	^currentToken

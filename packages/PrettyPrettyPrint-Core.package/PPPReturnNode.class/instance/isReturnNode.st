@@ -1,0 +1,4 @@
+accessing
+isReturnNode
+
+	^true

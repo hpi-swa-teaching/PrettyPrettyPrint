@@ -1,0 +1,3 @@
+comparing
+getAllPragmas
+	^ self subclassResponsibility
