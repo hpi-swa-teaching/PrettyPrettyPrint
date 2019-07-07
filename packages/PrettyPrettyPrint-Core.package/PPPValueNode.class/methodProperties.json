@@ -6,8 +6,12 @@
 		"getAllPragmas" : "gw 4/30/2019 16:27",
 		"hasParentheses" : "lcj 7/29/2016 19:31",
 		"hasParentheses:" : "TB 7/7/2016 13:54",
-		"initialize" : "TB 6/28/2016 15:31",
+		"initialize" : "kiwi 7/7/2019 15:39",
+		"isAssignmentNode" : "kiwi 7/7/2019 15:39",
 		"matches:" : "TB 6/23/2016 10:35",
+		"needsParantheses" : "kiwi 7/7/2019 15:39",
+		"needsParantheses:" : "kiwi 7/7/2019 15:39",
 		"precededByEmptyLine" : "TB 6/28/2016 15:26",
 		"precededByEmptyLine:" : "TB 6/28/2016 15:25",
+		"precedence" : "kiwi 7/7/2019 15:39",
 		"shallowMatch:" : "TB 6/23/2016 11:33" } }

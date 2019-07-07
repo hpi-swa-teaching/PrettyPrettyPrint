@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"askUserToSetPrettyPrinterAsStandart" : "MiB 7/5/2019 17:48",
+		"askUserToSetPrettyPrinterAsStandard" : "kiwi 7/6/2019 09:57",
 		"format:" : "MiB 7/6/2019 12:37",
 		"format:in:notifying:" : "kiwi 5/28/2019 12:16",
 		"format:in:notifying:decorated:" : "TB 6/28/2016 23:23",
@@ -29,7 +29,7 @@
 		"incrementBlockLevel" : "kiwi 5/18/2019 10:04",
 		"incrementIndent" : "TB 6/16/2016 11:57",
 		"indentLength" : "MiB 6/29/2019 11:28",
-		"initialize" : "MiB 7/4/2019 15:29",
+		"initialize" : "kiwi 7/7/2019 15:34",
 		"newLineAfterSelectorNeededFor:" : "gw 6/2/2019 12:30",
 		"newLineIndent" : "MiB 7/4/2019 15:35",
 		"newLineIndentOn:" : "MiB 7/7/2019 16:26",
@@ -57,8 +57,6 @@
 		"printUnaryMessage:" : "MiB 7/4/2019 16:03",
 		"printedLinesBuffer" : "MiB 7/4/2019 15:28",
 		"printedLinesBuffer:" : "MiB 7/4/2019 15:28",
-		"profile" : "TB 6/20/2016 10:27",
-		"profile:" : "kiwi 5/18/2019 10:08",
 		"stringFitsInLine:" : "MiB 7/4/2019 19:49",
 		"visitArrayNode:" : "MiB 7/4/2019 19:36",
 		"visitAssignmentNode:" : "MiB 7/5/2019 23:57",

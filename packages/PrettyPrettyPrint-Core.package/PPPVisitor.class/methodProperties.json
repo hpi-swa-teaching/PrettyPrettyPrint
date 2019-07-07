@@ -2,6 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
+		"initialize" : "kiwi 7/7/2019 15:34",
+		"profile" : "kiwi 7/7/2019 15:31",
+		"profile:" : "kiwi 7/7/2019 15:31",
 		"visitArrayNode:" : "TB 6/29/2016 01:18",
 		"visitAssignmentNode:" : "TB 6/17/2016 18:48",
 		"visitBlockNode:" : "TB 6/17/2016 18:48",
