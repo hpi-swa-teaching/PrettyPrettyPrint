@@ -2,10 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
+		"testNestedNamedMessages2" : "MiB 7/6/2019 18:46",
 		"testNoDotAfterPragma" : "MiB 7/6/2019 11:22",
+		"testNotTooMuchIndentForNestedNamedMessages" : "MiB 7/7/2019 14:48",
+		"testNotTooMuchIndentForNestedNamedMessages2" : "MiB 7/6/2019 19:16",
 		"testPrintingArrayCorrectly" : "MiB 7/6/2019 11:16",
 		"testPrintingMultilineStringLiterals" : "MiB 7/6/2019 16:56",
 		"testPrintingNestedNamedMessages" : "MiB 7/6/2019 16:53",
-		"testTooLongBinaryMessageConcatenation" : "MiB 7/6/2019 17:32",
+		"testTooLongBinaryMessageConcatenation" : "MiB 7/6/2019 18:46",
 		"testTooLongUnaryMessageConcatenation" : "MiB 7/6/2019 18:33",
 		"testTooMuchIndentForAssignmentNodeBug" : "MiB 7/6/2019 11:35" } }

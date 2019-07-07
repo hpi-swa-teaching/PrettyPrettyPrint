@@ -6,13 +6,10 @@ testTooLongBinaryMessageConcatenation
 	method := 'testMethod
 	| test |
 	
-	self
-		assert: ((PPPAssignmentNode
-				variable: ''Dieter''
-				value: (PPPVariableNode name: ''Hans''))
-			matches: (PPPAssignmentNode
-				variable: ''Dieter''
-				value: (PPPVariableNode name: ''Hans'')))'.
+	test := ''^'' , variableName , Character cr , Character tab
+		, firstMessageSelector , '' '' , firstArgumentNode name , Character cr
+		, Character tab , secondMessageSelector , '' ''.
+	Transcript showln: ''test'''.
 	
 	formatteMethod := PPPPrinter
 		format: method

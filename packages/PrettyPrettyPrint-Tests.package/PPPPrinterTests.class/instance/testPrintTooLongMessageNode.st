@@ -35,6 +35,7 @@ testPrintTooLongMessageNode
 	self assert: variableName , Character cr , Character tab
 		, firstMessageSelector , ': (' , variableNode name , Character cr
 		, Character tab , Character tab , firstMessageSelector , ';'
-		, Character cr , Character tab , Character tab , firstMessageSelector
+		, Character cr , Character tab , Character tab , 
+			firstMessageSelector
 		, ')' , Character cr , Character tab , secondMessageSelector , ' '
 		, secondArgumentNode name equals: formattedMessage

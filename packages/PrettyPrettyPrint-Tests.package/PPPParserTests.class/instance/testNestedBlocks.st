@@ -13,7 +13,8 @@ testNestedBlocks
 					bodySequence: (PPPSequenceNode
 						statements: { 
 							(PPPBlockNode
-								bodySequence: (PPPSequenceNode
+								bodySequence: (
+										PPPSequenceNode
 									statements: { 
 										(PPPMessageNode
 											receiver: (
