@@ -1,0 +1,17 @@
+{
+	"category" : "PrettyPrettyPrint-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "TB 7/28/2016 17:07",
+	"instvars" : [
+		"messages",
+		"receiver",
+		"messageDepth",
+		"receiverDepth" ],
+	"name" : "PPPCascadeNode",
+	"pools" : [
+		 ],
+	"super" : "PPPValueNode",
+	"type" : "normal" }

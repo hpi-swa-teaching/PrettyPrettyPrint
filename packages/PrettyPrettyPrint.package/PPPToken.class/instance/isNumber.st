@@ -1,0 +1,3 @@
+testing
+isNumber
+	^tokenType = #number

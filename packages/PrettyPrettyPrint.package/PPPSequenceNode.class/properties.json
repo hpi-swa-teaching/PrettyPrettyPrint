@@ -1,0 +1,18 @@
+{
+	"category" : "PrettyPrettyPrint-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "TB 7/28/2016 15:23",
+	"instvars" : [
+		"temporaries",
+		"statements",
+		"trailingComments",
+		"childLength",
+		"maxChildDepth" ],
+	"name" : "PPPSequenceNode",
+	"pools" : [
+		 ],
+	"super" : "PPPNode",
+	"type" : "normal" }

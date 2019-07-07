@@ -1,0 +1,1 @@
+A PPPSettingsProfile is a data class containing all settings a PPPPrinter may use while printing. On its class side, all settings are duplicated for the preferences browser. Consult those methods for documentation of each settings' effect.

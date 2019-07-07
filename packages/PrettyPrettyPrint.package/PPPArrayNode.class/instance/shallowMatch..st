@@ -1,0 +1,3 @@
+comparing
+shallowMatch: aNode 
+	^true
