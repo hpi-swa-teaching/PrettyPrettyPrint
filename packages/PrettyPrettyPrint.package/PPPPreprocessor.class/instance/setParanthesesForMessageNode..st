@@ -1,10 +1,9 @@
 parantheses
 setParanthesesForMessageNode: aMessageNode
 
-	aMessageNode receiver ifNotNil: [
-		self setParanthesesForChildNode: aMessageNode receiver ofMessage: aMessageNode].
+	self setParanthesesForReceiver: aMessageNode receiver ofMessage: aMessageNode.
 	
 	aMessageNode arguments do: [:node | 
-		self setParanthesesForChildNode: node ofMessage: aMessageNode]
+		self setParanthesesForArgument: node ofMessage: aMessageNode].
 		
 	
