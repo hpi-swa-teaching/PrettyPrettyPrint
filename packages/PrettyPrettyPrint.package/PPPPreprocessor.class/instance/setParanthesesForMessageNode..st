@@ -1,7 +1,7 @@
-parantheses
+set needsParantheses
 setParanthesesForMessageNode: aMessageNode
 
-	self setParanthesesForReceiver: aMessageNode receiver ofMessage: aMessageNode.
+	self setParanthesesForReceiverOf: aMessageNode.
 	
 	aMessageNode arguments do: [:node | 
 		self setParanthesesForArgument: node ofMessage: aMessageNode].

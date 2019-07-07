@@ -1,5 +1,5 @@
 as yet unclassified
-testVisitMessageNodeBinaryArgumentNeedsParantheses
+testVisitMessageNodeBinaryMessageNeedsParantheses
 
 	| sumMessageNode productMessageNode literalNode |
 	

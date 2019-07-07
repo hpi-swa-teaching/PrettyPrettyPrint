@@ -1,4 +1,4 @@
-parantheses
+set needsParantheses
 setParanthesesForAssignmentNode: anAssignmentNode
 
 	anAssignmentNode value isAssignmentNode ifTrue: [

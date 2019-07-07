@@ -14,5 +14,5 @@ testVisitMessageNodeReceiverNeedsParantheses
 	"(literalNode keywordMessage: literalNode) unaryMessage"
 	receiver := keywordMessageNode.
 	unaryMessageNode := PPPMessageNode receiver: receiver selector: 'unaryMessage'.
-	PPPPreprocessor new visitMessageNode: keywordMessageNode.
+	PPPPreprocessor new visitMessageNode: unaryMessageNode.
 	self assert: true equals: receiver needsParantheses.
