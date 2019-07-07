@@ -7,4 +7,4 @@ printBinaryMessageMultiline: aPPPMessageNode
 		decrementIndent.
 	self currentLine nextPutAll: aPPPMessageNode selector.
 	self profile spaceAroundBinaryOperator ifTrue: [ self currentLine space ].
-	self visitValueNode: aPPPMessageNode arguments first.
+	self visitValueNode: aPPPMessageNode arguments first
