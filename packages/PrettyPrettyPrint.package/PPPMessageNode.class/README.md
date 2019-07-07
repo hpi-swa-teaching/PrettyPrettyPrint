@@ -1,1 +1,0 @@
-A PPPMessageNode is a message send to a receiver. It may be unary, binary or a named message. Its arguments array contains expressions, that fill each argument slot. The selector string can be broken up into the individual message parts.

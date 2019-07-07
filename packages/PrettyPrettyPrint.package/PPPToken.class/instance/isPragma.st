@@ -1,3 +1,0 @@
-testing
-isPragma
-	^tokenType = #pragma

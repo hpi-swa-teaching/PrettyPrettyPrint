@@ -1,3 +1,0 @@
-testing
-isSeparator
-	^tokenType = #separator

@@ -1,1 +1,0 @@
-A PPPVisitor implements the visitor pattern over the node hierarchy of an PPP AST.

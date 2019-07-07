@@ -1,3 +1,0 @@
-testing
-isCharacter
-	^tokenType = #character

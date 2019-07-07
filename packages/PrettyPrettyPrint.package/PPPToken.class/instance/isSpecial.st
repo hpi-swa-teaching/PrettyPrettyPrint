@@ -1,3 +1,0 @@
-testing
-isSpecial
-	^tokenType = #special

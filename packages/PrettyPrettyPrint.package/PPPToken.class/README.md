@@ -1,1 +1,0 @@
-A token object is the representation of an identified code entity, such as a string, a number or some special character like ${.

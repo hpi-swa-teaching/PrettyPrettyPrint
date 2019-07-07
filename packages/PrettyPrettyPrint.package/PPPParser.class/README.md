@@ -1,1 +1,0 @@
-A PPPParser is a class that analyzes a given token stream (PPPTokenizer) and builds an AST from it.

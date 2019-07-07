@@ -1,1 +1,0 @@
-A PPPTokenizer is a stream that steps over a given string stream and extracts tokens from it.

@@ -1,3 +1,0 @@
-testing
-isString
-	^tokenType = #string

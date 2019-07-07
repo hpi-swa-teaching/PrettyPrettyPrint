@@ -5,5 +5,4 @@ OrderedDictionary {
 	'packages\/PrettyPrettyPrint-Dummy.package' : #SquotCypressCodeSerializer,
 	'packages\/PrettyPrettyPrint-Help.package' : #SquotCypressCodeSerializer,
 	'packages\/PrettyPrettyPrint-UI.package' : #SquotCypressCodeSerializer,
-	'packages\/PrettyPrettyPrint.package' : #SquotCypressCodeSerializer
 }

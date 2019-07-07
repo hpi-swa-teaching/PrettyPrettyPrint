@@ -1,3 +1,0 @@
-testing
-isInCascade
-	^receiver isNil
