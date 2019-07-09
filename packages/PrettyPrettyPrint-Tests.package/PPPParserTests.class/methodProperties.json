@@ -7,6 +7,7 @@
 		"testAssignment" : "TB 6/10/2016 16:40",
 		"testAssignmentInBlock" : "TB 6/29/2016 10:47",
 		"testBlock" : "TB 6/10/2016 17:34",
+		"testBlockCommentBug" : "gw 7/9/2019 16:45",
 		"testCascade" : "TB 6/27/2016 21:16",
 		"testCascadeAfterNew" : "TB 6/27/2016 22:52",
 		"testCascadeWithMessageSendArgument" : "TB 6/29/2016 12:08",

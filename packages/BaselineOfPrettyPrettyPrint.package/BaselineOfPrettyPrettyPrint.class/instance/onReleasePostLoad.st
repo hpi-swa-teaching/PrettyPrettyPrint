@@ -1,4 +1,4 @@
 as yet unclassified
 onReleasePostLoad
 
-	PPPPrinter askUserToSetPrettyPrinterAsStandard
+	PPPPrinter askUserToSetPrettyPrinterAsStandart
