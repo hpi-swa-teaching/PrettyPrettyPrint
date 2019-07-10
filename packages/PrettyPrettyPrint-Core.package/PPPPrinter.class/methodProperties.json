@@ -58,6 +58,7 @@
 		"printUnaryMessage:" : "MiB 7/4/2019 16:03",
 		"printedLinesBuffer" : "MiB 7/4/2019 15:28",
 		"printedLinesBuffer:" : "MiB 7/4/2019 15:28",
+		"shouldHaveParantheses:" : "MiB 7/10/2019 15:12",
 		"stringFitsInLine:" : "MiB 7/4/2019 19:49",
 		"visitArrayNode:" : "MiB 7/4/2019 19:36",
 		"visitAssignmentNode:" : "MiB 7/4/2019 19:21",
@@ -69,6 +70,6 @@
 		"visitPragmaNode:" : "MiB 7/4/2019 20:05",
 		"visitReturnNode:" : "MiB 7/4/2019 15:41",
 		"visitSequenceNode:" : "MiB 7/4/2019 17:53",
-		"visitValueNode:" : "MiB 7/4/2019 18:40",
+		"visitValueNode:" : "MiB 7/10/2019 15:12",
 		"visitVariableNode:" : "MiB 7/4/2019 19:26",
 		"wholeContent" : "MiB 7/4/2019 18:55" } }
