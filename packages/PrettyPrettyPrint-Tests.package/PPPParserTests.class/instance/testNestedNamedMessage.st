@@ -14,7 +14,7 @@ testNestedNamedMessage
 		PPPToken type: #string content: 'test2'.
 		PPPToken type: #eof content: ''}.
 	
-	methodNode := PPPParser new parseTokenStream: (ReadStream on: tokens).
+	methodNode := PPPParser parseMethodTokenStream: (ReadStream on: tokens).
 	
 	self
 		assert: methodNode bodySequence statements first class equals: PPPMessageNode;

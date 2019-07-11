@@ -21,7 +21,7 @@ testBlock
 		PPPToken type: #special content: ']'.
 		PPPToken type: #eof content: '' }.
 	
-	methodNode := PPPParser new parseTokenStream: (ReadStream on: tokens).
+	methodNode := PPPParser parseMethodTokenStream: (ReadStream on: tokens).
 	assignment := methodNode bodySequence statements first.
 	block := assignment value.
 	

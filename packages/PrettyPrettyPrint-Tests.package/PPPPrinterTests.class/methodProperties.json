@@ -37,6 +37,7 @@
 		"testPrintTooLongVariableNode" : "MiB 7/4/2019 20:25",
 		"testPrintUnaryMessageNode" : "MiB 7/4/2019 20:21",
 		"testPrintVariableNode" : "MiB 7/4/2019 20:18",
+		"testSequencePrettyPrinting" : "MiB 7/11/2019 09:30",
 		"testSpaceAroundBinaryOperator" : "kiwi 5/15/2019 19:38",
 		"testTooLongArray" : "MiB 7/4/2019 20:38",
 		"testTooLongAssignmentNode" : "MiB 7/4/2019 19:20",

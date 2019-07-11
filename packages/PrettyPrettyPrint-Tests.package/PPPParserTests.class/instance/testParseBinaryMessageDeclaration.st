@@ -6,7 +6,7 @@ testParseBinaryMessageDeclaration
 		PPPToken type: #identifier content: 'a'.
 		PPPToken type: #eof content: '' }.
 	
-	methodNode := PPPParser new parseTokenStream: (ReadStream on: tokens).
+	methodNode := PPPParser parseMethodTokenStream: (ReadStream on: tokens).
 	parsedMethodNode := PPPMethodNode 
 		bodySequence: (PPPSequenceNode new)
 		selector: '++'

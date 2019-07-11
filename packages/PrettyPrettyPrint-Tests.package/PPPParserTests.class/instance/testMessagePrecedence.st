@@ -3,7 +3,7 @@ testMessagePrecedence
 	| tokens methodNode msgSend firstArg secondArg referenceMethodNode |
 	tokens := PPPTokenizer on: 'testMethod self send: 5 hi + 6 test + 3 nope part: 3'.
 	
-	methodNode := PPPParser new parseTokenStream: tokens.
+	methodNode := PPPParser parseMethodTokenStream: tokens.
 	
 	firstArg := PPPMessageNode
 		receiver: (PPPMessageNode receiver: (PPPLiteralNode value: '5' literalType: #number) selector: 'hi')

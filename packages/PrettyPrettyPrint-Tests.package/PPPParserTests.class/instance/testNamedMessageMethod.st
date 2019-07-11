@@ -8,7 +8,7 @@ testNamedMessageMethod
 		PPPToken type: #identifier content: 'arg6'.
 		PPPToken type: #eof content: ''}.
 		
-	methodNode := PPPParser new parseTokenStream: (ReadStream on: tokens).
+	methodNode := PPPParser parseMethodTokenStream: (ReadStream on: tokens).
 	
 	self
 		assert: methodNode selector = 'testMethod:b:';
