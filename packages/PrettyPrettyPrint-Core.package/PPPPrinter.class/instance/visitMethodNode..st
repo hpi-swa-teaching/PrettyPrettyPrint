@@ -8,8 +8,8 @@ visitMethodNode: aPPPMethodNode
 				self currentLine nextPutAll: arg first , ' ' , arg second ]
 			separatedBy: [ self currentLine space ] ].
 	
+	self incrementIndent.
 	(self newLineAfterSelectorNeededFor: aPPPMethodNode) ifTrue: [ self newLineIndent ].
 	self newLineIndent.
-	self incrementIndent.
 	
 	aPPPMethodNode bodySequence accept: self
