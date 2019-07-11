@@ -18,7 +18,7 @@ testIfTrueIfFalse
 		PPPToken type: #special content: ']'.
 		PPPToken type: #eof content: '' }.
 	
-	methodNode := PPPParser new parseTokenStream: (ReadStream on: tokens).
+	methodNode := PPPParser parseMethodTokenStream: (ReadStream on: tokens).
 	
 	self
 		assert: 'ifTrue:ifFalse:' equals: methodNode bodySequence statements first selector;

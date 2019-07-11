@@ -14,6 +14,6 @@ testAssignmentInBlock
 		PPPToken type: #special content: ']'.
 		PPPToken type: #eof content: ''}.
 	
-	methodNode := PPPParser new parseTokenStream: (ReadStream on: tokens).
+	methodNode := PPPParser parseMethodTokenStream: (ReadStream on: tokens).
 	
 	self assert: PPPAssignmentNode equals: methodNode bodySequence return value arguments first bodySequence statements first class

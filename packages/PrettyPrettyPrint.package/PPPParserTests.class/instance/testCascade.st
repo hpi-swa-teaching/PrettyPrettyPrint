@@ -14,7 +14,7 @@ testCascade
 		PPPToken type: #identifier content: 'yourself'.
 		PPPToken type: #eof content: ''}.
 	
-	methodNode := PPPParser new parseTokenStream: (ReadStream on: tokens).
+	methodNode := PPPParser parseMethodTokenStream: (ReadStream on: tokens).
 	
 	self
 		assertHierarchy: (PPPCascadeNode

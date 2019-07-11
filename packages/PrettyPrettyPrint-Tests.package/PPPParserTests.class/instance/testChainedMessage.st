@@ -29,7 +29,7 @@ testChainedMessage
 			selector: '+'
 			argument: (PPPLiteralNode value: '3' literalType: #number)).
 	
-	methodNode := PPPParser new parseTokenStream: (ReadStream on: tokens).
+	methodNode := PPPParser parseMethodTokenStream: (ReadStream on: tokens).
 	
 	firstStatement := methodNode bodySequence statements first.
 	secondStatement := methodNode bodySequence statements second.

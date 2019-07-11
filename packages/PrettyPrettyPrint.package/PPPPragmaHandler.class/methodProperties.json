@@ -1,6 +1,6 @@
 {
 	"class" : {
-		 },
+		"getPragmaPreferencesFrom:" : "MiB 7/11/2019 08:06" },
 	"instance" : {
 		"extractRelevantPragmasFrom:" : "gw 5/5/2019 09:31",
 		"formatTokenPart:" : "gw 6/4/2019 11:16",

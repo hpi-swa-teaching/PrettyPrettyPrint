@@ -3,7 +3,7 @@ testSimpleMessagePrecedence
 	| tokens methodNode sendPartMsg firstArgument secondArgument |
 	tokens := PPPTokenizer on: 'testMethod self send: 5 nope part: 3'.
 	
-	methodNode := PPPParser new parseTokenStream: tokens.
+	methodNode := PPPParser parseMethodTokenStream: tokens.
 	
 	sendPartMsg := methodNode bodySequence statements first.
 	self

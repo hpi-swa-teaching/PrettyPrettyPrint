@@ -5,6 +5,6 @@ testUnaryMethodDeclaration
 		PPPToken type: #identifier content: 'someMessage'.
 		PPPToken type: #eof content: ''}.
 		
-	methodNode := PPPParser new parseTokenStream: (ReadStream on: tokens).
+	methodNode := PPPParser parseMethodTokenStream: (ReadStream on: tokens).
 	
 	self assert: methodNode selector equals: 'someMessage'

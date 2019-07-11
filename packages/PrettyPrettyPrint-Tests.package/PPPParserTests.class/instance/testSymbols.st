@@ -12,7 +12,7 @@ testSymbols
 		PPPToken type: #special content: ')'.
 		PPPToken type: #eof content: ''}.
 	
-	methodNode := PPPParser new parseTokenStream: (ReadStream on: tokens).
+	methodNode := PPPParser parseMethodTokenStream: (ReadStream on: tokens).
 	
 	self
 		assert: 2 equals: methodNode bodySequence statements size;

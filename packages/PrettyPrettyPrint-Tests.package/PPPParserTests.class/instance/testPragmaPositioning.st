@@ -10,7 +10,7 @@ testPragmaPositioning
 	self hello'.
 	
 	tokens := PPPTokenizer on: method.
-	ast := PPPParser new parseTokenStream: (tokens).
+	ast := PPPParser parseMethodTokenStream: (tokens).
 	pragmas := OrderedCollection new
 		add: (PPPPragmaNode new content: '<enten sind toll>');
 		add: (PPPPragmaNode new content: '<hallo>');

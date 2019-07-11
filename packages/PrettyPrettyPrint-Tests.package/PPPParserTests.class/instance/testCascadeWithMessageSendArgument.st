@@ -13,7 +13,7 @@ testCascadeWithMessageSendArgument
 			PPPMessageNode receiver: nil selector: 'tokenType:' argument: (PPPLiteralNode value: '1' literalType: #number).
 			PPPMessageNode receiver: nil selector: 'yourself' }.
 	
-	methodNode := PPPParser new parseTokenStream: tokens.
+	methodNode := PPPParser parseMethodTokenStream: tokens.
 	
 	self
 		assertHierarchy: referenceStatement equals: methodNode bodySequence statements first

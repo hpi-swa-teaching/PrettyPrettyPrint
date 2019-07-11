@@ -9,7 +9,7 @@ testCharacters
 		PPPToken type: #string content: '$$'.
 		PPPToken type: #eof content: ''}.
 	
-	methodNode := PPPParser new parseTokenStream: (ReadStream on: tokens).
+	methodNode := PPPParser parseMethodTokenStream: (ReadStream on: tokens).
 	
 	self
 		assert: PPPMessageNode equals: methodNode bodySequence statements first class;

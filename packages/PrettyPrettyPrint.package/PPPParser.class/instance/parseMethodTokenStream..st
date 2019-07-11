@@ -1,5 +1,6 @@
 initialize-release
-parseTokenStream: aStream
+parseMethodTokenStream: aStream
+	
 	stream := aStream.
 	
 	^self parseMethod

@@ -1,7 +1,6 @@
 visit-node
 visitMethodNode: aPPPMethodNode
 	
-	self incrementIndent.
 	aPPPMethodNode arguments
 		ifEmpty: [ self currentLine nextPutAll: aPPPMethodNode selector ]
 		ifNotEmpty: [ aPPPMethodNode arguments
@@ -9,8 +8,8 @@ visitMethodNode: aPPPMethodNode
 				self currentLine nextPutAll: arg first , ' ' , arg second ]
 			separatedBy: [ self currentLine space ] ].
 	
+	self incrementIndent.
 	(self newLineAfterSelectorNeededFor: aPPPMethodNode) ifTrue: [ self newLineIndent ].
-	
 	self newLineIndent.
 	
 	aPPPMethodNode bodySequence accept: self

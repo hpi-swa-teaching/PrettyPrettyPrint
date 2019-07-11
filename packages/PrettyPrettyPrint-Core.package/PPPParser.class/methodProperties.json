@@ -1,6 +1,8 @@
 {
 	"class" : {
-		 },
+		"parseMethodTokenStream:" : "MiB 7/11/2019 08:03",
+		"parsePragmaTokenStream:" : "MiB 7/11/2019 09:36",
+		"parseSequenceTokenStream:" : "MiB 7/11/2019 08:03" },
 	"instance" : {
 		"canStartNewMessage:" : "TB 6/29/2016 11:25",
 		"currentToken" : "lcj 5/29/2016 15:08",
@@ -14,6 +16,7 @@
 		"parseCascadeMessageSendStartingWith:state:" : "lcj 7/29/2016 12:58",
 		"parseMessageSendState:" : "TB 6/29/2016 12:08",
 		"parseMethod" : "gw 5/4/2019 12:38",
+		"parseMethodTokenStream:" : "MiB 7/11/2019 08:01",
 		"parseNamedMessageDeclaration" : "TB 6/22/2016 19:37",
 		"parseNamedMessageSendTo:state:" : "lcj 7/29/2016 12:58",
 		"parseParenthesesExpression" : "TB 6/29/2016 00:15",
@@ -28,10 +31,10 @@
 		"parseReceiverVariable" : "TB 6/22/2016 17:52",
 		"parseReturnStatement" : "TB 6/29/2016 11:02",
 		"parseSequence" : "kiwi 5/11/2019 16:31",
+		"parseSequenceTokenStream:" : "MiB 7/11/2019 09:16",
 		"parseSingleMessageSendTo:state:" : "TB 6/29/2016 01:09",
 		"parseStatement:" : "TB 6/29/2016 11:09",
 		"parseTemporaries" : "TB 6/29/2016 00:13",
-		"parseTokenStream:" : "TB 7/28/2016 10:04",
 		"parseUnaryMessageDeclaration" : "TB 6/20/2016 10:51",
 		"parseUnaryMessageSendTo:" : "TB 6/29/2016 01:42",
 		"sequenceNodeWithTemporariesAndPragmas" : "kiwi 5/11/2019 16:26",
