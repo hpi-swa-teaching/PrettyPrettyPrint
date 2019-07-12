@@ -11,4 +11,4 @@ The GUI offers multi-selection. If you deselect a class, all methods associated 
 
 IMPORTANT:
 	- Pretty printing is not reversible.
-	- Do not interact with the GUI while your cursor is a sandhour.'
+	- Do not interact with the GUI while your cursor is an hourglass.'

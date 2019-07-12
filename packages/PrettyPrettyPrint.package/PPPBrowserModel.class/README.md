@@ -1,0 +1,1 @@
+A PPPBrowserModel is the model for the PrettyPrettyPrinter-GUI.
