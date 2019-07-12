@@ -3,12 +3,12 @@ testVisitAssignmentNodeDepth
 	
 	| anAssignmentNode content |
 	
-	anAssignmentNode := PPPAssignmentNode variable: 'Dieter' value: (PPPVariableNode name: 'Hans').		
+	anAssignmentNode := self assignmentNodeWithValue: self variableNode.		
 	PPPPreprocessor new visitAssignmentNode: anAssignmentNode.
 	
 	self assert: 0 equals: anAssignmentNode depth.
 	
-	content := OrderedCollection with: (PPPLiteralNode value: '1' literalType: #number) with: (PPPMessageNode receiver: (PPPVariableNode name: 'Hans') selector: 'hallo').
+	content := OrderedCollection with: self literalNode with: (PPPMessageNode receiver: self variableNode selector: 'someMessage').
 	anAssignmentNode value: (PPPArrayNode contents: content constant: false).
 	PPPPreprocessor new visitAssignmentNode: anAssignmentNode.
 	

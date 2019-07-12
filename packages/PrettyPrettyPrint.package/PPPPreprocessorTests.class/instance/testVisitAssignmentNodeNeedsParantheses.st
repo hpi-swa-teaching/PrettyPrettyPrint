@@ -3,7 +3,7 @@ testVisitAssignmentNodeNeedsParantheses
 	
 	| outerAssignmentNode innerAssignmentNode value |
 	
-	value := PPPLiteralNode value: '42' literalType: #number.
+	value := self literalNode.
 	innerAssignmentNode := PPPAssignmentNode variable: 'someNumber' value: value.
 	outerAssignmentNode := PPPAssignmentNode variable: 'someVariable' value: innerAssignmentNode.
 	

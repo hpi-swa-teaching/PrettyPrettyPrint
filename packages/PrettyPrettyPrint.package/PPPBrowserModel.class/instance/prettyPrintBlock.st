@@ -1,8 +1,9 @@
 pretty printing
 prettyPrintBlock
 
-	^ [:method | method actualClass
-		compile: (method actualClass prettyPrinterClass format: method source)
-		classified: method category
-		withStamp: method timeStamp
+	^ [:methodReference | methodReference actualClass
+		compile: (methodReference actualClass prettyPrinterClass 
+			format: methodReference source)
+		classified: methodReference category
+		withStamp: methodReference timeStamp
 		notifying: nil]

@@ -3,8 +3,8 @@ referencesToSelectedMethods
 
 	| methodReferences class selector |
 	methodReferences := OrderedCollection new. 
-	self selectedMethods do: [:meth |
-		class := Compiler evaluate: (meth subStrings: '  >>  ') first.
-		selector := (meth subStrings: '  >>  ') second asSymbol.
+	self selectedMethods do: [:method |
+		class := Compiler evaluate: (method subStrings: '>') first withBlanksTrimmed.
+		selector := (method subStrings: '>') second withBlanksTrimmed asSymbol.
 		methodReferences add: (MethodReference class: class selector: selector)].
 	^ methodReferences
