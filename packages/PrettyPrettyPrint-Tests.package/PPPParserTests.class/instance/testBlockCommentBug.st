@@ -5,7 +5,7 @@ testBlockCommentBug
 	tokens := PPPTokenizer on: 
 'test " blah " 4. "comm"
 	[self 3]'.
-methodNode := PPPParser new parseTokenStream: tokens.
+methodNode := PPPParser new parseMethodTokenStream: tokens.
 
 	
 	self
