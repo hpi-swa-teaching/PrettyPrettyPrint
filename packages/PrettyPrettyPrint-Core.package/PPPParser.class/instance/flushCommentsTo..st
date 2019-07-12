@@ -1,5 +1,6 @@
 parse-node
 flushCommentsTo: aNode
-	aNode comments: currentComments.
-	currentComments := OrderedCollection new.
+	aNode comments: (aNode comments addAll: self currentComments; yourself).
+	self currentComments: OrderedCollection new.
+
 	^aNode
