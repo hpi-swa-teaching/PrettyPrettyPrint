@@ -11,8 +11,7 @@ testVisitCascadeNodeDepth
 				argument: ((PPPMessageNode 
 					receiver: (PPPVariableNode new name: 'self') 
 					selector: 'sayHello') 
-						hasParentheses: true;
-						needsParantheses: true));
+						hasParentheses: true));
 				
 			add: (PPPMessageNode receiver: nil selector: 'sayByeByeBaby');
 			yourself).
