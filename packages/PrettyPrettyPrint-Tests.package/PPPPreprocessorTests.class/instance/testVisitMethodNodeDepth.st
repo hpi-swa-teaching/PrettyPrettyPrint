@@ -5,13 +5,13 @@ testVisitMethodNodeDepth
 	aBlockNode := PPPBlockNode bodySequence: 
 		(PPPSequenceNode statements: 
 			(OrderedCollection 
-				with: (PPPVariableNode name: 'Dieter') 
-				with: (PPPLiteralNode value: '1' literalType: #number))).
-	bodySequence := PPPSequenceNode statements: { PPPVariableNode name: 'DieterReturns' .  aBlockNode }.
+				with: self variableNode 
+				with: self literalNode)).
+	bodySequence := PPPSequenceNode statements: { self variableNode .  aBlockNode }.
 	aMethodNode := PPPMethodNode 
 		bodySequence: bodySequence 
-		selector: 'newestBlockBuster:' 
-		arguments: {{'newestBlockBuster:' . 'aBoolean'}}.
+		selector: 'someMessage:' 
+		arguments: {{'someMessage:' . 'someArgument'}}.
 		
 	PPPPreprocessor new visitMethodNode: aMethodNode.
 	"The length of the method node only needs to be the whole selector with its arguments."

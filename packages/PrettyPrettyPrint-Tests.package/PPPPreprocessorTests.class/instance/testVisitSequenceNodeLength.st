@@ -2,18 +2,18 @@ as yet unclassified
 testVisitSequenceNodeLength
 	
 	| aSequenceNode aBlockNode |
-	aBlockNode := PPPBlockNode bodySequence: 
-		(PPPSequenceNode statements: 
-			(OrderedCollection 
-				with: (PPPVariableNode name: 'Dieter') 
-				with: (PPPLiteralNode value: '1' literalType: #number))).
 	
-	aSequenceNode := PPPSequenceNode 
+	aBlockNode := PPPBlockNode
+			bodySequence: (PPPSequenceNode
+				statements: (OrderedCollection
+					with: self variableNode
+					with: self literalNode)).
+	
+	aSequenceNode := PPPSequenceNode
 		temporaries: (OrderedCollection with: 'temp1' with: 'temp2')
-		statements: 
-			(OrderedCollection 
-				with: (PPPVariableNode name: 'Dieter') 
-				with: (PPPLiteralNode value: '1' literalType: #number)
+		statements: (OrderedCollection
+				with: self variableNode
+				with: self literalNode
 				with: aBlockNode).
 			
 	PPPPreprocessor new visitSequenceNode: aSequenceNode.

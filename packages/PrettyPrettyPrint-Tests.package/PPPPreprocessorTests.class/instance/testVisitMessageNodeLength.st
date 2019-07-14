@@ -3,14 +3,14 @@ testVisitMessageNodeLength
 	
 	| aMessageNode content |
 	
-	aMessageNode := PPPMessageNode receiver: (PPPVariableNode name: 'Dieter') selector: 'helloWorld'.		
+	aMessageNode := self unaryMessageNode.		
 	PPPPreprocessor new visitMessageNode: aMessageNode.
 	
-	self assert: 17 equals: aMessageNode length.
+	self assert: 20 equals: aMessageNode length.
 	
-	content := OrderedCollection with: (PPPLiteralNode value: '1' literalType: #number) with: (PPPMessageNode receiver: (PPPVariableNode name: 'Hans') selector: 'hallo').
+	content := OrderedCollection with: self literalNode with: self unaryMessageNode.
 	aMessageNode receiver: (PPPArrayNode contents: content constant: false).
 	PPPPreprocessor new visitMessageNode: aMessageNode.
 	
-	self assert: 27 equals: aMessageNode length
+	self assert: 38 equals: aMessageNode length
 	
