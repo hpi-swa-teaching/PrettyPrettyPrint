@@ -19,5 +19,7 @@ testVisitBlockNodeDepth
 	aBlockNode bodySequence addStatement: (PPPArrayNode contents: content constant: false).
 	PPPPreprocessor new visitBlockNode: aBlockNode.
 	
+	aBlockNode bodySequence
+		addStatement: (PPPArrayNode contents: content constant: false).
+	PPPPreprocessor new visitBlockNode: aBlockNode.
 	self assert: 2 equals: aBlockNode depth
-	

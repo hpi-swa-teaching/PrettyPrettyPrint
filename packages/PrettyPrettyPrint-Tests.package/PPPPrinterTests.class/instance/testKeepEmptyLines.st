@@ -16,4 +16,4 @@ testKeepEmptyLines
 	3.
 	
 	
-	4' preferences: self preferenceBlock).
+	4' preferences: [:profile | profile keepEmptyLines: true; newlineAfterSelector: false; newlineBeforeReturn: false; dotAfterReturn: false]).

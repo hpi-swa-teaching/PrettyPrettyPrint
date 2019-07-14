@@ -1,6 +1,6 @@
 helpers-printing
 printNamedMessageMultiline: aPPPMessageNode 
-	
+
 	self incrementIndent.
 	aPPPMessageNode ifNotInCascade: [ self newLineIndent] .
 	

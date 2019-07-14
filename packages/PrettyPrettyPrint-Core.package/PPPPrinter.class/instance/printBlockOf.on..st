@@ -1,5 +1,6 @@
 helpers-printing
 printBlockOf: aNode on: aBuffer 
+
 	aBuffer nextPut: $[.
 	aNode bindings
 		ifNotEmpty: [ aBuffer space ];

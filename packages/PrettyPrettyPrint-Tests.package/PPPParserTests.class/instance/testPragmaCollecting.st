@@ -1,6 +1,8 @@
 testing
 testPragmaCollecting
+	
 	| tokens ast method pragmas |
+	
 	"not working because the parser can not handle more than one pragma"
 	method := 'testMesthod
 	<hi>

@@ -15,5 +15,6 @@ testVisitMethodNodeLength
 		arguments: {{'someMessage:' . 'someArgument'}}.
 		
 	PPPPreprocessor new visitMethodNode: aMethodNode.
+	
 	"The length of the method node only needs to be the whole selector with its arguments."
 	self assert: 25 equals: aMethodNode length

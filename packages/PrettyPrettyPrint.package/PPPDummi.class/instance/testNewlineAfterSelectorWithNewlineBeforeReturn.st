@@ -7,12 +7,12 @@ testNewlineAfterSelectorWithNewlineBeforeReturn
 	
 	^self hello'.
 	formattedMethod := PPPPrinter
-			format: method
-			preferences: [ :profile |
-				profile
-					newlineBeforeReturn: true;
-					keepEmptyLines: true;
-					newlineAfterSelector: true ].
+		format: method
+		preferences: [ :profile |
+			profile
+				newlineBeforeReturn: true;
+				keepEmptyLines: true;
+				newlineAfterSelector: true ].
 	correctlyFormattedMethodPattern := 
 		'visitMethodNode: aNode
 	

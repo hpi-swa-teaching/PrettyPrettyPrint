@@ -1,13 +1,13 @@
 accessing
-relevantParsedPragmas	
+relevantParsedPragmas
 	
-	^ OrderedCollection new 
+	^OrderedCollection new
 		add: self validIgnoreParsedPragma;
-		add: (PPPMethodNode new 
-			arguments: (OrderedCollection new 
-				add: #('PrettyPrint:' '#maxLineLength');
-				add: #('option:' '10');
-				yourself);
-			bodySequence: (PPPSequenceNode new);
-			selector: 'PrettyPrint:option:');
+		add: (PPPMethodNode new
+				arguments: (OrderedCollection new
+						add: #( 'PrettyPrint:' '#maxLineLength' );
+						add: #( 'option:' '10' );
+						yourself);
+				bodySequence: (PPPSequenceNode new);
+				selector: 'PrettyPrint:option:');
 		yourself

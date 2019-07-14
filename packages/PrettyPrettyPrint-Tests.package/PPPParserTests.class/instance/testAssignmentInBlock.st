@@ -1,6 +1,8 @@
 testing
 testAssignmentInBlock
+	
 	| tokens methodNode |
+	
 	tokens := {
 		PPPToken type: #identifier content: 'peek'.
 		PPPToken type: #special content: '^'.
@@ -16,4 +18,6 @@ testAssignmentInBlock
 	
 	methodNode := PPPParser parseMethodTokenStream: (ReadStream on: tokens).
 	
-	self assert: PPPAssignmentNode equals: methodNode bodySequence return value arguments first bodySequence statements first class
+	self
+		assert: PPPAssignmentNode
+		equals: methodNode bodySequence return value arguments first bodySequence statements first class

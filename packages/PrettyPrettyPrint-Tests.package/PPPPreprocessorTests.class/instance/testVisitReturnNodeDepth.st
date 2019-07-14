@@ -12,5 +12,4 @@ testVisitReturnNodeDepth
 	value := PPPAssignmentNode variable: 'variable' value: (PPPArrayNode contents: content constant: false).
 	aReturnNode value: value.
 	PPPPreprocessor new visitReturnNode: aReturnNode.
-	
 	self assert: 1 equals: aReturnNode depth
