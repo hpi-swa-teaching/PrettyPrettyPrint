@@ -8,7 +8,7 @@ testVisitAssignmentNodeDepth
 	
 	self assert: 0 equals: anAssignmentNode depth.
 	
-	content := OrderedCollection with: self literalNode with: (PPPMessageNode receiver: self variableNode selector: 'someMessage').
+	content := OrderedCollection with: self literalNode with: self unaryMessageNode.
 	anAssignmentNode value: (PPPArrayNode contents: content constant: false).
 	PPPPreprocessor new visitAssignmentNode: anAssignmentNode.
 	

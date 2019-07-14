@@ -2,6 +2,8 @@ as yet unclassified
 testVisitPragmaNodeLength
 	
 	| aPragmaNode |
-	aPragmaNode := PPPPragmaNode content: '<PrettyPrint: #ignore option: true>'.
+	
+	aPragmaNode := PPPPragmaNode
+		content: '<PrettyPrint: ''ignore'' option: ''true''>'.
 	PPPPreprocessor new visitPragmaNode: aPragmaNode.
-	self assert: 35 equals: aPragmaNode length
+	self assert: 38 equals: aPragmaNode length

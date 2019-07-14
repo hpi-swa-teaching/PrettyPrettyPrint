@@ -3,14 +3,18 @@ testVisitAssignmentNodeLength
 	
 	| anAssignmentNode content |
 	
-	anAssignmentNode := self assignmentNodeWithValue: self variableNode.		
+	anAssignmentNode := PPPAssignmentNode
+		variable: 'Dieter'
+		value: (PPPVariableNode name: 'Hans').
 	PPPPreprocessor new visitAssignmentNode: anAssignmentNode.
 	
-	self assert: 20 equals: anAssignmentNode length.
+	self assert: 14 equals: anAssignmentNode length.
 	
-	content := OrderedCollection with: self literalNode with: self unaryMessageNode.
+	content := OrderedCollection
+		with: (PPPLiteralNode value: '1' literalType: #number)
+		with: (PPPMessageNode
+			receiver: (PPPVariableNode name: 'Hans')
+			selector: 'hallo').
 	anAssignmentNode value: (PPPArrayNode contents: content constant: false).
 	PPPPreprocessor new visitAssignmentNode: anAssignmentNode.
-	
-	self assert: 38 equals: anAssignmentNode length
-	
+	self assert: 26 equals: anAssignmentNode length
