@@ -1,9 +1,14 @@
 {
 	"class" : {
 		"bookName" : "kiwi 5/11/2019 17:23",
-		"graphicUserInterface" : "kiwi 7/12/2019 10:10",
-		"introduction" : "kiwi 7/12/2019 10:11",
+		"graphicUserInterface" : "MiB 7/8/2019 08:48",
+		"introduction" : "MiB 7/8/2019 08:51",
 		"pages" : "gw 5/27/2019 09:40",
+		"pragmaFirstExample" : "kiwi 6/2/2019 13:38",
+		"pragmaIntroduction" : "kiwi 5/15/2019 17:46",
+		"pragmaPattern" : "kiwi 6/2/2019 13:44",
+		"pragmaSecondExample" : "kiwi 6/2/2019 13:39",
+		"pragmaSupportedRules" : "kiwi 6/2/2019 13:47",
 		"preferences" : "MiB 7/8/2019 08:51",
 		"usingPragmas" : "gw 6/2/2019 13:52" },
 	"instance" : {
