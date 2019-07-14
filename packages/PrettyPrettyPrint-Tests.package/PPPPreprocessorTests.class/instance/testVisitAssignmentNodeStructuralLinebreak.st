@@ -9,7 +9,9 @@ testVisitAssignmentNodeStructuralLinebreak
 	
 	self assert: false equals: anAssignmentNode needsStructuralLinebreak.
 	
-	value := self nodeWithStructuralLinebreak.
+	value := self nodeWithStructuralLinebreak .
 	anAssignmentNode value: value.
 	PPPPreprocessor new visitAssignmentNode: anAssignmentNode.
+	
 	self assert: true equals: anAssignmentNode needsStructuralLinebreak
+	

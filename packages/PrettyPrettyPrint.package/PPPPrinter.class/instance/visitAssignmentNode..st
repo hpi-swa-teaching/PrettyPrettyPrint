@@ -6,6 +6,4 @@ visitAssignmentNode: aPPPAssignmentNode
 	self profile spaceAroundBinaryOperator 
 		ifTrue: [ self currentLine nextPutAll: ' := ' ] 
 		ifFalse: [ self currentLine nextPutAll: ':=' ].
-	self incrementIndent.
-	self visitValueNode: aPPPAssignmentNode value.
-	self decrementIndent
+	self visitValueNode: aPPPAssignmentNode value

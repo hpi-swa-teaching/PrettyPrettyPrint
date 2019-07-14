@@ -10,7 +10,7 @@ lengthForMessageNode: aMessageNode
 		length := length + self additionalLengthForSpace + aMessageNode receiver length].
 
 	aMessageNode arguments 
-		do: [:argument | length := length + self additionalLengthForSpace + argument length] 
+		do: [:argument | length := length + self additionalLengthForSpace + (self maybeOnlyReceiverLength: argument)] 
 		separatedBy: [length := length + self additionalLengthForSpace].
 		
 	^ length

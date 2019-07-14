@@ -6,4 +6,4 @@ nodeWithoutStructuralLinebreak
 	someNode := PPPVariableNode name: 'variable'.
 	someNode needsStructuralLinebreak: false.
 	
-	^someNode
+	^ someNode

@@ -10,12 +10,6 @@ testReturnStatement
 		
 	methodNode := PPPParser parseMethodTokenStream: (ReadStream on: tokens).
 	
-	tokens := { PPPToken type: #identifier content: 'someMessage' . 
-		PPPToken type: #special content: '^' . 
-		PPPToken type: #identifier content: 'tmp' . 
-		PPPToken type: #eof content: '' }.
-	
-	methodNode := PPPParser new parseTokenStream: (ReadStream on: tokens).
 	self
 		assert: methodNode bodySequence return value class
 			equals: PPPVariableNode;

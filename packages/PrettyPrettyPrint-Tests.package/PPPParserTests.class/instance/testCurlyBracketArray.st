@@ -3,9 +3,17 @@ testCurlyBracketArray
 	
 	| tokens methodNode |
 	
-	methodNode := PPPParser parseMethodTokenStream: (ReadStream on: tokens).
+	tokens := {
+		PPPToken type: #identifier content: 'testMethod'.
+		PPPToken type: #special content: '{'.
+		PPPToken type: #identifier content: 'self'.
+		PPPToken type: #identifier content: 'open'.
+		PPPToken type: #special content: '.'.
+		PPPToken type: #number content: '5'.
+		PPPToken type: #special content: '}'.
+		PPPToken type: #eof content: ''}.
 	
-	methodNode := PPPParser new parseTokenStream: (ReadStream on: tokens).
+	methodNode := PPPParser parseMethodTokenStream: (ReadStream on: tokens).
 	
 	self
 		assertHierarchy: (PPPArrayNode

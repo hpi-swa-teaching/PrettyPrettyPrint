@@ -3,7 +3,7 @@ testVisitArrayNodeStructuralLinebreak
 	
 	| anArrayNode content |
 	
-	content := OrderedCollection
+	content := OrderedCollection 
 		with: self nodeWithoutStructuralLinebreak
 		with:  self nodeWithoutStructuralLinebreak.
 	

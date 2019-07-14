@@ -1,6 +1,8 @@
 testing
 testPrintBinaryMessageNode
-	| messageNode argumentNodes receiverNode selector printer formattedMessage |
+	
+	| messageNode argumentNodes receiverNode selector printer 
+		formattedMessage |
 	
 	printer := PPPPrinter new.
 	messageNode := PPPMessageNode new.
@@ -16,5 +18,4 @@ testPrintBinaryMessageNode
 		arguments: argumentNodes.
 	messageNode accept: printer.
 	formattedMessage := printer wholeContent.
-	
 	self assert: '2 + 3' equals: formattedMessage

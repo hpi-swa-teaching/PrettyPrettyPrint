@@ -1,15 +1,18 @@
 testing
 testTooLongAssignmentNode
-	| printer assignmentNode valueNode formattedAssignment|
+	
+	| printer assignmentNode valueNode formattedAssignment |
 	
 	valueNode := PPPLiteralNode new
 		literalType: #string;
-		value: '''myVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongValue''';
+		value: 
+				'''myVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongValue''';
 		length: 93;
 		yourself.
 	
 	assignmentNode := PPPAssignmentNode new
-		variable: 'myVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongVar';
+		variable: 
+				'myVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongVar';
 		value: valueNode;
 		length: 186;
 		yourself.
@@ -18,8 +21,8 @@ testTooLongAssignmentNode
 	self preferenceBlock value: printer profile.
 	printer visitAssignmentNode: assignmentNode.
 	formattedAssignment := printer wholeContent.
-		
 	self
-		assert: 'myVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongVar := 
+		assert: 
+			'myVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongVar := 
 	''myVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongValue'''
 		equals: formattedAssignment

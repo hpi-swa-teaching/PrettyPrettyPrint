@@ -9,13 +9,13 @@ testNewlineAfterSelectorWithKeepEmptyLines
 
 ^self hello'.
 	formattedMethod := PPPPrinter
-		format: methodWithReturn
-		preferences: [ :profile |
-			profile
-				newlineAfterSelector: true;
-				keepEmptyLines: true;
-				dotAfterReturn: false;
-				spaceBeforeReturn: false ].
+			format: methodWithReturn
+			preferences: [ :profile |
+				profile
+					newlineAfterSelector: true;
+					keepEmptyLines: true;
+					dotAfterReturn: false;
+					spaceBeforeReturn: false ].
 	correctlyFormattedMethodWithReturn := 
 		'visitMethodNode: aNode
 	

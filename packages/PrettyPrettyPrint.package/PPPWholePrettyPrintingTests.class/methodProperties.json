@@ -1,0 +1,20 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testComments" : "MiB 7/6/2019 11:17",
+		"testKeepEmptyLines" : "MiB 7/6/2019 11:17",
+		"testNewlineAfterSelector" : "MiB 7/6/2019 11:19",
+		"testNewlineAfterSelectorWithKeepEmptyLines" : "MiB 7/6/2019 11:21",
+		"testNewlineAfterSelectorWithNewlineBeforeReturn" : "MiB 7/6/2019 11:21",
+		"testNewlineAfterTemporaryDeclaration" : "MiB 7/6/2019 11:21",
+		"testNewlineBeforeReturn" : "MiB 7/6/2019 12:44",
+		"testNewlineBeforeReturnWithKeepEmptyLines" : "MiB 7/6/2019 11:22",
+		"testNoNewlineAfterTemporaryDeclaration" : "MiB 7/6/2019 11:24",
+		"testPragmaSkipFormatting" : "MiB 7/6/2019 11:24",
+		"testPrintArray" : "MiB 7/6/2019 11:37",
+		"testPrintComplexBlocks" : "MiB 7/6/2019 11:37",
+		"testPrintMultilineMessage" : "MiB 7/6/2019 11:25",
+		"testPrintPragma" : "MiB 7/6/2019 11:37",
+		"testPrintShortNamedMessage" : "MiB 7/6/2019 11:37",
+		"testSpaceAroundBinaryOperator" : "MiB 7/6/2019 11:29" } }

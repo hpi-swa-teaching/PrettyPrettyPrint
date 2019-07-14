@@ -12,7 +12,5 @@ testVisitSequenceNodeStructuralLinebreak
 	self assert: true equals: sequenceNode needsStructuralLinebreak.
 	
 	sequenceNode := self sequenceNodeWithStructuralLinebreak.
-	PPPPreprocessor new visitSequenceNode: sequenceNode.	
+	PPPPreprocessor new visitSequenceNode: sequenceNode.
 	self assert: true equals: sequenceNode needsStructuralLinebreak
-		
-	

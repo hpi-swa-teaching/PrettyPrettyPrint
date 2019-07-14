@@ -1,4 +1,4 @@
 parse-message-send
 initialize
 	super initialize.
-	currentComments := OrderedCollection new
+	self currentComments: OrderedCollection new

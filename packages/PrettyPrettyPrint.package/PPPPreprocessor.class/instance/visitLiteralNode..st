@@ -1,5 +1,7 @@
 visit-node
-visitLiteralNode: aNode
+visitLiteralNode: aPPPLiteralNode
 	
-	aNode length: aNode value size
+	aPPPLiteralNode literalType == #string
+		ifTrue: [aPPPLiteralNode length: (self getLengthOStringLiteralNode: aPPPLiteralNode)]
+		ifFalse: [aPPPLiteralNode length: aPPPLiteralNode value size]
 	
