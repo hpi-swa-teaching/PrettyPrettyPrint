@@ -3,7 +3,7 @@ SmalltalkCISpec {
     SCIMetacelloLoadSpec {
       #baseline : 'PrettyPrettyPrint',
       #directory : 'packages',
-      #load : 'Core',
+      #load : 'TravisCI',
       #platforms : [ #squeak ]
     }
   ]
