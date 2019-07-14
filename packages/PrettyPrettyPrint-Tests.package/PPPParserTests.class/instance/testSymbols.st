@@ -1,6 +1,8 @@
 testing
 testSymbols
+	
 	| tokens methodNode |
+	
 	tokens := {
 		PPPToken type: #identifier content: 'someMessage'.
 		PPPToken type: #symbol content: '#tmp'.
@@ -16,10 +18,17 @@ testSymbols
 	
 	self
 		assert: 2 equals: methodNode bodySequence statements size;
-		assert: #symbol equals: methodNode bodySequence statements first literalType;
-		assert: PPPArrayNode equals: methodNode bodySequence statements second class;
-		assert: 3 equals: methodNode bodySequence statements second contents size;
-		assert: #identifier equals: methodNode bodySequence statements second contents first literalType;
-		assert: #number equals: methodNode bodySequence statements second contents second literalType;
-		assert: #string equals: methodNode bodySequence statements second contents third literalType;
-		assert: PPPLiteralNode equals: methodNode bodySequence statements second contents first class
+		assert: #symbol
+			equals: methodNode bodySequence statements first literalType;
+		assert: PPPArrayNode
+			equals: methodNode bodySequence statements second class;
+		assert: 3
+			equals: methodNode bodySequence statements second contents size;
+		assert: #identifier
+			equals: methodNode bodySequence statements second contents first literalType;
+		assert: #number
+			equals: methodNode bodySequence statements second contents second literalType;
+		assert: #string
+			equals: methodNode bodySequence statements second contents third literalType;
+		assert: PPPLiteralNode
+			equals: methodNode bodySequence statements second contents first class

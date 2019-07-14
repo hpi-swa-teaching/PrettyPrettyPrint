@@ -1,10 +1,10 @@
 accessing
-allParsedPragmas	
+allParsedPragmas
 	
-	^ OrderedCollection new 
+	^OrderedCollection new
 		addAll: self relevantParsedPragmas;
-		add: (PPPMethodNode new 
-			arguments: OrderedCollection new;
-			bodySequence: (PPPSequenceNode new);
-			selector: 'Dummy');
+		add: (PPPMethodNode new
+				arguments: OrderedCollection new;
+				bodySequence: (PPPSequenceNode new);
+				selector: 'Dummy');
 		yourself

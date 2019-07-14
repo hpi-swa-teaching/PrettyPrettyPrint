@@ -1,5 +1,6 @@
 testing
 testEscapedString
+	
 	| stream tokenizer token |
 	
 	stream := '''hello'' ''hell''''o'''.
@@ -12,7 +13,6 @@ testEscapedString
 		assert: '''hello''' equals: token content.
 	
 	token := tokenizer next.
-	
 	self
 		assert: 1 equals: token whitespaces size;
 		assert: #string equals: token tokenType;

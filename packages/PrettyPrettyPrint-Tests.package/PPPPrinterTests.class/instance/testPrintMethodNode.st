@@ -1,7 +1,8 @@
 testing
 testPrintMethodNode
-
-	| sequenceNode printer statements temporaries methodNode formattedMethod |
+	
+	| sequenceNode printer statements temporaries methodNode 
+		formattedMethod |
 	
 	printer := PPPPrinter new.
 	self preferenceBlock value: printer profile.
@@ -11,7 +12,11 @@ testPrintMethodNode
 		add: 'temp1';
 		add: 'temp2';
 		yourself.
-	statements := { PPPAssignmentNode variable: 'variable' value: (PPPVariableNode new name: '4'). PPPReturnNode value: (PPPVariableNode new name: 'self') }.
+	statements := { 
+		PPPAssignmentNode
+			variable: 'variable'
+			value: (PPPVariableNode new name: '4') . 
+		PPPReturnNode value: (PPPVariableNode new name: 'self') }.
 	
 	sequenceNode
 		temporaries: temporaries;
@@ -25,7 +30,6 @@ testPrintMethodNode
 		yourself.
 	methodNode accept: printer.
 	formattedMethod := printer wholeContent.
-	
 	self
 		assert: 'ourMethod: argument with: anotherArgument
 	| temp1 temp2 |

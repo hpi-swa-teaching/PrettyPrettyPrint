@@ -1,6 +1,8 @@
 as yet unclassified
 dummyAst
-
-	| sequenceNode |		
+	
+	| sequenceNode |
+	
 	sequenceNode := PPPSequenceNode new statements: self allPragmas.
-	^ PPPMethodNode new bodySequence: sequenceNode
+	
+	^PPPMethodNode new bodySequence: sequenceNode

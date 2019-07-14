@@ -1,6 +1,8 @@
 testing
 testCharacters
+	
 	| tokens methodNode |
+	
 	tokens := {
 		PPPToken type: #identifier content: 'testMethod'.
 		PPPToken type: #character content: '$a'.
@@ -12,8 +14,12 @@ testCharacters
 	methodNode := PPPParser parseMethodTokenStream: (ReadStream on: tokens).
 	
 	self
-		assert: PPPMessageNode equals: methodNode bodySequence statements first class;
-		assert: '$a' equals: methodNode bodySequence statements first receiver value;
-		assert: 'asString' equals: methodNode bodySequence statements first selector;
-		assert: PPPLiteralNode equals: methodNode bodySequence statements second class;
+		assert: PPPMessageNode
+			equals: methodNode bodySequence statements first class;
+		assert: '$a'
+			equals: methodNode bodySequence statements first receiver value;
+		assert: 'asString'
+			equals: methodNode bodySequence statements first selector;
+		assert: PPPLiteralNode
+			equals: methodNode bodySequence statements second class;
 		assert: '$$' equals: methodNode bodySequence statements second value

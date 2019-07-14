@@ -1,6 +1,9 @@
 testing
 testPrintLiteralNode
-	| stringNode numberNode symbolNode numberPrinter stringPrinter symbolPrinter formattedString formattedNumber formattedSymbol |
+	
+	| stringNode numberNode symbolNode numberPrinter stringPrinter 
+		symbolPrinter formattedString formattedNumber formattedSymbol |
+	
 	stringPrinter := PPPPrinter new.
 	numberPrinter := PPPPrinter new.
 	symbolPrinter := PPPPrinter new.
@@ -17,14 +20,13 @@ testPrintLiteralNode
 		yourself.
 	numberNode accept: numberPrinter.
 	formattedNumber := numberPrinter wholeContent.
-		
+	
 	symbolNode := PPPLiteralNode new
 		literalType: #symbol;
 		value: '#actualSymbol';
 		yourself.
 	symbolNode accept: symbolPrinter.
 	formattedSymbol := symbolPrinter wholeContent.
-	
 	self
 		assert: '''asd''' equals: formattedString;
 		assert: '4' equals: formattedNumber;

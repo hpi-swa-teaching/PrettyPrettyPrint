@@ -1,6 +1,8 @@
 testing
 testPrintUnaryMessageNode
-	| messageNode argumentNodes selector printer receiverNode formattedMessage |
+	
+	| messageNode argumentNodes selector printer receiverNode 
+		formattedMessage |
 	
 	printer := PPPPrinter new.
 	messageNode := PPPMessageNode new.

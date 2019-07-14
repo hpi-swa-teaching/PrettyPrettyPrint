@@ -1,5 +1,6 @@
 testing
 testSimpleAssignment
+	
 	| tokens methodNode |
 	tokens := {
 		PPPToken type: #identifier content: 'someMessage'.
@@ -15,8 +16,11 @@ testSimpleAssignment
 	methodNode := PPPParser parseMethodTokenStream: (ReadStream on: tokens).
 	
 	self
-		assert: methodNode bodySequence statements first class equals: PPPAssignmentNode;
-		assert: methodNode bodySequence statements first variable equals: 'tmp';
-		
-		assert: methodNode bodySequence statements first value class equals: PPPLiteralNode;
-		assert: methodNode bodySequence statements first value value equals: '2'
+		assert: methodNode bodySequence statements first class
+			equals: PPPAssignmentNode;
+		assert: methodNode bodySequence statements first variable
+			equals: 'tmp';
+		assert: methodNode bodySequence statements first value class
+			equals: PPPLiteralNode;
+		assert: methodNode bodySequence statements first value value
+			equals: '2'

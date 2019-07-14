@@ -1,5 +1,6 @@
 testing
 testTemporaryDeclaration
+	
 	| tokens methodNode |
 	tokens := {
 		PPPToken type: #identifier content: 'someMessage'.

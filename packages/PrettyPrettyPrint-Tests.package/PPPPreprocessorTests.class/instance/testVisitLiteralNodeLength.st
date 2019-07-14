@@ -10,6 +10,4 @@ testVisitLiteralNodeLength
 	
 	aLiteralNode := PPPLiteralNode value: '''Dieter''' literalType: #string.
 	PPPPreprocessor new visitLiteralNode: aLiteralNode.
-	
 	self assert: 8 equals: aLiteralNode length
-	

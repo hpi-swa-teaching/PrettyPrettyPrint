@@ -1,5 +1,6 @@
 testing
 testNamedMessageMethod
+	
 	| tokens methodNode |
 	tokens := {
 		PPPToken type: #identifier content: 'testMethod:'.
@@ -9,7 +10,7 @@ testNamedMessageMethod
 		PPPToken type: #eof content: ''}.
 		
 	methodNode := PPPParser parseMethodTokenStream: (ReadStream on: tokens).
-	
+
 	self
 		assert: methodNode selector = 'testMethod:b:';
 		assert: methodNode arguments first second = 'arg5';

@@ -1,3 +1,3 @@
 accessing
-length: aSmallIntegers
-	length := aSmallIntegers
+length: aSmallInteger
+	length := aSmallInteger
