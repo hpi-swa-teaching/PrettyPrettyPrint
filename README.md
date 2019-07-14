@@ -13,14 +13,6 @@ Clone the repository.
 
 Pull the package the package into your Squeak Image, by adding it as a Monitcello filetree repository.
 
-**Step 3**
-
-Change the method Behavior>>prettyPrinterClass as follows:
-```
-Behavior>>prettyPrinterClass
- ^ PPPPrinter
-```
-
 ###### Via Metacello
 
 **Step 1**
@@ -34,35 +26,25 @@ Load the project by running the following in your workspace:
 ```
 Metacello new
   baseline: 'PrettyPrettyPrint';
-  repository: 'github://hpi-swa-teaching/PrettyPrettyPrint:master/packages'; 
+  repository: 'github://hpi-swa-teaching/PrettyPrettyPrint:dev/packages'; 
   onConflict: [:ex | ex allow];
   load
-```
-
-**Step 3**
-
-Change the method Behavior>>prettyPrinterClass as follows:
-```
-Behavior>>prettyPrinterClass
- ^ PPPPrinter
 ```
 
 How to Use
 =================
 
-To pretty pretty print an entire package with the default settings execute the following command:
-```
-PPPPrinter formatPackage: 'name of package'
-```
+You will find detailed instructions in Squeak Help, once you have installed the package. This is just a short overview:
 
-To pretty pretty print an entire package with your userProfile execute the following command:
-```
-PPPPrinter userFormatPackage: 'name of package'
-```
+The PrettyPrettyPrinter offers a graphic user interface for comfortable interaction. It can be found in the 'Apps' menu.
+
+The PrettyPrettyPrinter offers a set of user options, accessible through the built-in Squeak Preference Browser.
+
+
 
 Implementation Details
 =================
-The project contains four classes that aggregate most logic and a set of classes used to represent the nodes in the abstract syntax tree (AST) of a method.
+The project contains five classes that aggregate most logic and a set of classes used to represent the nodes in the abstract syntax tree (AST) of a method.
 
 #### The PPPTokenizer
 
@@ -82,14 +64,19 @@ Rough code flow when parsing a method is as follows:
 
 Methods responsible for parsing message sends carry a `PPPParserState` with them. This is required for keeping the parse methods isolated while still maintaining the knowledge of whether we are currently parsing a multi part named message or a cascade.
 
+#### The PPPPreprocessor
+The preprocessor is implemented as a visitor over the AST. It enriches all nodes with information like `length`, `needsStructualLineBreak` and `needsParatheses`.
+
 #### The PPPPrinter
-The printer is implemented as a visitor over the AST. Each `visit*` method returns a string (so that the resulting length of a subexpression can be determined before printing it). The indent is kept within the object and can be incremented or decremented upon encountering nodes that require such a change. `newLineIndentOn:` can then be used to directly print a newline and the current indent on a given buffer.
+The printer is also implemented as a visitor over the AST. Each `visit*` method returns a string (so that the resulting length of a subexpression can be determined before printing it). The indent is kept within the object and can be incremented or decremented upon encountering nodes that require such a change. `newLineIndentOn:` can then be used to directly print a newline and the current indent on a given buffer.
 
 Different methods can be used for pretty pretty printing (more on preferences can be found in the next section):
 * Calling `format:` will use the default set of preferences.
 * `format:preferences:` allows tweaking the default settings before they are used.
 * `userProfileFormat:` will use the current global profile.
 * `format:in:notifying` and `format:in:notifying:decorated:` are called by the CodeHolders to get pretty printed text. In practice, only the supplied string prove to be relevant for us, so we are ignoring all other parameters.
+
+Our GUI uses the `userProfileFormat:` method for pretty printing.
 
 #### The PPPPSettingsProfile
 The printer has a PPPSettingsProfile that can be tweaked or overriden. Its settings are used during the printing process.
@@ -100,3 +87,5 @@ When an option on the class side is changed, all CodeHolder subinstaces are aske
 
 The class also allows the import and export of the profile to the filesystem via `importUserProfileFromFileNamed:` and `exportUserProfileFromFileNamed:`.
 
+
+```

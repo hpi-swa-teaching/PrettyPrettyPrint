@@ -7,7 +7,7 @@ testComplexMethod
 	tokens := PPPTokenizer
 		on: (self class methodDict at: #sampleComplexMethod:b:) decompile asString.
 	
-	methodNode := PPPParser new parseTokenStream: tokens.
+	methodNode := PPPParser parseMethodTokenStream: tokens.
 	
 	firstBlock := methodNode bodySequence statements first value.
 	firstNamedMsgSend := methodNode bodySequence statements second value.

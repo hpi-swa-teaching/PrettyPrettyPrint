@@ -1,7 +1,7 @@
 testing
 testPragmaParsing
 	
-	| tokens methodNode expectedParsedPragmaNode |
+	methodNode := PPPParser parsePragmaTokenStream: (ReadStream on: tokens).
 	
 	tokens := { PPPToken type: #identifier content: 'PrettyPrint:' . 
 		PPPToken type: #string content: 'ignore' . 

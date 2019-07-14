@@ -2,6 +2,11 @@ testing
 testUnaryMethodDeclaration
 	
 	| tokens methodNode |
+	tokens := {
+		PPPToken type: #identifier content: 'someMessage'.
+		PPPToken type: #eof content: ''}.
+		
+	methodNode := PPPParser parseMethodTokenStream: (ReadStream on: tokens).
 	
 	tokens := { PPPToken type: #identifier content: 'someMessage' . 
 		PPPToken type: #eof content: '' }.

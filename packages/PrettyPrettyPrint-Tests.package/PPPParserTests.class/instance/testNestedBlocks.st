@@ -42,5 +42,7 @@ testNestedBlocks
 															':e' })) }) })) })) })
 		selector: 'testMethod').
 	
-	methodNode := PPPParser new parseTokenStream: tokens.
-	self assertHierarchy: referenceStatement equals: methodNode
+	methodNode := PPPParser parseMethodTokenStream: tokens.
+	
+	self
+		assertHierarchy: referenceStatement equals: methodNode

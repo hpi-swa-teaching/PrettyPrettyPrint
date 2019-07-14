@@ -3,11 +3,7 @@ testCharacters
 	
 	| tokens methodNode |
 	
-	tokens := { PPPToken type: #identifier content: 'testMethod' . 
-		PPPToken type: #character content: '$a' . 
-		PPPToken type: #identifier content: 'asString' . 
-		PPPToken type: #special content: '.' . 
-		PPPToken type: #string content: '$$' . PPPToken type: #eof content: '' }.
+	methodNode := PPPParser parseMethodTokenStream: (ReadStream on: tokens).
 	
 	methodNode := PPPParser new parseTokenStream: (ReadStream on: tokens).
 	self

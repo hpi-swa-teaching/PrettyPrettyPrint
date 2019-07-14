@@ -1,0 +1,14 @@
+{
+	"category" : "PrettyPrettyPrint-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "kiwi 7/12/2019 10:24",
+	"instvars" : [
+		"content" ],
+	"name" : "PPPPragmaNode",
+	"pools" : [
+		 ],
+	"super" : "PPPValueNode",
+	"type" : "normal" }

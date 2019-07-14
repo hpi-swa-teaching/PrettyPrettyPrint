@@ -32,7 +32,8 @@ testCascadeAfterNew
 					literalType: #number) . 
 			PPPMessageNode receiver: nil selector: 'yourself' }.
 	
-	methodNode := PPPParser new parseTokenStream: tokens.
+	methodNode := PPPParser parseMethodTokenStream: tokens.
+	
 	self
 		assertHierarchy: referenceStatement
 		equals: methodNode bodySequence statements first

@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testAssignmentNodeMatches" : "gw 6/10/2019 11:58",
+		"testCollectionOfNodesMatches" : "gw 6/10/2019 10:40",
+		"testIfInCascade" : "gw 6/10/2019 12:07",
+		"testMessageNodeMatches" : "gw 6/10/2019 12:19",
+		"testReturnNodeShallowMatch" : "gw 6/10/2019 12:21",
+		"testValueNodeMethods" : "gw 6/10/2019 12:00",
+		"testVariableNodeMatches" : "gw 6/10/2019 11:54" } }

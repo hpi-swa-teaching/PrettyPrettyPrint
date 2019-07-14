@@ -1,0 +1,14 @@
+{
+	"category" : "PrettyPrettyPrint-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "TB 7/28/2016 15:08",
+	"instvars" : [
+		"profile" ],
+	"name" : "PPPVisitor",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

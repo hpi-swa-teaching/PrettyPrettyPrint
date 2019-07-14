@@ -1,11 +1,13 @@
 {
 	"class" : {
-		 },
+		"eineTolleUndCooleKlassenmethodeFürTom:" : "MiB 7/10/2019 14:22" },
 	"instance" : {
 		"cascadeBug:" : "kiwi 5/23/2019 09:49",
 		"demoMessage:withSecondArgument:andThirdSuperDuperIncrediblyAndUnnecessarilyLonglyDescribedArgument:andFourthArgument:andFifthArgument:" : "kiwi 6/5/2019 16:03",
-		"testMessage" : "MiB 5/25/2019 15:11",
-		"testMethod" : "gw 5/9/2019 15:36",
+		"leerzeichenNachDemSelektor" : "MiB 7/10/2019 14:28",
+		"leerzeichenVorDemReturnStatement" : "MiB 7/10/2019 14:30",
+		"testMessage" : "gw 7/9/2019 15:31",
+		"testMethod" : "gw 7/8/2019 09:35",
 		"testNewlineAfterSelectorWithKeepEmptyLines" : "MiB 7/4/2019 20:42",
 		"testNewlineAfterSelectorWithNewlineBeforeReturn" : "MiB 7/4/2019 20:40",
 		"testPragmaExtracting" : "MiB 7/5/2019 23:36",

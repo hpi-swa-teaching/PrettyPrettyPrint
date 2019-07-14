@@ -1,0 +1,3 @@
+testing
+isSymbolArrayStart
+	^tokenType = #symbolArrayStart

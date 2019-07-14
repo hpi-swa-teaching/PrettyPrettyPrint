@@ -4,7 +4,7 @@ testVisitAssignmentNodeStructuralLinebreak
 	| anAssignmentNode value |
 	
 	value := self nodeWithoutStructuralLinebreak.
-	anAssignmentNode := PPPAssignmentNode variable: 'dieter' value: value.
+	anAssignmentNode := PPPAssignmentNode variable: 'variable' value: value.		
 	PPPPreprocessor new visitAssignmentNode: anAssignmentNode.
 	
 	self assert: false equals: anAssignmentNode needsStructuralLinebreak.

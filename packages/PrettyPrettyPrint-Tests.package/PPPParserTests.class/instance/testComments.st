@@ -6,7 +6,8 @@ testComments
 	tokens := PPPTokenizer on: '" hi " test " blah " 4.
 	self "i" printTest "l" "asdasd".
 	"lkjh" "blbl"'.
-	methodNode := PPPParser new parseTokenStream: tokens.
+	methodNode := PPPParser parseMethodTokenStream: tokens.
+	
 	self
 		assert: 2
 			equals: methodNode bodySequence statements first comments size;

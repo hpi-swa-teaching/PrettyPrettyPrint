@@ -1,0 +1,17 @@
+{
+	"category" : "PrettyPrettyPrint-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "kiwi 7/12/2019 10:25",
+	"instvars" : [
+		"categoryDictionary",
+		"selectedCategories",
+		"selectedClasses",
+		"selectedMethods" ],
+	"name" : "PPPBrowserModel",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }
