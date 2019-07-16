@@ -2,10 +2,8 @@ as yet unclassified
 testVisitReturnNodeLength
 	
 	| aReturnNode value |
-	
-	value := PPPAssignmentNode
-		variable: 'Dieter'
-		value: (PPPVariableNode name: 'Hans').
-	aReturnNode := PPPReturnNode value: value.
+	value := self assignmentNodeWithValue: self variableNode.
+	aReturnNode := PPPReturnNode value: value.		
 	PPPPreprocessor new visitReturnNode: aReturnNode.
-	self assert: 15 equals: aReturnNode length
+	
+	self assert: 21 equals: aReturnNode length
