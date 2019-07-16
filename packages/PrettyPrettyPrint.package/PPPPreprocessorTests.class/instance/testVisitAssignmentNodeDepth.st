@@ -3,7 +3,7 @@ testVisitAssignmentNodeDepth
 	
 	| anAssignmentNode content |
 	
-	anAssignmentNode := self assignmentNodeWithValue: self variableNode.		
+	anAssignmentNode := self assignmentNode.		
 	PPPPreprocessor new visitAssignmentNode: anAssignmentNode.
 	
 	self assert: 0 equals: anAssignmentNode depth.

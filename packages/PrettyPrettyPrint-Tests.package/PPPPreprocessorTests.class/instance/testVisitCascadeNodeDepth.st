@@ -5,18 +5,11 @@ testVisitCascadeNodeDepth
 	aCascadeNode := PPPCascadeNode new 
 		receiver: self variableNode;
 		messages: (OrderedCollection new 
-			add: (PPPMessageNode 
-				receiver: nil 
-				selector: 'first:' 
-				argument: (self unaryMessageNode 
-						hasParentheses: true;
-						needsParantheses: true));
-				
-			add: (PPPMessageNode receiver: nil selector: 'anotherMessage');
+			add: self keywordMessageWithComplexArgument;	
+			add: self unaryMessageInCascade;
 			yourself).
 			
 	PPPPreprocessor new visitCascadeNode: aCascadeNode.
-	
 	
 	self 
 		assert: 1 equals: aCascadeNode depth;

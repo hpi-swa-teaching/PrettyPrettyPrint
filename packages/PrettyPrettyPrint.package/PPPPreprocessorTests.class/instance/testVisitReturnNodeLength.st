@@ -2,7 +2,7 @@ as yet unclassified
 testVisitReturnNodeLength
 	
 	| aReturnNode value |
-	value := self assignmentNodeWithValue: self variableNode.
+	value := self assignmentNode.
 	aReturnNode := PPPReturnNode value: value.		
 	PPPPreprocessor new visitReturnNode: aReturnNode.
 	

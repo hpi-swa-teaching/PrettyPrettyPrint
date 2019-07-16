@@ -3,7 +3,7 @@ testVisitLiteralNodeDepth
 	
 	| aLiteralNode |
 	
-	aLiteralNode := PPPLiteralNode value: '1' literalType: #number.
+	aLiteralNode := self literalNode.
 	PPPPreprocessor new visitLiteralNode: aLiteralNode.
 	
 	self assert: 0 equals: aLiteralNode depth.

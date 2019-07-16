@@ -4,12 +4,8 @@ testVisitCascadeNodeLength
 	| aCascadeNode |
 	aCascadeNode := PPPCascadeNode new 
 		receiver: self variableNode;
-		messages: (OrderedCollection new 
-			add: (PPPMessageNode receiver: nil selector: 'firstMessage');
-			add: (PPPMessageNode receiver: nil selector: 'secondMessage');
-			yourself).
+		messages: self unaryMessagesInCascade.
 			
 	PPPPreprocessor new visitCascadeNode: aCascadeNode.
 	
-	
-	self assert: 36 equals: aCascadeNode length
+	self assert: 33 equals: aCascadeNode length
