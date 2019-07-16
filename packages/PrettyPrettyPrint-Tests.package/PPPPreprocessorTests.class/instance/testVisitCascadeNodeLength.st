@@ -11,4 +11,5 @@ testVisitCascadeNodeLength
 			
 	PPPPreprocessor new visitCascadeNode: aCascadeNode.
 	
+	
 	self assert: 36 equals: aCascadeNode length
