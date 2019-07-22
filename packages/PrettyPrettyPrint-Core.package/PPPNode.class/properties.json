@@ -8,7 +8,6 @@
 	"instvars" : [
 		"comments",
 		"length",
-		"depth",
 		"needsStructuralLinebreak" ],
 	"name" : "PPPNode",
 	"pools" : [

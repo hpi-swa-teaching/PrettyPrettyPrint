@@ -6,8 +6,7 @@ testBinaryMessageLength
 	firstBinaryMessageNode := PPPMessageNode
 		receiver: (PPPVariableNode name: 'variableName')
 		selector: ','
-		arguments: { 
-			PPPLiteralNode value: '''someStuff''' literalType: #string }.
+		arguments: { PPPLiteralNode value: '''someStuff''' literalType: #string }.
 	
 	secondBinaryMessageNode := PPPMessageNode
 		receiver: (PPPLiteralNode value: '''^''' literalType: #string)

@@ -9,7 +9,7 @@ testVisitArrayNodeLength
 	
 	self assert: 13 equals: anArrayNode length.
 	
-	content := OrderedCollection with: self literalNode with: (PPPMessageNode receiver: self variableNode selector: 'someMessage').
+	content := OrderedCollection with: self literalNode with: self unaryMessageNode.
 	anArrayNode contents: content.
 	anArrayNode constant: false.
 	PPPPreprocessor new visitArrayNode: anArrayNode.
