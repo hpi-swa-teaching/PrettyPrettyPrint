@@ -5,6 +5,6 @@ visitReturnNode: aReturnNode
 	
 	aReturnNode 
 		length: (self lengthForReturnNode: aReturnNode);
-		depth: (self depthForReturnNode: aReturnNode);
+		
 		needsStructuralLinebreak: (self structuralLinebreakForReturnNode: aReturnNode)
 	

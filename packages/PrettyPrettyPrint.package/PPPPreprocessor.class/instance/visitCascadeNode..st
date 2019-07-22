@@ -8,6 +8,6 @@ visitCascadeNode: aCascadeNode
 	
 	aCascadeNode 
 		length: (self lengthForCascadeNode: aCascadeNode);
-		depth: (self depthForCascadeNode: aCascadeNode);
+		
 		needsStructuralLinebreak: (self structuralLinebreakForCascadeNode: aCascadeNode)
 	
