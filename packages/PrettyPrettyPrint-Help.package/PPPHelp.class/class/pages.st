@@ -1,5 +1,4 @@
 as yet unclassified
-pages 
-	"Returns a collection of method selectors to return the pages of the custom help book"
+pages
 		
 	^#(introduction graphicUserInterface preferences usingPragmas)

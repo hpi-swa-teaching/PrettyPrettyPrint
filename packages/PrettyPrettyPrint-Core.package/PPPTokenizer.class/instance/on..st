@@ -1,7 +1,7 @@
 initialize-release
 on: aString
-	stream := ReadStream on: aString.
-	buffer := WriteStream on: ''.
-	indexCount := 0.
+	self stream: (ReadStream on: aString).
+	self buffer: (WriteStream on: '').
+	self indexCount: 0.
 	
 	self step

@@ -1,9 +1,9 @@
 scanning
 scanBinaryOperator 
-	[buffer nextPut: currentCharacter] doWhileTrue: [ (self classifyCharacter: self step) = #binaryOperator ].
+	[self buffer nextPut: self currentCharacter] doWhileTrue: [ (self classifyCharacter: self step) = #binaryOperator ].
 	
 	^PPPToken new
-		position: indexCount;
-		content: buffer contents;
+		position: self indexCount;
+		content: self buffer contents;
 		tokenType: #binaryOperator;
 		yourself

@@ -1,3 +1,3 @@
 testing
 isUnaryMessage
-	^arguments isEmpty
+	^self arguments isEmpty

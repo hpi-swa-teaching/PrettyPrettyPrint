@@ -3,16 +3,16 @@ scanIdentifier
 	| token |
 	
 	token := PPPToken new
-		position: indexCount;
+		position: self indexCount;
 		tokenType: #identifier;
 		yourself.
 	
-	[characterType = #letter or:
-	[characterType = #digit or:
-	[currentCharacter = $: and: [stream peek ~= $=]]]] whileTrue: [
-		buffer nextPut: currentCharacter.
+	[self characterType = #letter or:
+	[self characterType = #digit or:
+	[self currentCharacter = $: and: [self stream peek ~= $=]]]] whileTrue: [
+		self buffer nextPut: self currentCharacter.
 		self step ].
 	
 	^token
-		content: buffer contents;
+		content: self buffer contents;
 		yourself

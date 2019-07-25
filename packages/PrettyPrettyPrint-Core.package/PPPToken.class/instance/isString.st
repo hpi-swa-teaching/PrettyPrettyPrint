@@ -1,3 +1,3 @@
 testing
 isString
-	^tokenType = #string
+	^self tokenType = #string

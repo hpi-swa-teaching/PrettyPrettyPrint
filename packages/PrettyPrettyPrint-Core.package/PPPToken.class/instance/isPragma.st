@@ -1,3 +1,3 @@
 testing
 isPragma
-	^tokenType = #pragma
+	^self tokenType = #pragma

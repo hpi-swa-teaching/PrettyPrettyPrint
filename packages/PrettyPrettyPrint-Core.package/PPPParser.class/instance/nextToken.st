@@ -2,6 +2,6 @@ stepping
 nextToken
 	nextToken ifNil: [
 		nextToken := stream next.
-		currentComments addAll: nextToken comments ].
+		self currentComments addAll: nextToken comments ].
 	
 	^nextToken

@@ -15,6 +15,6 @@ parseSequence
 		self skipDots ].
 	
 	node trailingComments: currentComments.
-	currentComments := OrderedCollection new.
+	self currentComments: OrderedCollection new.
 	
 	^ node

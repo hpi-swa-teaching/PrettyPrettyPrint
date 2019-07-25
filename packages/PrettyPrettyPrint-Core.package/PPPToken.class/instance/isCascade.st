@@ -1,3 +1,3 @@
 testing
 isCascade
-	^self isSpecial and: [ content = ';' ]
+	^self isSpecial and: [ self content = ';' ]

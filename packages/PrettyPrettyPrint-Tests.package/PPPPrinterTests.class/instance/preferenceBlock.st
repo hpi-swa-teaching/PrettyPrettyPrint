@@ -7,4 +7,4 @@ preferenceBlock
 		spaceBeforeReturn: false;
 		newlineAfterTemporaryDeclaration: false;
 		minimalParanthesis: false;
-		maxLineLength: 80]
+		maxLineLength: self defaultMaxLineLength]

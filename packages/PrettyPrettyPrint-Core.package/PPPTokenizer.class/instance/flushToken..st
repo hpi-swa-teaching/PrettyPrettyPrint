@@ -1,10 +1,10 @@
 scanning
 flushToken: aToken
 	aToken
-		comments: currentComments;
-		whitespaces: currentWhitespaces.
+		comments: self currentComments;
+		whitespaces: self currentWhitespaces.
 	
-	currentComments := OrderedCollection new.
-	currentWhitespaces := OrderedCollection new.
+	self currentComments: OrderedCollection new.
+	self currentWhitespaces: OrderedCollection new.
 	
 	^aToken

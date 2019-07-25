@@ -1,3 +1,3 @@
 testing
 precedingComments
-	^comments
+	^self comments

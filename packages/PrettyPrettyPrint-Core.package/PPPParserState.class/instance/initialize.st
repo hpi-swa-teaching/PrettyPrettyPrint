@@ -2,5 +2,6 @@ initialize-release
 initialize
 	super initialize.
 	
-	insideCascade := false.
-	insideNamedMessage := false
+	self 
+		insideCascade: false;
+		insideNamedMessage: false

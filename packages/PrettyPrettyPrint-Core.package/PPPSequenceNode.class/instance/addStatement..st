@@ -1,3 +1,3 @@
 accessing
 addStatement: aValueNode 
-	statements add: aValueNode
+	self statements add: aValueNode

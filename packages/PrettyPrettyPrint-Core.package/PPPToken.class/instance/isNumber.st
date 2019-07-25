@@ -1,3 +1,3 @@
 testing
 isNumber
-	^tokenType = #number
+	^self tokenType = #number

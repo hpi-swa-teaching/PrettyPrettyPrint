@@ -3,7 +3,7 @@ scanAssignment
 	| token |
 	
 	token := PPPToken new
-		position: indexCount;
+		position: self indexCount;
 		tokenType: #assignment;
 		content: ':=';
 		yourself.

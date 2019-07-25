@@ -3,7 +3,7 @@ scanSymbolArray
 	2 timesRepeat: [ self step ].
 	
 	^PPPToken new
-		position: indexCount;
+		position: self indexCount;
 		tokenType: #symbolArrayStart;
 		content: '#(';
 		yourself

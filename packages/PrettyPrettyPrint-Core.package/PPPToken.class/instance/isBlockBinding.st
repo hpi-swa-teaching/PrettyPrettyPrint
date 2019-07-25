@@ -1,3 +1,3 @@
 testing
 isBlockBinding
-	^self isIdentifier and: [ content first = $: ]
+	^self isIdentifier and: [self content first = $: ]

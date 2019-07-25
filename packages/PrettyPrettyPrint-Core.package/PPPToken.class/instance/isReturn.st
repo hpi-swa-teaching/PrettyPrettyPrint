@@ -1,3 +1,3 @@
 testing
 isReturn
-	^tokenType = #special and: [ content = '^' ]
+	^self tokenType = #special and: [ self content = '^' ]

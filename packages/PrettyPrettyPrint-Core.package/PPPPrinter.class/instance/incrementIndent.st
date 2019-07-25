@@ -1,3 +1,3 @@
 helpers-indent
 incrementIndent
-	currentIndent := currentIndent + 1
+	self currentIndent: self currentIndent + 1

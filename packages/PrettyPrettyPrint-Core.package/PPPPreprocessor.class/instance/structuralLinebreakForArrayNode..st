@@ -2,10 +2,8 @@ calculate structuralLinebreak
 structuralLinebreakForArrayNode: anArrayNode
 
 	anArrayNode isConstant 
-		ifFalse: [ anArrayNode contents 
-			do: [:childNode | 
-				childNode needsStructuralLinebreak
-					ifTrue:[^ true]]].
-	^ false
+		ifTrue: [ ^ false]
+		ifFalse: [ ^ anArrayNode contents 
+			contains: [:childNode | childNode needsStructuralLinebreak]]
 	
 	

@@ -1,13 +1,13 @@
 scanning
 scanComment
-	[ self step ~= $" ] whileTrue: [ buffer nextPut: currentCharacter ].
+	[ self step ~= $" ] whileTrue: [ self buffer nextPut: self currentCharacter ].
 	
 	self step.
 	
 	currentComments add: (PPPToken new
-		position: indexCount;
+		position: self indexCount;
 		tokenType: #comment;
-		content: '"', buffer contents, '"';
+		content: '"', self buffer contents, '"';
 		yourself).
 		
 	^self nextToken
