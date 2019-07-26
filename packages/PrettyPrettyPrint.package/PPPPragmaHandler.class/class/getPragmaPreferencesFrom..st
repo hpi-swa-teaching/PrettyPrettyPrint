@@ -1,4 +1,4 @@
 constructor
 getPragmaPreferencesFrom: aPPPMethodNode
-
-	^ self new getPragmaPreferencesFrom: aPPPMethodNode
+	
+	^self new getPragmaPreferencesFrom: aPPPMethodNode

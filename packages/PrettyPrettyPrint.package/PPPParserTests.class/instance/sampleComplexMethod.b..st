@@ -12,4 +12,3 @@ sampleComplexMethod: arg5 b: arg6
 	d := self assert: 2 equals: 'test'.
 	
 	d assert: (a on: 5) equals: 'test2'.
-	true ifTrue: [ Transcript show: 'hi' ] ifFalse: [ Transcript show: 'bye' ]

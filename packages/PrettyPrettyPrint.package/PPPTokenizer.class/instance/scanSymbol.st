@@ -3,7 +3,7 @@ scanSymbol
 	| token |
 	
 	token := PPPToken new
-		position: indexCount;
+		position: self indexCount;
 		tokenType: #symbol;
 		yourself.
 	

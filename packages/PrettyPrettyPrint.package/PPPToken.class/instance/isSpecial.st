@@ -1,3 +1,3 @@
 testing
 isSpecial
-	^tokenType = #special
+	^self tokenType = #special

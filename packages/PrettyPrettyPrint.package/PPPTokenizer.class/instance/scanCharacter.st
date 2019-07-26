@@ -2,11 +2,11 @@ scanning
 scanCharacter
 	| character |
 	
-	character := String with: currentCharacter with: self step.
+	character := String with: self currentCharacter with: self step.
 	self step.
 	
 	^PPPToken new
-		position: indexCount;
+		position: self indexCount;
 		tokenType: #character;
 		content: character;
 		yourself

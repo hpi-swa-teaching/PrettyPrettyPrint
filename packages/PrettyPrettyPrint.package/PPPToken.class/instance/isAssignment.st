@@ -1,3 +1,3 @@
 testing
 isAssignment
-	^tokenType = #assignment
+	^self tokenType = #assignment

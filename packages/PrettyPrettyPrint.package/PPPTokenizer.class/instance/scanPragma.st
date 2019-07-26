@@ -3,7 +3,7 @@ scanPragma
 	| token currentToken content |
 	
 	token := self flushToken: (PPPToken new
-		position: indexCount;
+		position: self indexCount;
 		tokenType: #pragma;
 		yourself).
 	

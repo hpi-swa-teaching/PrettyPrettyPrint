@@ -1,8 +1,8 @@
 accessing
 next
-	nextObject ifNotNil: [ | token |
-		token := nextObject.
-		nextObject := nil.
+	self nextObject ifNotNil: [ | token |
+		token := self nextObject.
+		self nextObject: nil.
 		^token ].
 	
 	^self flushToken: self nextToken

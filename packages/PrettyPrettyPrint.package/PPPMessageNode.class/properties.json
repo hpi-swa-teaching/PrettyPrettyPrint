@@ -8,9 +8,7 @@
 	"instvars" : [
 		"receiver",
 		"selector",
-		"arguments",
-		"receiverDepth",
-		"argumentDepth" ],
+		"arguments" ],
 	"name" : "PPPMessageNode",
 	"pools" : [
 		 ],

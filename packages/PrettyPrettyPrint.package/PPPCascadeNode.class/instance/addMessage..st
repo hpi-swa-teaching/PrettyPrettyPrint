@@ -1,3 +1,3 @@
 accessing
 addMessage: aString
-	messages add: aString
+	self messages add: aString

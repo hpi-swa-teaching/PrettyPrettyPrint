@@ -1,3 +1,3 @@
 testing
 isInCascade
-	^receiver isNil
+	^ self receiver isNil

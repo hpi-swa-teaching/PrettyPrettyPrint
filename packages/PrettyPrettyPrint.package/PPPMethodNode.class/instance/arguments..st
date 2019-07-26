@@ -1,3 +1,3 @@
-accsessing
+accessing
 arguments: anArray 
 	arguments := anArray

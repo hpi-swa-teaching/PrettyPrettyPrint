@@ -3,19 +3,19 @@ scanString
 	| token |
 	
 	token := PPPToken new
-		position: indexCount;
+		position: self indexCount;
 		tokenType: #string;
 		yourself.
 	
 	self step.
 	
-	[ currentCharacter ~= $' or: [ currentCharacter = $' and: [stream peek = $'] ]] whileTrue: [
-		buffer nextPut: currentCharacter.
-		currentCharacter = $' ifTrue: [ buffer nextPut: $'. self step ].
+	[ self currentCharacter ~= $' or: [ self currentCharacter = $' and: [self stream peek = $'] ]] whileTrue: [
+		self buffer nextPut: self currentCharacter.
+		self currentCharacter = $' ifTrue: [ self buffer nextPut: $'. self step ].
 		self step ].
 	
 	self step.
 	
 	^token
-		content: '''', buffer contents, '''';
+		content: '''', self buffer contents, '''';
 		yourself

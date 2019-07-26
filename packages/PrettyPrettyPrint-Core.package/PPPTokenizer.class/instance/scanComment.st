@@ -4,7 +4,7 @@ scanComment
 	
 	self step.
 	
-	currentComments add: (PPPToken new
+	self currentComments add: (PPPToken new
 		position: self indexCount;
 		tokenType: #comment;
 		content: '"', self buffer contents, '"';

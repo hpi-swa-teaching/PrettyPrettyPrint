@@ -2,5 +2,5 @@ initialize-release
 initialize
 	super initialize.
 	
-	currentComments := OrderedCollection new.
-	currentWhitespaces := OrderedCollection new
+	self currentComments: OrderedCollection new.
+	self currentWhitespaces: OrderedCollection new.

@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 getAllPragmas
 	^ OrderedCollection new
 		add: self;

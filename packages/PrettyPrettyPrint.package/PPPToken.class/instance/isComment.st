@@ -1,3 +1,3 @@
 testing
 isComment
-	^tokenType = #comment
+	^self tokenType = #comment

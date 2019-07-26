@@ -3,8 +3,8 @@ scanSpecial
 	| token |
 	
 	token := PPPToken new
-		position: indexCount;
-		content: currentCharacter asString;
+		position: self indexCount;
+		content: self currentCharacter asString;
 		tokenType: #special;
 		yourself.
 	

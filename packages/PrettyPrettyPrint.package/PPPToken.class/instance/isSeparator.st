@@ -1,3 +1,3 @@
 testing
 isSeparator
-	^tokenType = #separator
+	^self tokenType = #separator

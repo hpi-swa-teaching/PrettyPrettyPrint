@@ -2,5 +2,5 @@ initialize-release
 initialize
 	super initialize.
 	
-	comments := OrderedCollection new.
-	whitespaces := OrderedCollection new
+	self comments: OrderedCollection new;
+		whitespaces: OrderedCollection new

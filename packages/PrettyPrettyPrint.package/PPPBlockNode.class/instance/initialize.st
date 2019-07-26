@@ -1,4 +1,4 @@
 initialize-release
 initialize
 	super initialize.
-	bindings := OrderedCollection new
+	self bindings: OrderedCollection new

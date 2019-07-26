@@ -7,9 +7,6 @@ newLineNeededBefore: aStatement of: aNode
 		and: [self profile newlineAfterSelector 
 			and: [self profile keepEmptyLines]]) ifTrue: [^ false].
 		
-	(aStatement == aNode statements last 
+	^(aStatement == aNode statements last 
 		and: [self profile newlineBeforeReturn 
-			and: [self profile keepEmptyLines]]) ifTrue: [^ false].
-		
-	^ true
-	
+			and: [self profile keepEmptyLines]]) not

@@ -1,5 +1,5 @@
 parse-declaration
 parsePragmaTokenStream: aStream
-	stream:= aStream.
+	self stream: aStream.
 	
 	^self parsePragma

@@ -1,6 +1,6 @@
 initialize-release
 parseMethodTokenStream: aStream
 	
-	stream := aStream.
+	self stream: aStream.
 	
 	^self parseMethod

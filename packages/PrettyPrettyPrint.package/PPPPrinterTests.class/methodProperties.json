@@ -2,7 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"preferenceBlock" : "kiwi 7/12/2019 10:05",
+		"defaultMaxLineLength" : "kiwi 7/25/2019 12:27",
+		"preferenceBlock" : "kiwi 7/25/2019 12:27",
 		"testCustomProfileImportExport" : "lcj 7/29/2016 13:24",
 		"testKeepEmptyLines" : "kiwi 7/12/2019 10:01",
 		"testMultilineArray" : "MiB 7/4/2019 19:14",

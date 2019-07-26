@@ -1,3 +1,3 @@
 accessing
 addBinding: aString
-	bindings add: aString
+	self bindings add: aString

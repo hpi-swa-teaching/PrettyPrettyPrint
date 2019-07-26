@@ -1,12 +1,12 @@
 private
 step
 
-	stream atEnd ifTrue: [
-		characterType := #eof.
-		^currentCharacter := nil ].
+	self stream atEnd ifTrue: [
+		self characterType: #eof.
+		^ self currentCharacter: nil ].
 	
-	currentCharacter := stream next.
-	characterType := self classifyCharacter: currentCharacter.
-	indexCount := indexCount + 1.
+	self currentCharacter: self stream next.
+	self characterType: (self classifyCharacter: self currentCharacter).
+	self indexCount: self indexCount + 1.
 	
-	^currentCharacter
+	^self currentCharacter

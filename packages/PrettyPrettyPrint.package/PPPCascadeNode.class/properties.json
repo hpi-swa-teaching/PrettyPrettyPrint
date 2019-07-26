@@ -7,9 +7,7 @@
 	"commentStamp" : "TB 7/28/2016 17:07",
 	"instvars" : [
 		"messages",
-		"receiver",
-		"messageDepth",
-		"receiverDepth" ],
+		"receiver" ],
 	"name" : "PPPCascadeNode",
 	"pools" : [
 		 ],

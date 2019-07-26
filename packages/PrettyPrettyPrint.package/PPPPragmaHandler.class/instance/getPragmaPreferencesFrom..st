@@ -1,7 +1,9 @@
 as yet unclassified
 getPragmaPreferencesFrom: aPPPMethodNode
-
-	| parsedPragmas relevantParsedPragmas|
+	
+	| parsedPragmas relevantParsedPragmas |
+	
 	parsedPragmas := self parseAllPragmasFrom: aPPPMethodNode.
-	relevantParsedPragmas := self extractRelevantPragmasFrom: parsedPragmas.	
-	^ self pragmasToDict: relevantParsedPragmas
+	relevantParsedPragmas := self extractRelevantPragmasFrom: parsedPragmas.
+	
+	^self pragmasToDict: relevantParsedPragmas

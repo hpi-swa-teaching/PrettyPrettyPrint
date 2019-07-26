@@ -1,3 +1,3 @@
-accsessing
+accessing
 selector: aString 
 	selector := aString

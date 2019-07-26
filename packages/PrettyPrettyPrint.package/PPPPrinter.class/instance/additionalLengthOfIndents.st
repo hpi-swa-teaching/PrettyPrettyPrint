@@ -1,4 +1,4 @@
 accessing
 additionalLengthOfIndents
 
-	^ self currentIndent * 5
+	^ self currentIndent * self spacesPerTab

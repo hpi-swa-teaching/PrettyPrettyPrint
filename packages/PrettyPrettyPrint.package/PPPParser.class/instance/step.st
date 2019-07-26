@@ -1,9 +1,9 @@
 stepping
 step
-	currentToken := self nextToken.
-	nextToken := self nextNextToken.
-	nextNextToken := nil.
+	self currentToken: self nextToken.
+	self nextToken: self nextNextToken.
+	self nextNextToken: nil.
 	
-	nextToken ifNotNil: [ currentComments addAll: nextToken comments ].
+	self nextToken ifNotNil: [ self currentComments addAll: self nextToken comments ].
 	
-	^currentToken
+	^ self currentToken

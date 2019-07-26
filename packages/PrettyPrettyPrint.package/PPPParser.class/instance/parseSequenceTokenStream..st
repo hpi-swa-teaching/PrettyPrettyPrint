@@ -1,6 +1,6 @@
 initialize-release
 parseSequenceTokenStream: aStream
 	
-	stream := aStream.
+	self stream: aStream.
 	
 	^self parseSequence

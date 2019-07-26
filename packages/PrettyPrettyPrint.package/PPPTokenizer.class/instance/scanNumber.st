@@ -3,20 +3,20 @@ scanNumber
 	| token positionBeforeParsing positionAfterParsing |
 	
 	token := PPPToken new
-		position: indexCount;
+		position: self indexCount;
 		tokenType: #number;
 		yourself.
 	
-	positionBeforeParsing := stream position.
-	stream position: positionBeforeParsing - 1.
-	SqNumberParser parse: stream.
-	positionAfterParsing := stream position.
+	positionBeforeParsing := self stream position.
+	self stream position: positionBeforeParsing - 1.
+	SqNumberParser parse: self stream.
+	positionAfterParsing := self stream position.
 	
-	stream position: positionBeforeParsing - 1.
-	buffer nextPutAll: (stream next: positionAfterParsing - positionBeforeParsing + 1).
+	self stream position: positionBeforeParsing - 1.
+	self buffer nextPutAll: (self stream next: positionAfterParsing - positionBeforeParsing + 1).
 	
 	self step.
 	
 	^token
-		content: buffer contents;
+		content: self buffer contents;
 		yourself

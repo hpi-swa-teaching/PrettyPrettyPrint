@@ -1,3 +1,3 @@
-accsessing
+accessing
 bodySequence
 	^bodySequence

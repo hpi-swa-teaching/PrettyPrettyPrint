@@ -5,7 +5,7 @@ step
 		self characterType: #eof.
 		^ self currentCharacter: nil ].
 	
-	self currentCharacter: stream next.
+	self currentCharacter: self stream next.
 	self characterType: (self classifyCharacter: self currentCharacter).
 	self indexCount: self indexCount + 1.
 	
