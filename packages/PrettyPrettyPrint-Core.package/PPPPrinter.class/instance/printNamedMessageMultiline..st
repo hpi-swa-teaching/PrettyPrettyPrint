@@ -7,9 +7,6 @@ printNamedMessageMultiline: aPPPMessageNode
 	self
 		each: (aPPPMessageNode selector subStrings: ':')
 		and: aPPPMessageNode arguments
-		do: [ :messagePart :argument | self currentLine
-			nextPutAll: messagePart;
-			nextPutAll: ': '.
-			self visitValueNode: argument ]
+		do: [ :selectorPart :argument |self printSelectorPartMultiline: selectorPart argument: argument ]
 		separatedBy: [ self newLineIndent ].
 	self decrementIndent

@@ -6,11 +6,7 @@ printArrayNodeMultiline: aPPPArrayNode
 	
 	aPPPArrayNode contents
 		do: [ :content | self visitValueNode: content ]
-		separatedBy: [ self currentLine space.
-			aPPPArrayNode constant ifFalse: [ self currentLine
-			nextPut: $.;
-			space ].
-			self newLineIndent ].
+		separatedBy: [ self printArrayMultilineSeparationOf: aPPPArrayNode ].
 	
 	self currentLine nextPutAll: (aPPPArrayNode constant ifTrue: [ ' )' ] ifFalse: [ ' }' ]).
 	self decrementIndent

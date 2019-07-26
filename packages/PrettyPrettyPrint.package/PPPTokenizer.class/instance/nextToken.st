@@ -1,6 +1,6 @@
 accessing
 nextToken
-	buffer reset.
+	self buffer reset.
 	
 	(self currentCharacter = $: and: [self stream peek = $=]) ifTrue: [ ^self scanAssignment ].
 	self currentCharacter = $' ifTrue: [ ^self scanString ].

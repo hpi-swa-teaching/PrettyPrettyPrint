@@ -9,8 +9,7 @@ visitBlockNode: aPPPBlockNode
 	
 	multiline := (self nodeFitsInLine: aPPPBlockNode) not.
 	multiline
-		ifTrue: [ self
-			incrementIndent;
+		ifTrue: [ self incrementIndent;
 			newLineIndent ]
 		ifFalse: [ self profile encloseBlockSequenceWithSpace ifTrue: [ self currentLine space ] ].
 	
