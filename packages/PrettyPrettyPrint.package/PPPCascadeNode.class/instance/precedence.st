@@ -1,4 +1,4 @@
 precedence
 precedence
-
+	
 	^ 4

@@ -1,5 +1,6 @@
 scanning
 flushToken: aToken
+	
 	aToken
 		comments: self currentComments;
 		whitespaces: self currentWhitespaces.
@@ -7,4 +8,4 @@ flushToken: aToken
 	self currentComments: OrderedCollection new.
 	self currentWhitespaces: OrderedCollection new.
 	
-	^aToken
+	^ aToken

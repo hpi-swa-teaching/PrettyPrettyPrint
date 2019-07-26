@@ -3,19 +3,16 @@ testSymbols
 	
 	| tokens methodNode |
 	
-	tokens := {
-		PPPToken type: #identifier content: 'someMessage'.
-		PPPToken type: #symbol content: '#tmp'.
-		PPPToken type: #special content: '.'.
-		PPPToken type: #symbolArrayStart content: '#('.
-		PPPToken type: #identifier content: 'test'.
-		PPPToken type: #number content: '123'.
-		PPPToken type: #string content: 'aString'.
-		PPPToken type: #special content: ')'.
-		PPPToken type: #eof content: ''}.
+	tokens := { PPPToken type: #identifier content: 'someMessage' . 
+		PPPToken type: #symbol content: '#tmp' . 
+		PPPToken type: #special content: '.' . 
+		PPPToken type: #symbolArrayStart content: '#(' . 
+		PPPToken type: #identifier content: 'test' . 
+		PPPToken type: #number content: '123' . 
+		PPPToken type: #string content: 'aString' . 
+		PPPToken type: #special content: ')' . PPPToken type: #eof content: '' }.
 	
 	methodNode := PPPParser parseMethodTokenStream: (ReadStream on: tokens).
-	
 	self
 		assert: 2 equals: methodNode bodySequence statements size;
 		assert: #symbol

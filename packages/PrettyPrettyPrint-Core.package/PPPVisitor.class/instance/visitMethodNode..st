@@ -1,3 +1,4 @@
 visit-node
 visitMethodNode: aNode
-	^self subclassResponsibility 
+	
+	^ self subclassResponsibility

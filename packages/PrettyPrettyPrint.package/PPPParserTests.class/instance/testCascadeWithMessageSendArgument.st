@@ -25,7 +25,6 @@ testCascadeWithMessageSendArgument
 			PPPMessageNode receiver: nil selector: 'yourself' }.
 	
 	methodNode := PPPParser parseMethodTokenStream: tokens.
-	
 	self
 		assertHierarchy: referenceStatement
 		equals: methodNode bodySequence statements first

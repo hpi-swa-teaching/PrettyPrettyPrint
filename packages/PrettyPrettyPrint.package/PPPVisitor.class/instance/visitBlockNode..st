@@ -1,3 +1,4 @@
 visit-node
 visitBlockNode: aNode
-	^self subclassResponsibility 
+	
+	^ self subclassResponsibility

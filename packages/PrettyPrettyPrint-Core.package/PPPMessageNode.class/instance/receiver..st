@@ -1,3 +1,4 @@
 accessing
-receiver: aNode 
+receiver: aNode
+	
 	receiver := aNode

@@ -1,5 +1,6 @@
 accessing
 needsStructuralLinebreak
-
-	needsStructuralLinebreak ifNil: [needsStructuralLinebreak := false].
+	
+	needsStructuralLinebreak ifNil: [ needsStructuralLinebreak := false ].
+	
 	^ needsStructuralLinebreak

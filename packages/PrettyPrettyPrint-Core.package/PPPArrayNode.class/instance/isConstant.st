@@ -1,3 +1,4 @@
 accessing
 isConstant
-	^self constant
+	
+	^ self constant

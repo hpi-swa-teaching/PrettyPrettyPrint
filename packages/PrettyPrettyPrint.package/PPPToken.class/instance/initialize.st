@@ -1,6 +1,7 @@
-initialize-release
 initialize
-	super initialize.
+initialize
 	
-	self comments: OrderedCollection new;
+	super initialize.
+	self
+		comments: OrderedCollection new;
 		whitespaces: OrderedCollection new

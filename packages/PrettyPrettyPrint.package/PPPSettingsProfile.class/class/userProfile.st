@@ -1,5 +1,6 @@
 instance creation
 userProfile
+	
 	^ PPPSettingsProfile new
 		dotAfterReturn: self dotAfterReturn;
 		minimalParanthesis: self minimalParanthesis;

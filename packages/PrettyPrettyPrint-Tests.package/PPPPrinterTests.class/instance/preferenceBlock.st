@@ -1,10 +1,12 @@
 accessing
 preferenceBlock
-	^ [:profile | profile
-		newlineAfterSelector: false; 
-		dotAfterReturn: false;
-		newlineBeforeReturn: false;
-		spaceBeforeReturn: false;
-		newlineAfterTemporaryDeclaration: false;
-		minimalParanthesis: false;
-		maxLineLength: self defaultMaxLineLength]
+	
+	^ [ :profile |
+		profile
+			newlineAfterSelector: false;
+			dotAfterReturn: false;
+			newlineBeforeReturn: false;
+			spaceBeforeReturn: false;
+			newlineAfterTemporaryDeclaration: false;
+			minimalParanthesis: false;
+			maxLineLength: self defaultMaxLineLength ]

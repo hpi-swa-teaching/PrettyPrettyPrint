@@ -1,5 +1,5 @@
 accessing
 selectedClasses: anArray
-
+	
 	selectedClasses := anArray.
-	self changed: #methods.
+	self changed: #methods

@@ -1,4 +1,4 @@
-constructor
+instance creation
 getPragmaPreferencesFrom: aPPPMethodNode
 	
-	^self new getPragmaPreferencesFrom: aPPPMethodNode
+	^ self new getPragmaPreferencesFrom: aPPPMethodNode

@@ -1,3 +1,4 @@
 visit-node
 visitReturnNode: aNode
-	^self subclassResponsibility
+	
+	^ self subclassResponsibility

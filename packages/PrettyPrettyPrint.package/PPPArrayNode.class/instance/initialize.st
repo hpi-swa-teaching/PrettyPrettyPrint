@@ -1,5 +1,6 @@
-initialize-release
 initialize
+initialize
+	
 	super initialize.
 	
 	self contents: OrderedCollection new.

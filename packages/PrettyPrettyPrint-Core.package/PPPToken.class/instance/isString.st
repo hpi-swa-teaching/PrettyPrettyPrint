@@ -1,3 +1,4 @@
 testing
 isString
-	^self tokenType = #string
+	
+	^ self tokenType = #string

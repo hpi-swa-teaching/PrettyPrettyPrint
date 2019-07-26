@@ -1,4 +1,4 @@
-as yet unclassified
+build-dict
 extractRelevantPragmasFrom: anOrderedCollection
 	
 	| relevantPragmas |
@@ -7,4 +7,4 @@ extractRelevantPragmasFrom: anOrderedCollection
 		select: [ :pragma |
 			pragma selector = 'PrettyPrint:option:' ].
 	
-	^relevantPragmas
+	^ relevantPragmas

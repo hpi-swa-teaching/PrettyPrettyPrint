@@ -1,3 +1,4 @@
 visit-node
 visitMessageNode: aNode
-	^self subclassResponsibility
+	
+	^ self subclassResponsibility

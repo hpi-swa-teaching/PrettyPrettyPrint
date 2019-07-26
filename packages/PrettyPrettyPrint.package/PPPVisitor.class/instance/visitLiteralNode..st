@@ -1,3 +1,4 @@
 visit-node
 visitLiteralNode: aNode
-	^self subclassResponsibility 
+	
+	^ self subclassResponsibility

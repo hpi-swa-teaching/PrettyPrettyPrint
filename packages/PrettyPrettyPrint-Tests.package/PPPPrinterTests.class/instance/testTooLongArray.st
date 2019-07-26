@@ -15,11 +15,11 @@ testTooLongArray
 			length: 27;
 			yourself)
 		with: ((PPPMessageNode
-				receiver: ((PPPVariableNode
-					name: 'aVeryVeryVeryVeryVeryVeryVeryLongName')
-					length: 37;
-					yourself)
-				selector: 'aLongSelector')
+			receiver: ((PPPVariableNode
+				name: 'aVeryVeryVeryVeryVeryVeryVeryLongName')
+				length: 37;
+				yourself)
+			selector: 'aLongSelector')
 			length: 51).
 	anArrayNode := PPPArrayNode contents: content constant: false.
 	anArrayNode

@@ -1,4 +1,5 @@
 as yet unclassified
 expectedFailures
-
-	^#(testNotTooMuchIndentForNestedNamedMessages testNotTooMuchIndentForNestedNamedMessages2)
+	
+	^ #( testNotTooMuchIndentForNestedNamedMessages 
+		testNotTooMuchIndentForNestedNamedMessages2 )

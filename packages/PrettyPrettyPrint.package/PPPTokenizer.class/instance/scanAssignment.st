@@ -1,5 +1,6 @@
 scanning
-scanAssignment 
+scanAssignment
+	
 	| token |
 	
 	token := PPPToken new
@@ -7,7 +8,7 @@ scanAssignment
 		tokenType: #assignment;
 		content: ':=';
 		yourself.
-		
+	
 	2 timesRepeat: [ self step ].
 	
-	^token
+	^ token

@@ -1,6 +1,8 @@
 helpers
-each: anArray and: anotherArray do: aBlock separatedBy: anotherBlock 
+each: anArray and: anotherArray do: aBlock separatedBy: anotherBlock
+	
 	| index |
+	
 	index := 1.
 	anArray
 		do: [ :firstElement |

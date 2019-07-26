@@ -1,3 +1,4 @@
 comparing
-matches: aNode 
-	^self subclassResponsibility
+matches: aNode
+	
+	^ self subclassResponsibility

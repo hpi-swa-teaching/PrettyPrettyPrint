@@ -1,7 +1,7 @@
 as yet unclassified
 invalidParsedPragmas
 	
-	^OrderedCollection new
+	^ OrderedCollection new
 		add: (PPPMethodNode new
 				arguments: OrderedCollection new;
 				bodySequence: OrderedCollection new;

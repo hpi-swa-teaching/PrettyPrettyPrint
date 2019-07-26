@@ -1,3 +1,4 @@
 testing
 isOpeningRoundBrace
-	^self isSpecial and: [ self content = '(' ]
+	
+	^ self isSpecial and: [ self content = '(' ]

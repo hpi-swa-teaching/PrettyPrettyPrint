@@ -1,10 +1,12 @@
 parse-node
 parseSequence
+	
 	| node |
 	
-	node := self sequenceNodeWithTemporariesAndPragmas.
+	node := self parseSequenceNodeWithTemporariesAndPragmas.
 	
-	[ self nextToken endsSequence ] whileFalse: [self parseSequencePartFor: node].
+	[ self nextToken endsSequence ]
+		whileFalse: [ self parseSequencePartFor: node ].
 	
 	node trailingComments: self currentComments.
 	self currentComments: OrderedCollection new.

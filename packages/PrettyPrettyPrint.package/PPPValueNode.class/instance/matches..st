@@ -1,3 +1,4 @@
 comparing
 matches: aNode
-	^self shouldNotImplement
+	
+	^ self shouldNotImplement

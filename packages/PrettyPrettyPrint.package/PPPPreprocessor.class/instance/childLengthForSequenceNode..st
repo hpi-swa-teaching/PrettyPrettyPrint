@@ -5,8 +5,11 @@ childLengthForSequenceNode: aSequenceNode
 	
 	childLength := 0.
 	
-	aSequenceNode statements 
-		do: [:statement | childLength := childLength + statement length + (self additionalLengthForPeriod)]
-		separatedBy: [childLength := childLength + self additionalLengthForSpace].
-
+	aSequenceNode statements
+		do: [ :statement |
+			childLength := childLength + statement length
+				+ (self additionalLengthForPeriod) ]
+		separatedBy: [
+			childLength := childLength + self additionalLengthForSpace ].
+	
 	^ childLength

@@ -1,9 +1,4 @@
 visit-node
 accept: aVisitor
 	
-	
-	
-	
-	
-	
-	^ aVisitor visitPragmaNode: self.
+	^ aVisitor visitPragmaNode: self

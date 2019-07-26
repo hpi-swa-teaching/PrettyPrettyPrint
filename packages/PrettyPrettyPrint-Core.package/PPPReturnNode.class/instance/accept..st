@@ -1,3 +1,4 @@
 visit-node
 accept: aPrinter
-	^aPrinter visitReturnNode: self
+	
+	^ aPrinter visitReturnNode: self

@@ -1,6 +1,7 @@
 instance creation
 receiver: aNode selector: aString arguments: anArray
-	^self new
+	
+	^ self new
 		receiver: aNode;
 		selector: aString;
 		arguments: anArray;

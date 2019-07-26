@@ -1,7 +1,7 @@
-initialize-release
 initialize
-	super initialize.
+initialize
 	
-	self 
+	super initialize.
+	self
 		insideCascade: false;
 		insideNamedMessage: false

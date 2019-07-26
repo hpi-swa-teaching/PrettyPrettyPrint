@@ -1,5 +1,6 @@
 parse-node
 parseReturnStatement
+	
 	self step.
 	
-	^PPPReturnNode value: (self parseStatement: PPPParserState new)
+	^ PPPReturnNode value: (self parseStatement: PPPParserState new)

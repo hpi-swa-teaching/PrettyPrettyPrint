@@ -1,5 +1,6 @@
 scanning
 scanSpecial
+	
 	| token |
 	
 	token := PPPToken new
@@ -10,4 +11,4 @@ scanSpecial
 	
 	self step.
 	
-	^token
+	^ token

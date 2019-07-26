@@ -6,13 +6,13 @@ testTooLongAssignmentNode
 	valueNode := PPPLiteralNode new
 		literalType: #string;
 		value: 
-				'''myVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongValue''';
+			'''myVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongValue''';
 		length: 93;
 		yourself.
 	
 	assignmentNode := PPPAssignmentNode new
 		variable: 
-				'myVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongVar';
+			'myVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongVar';
 		value: valueNode;
 		length: 186;
 		yourself.

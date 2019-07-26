@@ -1,9 +1,8 @@
-visit-node
+printing
 printBinding: name
-
-	(self stringFitsInLine: name) ifFalse: [self incrementIndent;
-		newLineIndent;
-		decrementIndent].
+	
+	(self stringFitsInLine: name)
+		ifFalse: [ self incrementIndent; newLineIndent; decrementIndent ].
 	self currentLine
 		nextPutAll: name;
-		space 
+		space

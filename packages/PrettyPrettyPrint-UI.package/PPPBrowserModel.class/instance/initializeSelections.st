@@ -1,7 +1,7 @@
 initialize-release
 initializeSelections
-
-	self 
-		selectedCategories: {};
-		selectedClasses: {};
-		selectedMethods: {}.
+	
+	self
+		selectedCategories: {  };
+		selectedClasses: {  };
+		selectedMethods: {  }

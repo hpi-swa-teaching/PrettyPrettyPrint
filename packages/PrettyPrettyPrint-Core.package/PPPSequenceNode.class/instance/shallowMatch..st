@@ -1,3 +1,4 @@
 comparing
-shallowMatch: aNode 
-	^aNode temporaries hasEqualElements: self temporaries
+shallowMatch: aNode
+	
+	^ aNode temporaries hasEqualElements: self temporaries

@@ -1,3 +1,4 @@
 testing
 isEof
-	^self tokenType = #eof
+	
+	^ self tokenType = #eof

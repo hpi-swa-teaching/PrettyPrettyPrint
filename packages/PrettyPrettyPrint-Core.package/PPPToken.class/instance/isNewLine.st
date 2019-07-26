@@ -1,3 +1,4 @@
 testing
 isNewLine
-	^self tokenType = #separator and: [ self content = String cr ]
+	
+	^ self tokenType = #separator and: [ self content = String cr ]

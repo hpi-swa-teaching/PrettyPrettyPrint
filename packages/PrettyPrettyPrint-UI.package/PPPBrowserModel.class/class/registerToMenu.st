@@ -1,4 +1,4 @@
 as yet unclassified
 registerToMenu
-
-	TheWorldMenu registerOpenCommand: {self labelString . {self . #open}}.
+	
+	TheWorldMenu registerOpenCommand: { self labelString . { self . #open } }

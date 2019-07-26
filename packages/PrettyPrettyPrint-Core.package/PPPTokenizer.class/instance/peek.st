@@ -1,3 +1,4 @@
 accessing
 peek
-	^ self nextObject ifNil: [self nextObject: self next]
+	
+	^ self nextObject ifNil: [ self nextObject: self next ]

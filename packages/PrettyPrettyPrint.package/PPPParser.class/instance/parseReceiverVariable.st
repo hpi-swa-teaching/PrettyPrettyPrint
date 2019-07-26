@@ -1,5 +1,6 @@
 parse-message-receiver
 parseReceiverVariable
-	^PPPVariableNode new
+	
+	^ PPPVariableNode new
 		name: (self step: #identifier) content;
 		yourself

@@ -1,3 +1,4 @@
 comparing
 shallowMatch: aNode
-	^self shouldNotImplement
+	
+	^ self shouldNotImplement

@@ -1,3 +1,4 @@
 format
 format: aString
-	^self format: aString preferences: [ :profile | ]
+	
+	^ self format: aString preferences: [ :profile |  ]

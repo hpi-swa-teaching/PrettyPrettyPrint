@@ -1,3 +1,4 @@
 accessing
-trailingComments: aList 
+trailingComments: aList
+	
 	trailingComments := aList

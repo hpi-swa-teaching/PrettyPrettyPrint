@@ -1,6 +1,6 @@
 as yet unclassified
 sequenceNodeWithStructuralLinebreak
 	
-	^PPPSequenceNode
+	^ PPPSequenceNode
 		statements: (OrderedCollection
 			with: self nodeWithStructuralLinebreak)

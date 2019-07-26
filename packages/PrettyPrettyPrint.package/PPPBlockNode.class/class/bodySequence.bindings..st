@@ -1,6 +1,7 @@
 instance creation
 bodySequence: aSequenceNode bindings: anArray
-	^self new
+	
+	^ self new
 		bodySequence: aSequenceNode;
 		bindings: anArray;
 		yourself

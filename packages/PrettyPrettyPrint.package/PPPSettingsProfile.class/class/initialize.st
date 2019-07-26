@@ -1,5 +1,5 @@
-preferences
+instance creation
 initialize
-	super initialize.
 	
+	super initialize.
 	FreezeCodeHolderRefresh := false

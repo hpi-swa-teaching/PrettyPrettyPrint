@@ -1,7 +1,8 @@
-initialize-release
 initialize
-	super initialize.
+initialize
 	
-	self temporaries: OrderedCollection new;
+	super initialize.
+	self
+		temporaries: OrderedCollection new;
 		statements: OrderedCollection new;
 		trailingComments: OrderedCollection new

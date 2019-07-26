@@ -1,3 +1,4 @@
 testing
 isDot
-	^self isSpecial and: [ self content = '.' ]
+	
+	^ self isSpecial and: [ self content = '.' ]

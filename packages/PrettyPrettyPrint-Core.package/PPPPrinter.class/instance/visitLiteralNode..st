@@ -1,8 +1,9 @@
 visit-node
-visitLiteralNode: aPPPLiteralNode 
+visitLiteralNode: aPPPLiteralNode
 	
 	| fitsInLine |
+	
 	fitsInLine := self nodeFitsInLine: aPPPLiteralNode.
-	fitsInLine ifFalse: [self incrementIndent; newLineIndent].
+	fitsInLine ifFalse: [ self incrementIndent; newLineIndent ].
 	self currentLine nextPutAll: aPPPLiteralNode value.
-	fitsInLine ifFalse: [self decrementIndent]
+	fitsInLine ifFalse: [ self decrementIndent ]

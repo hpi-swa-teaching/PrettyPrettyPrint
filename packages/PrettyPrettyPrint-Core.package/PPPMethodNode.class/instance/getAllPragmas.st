@@ -1,4 +1,4 @@
 accessing
 getAllPragmas
 	
-	^ self bodySequence getAllPragmas.
+	^ self bodySequence getAllPragmas

@@ -1,3 +1,4 @@
-testing
+comparing
 matches: aNode
-	^self shallowMatch: aNode
+	
+	^ self shallowMatch: aNode

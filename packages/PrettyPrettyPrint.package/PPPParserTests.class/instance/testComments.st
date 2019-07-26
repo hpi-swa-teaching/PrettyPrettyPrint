@@ -7,7 +7,6 @@ testComments
 	self "i" printTest "l" "asdasd".
 	"lkjh" "blbl"'.
 	methodNode := PPPParser parseMethodTokenStream: tokens.
-	
 	self
 		assert: 2
 			equals: methodNode bodySequence statements first comments size;

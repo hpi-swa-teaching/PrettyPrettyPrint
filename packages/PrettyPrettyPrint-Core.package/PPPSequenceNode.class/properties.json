@@ -4,13 +4,12 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "TB 7/28/2016 15:23",
+	"commentStamp" : "gw 7/26/2019 20:38",
 	"instvars" : [
 		"temporaries",
 		"statements",
 		"trailingComments",
-		"childLength",
-		"maxChildDepth" ],
+		"childLength" ],
 	"name" : "PPPSequenceNode",
 	"pools" : [
 		 ],

@@ -1,7 +1,7 @@
 accessing
 relevantParsedPragmas
 	
-	^OrderedCollection new
+	^ OrderedCollection new
 		add: self validIgnoreParsedPragma;
 		add: (PPPMethodNode new
 				arguments: (OrderedCollection new

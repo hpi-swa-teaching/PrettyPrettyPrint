@@ -1,3 +1,4 @@
 testing
 isOpeningCurlyBrace
-	^self isSpecial and: [ self content = '{' ]
+	
+	^ self isSpecial and: [ self content = '{' ]

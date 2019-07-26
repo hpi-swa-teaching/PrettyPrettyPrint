@@ -1,3 +1,4 @@
 accessing
-addStatement: aValueNode 
+addStatement: aValueNode
+	
 	self statements add: aValueNode

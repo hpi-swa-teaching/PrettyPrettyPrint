@@ -2,9 +2,7 @@ visit-node
 visitReturnNode: aReturnNode
 	
 	aReturnNode value accept: self.
-	
-	aReturnNode 
+	aReturnNode
 		length: (self lengthForReturnNode: aReturnNode);
-		
-		needsStructuralLinebreak: (self structuralLinebreakForReturnNode: aReturnNode)
-	
+		needsStructuralLinebreak: (self
+			structuralLinebreakForReturnNode: aReturnNode)

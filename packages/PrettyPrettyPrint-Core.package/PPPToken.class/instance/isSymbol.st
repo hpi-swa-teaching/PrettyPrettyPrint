@@ -1,3 +1,4 @@
 testing
 isSymbol
-	^self tokenType = #symbol
+	
+	^ self tokenType = #symbol

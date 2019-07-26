@@ -1,3 +1,4 @@
-instance creation
+default
 defaultUserProfileName
-	^'P3SettingsProfile'
+	
+	^ 'P3SettingsProfile'

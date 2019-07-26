@@ -1,7 +1,7 @@
 instance creation
 receiver: aNode selector: aString argument: anotherNode
 	
-	^self new
+	^ self new
 		receiver: aNode;
 		selector: aString;
 		arguments: (OrderedCollection with: anotherNode);

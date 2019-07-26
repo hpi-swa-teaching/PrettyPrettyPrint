@@ -1,3 +1,4 @@
 accessing
 getAllPragmas
+	
 	^ self subclassResponsibility

@@ -10,15 +10,15 @@ testPragmaExtracting
 	parsedPragmas := OrderedCollection new
 		addAll: expectedRelevantPragmas;
 		add: (PPPMethodNode new
-				arguments: OrderedCollection new;
-				bodySequence: OrderedCollection new;
-				selector: 'hello');
+			arguments: OrderedCollection new;
+			bodySequence: OrderedCollection new;
+			selector: 'hello');
 		add: (PPPMethodNode new
-				arguments: (OrderedCollection new
-						add: #( 'PrettyPrint:' #ignore );
-						yourself);
-				bodySequence: (PPPSequenceNode new);
-				selector: 'PrettyPrint:');
+			arguments: (OrderedCollection new
+				add: #( 'PrettyPrint:' #ignore );
+				yourself);
+			bodySequence: (PPPSequenceNode new);
+			selector: 'PrettyPrint:');
 		yourself.
 	
 	relevantPragmas := PPPPragmaHandler new

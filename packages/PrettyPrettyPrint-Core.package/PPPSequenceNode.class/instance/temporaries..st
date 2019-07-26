@@ -1,3 +1,4 @@
 accessing
-temporaries: aList 
+temporaries: aList
+	
 	temporaries := aList

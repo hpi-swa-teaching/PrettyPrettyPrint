@@ -1,4 +1,4 @@
 special characters
-additionalLengthForCircumflex 
+additionalLengthForCircumflex
 	
 	^ 1

@@ -1,6 +1,7 @@
 instance creation
 bodySequence: aSequenceNode
-	^self new
+	
+	^ self new
 		bodySequence: aSequenceNode;
-		bindings: {};
+		bindings: {  };
 		yourself

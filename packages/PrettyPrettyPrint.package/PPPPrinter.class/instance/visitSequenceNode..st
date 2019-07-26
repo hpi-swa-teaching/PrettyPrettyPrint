@@ -1,10 +1,10 @@
 visit-node
-visitSequenceNode: aPPPSequenceNode 
+visitSequenceNode: aPPPSequenceNode
 	
 	self
 		printTemporariesOf: aPPPSequenceNode;
 		printStatementsOf: aPPPSequenceNode.
-	
-	aPPPSequenceNode trailingComments do: [ :comment |
-		self newLineIndent.
-		self currentLine nextPutAll: comment content ]
+	aPPPSequenceNode trailingComments
+		do: [ :comment |
+			self newLineIndent.
+			self currentLine nextPutAll: comment content ]

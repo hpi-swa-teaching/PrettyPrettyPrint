@@ -9,40 +9,22 @@ testNestedBlocks
 	referenceStatement := (PPPMethodNode
 		bodySequence: (PPPSequenceNode
 			statements: { 
-				(PPPBlockNode
-					bodySequence: (PPPSequenceNode
-						statements: { 
-							(PPPBlockNode
-								bodySequence: (
-										PPPSequenceNode
-									statements: { 
-										(PPPMessageNode
-											receiver: (
-													PPPVariableNode
-												name: 
-													'true')
-											selector: 
-												'ifTrue:'
-											arguments: { 
-												(
-														PPPBlockNode
-													bodySequence: (
-															PPPSequenceNode
-														statements: { 
-															(
-																	PPPMessageNode
-																receiver: (
-																		PPPVariableNode
-																	name: 
-																		'e')
-																selector: 
-																	'high') })
-													bindings: ({ 
-														
-															':e' })) }) })) })) })
+				(PPPBlockNode bodySequence: 
+					(PPPSequenceNode statements: { 
+						(PPPBlockNode bodySequence: (
+							PPPSequenceNode statements: { 
+								(PPPMessageNode 
+									receiver: (PPPVariableNode name: 'true')
+									selector: 'ifTrue:'
+									arguments: {(PPPBlockNode
+										bodySequence: (PPPSequenceNode
+											statements: { 
+												(PPPMessageNode 
+													receiver: (PPPVariableNode
+														name: 'e')
+													selector: 'high') })
+										bindings: ({':e' })) }) })) })) })
 		selector: 'testMethod').
 	
 	methodNode := PPPParser parseMethodTokenStream: tokens.
-	
-	self
-		assertHierarchy: referenceStatement equals: methodNode
+	self assertHierarchy: referenceStatement equals: methodNode

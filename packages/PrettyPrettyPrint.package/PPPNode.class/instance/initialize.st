@@ -1,9 +1,8 @@
-initialize-release
 initialize
-	super initialize.
+initialize
 	
-	self 
+	super initialize.
+	self
 		comments: OrderedCollection new;
 		length: 0;
 		needsStructuralLinebreak: false
-	

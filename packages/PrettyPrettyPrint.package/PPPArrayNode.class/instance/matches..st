@@ -1,3 +1,4 @@
 comparing
-matches: aNode 
-	^self collectionOfNodes: aNode contents matches: self contents
+matches: aNode
+	
+	^ self collectionOfNodes: aNode contents matches: self contents

@@ -11,3 +11,9 @@ and
 self equals: 2
 
 by accident, because the parser was not aware of being inside a named message.
+
+
+Structure:
+instance var       		Type         	Description
+insideNamedMessage  	Boolean        Whether the parser is inside of a named message or not
+insideCascade      		Boolean        Whether the parser is inside of a cascade or not

@@ -1,3 +1,4 @@
 comparing
-shallowMatch: aNode 
-	^aNode selector = self selector
+shallowMatch: aNode
+	
+	^ aNode selector = self selector

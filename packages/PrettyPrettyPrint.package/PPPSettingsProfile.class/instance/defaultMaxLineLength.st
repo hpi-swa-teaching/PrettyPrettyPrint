@@ -1,4 +1,4 @@
-as yet unclassified
+default-values
 defaultMaxLineLength
-
+	
 	^ 100

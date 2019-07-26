@@ -1,4 +1,4 @@
 format
 formatSequence: aString
 	
-	^self formatSequence: aString preferences: [ :profile |  ]
+	^ self formatSequence: aString preferences: [ :profile |  ]

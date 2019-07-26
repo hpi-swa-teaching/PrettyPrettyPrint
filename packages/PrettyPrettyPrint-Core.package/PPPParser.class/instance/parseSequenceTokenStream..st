@@ -1,6 +1,6 @@
-initialize-release
+parsing
 parseSequenceTokenStream: aStream
 	
 	self stream: aStream.
 	
-	^self parseSequence
+	^ self parseSequence

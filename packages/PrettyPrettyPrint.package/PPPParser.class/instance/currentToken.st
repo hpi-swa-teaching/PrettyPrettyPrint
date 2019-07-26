@@ -1,3 +1,4 @@
-stepping
+initialize
 currentToken
-	^currentToken
+	
+	^ currentToken

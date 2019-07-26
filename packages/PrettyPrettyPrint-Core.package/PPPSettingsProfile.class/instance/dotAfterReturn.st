@@ -1,3 +1,4 @@
 accessing
 dotAfterReturn
-	^dotAfterReturn
+	
+	^ dotAfterReturn

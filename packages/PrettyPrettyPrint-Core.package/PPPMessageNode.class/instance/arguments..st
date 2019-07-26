@@ -1,4 +1,5 @@
 accessing
-arguments: anArray 
+arguments: anArray
+	
 	"anArray should consist of Strings"
 	arguments := anArray

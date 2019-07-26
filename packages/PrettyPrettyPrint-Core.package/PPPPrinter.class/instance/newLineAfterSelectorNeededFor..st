@@ -1,10 +1,12 @@
-visit-node
+helpers-indent
 newLineAfterSelectorNeededFor: aMethodNode
-
-	| hasNoStatements | 
+	
+	| hasNoStatements |
+	
 	hasNoStatements := aMethodNode bodySequence statements isEmpty.
-	hasNoStatements ifTrue: [^ false].
+	hasNoStatements ifTrue: [ ^ false ].
 	
-	self profile newlineAfterSelector ifFalse: [^ false].
+	self profile newlineAfterSelector ifFalse: [ ^ false ].
 	
-	^(self profile newlineBeforeReturn and: [aMethodNode bodySequence statements first isReturnNode]) not
+	^ (self profile newlineBeforeReturn
+		and: [ aMethodNode bodySequence statements first isReturnNode ]) not

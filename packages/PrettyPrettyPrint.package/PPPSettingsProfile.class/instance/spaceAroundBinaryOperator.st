@@ -1,3 +1,4 @@
 accessing
 spaceAroundBinaryOperator
-	^spaceAroundBinaryOperator
+	
+	^ spaceAroundBinaryOperator

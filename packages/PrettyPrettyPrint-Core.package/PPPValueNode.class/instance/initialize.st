@@ -1,7 +1,8 @@
-initialize-release
-initialize 
+initialize
+initialize
+	
 	super initialize.
-	self 
+	self
 		hasParentheses: false;
 		needsParantheses: false;
 		precededByEmptyLine: false

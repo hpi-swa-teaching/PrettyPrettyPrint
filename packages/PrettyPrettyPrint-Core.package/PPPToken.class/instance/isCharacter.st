@@ -1,3 +1,4 @@
 testing
 isCharacter
-	^self tokenType = #character
+	
+	^ self tokenType = #character

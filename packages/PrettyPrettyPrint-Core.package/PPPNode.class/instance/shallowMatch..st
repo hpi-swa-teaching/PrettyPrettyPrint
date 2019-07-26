@@ -1,3 +1,4 @@
 comparing
-shallowMatch: aNode 
-	^self subclassResponsibility
+shallowMatch: aNode
+	
+	^ self subclassResponsibility

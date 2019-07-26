@@ -1,3 +1,4 @@
 visit-node
 accept: aPrinter
-	^self shouldNotImplement 
+	
+	^ self shouldNotImplement

@@ -1,3 +1,4 @@
 comparing
 shallowMatch: aNode
-	^self name = aNode name
+	
+	^ self name = aNode name

@@ -1,5 +1,4 @@
 format
 userProfileFormat: aString
-
 	
-	^ self format: aString.
+	^ self format: aString

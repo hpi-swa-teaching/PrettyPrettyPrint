@@ -4,9 +4,7 @@ visitAssignmentNode: anAssignmentNode
 	anAssignmentNode value accept: self.
 	
 	self setParanthesesForAssignmentNode: anAssignmentNode.
-	
-	anAssignmentNode 
+	anAssignmentNode
 		length: (self lengthForAssignmentNode: anAssignmentNode);
-		
-		needsStructuralLinebreak: (self structuralLinebreakForAssignmentNode: anAssignmentNode)
-	
+		needsStructuralLinebreak: (self
+			structuralLinebreakForAssignmentNode: anAssignmentNode)

@@ -1,4 +1,4 @@
 UI design
 initialExtent
-
-	^ 500@400
+	
+	^ 500 @ 400

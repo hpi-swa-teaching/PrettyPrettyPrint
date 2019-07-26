@@ -1,3 +1,4 @@
 visit-node
 visitAssignmentNode: aNode
-	^self subclassResponsibility
+	
+	^ self subclassResponsibility

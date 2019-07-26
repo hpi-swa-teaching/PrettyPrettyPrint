@@ -5,7 +5,7 @@ lengthForAssignmentNode: anAssignmentNode
 	
 	length := self additionalLengthForParentheses: anAssignmentNode.
 	length := length + self additionalLengthForAssignment.
-	length := length + anAssignmentNode variable size + anAssignmentNode value length.
+	length := length + anAssignmentNode variable size
+		+ anAssignmentNode value length.
 	
 	^ length
-	

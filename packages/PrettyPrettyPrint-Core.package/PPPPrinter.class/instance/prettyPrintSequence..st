@@ -1,6 +1,6 @@
-visit-node
+pretty-print
 prettyPrintSequence: aPPPSequenceNode
 	
-	^ self 
+	^ self
 		visitSequenceNode: aPPPSequenceNode;
 		wholeContent

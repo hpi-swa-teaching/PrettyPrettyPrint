@@ -1,3 +1,4 @@
 accessing
 encloseBlockSequenceWithSpace
-	^encloseBlockSequenceWithSpace
+	
+	^ encloseBlockSequenceWithSpace

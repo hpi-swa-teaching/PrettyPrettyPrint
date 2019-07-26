@@ -1,3 +1,4 @@
 visit-node
 visitArrayNode: aNode
-	^self subclassResponsibility 
+	
+	^ self subclassResponsibility

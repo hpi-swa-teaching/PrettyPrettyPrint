@@ -11,4 +11,4 @@ formatSequence: aString preferences: aBlock
 	
 	PPPPreprocessor processSequenceNode: abstractSyntaxTree.
 	
-	^printer prettyPrintSequence: abstractSyntaxTree
+	^ printer prettyPrintSequence: abstractSyntaxTree

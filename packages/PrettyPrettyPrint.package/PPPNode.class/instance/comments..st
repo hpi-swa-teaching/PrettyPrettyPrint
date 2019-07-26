@@ -1,3 +1,4 @@
-comparing
-comments: aList 
-	comments := aList
+accessing
+comments: anOrderedCollection
+	
+	comments := anOrderedCollection

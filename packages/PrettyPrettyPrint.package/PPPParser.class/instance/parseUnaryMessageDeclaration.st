@@ -1,6 +1,7 @@
 parse-declaration
 parseUnaryMessageDeclaration
-	^PPPMethodNode new
+	
+	^ PPPMethodNode new
 		selector: (self step: #identifier) content;
 		bodySequence: self parseSequence;
 		yourself

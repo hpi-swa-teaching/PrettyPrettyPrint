@@ -1,6 +1,6 @@
-visit-node
+pretty-print
 prettyPrintMethod: aPPPMethodNode
 	
-	^ self 
+	^ self
 		visitMethodNode: aPPPMethodNode;
 		wholeContent

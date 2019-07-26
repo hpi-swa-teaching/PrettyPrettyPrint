@@ -2,11 +2,7 @@ visit-node
 visitBlockNode: aBlockNode
 	
 	aBlockNode bodySequence accept: self.
-	
-	aBlockNode 
+	aBlockNode
 		length: (self lengthForBlockNode: aBlockNode);
-		
-		needsStructuralLinebreak: (self structuralLinebreakForBlockNode: aBlockNode)
-	
-	
-	
+		needsStructuralLinebreak: (self
+			structuralLinebreakForBlockNode: aBlockNode)

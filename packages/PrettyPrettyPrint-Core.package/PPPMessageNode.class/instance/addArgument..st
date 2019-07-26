@@ -1,3 +1,4 @@
 accessing
-addArgument: aString 
+addArgument: aString
+	
 	self arguments add: aString

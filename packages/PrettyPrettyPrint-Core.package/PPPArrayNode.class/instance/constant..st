@@ -1,3 +1,4 @@
 accessing
-constant: aBoolean 
+constant: aBoolean
+	
 	constant := aBoolean

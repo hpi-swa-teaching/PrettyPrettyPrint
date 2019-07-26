@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 content: aString
-
+	
 	^ self new content: aString

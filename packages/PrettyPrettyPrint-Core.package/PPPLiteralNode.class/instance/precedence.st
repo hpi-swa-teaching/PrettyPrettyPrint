@@ -1,4 +1,5 @@
 precedence
 precedence
-
-	^ 0 "highest"
+	"highest"
+	
+	^ 0

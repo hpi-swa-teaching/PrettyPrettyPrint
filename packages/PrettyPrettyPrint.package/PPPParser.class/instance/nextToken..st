@@ -1,3 +1,4 @@
-stepping
+initialize
 nextToken: aPPPToken
+	
 	nextToken := aPPPToken

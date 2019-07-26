@@ -1,3 +1,4 @@
 testing
 isBinaryOperator
-	^self tokenType = #binaryOperator
+	
+	^ self tokenType = #binaryOperator

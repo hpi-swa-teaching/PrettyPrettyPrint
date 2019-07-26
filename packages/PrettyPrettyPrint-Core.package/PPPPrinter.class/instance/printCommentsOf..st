@@ -1,8 +1,9 @@
-visit-node
+printing
 printCommentsOf: aPPPValueNode
-
-
-	aPPPValueNode comments do: [ :comment |
-		(self commentFitsInLine: comment) ifFalse: [self newLineIndent].
-		self currentLine nextPutAll: comment content.
-		self newLineIndent ]
+	
+	aPPPValueNode comments
+		do: [ :comment |
+			(self commentFitsInLine: comment)
+				ifFalse: [ self newLineIndent ].
+			self currentLine nextPutAll: comment content.
+			self newLineIndent ]

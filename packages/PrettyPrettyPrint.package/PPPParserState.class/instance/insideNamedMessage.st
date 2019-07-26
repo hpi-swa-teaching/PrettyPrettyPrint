@@ -1,3 +1,4 @@
 accessing
 insideNamedMessage
-	^insideNamedMessage
+	
+	^ insideNamedMessage

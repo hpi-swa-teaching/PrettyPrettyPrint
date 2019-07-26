@@ -1,3 +1,4 @@
 visit-node
 visitSequenceNode: aNode
-	^self subclassResponsibility 
+	
+	^ self subclassResponsibility

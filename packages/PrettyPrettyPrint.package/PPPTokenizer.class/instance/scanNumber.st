@@ -1,5 +1,6 @@
 scanning
 scanNumber
+	
 	| token positionBeforeParsing positionAfterParsing |
 	
 	token := PPPToken new
@@ -13,10 +14,11 @@ scanNumber
 	positionAfterParsing := self stream position.
 	
 	self stream position: positionBeforeParsing - 1.
-	self buffer nextPutAll: (self stream next: positionAfterParsing - positionBeforeParsing + 1).
+	self buffer nextPutAll: (self stream next: positionAfterParsing
+		- positionBeforeParsing + 1).
 	
 	self step.
 	
-	^token
+	^ token
 		content: self buffer contents;
 		yourself

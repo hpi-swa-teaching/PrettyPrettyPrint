@@ -16,8 +16,10 @@ testPrintTooLongMessageNode
 		receiver: nil
 		selector: firstMessageSelector.
 	shortMessageNode length: 29.
-	firstArgumentNode := PPPCascadeNode receiver: variableNode messages: { shortMessageNode . shortMessageNode }.
-	firstArgumentNode 
+	firstArgumentNode := PPPCascadeNode
+		receiver: variableNode
+		messages: { shortMessageNode . shortMessageNode }.
+	firstArgumentNode
 		hasParentheses: true;
 		needsParantheses: true.
 	firstArgumentNode length: 97.

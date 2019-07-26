@@ -1,11 +1,9 @@
 visit-node
-visitVariableNode: aPPPVariableNode 
-
+visitVariableNode: aPPPVariableNode
+	
 	| fitsInLine |
 	
-	fitsInLine := (self nodeFitsInLine: aPPPVariableNode). 
-	fitsInLine ifFalse: [self 
-		incrementIndent;
-		newLineIndent].
+	fitsInLine := (self nodeFitsInLine: aPPPVariableNode).
+	fitsInLine ifFalse: [ self incrementIndent; newLineIndent ].
 	self currentLine nextPutAll: aPPPVariableNode name.
-	fitsInLine ifFalse: [self decrementIndent]
+	fitsInLine ifFalse: [ self decrementIndent ]

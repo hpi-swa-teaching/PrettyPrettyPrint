@@ -2,17 +2,20 @@ as yet unclassified
 testVisitArrayNodeLength
 	
 	| anArrayNode content |
-	content := OrderedCollection with: self literalNode with: self variableNode.
+	
+	content := OrderedCollection
+		with: self literalNode
+		with: self variableNode.
 	anArrayNode := PPPArrayNode contents: content constant: true.
-			
+	
 	PPPPreprocessor new visitArrayNode: anArrayNode.
 	
 	self assert: 13 equals: anArrayNode length.
 	
-	content := OrderedCollection with: self literalNode with: self unaryMessageNode.
+	content := OrderedCollection
+		with: self literalNode
+		with: self unaryMessageNode.
 	anArrayNode contents: content.
 	anArrayNode constant: false.
 	PPPPreprocessor new visitArrayNode: anArrayNode.
-	
 	self assert: 26 equals: anArrayNode length
-	

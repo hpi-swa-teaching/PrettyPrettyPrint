@@ -1,4 +1,5 @@
 visit-node
-nodesDo: aBlock 
+nodesDo: aBlock
+	
 	super nodesDo: aBlock.
 	self bodySequence nodesDo: aBlock

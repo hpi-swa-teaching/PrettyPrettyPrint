@@ -1,5 +1,4 @@
 calculate length
 lengthForReturnNode: aReturnNode
-
-	^ self additionalLengthForCircumflex + aReturnNode value length
 	
+	^ self additionalLengthForCircumflex + aReturnNode value length

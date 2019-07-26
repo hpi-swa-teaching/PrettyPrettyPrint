@@ -2,7 +2,9 @@ testing
 testWhitespacesInMethod
 	
 	| methodNode reference |
-	methodNode := PPPParser parseMethodTokenStream: (PPPTokenizer on: 'testMethod    
+	
+	methodNode := PPPParser
+		parseMethodTokenStream: (PPPTokenizer on: 'testMethod    
 	test   :=  5   +6.
 	
 	

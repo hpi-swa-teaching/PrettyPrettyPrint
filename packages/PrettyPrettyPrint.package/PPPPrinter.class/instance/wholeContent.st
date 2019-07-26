@@ -1,5 +1,6 @@
-visit-node
+accessing
 wholeContent
-
-	self printedLinesBuffer nextPutAll: self currentLine contents.	
+	
+	self printedLinesBuffer nextPutAll: self currentLine contents.
+	
 	^ self printedLinesBuffer contents

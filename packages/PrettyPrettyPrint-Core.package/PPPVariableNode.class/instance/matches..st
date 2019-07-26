@@ -1,3 +1,4 @@
 comparing
 matches: aNode
-	^aNode name = self name
+	
+	^ aNode name = self name

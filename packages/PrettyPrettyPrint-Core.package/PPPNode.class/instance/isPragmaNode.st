@@ -1,4 +1,4 @@
 testing
 isPragmaNode
 	
-	^false
+	^ false

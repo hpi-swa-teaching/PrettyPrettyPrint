@@ -1,6 +1,6 @@
 visit-node
-visitMessageNode: aPPPMessageNode 
+visitMessageNode: aPPPMessageNode
 	
 	(self nodeFitsInLine: aPPPMessageNode)
-		ifTrue: [ self  printMessageNode: aPPPMessageNode]
-		ifFalse: [ self printMessageNodeMultiline: aPPPMessageNode]
+		ifTrue: [ self printMessageNode: aPPPMessageNode ]
+		ifFalse: [ self printMessageNodeMultiline: aPPPMessageNode ]

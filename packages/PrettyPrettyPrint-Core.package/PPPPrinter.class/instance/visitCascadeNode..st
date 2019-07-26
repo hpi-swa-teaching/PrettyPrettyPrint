@@ -1,6 +1,6 @@
 visit-node
-visitCascadeNode: aPPPCascadeNode 
+visitCascadeNode: aPPPCascadeNode
 	
 	(self nodeFitsInLine: aPPPCascadeNode)
-		ifTrue: [ self printCascadeNode: aPPPCascadeNode]
-		ifFalse: [ self printCascadeNodeMultiline: aPPPCascadeNode]
+		ifTrue: [ self printCascadeNode: aPPPCascadeNode ]
+		ifFalse: [ self printCascadeNodeMultiline: aPPPCascadeNode ]

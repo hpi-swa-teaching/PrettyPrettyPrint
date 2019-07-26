@@ -1,4 +1,4 @@
-as yet unclassified
+build-dict
 pragmasToDict: anOrderedCollection
 	
 	| dict |
@@ -12,4 +12,4 @@ pragmasToDict: anOrderedCollection
 			option := self formatTokenPart: pragma arguments second second.
 			dict add: (Association key: rule value: option) ].
 	
-	^dict
+	^ dict

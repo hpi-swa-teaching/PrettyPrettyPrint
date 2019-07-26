@@ -1,3 +1,4 @@
 testing
 isSymbolArrayStart
-	^self tokenType = #symbolArrayStart
+	
+	^ self tokenType = #symbolArrayStart

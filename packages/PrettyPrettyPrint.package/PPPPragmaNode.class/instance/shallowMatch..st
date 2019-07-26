@@ -1,3 +1,4 @@
 comparing
 shallowMatch: aNode
-	^aNode content = self content
+	
+	^ aNode content = self content

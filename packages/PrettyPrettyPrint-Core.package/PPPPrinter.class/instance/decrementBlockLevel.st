@@ -1,3 +1,4 @@
 accessing
 decrementBlockLevel
-	self currentBlockLevel: self currentBlockLevel - 1.
+	
+	self currentBlockLevel: self currentBlockLevel - 1

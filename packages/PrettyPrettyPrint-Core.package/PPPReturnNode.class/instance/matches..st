@@ -1,3 +1,4 @@
 comparing
 matches: aNode
-	^aNode value matches: self value
+	
+	^ aNode value matches: self value

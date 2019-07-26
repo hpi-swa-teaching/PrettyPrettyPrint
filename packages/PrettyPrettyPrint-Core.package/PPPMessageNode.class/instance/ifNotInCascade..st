@@ -1,3 +1,4 @@
 testing
-ifNotInCascade: aBlock 
+ifNotInCascade: aBlock
+	
 	self isInCascade ifFalse: [ aBlock value ]

@@ -1,3 +1,4 @@
 accessing
 precededByEmptyLine
-	^precededByEmptyLine
+	
+	^ precededByEmptyLine

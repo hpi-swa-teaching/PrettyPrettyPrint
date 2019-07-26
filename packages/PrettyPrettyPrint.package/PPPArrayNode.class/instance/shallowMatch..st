@@ -1,3 +1,4 @@
 comparing
-shallowMatch: aNode 
-	^true
+shallowMatch: aNode
+	
+	^ true

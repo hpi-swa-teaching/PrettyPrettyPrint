@@ -1,3 +1,4 @@
 accessing
 hasParentheses
-	^hasParentheses
+	
+	^ hasParentheses

@@ -1,6 +1,8 @@
 parse-node
 parseParenthesesExpression
+	
 	| node |
+	
 	self step.
 	
 	node := self parseStatement: PPPParserState new.
@@ -8,4 +10,4 @@ parseParenthesesExpression
 	
 	(self step: #special) content = ')' ifFalse: [ self syntaxError ].
 	
-	^node
+	^ node

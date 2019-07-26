@@ -1,3 +1,4 @@
 accessing
-statements: aList 
+statements: aList
+	
 	statements := aList

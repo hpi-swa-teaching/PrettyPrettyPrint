@@ -1,7 +1,7 @@
-visit-node
+printing
 printSelectorPartMultiline: aString argument: anotherString
-
- 	self currentLine
+	
+	self currentLine
 		nextPutAll: aString;
 		nextPutAll: ': '.
-	self visitValueNode: anotherString 
+	self visitValueNode: anotherString

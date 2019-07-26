@@ -1,3 +1,4 @@
 comparing
 shallowMatch: aNode
-	^self matches: aNode
+	
+	^ self matches: aNode

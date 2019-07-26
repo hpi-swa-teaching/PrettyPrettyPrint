@@ -1,4 +1,4 @@
 testing
 isMessageNode
 	
-	^true
+	^ true

@@ -1,3 +1,4 @@
 testing
 isIdentifier
-	^self tokenType = #identifier
+	
+	^ self tokenType = #identifier

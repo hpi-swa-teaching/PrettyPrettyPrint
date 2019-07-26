@@ -1,3 +1,4 @@
 accessing
 literalType
-	^literalType
+	
+	^ literalType

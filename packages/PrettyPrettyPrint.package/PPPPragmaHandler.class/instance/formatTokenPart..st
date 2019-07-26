@@ -1,6 +1,6 @@
-as yet unclassified
+formatting
 formatTokenPart: aString
 	
-	aString isSymbol ifTrue: [ ^aString ].
+	aString isSymbol ifTrue: [ ^ aString ].
 	
-	^Compiler evaluate: aString
+	^ Compiler evaluate: aString

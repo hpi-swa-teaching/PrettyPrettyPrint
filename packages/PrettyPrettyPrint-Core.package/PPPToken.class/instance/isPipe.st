@@ -1,3 +1,4 @@
 testing
 isPipe
-	^self isSpecial and: [ self content = '|' ]
+	
+	^ self isSpecial and: [ self content = '|' ]

@@ -1,7 +1,6 @@
 precedence
 precedence
-
-	self subclassResponsibility
+	
 	
 	" 	0 = atomic values
 		1 = unary messages
@@ -9,3 +8,4 @@ precedence
 		3 = named messages
 		4 = cascades
 		5 = assignments		"
+	self subclassResponsibility

@@ -1,8 +1,12 @@
-visit-node
-printMessageNode: aPPPMessageNode 
+printing
+printMessageNode: aPPPMessageNode
 	
-	aPPPMessageNode ifNotInCascade: [ self visitValueNode: aPPPMessageNode receiver ].
+	aPPPMessageNode
+		ifNotInCascade: [ self visitValueNode: aPPPMessageNode receiver ].
 	
-	aPPPMessageNode isUnaryMessage ifTrue: [ self printUnaryMessage: aPPPMessageNode ].
-	aPPPMessageNode isBinaryMessage ifTrue: [ self printBinaryMessage: aPPPMessageNode ].
-	aPPPMessageNode isNamedMessage ifTrue: [ self printNamedMessage: aPPPMessageNode ]
+	aPPPMessageNode isUnaryMessage
+		ifTrue: [ self printUnaryMessage: aPPPMessageNode ].
+	aPPPMessageNode isBinaryMessage
+		ifTrue: [ self printBinaryMessage: aPPPMessageNode ].
+	aPPPMessageNode isNamedMessage
+		ifTrue: [ self printNamedMessage: aPPPMessageNode ]

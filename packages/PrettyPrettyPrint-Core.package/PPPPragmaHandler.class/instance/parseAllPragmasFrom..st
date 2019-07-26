@@ -1,4 +1,4 @@
-as yet unclassified
+parse-pragma
 parseAllPragmasFrom: aPPPMethodNode
 	
 	| allPragmas parsedPragmas |
@@ -7,4 +7,4 @@ parseAllPragmasFrom: aPPPMethodNode
 	parsedPragmas := allPragmas collect: [ :pragma |
 		self parsePragma: pragma ].
 	
-	^parsedPragmas
+	^ parsedPragmas

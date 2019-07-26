@@ -1,8 +1,4 @@
 special characters
 separationBetweenArrayElements: aPPPArrayNode
-
-	aPPPArrayNode constant 
-		ifTrue: [^1]
-		ifFalse: [^3]
-		
 	
+	aPPPArrayNode constant ifTrue: [ ^ 1 ] ifFalse: [ ^ 3 ]

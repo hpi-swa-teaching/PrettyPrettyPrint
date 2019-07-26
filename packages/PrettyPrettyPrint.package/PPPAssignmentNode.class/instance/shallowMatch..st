@@ -1,3 +1,4 @@
 comparing
-shallowMatch: aNode 
-	^aNode variable = self variable
+shallowMatch: aNode
+	
+	^ aNode variable = self variable

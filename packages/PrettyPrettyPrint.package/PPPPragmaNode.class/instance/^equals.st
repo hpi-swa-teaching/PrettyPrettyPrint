@@ -1,5 +1,4 @@
 comparing
 = aPPPPragmaNode
- 	^ self matches: aPPPPragmaNode
-		
-		
+	
+	^ self matches: aPPPPragmaNode

@@ -1,5 +1,5 @@
-visit-node
-printCascadeNodeMultiline: aPPPCascadeNode 
+printing
+printCascadeNodeMultiline: aPPPCascadeNode
 	
 	self visitValueNode: aPPPCascadeNode receiver.
 	self incrementIndent.
@@ -9,5 +9,4 @@ printCascadeNodeMultiline: aPPPCascadeNode
 			self newLineIndent.
 			self visitValueNode: message ]
 		separatedBy: [ self currentLine nextPut: $; ].
-	
 	self decrementIndent

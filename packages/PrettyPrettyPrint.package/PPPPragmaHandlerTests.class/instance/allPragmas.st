@@ -1,7 +1,7 @@
 accessing
 allPragmas
 	
-	^OrderedCollection new
+	^ OrderedCollection new
 		add: (PPPPragmaNode new
 				content: '<PrettyPrint: #ignore option: true>');
 		add: (PPPPragmaNode new

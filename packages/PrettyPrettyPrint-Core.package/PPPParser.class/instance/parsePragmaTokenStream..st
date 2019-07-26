@@ -1,5 +1,6 @@
-parse-declaration
+parsing
 parsePragmaTokenStream: aStream
+	
 	self stream: aStream.
 	
-	^self parsePragma
+	^ self parsePragma

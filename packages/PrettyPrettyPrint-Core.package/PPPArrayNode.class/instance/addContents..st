@@ -1,3 +1,4 @@
 accessing
-addContents: anArray 
+addContents: anArray
+	
 	self contents add: anArray

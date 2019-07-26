@@ -12,9 +12,7 @@ testPragma
 	self
 		assert: { 'newlineAfterTemporaryDeclaration' . #identifier }
 			equalsToken: tokenizer next;
-		assert: { 
-				
-					'<preference: ''Add a newline after declaration of temporaries''
+		assert: { '<preference: ''Add a newline after declaration of temporaries''
 		category: ''PrettyPrettyPrint<<>>>>''
 		type: #Boolean>' . 
 				#pragma }

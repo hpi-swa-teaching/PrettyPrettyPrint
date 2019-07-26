@@ -9,17 +9,17 @@ testPrintBlock
 	blockNode := PPPBlockNode new
 		bindings: (OrderedCollection with: ':b1' with: ':b2');
 		bodySequence: (PPPSequenceNode new
-				temporaries: (OrderedCollection
-						with: 'temp1'
-						with: 'temp2');
-				statements: { PPPAssignmentNode new
-							variable: 'variable';
-							value: (PPPVariableNode new
-								name: '4');
-							yourself . 
-						PPPReturnNode
-							value: (PPPVariableNode new
-								name: 'self') }).
+			temporaries: (OrderedCollection
+					with: 'temp1'
+					with: 'temp2');
+			statements: { PPPAssignmentNode new
+					variable: 'variable';
+					value: (PPPVariableNode new
+						name: '4');
+					yourself . 
+				PPPReturnNode
+					value: (PPPVariableNode new
+						name: 'self') }).
 	blockNode needsStructuralLinebreak: true.
 	blockNode accept: printer.
 	formattedBlock := printer wholeContent.

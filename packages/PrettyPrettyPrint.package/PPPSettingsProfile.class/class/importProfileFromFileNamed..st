@@ -1,9 +1,13 @@
 import/export
-importProfileFromFileNamed: aString 
+importProfileFromFileNamed: aString
+	
 	| profile |
 	
-	profile := StandardFileStream readOnlyFileNamed: aString do: [ :stream | Compiler new evaluate: stream contents ].
+	profile := StandardFileStream
+		readOnlyFileNamed: aString
+		do: [ :stream | Compiler new evaluate: stream contents ].
 	
-	(profile isMemberOf: PPPSettingsProfile) ifFalse: [ self error: 'Invalid file' ].
+	(profile isMemberOf: PPPSettingsProfile)
+		ifFalse: [ self error: 'Invalid file' ].
 	
-	^profile
+	^ profile
