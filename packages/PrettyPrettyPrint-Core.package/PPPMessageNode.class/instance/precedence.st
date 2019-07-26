@@ -1,4 +1,4 @@
-as yet unclassified
+precedence
 precedence
 
 	self isUnaryMessage ifTrue: [^ 1].

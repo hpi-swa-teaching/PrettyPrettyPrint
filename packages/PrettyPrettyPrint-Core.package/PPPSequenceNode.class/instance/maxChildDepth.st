@@ -1,3 +1,0 @@
-accessing
-maxChildDepth
-	^ maxChildDepth

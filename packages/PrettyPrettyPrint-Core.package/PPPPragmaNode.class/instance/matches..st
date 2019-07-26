@@ -1,3 +1,3 @@
-as yet unclassified
+testing
 matches: aNode
 	^self shallowMatch: aNode

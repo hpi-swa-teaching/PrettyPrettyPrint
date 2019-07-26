@@ -1,17 +1,15 @@
 helpers-printing
 newLineNeededBefore: aStatement of: aNode
 
-	| keepEmptyLines newlineAfterSelector newlineBeforeReturn |
-	keepEmptyLines := self profile keepEmptyLines.
-	newlineAfterSelector := self profile newlineAfterSelector.
-	newlineBeforeReturn := self profile newlineBeforeReturn.
+	(aStatement precededByEmptyLine and: self profile keepEmptyLines) ifFalse: [^ false].
 	
-	(aStatement precededByEmptyLine and: keepEmptyLines) ifFalse: [^ false].
 	(aStatement == aNode statements first 
-		and: [newlineAfterSelector 
-			and: [keepEmptyLines]]) ifTrue: [^ false].
+		and: [self profile newlineAfterSelector 
+			and: [self profile keepEmptyLines]]) ifTrue: [^ false].
+		
 	(aStatement == aNode statements last 
-		and: [newlineBeforeReturn 
-			and: [keepEmptyLines]]) ifTrue: [^ false].
+		and: [self profile newlineBeforeReturn 
+			and: [self profile keepEmptyLines]]) ifTrue: [^ false].
+		
 	^ true
 	

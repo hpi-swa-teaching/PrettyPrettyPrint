@@ -1,3 +1,0 @@
-accessing
-messageDepth
-	^ messageDepth

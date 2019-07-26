@@ -1,9 +1,8 @@
 as yet unclassified
 testPrintPragma
 	
-	| printer test |
+	| test |
 	
-	printer := PPPPrinter new.
 	test := 'test
 	<hi val: ''test''>'.
 	self
