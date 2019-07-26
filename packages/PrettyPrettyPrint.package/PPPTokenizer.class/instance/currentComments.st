@@ -1,4 +1,0 @@
-accessing
-currentComments
-	
-	^ currentComments

@@ -1,4 +1,0 @@
-constant
-spacesPerTab
-	
-	^ 5

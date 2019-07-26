@@ -1,4 +1,0 @@
-accessing
-isConstant
-	
-	^ self constant

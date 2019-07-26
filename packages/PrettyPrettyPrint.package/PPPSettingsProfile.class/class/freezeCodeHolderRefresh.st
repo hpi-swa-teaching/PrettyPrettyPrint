@@ -1,4 +1,0 @@
-import/export
-freezeCodeHolderRefresh
-	
-	^ FreezeCodeHolderRefresh

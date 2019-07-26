@@ -1,4 +1,0 @@
-constant
-precedenceForBinary
-	
-	^ 2

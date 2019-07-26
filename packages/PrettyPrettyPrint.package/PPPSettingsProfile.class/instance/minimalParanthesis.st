@@ -1,4 +1,0 @@
-accessing
-minimalParanthesis
-	
-	^ minimalParanthesis

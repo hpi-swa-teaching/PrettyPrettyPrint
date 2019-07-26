@@ -1,4 +1,0 @@
-precedence
-precedence
-	
-	^ 4

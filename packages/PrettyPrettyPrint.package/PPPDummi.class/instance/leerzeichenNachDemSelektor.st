@@ -1,4 +1,0 @@
-as yet unclassified
-leerzeichenNachDemSelektor
-	
-	self macheDollenGanzGanzDollenStuff

@@ -1,4 +1,0 @@
-accessing
-getAllPragmas
-	
-	^ self subclassResponsibility
