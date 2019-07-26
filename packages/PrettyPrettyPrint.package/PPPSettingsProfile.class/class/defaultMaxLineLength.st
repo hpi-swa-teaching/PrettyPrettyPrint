@@ -1,0 +1,4 @@
+preferences
+defaultMaxLineLength
+	
+	^ 100
